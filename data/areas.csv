@@ -1,0 +1,28 @@
+area,traffic_share_pct,lanes_share_pct,disappearances,expected_from_traffic,ratio,ci95_low,ci95_high,verdict,disappearances_1800_2025,expected_from_recorded_losses,ratio_vs_losses,verdict_vs_losses,recorded_losses_1800_2025,recorded_losses_2000_2025,expected_modern_losses_from_traffic,ratio_modern_losses,verdict_modern_losses
+Bermuda Triangle,0.592,0.707,8,2.793,2.865,1.237,5.645,higher (95%),8,1.234,6.483,higher,44,1,2.562,0.39,as expected
+Dragon's Triangle,1.341,1.247,7,6.329,1.106,0.445,2.279,as expected,7,5.441,1.287,as expected,194,1,5.806,0.172,lower (95%)
+Michigan Triangle,0.009,0.016,0,0.042,0.0,0.0,86.961,as expected,0,0.112,0.0,as expected,4,0,0.039,0.0,as expected
+Rest of Lake Michigan,0.049,0.079,16,0.229,69.731,39.857,113.239,higher,15,1.991,7.533,higher,71,0,0.21,0.0,as expected
+Rest of the Great Lakes,0.203,0.204,11,0.958,11.488,5.735,20.555,higher,11,3.141,3.502,higher,112,0,0.878,0.0,as expected
+English Channel,1.34,0.514,19,6.326,3.003,1.808,4.69,higher,18,18.172,0.991,as expected,648,3,5.804,0.517,as expected
+North Sea,7.172,3.478,21,33.854,0.62,0.384,0.948,lower (95%),20,39.037,0.512,lower,1392,13,31.057,0.419,lower
+Baltic Sea,6.113,2.247,5,28.853,0.173,0.056,0.404,lower,4,6.338,0.631,as expected,226,8,26.469,0.302,lower
+Irish and Celtic Seas,1.701,0.716,12,8.027,1.495,0.772,2.611,as expected,9,22.155,0.406,lower (95%),790,2,7.364,0.272,lower (95%)
+Bay of Biscay,2.593,1.122,5,12.238,0.409,0.133,0.953,lower (95%),5,12.928,0.387,lower (95%),461,3,11.227,0.267,lower (95%)
+Black Sea,3.439,1.513,1,16.233,0.062,0.002,0.343,lower,1,2.44,0.41,as expected,87,5,14.892,0.336,lower (95%)
+Mediterranean Sea,14.353,8.339,41,67.748,0.605,0.434,0.821,lower,40,48.264,0.829,as expected,1721,19,62.15,0.306,lower
+Gulf of Mexico,1.214,1.819,11,5.732,1.919,0.958,3.434,as expected,10,3.281,3.048,higher (95%),117,20,5.258,3.804,higher
+Caribbean Sea,2.175,2.924,27,10.265,2.63,1.733,3.827,higher,21,6.029,3.483,higher,215,5,9.417,0.531,as expected
+US Atlantic coast,1.479,1.573,24,6.98,3.438,2.203,5.116,higher,23,19.491,1.18,as expected,695,94,6.403,14.68,higher
+Newfoundland and the Grand Banks,1.299,1.029,18,6.129,2.937,1.741,4.641,higher,17,7.319,2.323,higher (95%),261,1,5.623,0.178,lower (95%)
+Gulf of Alaska,0.576,0.671,5,2.72,1.838,0.597,4.29,as expected,5,34.494,0.145,lower,1230,87,2.495,34.868,higher
+"North Atlantic, open ocean",14.506,12.668,68,68.466,0.993,0.771,1.259,as expected,64,100.902,0.634,lower,3598,18,62.809,0.287,lower
+South China Sea,1.802,2.931,8,8.504,0.941,0.406,1.854,as expected,8,16.125,0.496,lower (95%),575,21,7.801,2.692,higher
+East China and Yellow Seas,3.857,2.626,2,18.207,0.11,0.013,0.397,lower,0,7.852,0.0,lower,280,18,16.702,1.078,as expected
+Sea of Japan,2.474,1.336,0,11.675,0.0,0.0,0.316,lower,0,2.047,0.0,as expected,73,4,10.711,0.373,lower (95%)
+Indonesian seas,1.297,3.699,8,6.121,1.307,0.564,2.575,as expected,8,5.048,1.585,as expected,180,10,5.615,1.781,as expected
+Malacca Strait and Andaman Sea,0.272,0.514,4,1.282,3.12,0.85,7.988,as expected,4,1.346,2.972,as expected,48,1,1.176,0.85,as expected
+Bay of Bengal,0.772,1.282,1,3.644,0.274,0.007,1.529,as expected,0,1.514,0.0,as expected,54,3,3.343,0.897,as expected
+Arabian Sea and the Gulfs,3.36,4.643,5,15.861,0.315,0.102,0.736,lower (95%),5,3.253,1.537,as expected,116,6,14.551,0.412,lower (95%)
+Bass Strait and Tasman Sea,0.038,0.961,48,0.179,268.595,198.041,356.119,higher,47,1.374,34.203,higher,49,3,0.164,18.299,higher
+Rest of the world's seas,25.975,41.141,97,122.604,0.791,0.642,0.965,lower (95%),92,70.671,1.302,higher (95%),2520,87,112.474,0.774,lower (95%)

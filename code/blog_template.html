@@ -1,0 +1,118 @@
+<!-- wp:paragraph -->
+<p><em>The Bermuda Triangle is supposed to swallow ships and planes more often than anywhere else. I put {{cat.placed|int}} famous disappearances on the map and tested every sea against its shipping. The Triangle does come out above its traffic, but no more than its neighbours, and most of its famous cases happened somewhere else.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://maps.tristanhotham.com/lost-at-sea/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/10.5281/zenodo.23856868">Read the paper</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:paragraph -->
+<p>Every so often someone asks me whether the Bermuda Triangle is real. The answer I always gave was the sceptic's standard: it is a busy bit of sea, so of course things go missing there. It was only recently that I realised I had never checked. "Busy" is a number, and so is "missing", and both can now be measured.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>For the missing, I used Wikipedia. Its volunteers keep three lists: missing ships, missing aircraft, and people who disappeared mysteriously at sea. I parsed all three, added the incidents told in the articles on the Bermuda Triangle, the Dragon's Triangle south of Japan and the Lake Michigan Triangle, merged the {{cat.merged|int}} rows that turned out to be the same incident, and placed each one on the map as well as its text allows. That gave {{cat.n|int}} incidents, {{cat.placed|int}} of them at sea. For "busy", I used the World Bank and IMF's map of ship positions from 2015 to 2021, built from the AIS transponders that ships carry.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_map.png|World map with a pale blue haze of shipping lanes, densest around Europe, East Asia and the main ocean routes, and several hundred coloured dots for disappearances: navy for ships, red for aircraft, teal for people. Dots crowd off North America, around Britain, in Bass Strait and in the Great Lakes, and are sparse off East Asia. Dashed outlines mark the Bermuda, Dragon's and Michigan Triangles. Seas with more disappearances than their traffic predicts are tinted red|Famous disappearances placed at sea, on modern shipping traffic. Red tint: more disappearances than the sea's traffic predicts.}}
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What "lost at sea" looks like</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The lists are a wonderful mix: Tudor warships and Victorian steamers, Second World War submarines, pioneer aviators, balloonists, round-the-world yachtsmen and cruise passengers. The median year of a placed incident is {{cat.median_year|raw}}, and {{cat.pre1946_pct|pc}} are from before 1946, so most of them happened long before modern shipping lanes existed. Placing them was the hard part. Only {{cat.conf.Position given|int}} give a position. Most say "off" a cape or island, or name two ports ("somewhere between New York and Liverpool"), and I used the midpoint of the route. I left out {{cat.unplaced|int}} that say no more than "Atlantic Ocean", or were lost over land.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_decades.png|Stacked bar chart of famous disappearances per decade from the 1800s to the 2020s, by ships, aircraft and people. Counts are low through the 1800s, rise after 1900 as aircraft appear, peak at about 110 in the 1940s, and fall to between 10 and 25 a decade since|Famous disappearances placed at sea, per decade. The shaded bars are the decades of the two world wars.}}
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The test</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The idea is simple. If disappearances just followed traffic, a sea with 1% of the world's shipping should hold about 1% of the disappearances. So for each of {{T.n_areas|int}} seas I worked out the number expected from its share of traffic and compared it with the number there, with an interval for the role of chance. The Bermuda Triangle, drawn from Miami to Bermuda to San Juan, carries {{bermuda.traffic_pct|f2}}% of the world's tracked shipping, so it should hold {{bermuda.e|f1}} of the {{cat.placed|int}} disappearances. It holds {{bermuda.o|int}}.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That is {{bermuda.x|x1}} times its traffic, with a 95% interval of {{bermuda.lo|f1}} to {{bermuda.hi|f1}}. So the legend is right, then? Not quite. Look next door. The US Atlantic coast, the Caribbean, the Gulf of Mexico and the Grand Banks together hold {{bermuda.neigh_o|int}} disappearances against {{bermuda.neigh_e|f1}} expected: {{bermuda.neigh_x|x1}} times their traffic, the same excess as the Triangle. Within that group the Triangle has {{bermuda.within_share_pct|f1}}% of the shipping, which predicts {{bermuda.within_e|f1}} of the group's disappearances. It has {{bermuda.o|int}}. The whole American side of the Atlantic is over-represented, which is what you would expect of lists written mostly in English about American and British ships and planes. The Triangle is simply part of it.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_tests.png|Dot and interval chart of the Bermuda Triangle's ratio of observed to expected disappearances under eight tests. Against traffic it is about 2.9 times, with the interval above 1; with an alternative traffic index 2.4; since 1946 about 6; ships only within chance; its four neighbours 2.7; against recorded losses about 6.5; against modern losses within chance|The Bermuda Triangle under each test, with 95% intervals. A ratio of 1 means exactly what its traffic predicts.}}
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The famous cases happened elsewhere</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The bigger surprise came when I placed the incidents that Wikipedia's Bermuda Triangle article tells. Of {{bermuda.famous_n|int}}, only {{bermuda.famous_inside|int}} fall inside the triangle, and both of those only because I put them at the midpoint of their route. Flight 19, the five Avengers that vanished in 1945, was lost off Florida's east coast, just north of the line from Miami to Bermuda. The Cotopaxi's wreck has been found off St Augustine. The Marine Sulphur Queen went down in the Gulf of Mexico, the Carroll A. Deering ran aground at Cape Hatteras, and the Star Tiger was lost far out on the way from the Azores. Larry Kusche made the same point in 1975: the Triangle has grown in the telling to cover most of the western North Atlantic.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_bermuda.png|Map of the western North Atlantic with the dashed Bermuda Triangle from Miami to Bermuda to San Juan. Two red dots inside it are Star Ariel and USS Cyclops. White dots outside it, labelled, include Flight 19, a PBM Mariner, a DC-3 and the Cotopaxi off Florida's east coast, the Carroll A. Deering at Cape Hatteras, the KC-135s west of Bermuda, Connemara IV south of Bermuda, USS Nereus off the Virgin Islands, the Marine Sulphur Queen in the Gulf of Mexico and the Star Tiger far out in the Atlantic|The incidents of the Wikipedia Bermuda Triangle article, as placed from their text. Red: inside the triangle. White: outside.}}
+
+<!-- wp:pullquote -->
+<figure class="wp-block-pullquote"><blockquote><p>The seas that really are worse than their traffic are not mysterious: they are stormy, shallow, busy in the past, or very well written about.</p></blockquote></figure>
+<!-- /wp:pullquote -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">So where is it really worse?</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Some seas do stand far above their traffic, and none of them is a legend. Bass Strait and the Tasman Sea top the list, with {{worse.0.o|int}} disappearances against {{worse.0.e|f2}} expected. Almost all are colonial schooners and packets lost in the 1800s between Sydney, Hobart, Launceston and Port Phillip, in one of the stormiest straits in the world, and they come from one lovingly compiled section of the list of missing ships. Lake Michigan follows ({{michigan.lake_o|int}} against {{michigan.lake_e|f2}}), and the other Great Lakes: freighters lost in the November gales a century ago, when lake traffic was far busier than today. The English Channel's excess is made of pioneer aviators, Battle of Britain pilots and Glenn Miller. The Grand Banks have fog, ice and the transatlantic flights of 1927. Weather, shoals, war, old trade routes and who wrote it down: that covers them all.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_forest.png|Chart of 27 seas, each with a dot and a 95% interval for observed over expected disappearances on a log scale. Bass Strait and Tasman Sea, Lake Michigan and the other Great Lakes are far to the right, between 10 and 300 times; the US Atlantic coast, English Channel, Grand Banks, Bermuda Triangle and Caribbean sit around 3; the Mediterranean, North Sea, Baltic, Black Sea and the seas off China and Japan are well below 1|Every sea against its traffic: observed disappearances divided by the number expected, with 95% intervals. Shaded rows are the three legendary triangles.}}
+
+<!-- wp:paragraph -->
+<p>The other two triangles fare no better than Bermuda. The Dragon's Triangle south of Tokyo holds {{dragon.o|int}} disappearances against {{dragon.e|f1}} expected, exactly what its busy shipping predicts, and its most famous victim, the research ship Kaiyo Maru No. 5, was destroyed by the undersea volcano she had gone to study. By my placing, the Michigan Triangle contains none of the incidents in its own article, though most are within a few tens of kilometres.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How I did this</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>I parsed the Wikipedia tables with Python and placed each incident with a gazetteer of {{cat.gaz_places|int}} ports, capes and islands and {{cat.gaz_seas|int}} seas that I built by hand, correcting {{cat.fixes|int}} cases by hand. Traffic is the World Bank's Global Shipping Traffic Density, summed over each sea; because AIS favours coasts with dense receivers, I repeated every test with a second traffic index, and with the {{losses.n|int}} recorded wrecks that have a position as a historical yardstick. The intervals are exact Poisson intervals, and "clearly worse" means beyond the 99.8% limit of a funnel plot. The big caveats: these are famous disappearances, written about in English; many positions are rough; and modern traffic is only a proxy for where ships and planes went in the past. The interactive page has every sea, every dot and a funnel plot, and the paper has the details.</p>
+<!-- /wp:paragraph -->
+
+{{IMG|b_funnel.png|Funnel plot with expected disappearances on a log horizontal axis and observed over expected on a log vertical axis. Dashed funnel lines narrow towards a ratio of 1 as the expected count grows. Bass Strait and Lake Michigan sit far above the funnel; the Bermuda Triangle sits just inside the upper 99.8% line with its neighbours; the Mediterranean and Sea of Japan sit below|Funnel plot: each sea's observed over expected disappearances against the number expected. Points outside the dashed lines are beyond chance.}}
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://maps.tristanhotham.com/lost-at-sea/">Explore the interactive version</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://doi.org/10.5281/zenodo.23856868">Read the paper</a></div>
+<!-- /wp:button -->
+<!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://github.com/Tristan-Hotham/lost-at-sea">Data and code</a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Notes and sources</h3>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Wikipedia contributors, <a href="https://en.wikipedia.org/wiki/List_of_missing_ships">List of missing ships</a>, <a href="https://en.wikipedia.org/wiki/List_of_missing_aircraft">List of missing aircraft</a>, <a href="https://en.wikipedia.org/wiki/List_of_people_who_disappeared_mysteriously_at_sea">List of people who disappeared mysteriously at sea</a>, <a href="https://en.wikipedia.org/wiki/Bermuda_Triangle">Bermuda Triangle</a>, <a href="https://en.wikipedia.org/wiki/Devil%27s_Sea">Devil's Sea</a> and <a href="https://en.wikipedia.org/wiki/Lake_Michigan_Triangle">Lake Michigan Triangle</a> (CC BY-SA 4.0). The catalogue derived from them is shared under the same licence with the data.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>World Bank, <a href="https://datacatalog.worldbank.org/search/dataset/0037580">Global Shipping Traffic Density</a>, produced by the IMF and World Bank from AIS data, 2015 to 2021 (Cerdeiro, Komaromi, Liu and Saeed 2020), CC BY 4.0.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Recorded wrecks with a position: Wikipedia's <a href="https://en.wikipedia.org/wiki/Lists_of_shipwrecks">lists of shipwrecks</a> (CC BY-SA 4.0) and <a href="https://www.wikidata.org/">Wikidata</a> (CC0), as cleaned for my earlier study <a href="https://maps.tristanhotham.com/world-shipwrecks/">Shipwrecks of the world</a>.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>Larry Kusche, <em>The Bermuda Triangle Mystery: Solved</em> (1975). <a href="https://www.naturalearthdata.com/">Natural Earth</a> outlines (public domain). Base map tiles on the interactive page © Esri.</li>
+<!-- /wp:list-item -->
+<!-- wp:list-item -->
+<li>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->

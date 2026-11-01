@@ -1,0 +1,674 @@
+id,name,kind,year,lat,lon,confidence,how_placed,moved_to_nearest_sea,location_text,wikipedia_lists,legend_article,people_named
+D001,Vandino Vivaldi,People lost at sea,1291,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Vandino Vivaldi; Ugolino Vivaldi
+D002,Muhammad ibn Qu,People lost at sea,1307,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Muhammad ibn Qu
+D003,Jaume Ferrer,People lost at sea,1346,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Jaume Ferrer
+D004,Hanneke Vrome,Ship or boat,1468,59.9,23.4,Near a named place,near raseborg,False,Somewhere off Raseborg,List of missing ships,,
+D005,João Afonso do Estreito,People lost at sea,1487,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,João Afonso do Estreito
+D006,Santa María,Ship or boat,1492,19.953,-72.694,Near a named place,near haiti,True,Somewhere off Haiti,List of missing ships,,
+D007,John Cabot,People lost at sea,1499,,,Not placed,fate unknown (may have reached land),False,Northwest Passage,List of people who disappeared mysteriously at sea,,John Cabot
+D008,Vasco de Ataíde,People lost at sea,1500,,,Not placed,Cape Verde or Cape of Good Hope,False,Cape Verde or Cape of Good Hope,List of people who disappeared mysteriously at sea,,Vasco de Ataíde
+D009,Gaspar Corte-Real,People lost at sea,1501,70.0,-100.0,Sea area only,sea area: northwest passage,False,Northwest Passage,List of people who disappeared mysteriously at sea,,Gaspar Corte-Real
+D010,Miguel Corte-Real,People lost at sea,1502,70.0,-100.0,Sea area only,sea area: northwest passage,False,Northwest Passage,List of people who disappeared mysteriously at sea,,Miguel Corte-Real
+D011,Diego de Nicuesa,People lost at sea,1511,15.0,-75.0,Sea area only,sea area: caribbean sea,False,Caribbean Sea,List of people who disappeared mysteriously at sea,,Diego de Nicuesa
+D012,Francisco de Hoces,People lost at sea,1526,,,Not placed,ocean or unknown only,False,Pacific Ocean,List of people who disappeared mysteriously at sea,,Francisco de Hoces
+D013,John of Sandwich,Ship or boat,1566,49.75,-2.2,Near a named place,near alderney,False,Somewhere off Alderney,List of missing ships,,
+D014,Ikegusuku Antō,People lost at sea,1579,29.5,126.0,Sea area only,sea area: east china sea,False,East China Sea,List of people who disappeared mysteriously at sea,,Ikegusuku Antō
+D015,Revenge,Ship or boat,1591,38.604,-27.213,Near a named place,near terceira,True,Somewhere off Terceira (missing wreck),List of missing ships,,
+D016,Cinco Chagas,Ship or boat,1594,38.4,-28.3,Near a named place,near pico island,False,Somewhere off Pico Island,List of missing ships,,
+D017,Henry Hudson,People lost at sea,1611,70.0,-100.0,Sea area only,sea area: northwest passage,False,Northwest Passage,List of people who disappeared mysteriously at sea,,Henry Hudson
+D018,Urasoe Chōri,People lost at sea,1638,31.278,130.151,Near a named place,near satsuma,True,Satsuma Domain,List of people who disappeared mysteriously at sea,,Urasoe Chōri
+D019,Royal Merchant,Ship or boat,1641,50.05,-5.9,Near a named place,near lands end,False,Somewhere off Land's End,List of missing ships,,
+D020,George Lamberton,People lost at sea,1647,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,George Lamberton
+D021,Roche Braziliano,People lost at sea,1671,,,Not placed,ocean or unknown only,False,Location unknown,List of people who disappeared mysteriously at sea,,Roche Braziliano
+D022,Le Griffon,Ship or boat,1679,45.3,-86.9,Sea area only,read from the article text,False,sailed from La Grand Baie (Green Bay) for Lake Erie,legend article; List of missing ships,Michigan Triangle,
+D023,Michel de Grammont,People lost at sea,1686,29.89,-81.25,Near a named place,near st augustine,False,"Near St. Augustine, Florida, U.S.",List of people who disappeared mysteriously at sea,,Michel de Grammont
+D024,John Coxon,People lost at sea,1688,17.757,-77.329,Near a named place,near jamaica,True,Jamaica,List of people who disappeared mysteriously at sea,,John Coxon
+D025,Ridderschap van Holland,People lost at sea,1694,,,Not placed,ocean or unknown only,False,Indian Ocean,List of people who disappeared mysteriously at sea,,Ridderschap van Holland
+D026,HMS York,Ship or boat,1703,51.949,2.032,Position given,30 km from harwich,False,About 16 nautical miles (19 km) east of Harwich,List of missing ships,,
+D027,Aagtekerk,Ship or boat,1726,-28.7,113.8,Near a named place,near houtman abrolhos,False,Somewhere around the Houtman Abrolhos islands,List of missing ships,,
+D028,Aagtekerke,People lost at sea,1726,,,Not placed,ocean or unknown only,False,Indian Ocean,List of people who disappeared mysteriously at sea,,Aagtekerke
+D029,Anna Catharina,Ship or boat,1735,51.45,3.6,Near a named place,near scheldt,False,Somewhere in the Scheldt estuary,List of missing ships,,
+D030,Leusden,Ship or boat,1738,5.85,-53.9,Near a named place,near maroni river,False,Somewhere off Maroni River,List of missing ships,,
+D031,HMS Namur,Ship or boat,1749,11.7,79.9,Near a named place,near cuddalore,False,Somewhere off Cuddalore,List of missing ships,,
+D032,Sea Bird,People lost at sea,1750,41.4,-71.4,Near a named place,near rhode island,False,"Rhode Island, U.S.",List of people who disappeared mysteriously at sea,,Sea Bird
+D033,"Edward Moore, 5th Earl of Drogheda",People lost at sea,1758,53.376,-5.3,Route midpoint,"midpoint of holyhead to dublin (67 km, circumstances text)",False,Irish Sea,List of people who disappeared mysteriously at sea,,"Edward Moore, 5th Earl of Drogheda"
+D034,John Stanwix,People lost at sea,1766,53.376,-5.3,Route midpoint,"midpoint of dublin to holyhead (67 km, circumstances text)",False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,John Stanwix
+D035,Henry Vansittart,People lost at sea,1770,,,Not placed,ocean or unknown only,False,Indian Ocean,List of people who disappeared mysteriously at sea,,Henry Vansittart; Luke Scrafton; Francis Forde; William Falconer; Robert Pitcairn
+D036,USS Reprisal,Ship or boat,1777,47.0,-52.5,Near a named place,near newfoundland,False,Somewhere off Newfoundland,List of missing ships,,
+D037,Benjamin Church,People lost at sea,1778,15.0,-75.0,Sea area only,sea area: caribbean sea,False,Caribbean Sea,List of people who disappeared mysteriously at sea,,Benjamin Church
+D038,Thomas Lynch Jr.,People lost at sea,1779,15.0,-75.0,Sea area only,sea area: caribbean sea,False,Caribbean Sea,List of people who disappeared mysteriously at sea,,Thomas Lynch Jr.
+D039,Morgan Connor,People lost at sea,1780,,,Not placed,ocean or unknown only,False,Location unknown,List of people who disappeared mysteriously at sea,,Morgan Connor
+D040,William Palfrey,People lost at sea,1780,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,William Palfrey
+D041,Charles Carpenter,People lost at sea,1781,,,Not placed,ocean or unknown only,False,Location unknown,List of people who disappeared mysteriously at sea,,Charles Carpenter
+D042,USS Saratoga,Ship or boat,1781,15.0,-75.0,Sea area only,sea area: caribbean sea,False,Somewhere in Caribbean Sea,List of missing ships; List of people who disappeared mysteriously at sea,,John Young
+D043,Aimée du Buc de Rivéry,People lost at sea,1788,15.0,-75.0,Sea area only,sea area: caribbean sea,False,Caribbean Sea,List of people who disappeared mysteriously at sea,,Aimée du Buc de Rivéry
+D044,Jean-François de Galaup (Lapérouse) and his expedition,People lost at sea,1788,,,Not placed,"wrecked at Vanikoro, found in 1826 (not a mystery at sea)",False,"Botany Bay, Australia",List of people who disappeared mysteriously at sea,,Jean-François de Galaup (Lapérouse) and his expedition
+D045,Robert Manners Sutton,People lost at sea,1794,35.5,18.0,Sea area only,sea area: mediterranean sea,False,Mediterranean Sea,List of people who disappeared mysteriously at sea,,Robert Manners Sutton
+D046,William Mulso,People lost at sea,1797,,,Not placed,ocean or unknown only,False,Location unknown,List of people who disappeared mysteriously at sea,,William Mulso
+D047,Thomas Atkinson,People lost at sea,1799,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Thomas Atkinson
+D048,Crew of HMS Babet,People lost at sea,1800,15.0,-75.0,Sea area only,sea area: caribbean sea,False,Caribbean Sea,List of people who disappeared mysteriously at sea,,Crew of HMS Babet
+D049,HMS Heureux,Ship or boat,1800,,,Not placed,route too vague (the Caribbean to Halifax),False,Somewhere between the Caribbean and Halifax,List of missing ships,,
+D050,USS Insurgent,Ship or boat,1800,15.0,-75.0,Sea area only,sea area: caribbean sea,False,Somewhere in Caribbean Sea,List of missing ships; List of people who disappeared mysteriously at sea,,Patrick Fletcher
+D051,USS Pickering,Ship or boat,1800,27.657,-67.555,Route midpoint,"midpoint of newcastle delaware to guadeloupe (2,827 km)",False,"Somewhere between Newcastle, Delaware and Guadeloupe",List of missing ships; List of people who disappeared mysteriously at sea,,Joseph Ingraham
+D052,George Roper,People lost at sea,1802,,,Not placed,ocean or unknown only,False,Location unknown,List of people who disappeared mysteriously at sea,,George Roper; William Henry
+D053,George Bass,People lost at sea,1803,-33.85,151.35,Near a named place,near port jackson,False,"Port Jackson, Australia",List of people who disappeared mysteriously at sea,,George Bass
+D054,Venus,Ship or boat,1803,-40.704,158.627,Route midpoint,"midpoint of sydney to southern new zealand (1,994 km)",False,Somewhere between Sydney and southern New Zealand,List of missing ships,,
+D055,James Tippett,People lost at sea,1804,50.2,-1.5,Sea area only,sea area: english channel,False,English Channel,List of people who disappeared mysteriously at sea,,James Tippett
+D056,HMCS Integrity,Ship or boat,1805,,,Not placed,route crosses the Pacific (Sydney to Valparaiso),False,"Somewhere between Sydney, Australia and Valparaíso, Chile",List of missing ships,,
+D057,Independence,Ship or boat,1805,-42.588,163.335,Route midpoint,"midpoint of sydney to antipodes islands (2,851 km)",False,"Somewhere between Sydney and the Antipodes Islands, south east of New Zealand",List of missing ships,,
+D058,John,Ship or boat,1806,-37.919,148.082,Route midpoint,midpoint of king island to sydney (940 km),True,Somewhere between King Island and Sydney,List of missing ships,,
+D059,Raven,Ship or boat,1806,,,Not placed,ocean or unknown only,False,,List of missing ships,,
+D060,HMS Blenheim,Ship or boat,1807,-26.0,47.0,Near a named place,near madagascar,False,Off the coast of Madagascar,List of missing ships,,
+D061,James Hawes,People lost at sea,1807,35.5,18.0,Sea area only,sea area: mediterranean sea,False,Mediterranean Sea,List of people who disappeared mysteriously at sea,,James Hawes
+D062,John Sedley,People lost at sea,1807,,,Not placed,ocean or unknown only,False,Unknown,List of people who disappeared mysteriously at sea,,John Sedley
+D063,John Logan,People lost at sea,1808,-8.5,80.0,Position given,coordinates in the circumstances text,False,Unknown,List of people who disappeared mysteriously at sea,,John Logan
+D064,Hay MacDowall,People lost at sea,1809,-34.4,18.5,Near a named place,near cape of good hope,False,"Cape of Good Hope, South Africa",List of people who disappeared mysteriously at sea,,Hay MacDowall
+D065,J. Hill,People lost at sea,1809,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,J. Hill
+D066,John James Ridge,People lost at sea,1809,,,Not placed,ocean or unknown only,False,Indian Ocean,List of people who disappeared mysteriously at sea,,John James Ridge
+D067,Active,Ship or boat,1810,-37.0,160.0,Sea area only,sea area: tasman sea,False,Tasman Sea,List of missing ships; List of people who disappeared mysteriously at sea,,John Bader
+D068,Theodosia Burr Alston,People lost at sea,1813,32.8,-79.0,Near a named place,near south carolina,False,"Coast of South Carolina, U.S.",List of people who disappeared mysteriously at sea,,Theodosia Burr Alston
+D069,Unity,Ship or boat,1813,,,Not placed,no place given,False,Somewhere off the coast,List of missing ships,,
+D070,Argo,Ship or boat,1814,,,Not placed,no place given,False,Somewhere off the coast,List of missing ships,,
+D071,John Davies,People lost at sea,1814,50.2,-1.5,Sea area only,sea area: english channel,False,English Channel,List of people who disappeared mysteriously at sea,,John Davies
+D072,Johnston Blakeley,People lost at sea,1814,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Johnston Blakeley
+D073,Morning Star,Ship or boat,1814,-10.6,141.9,Near a named place,near booby island,False,Somewhere off Booby Island,List of missing ships,,
+D074,D.Grierson,People lost at sea,1815,,,Not placed,"route too long to place (midpoint of jamaica to london (7,700 km, circumstances text))",False,Unknown,List of people who disappeared mysteriously at sea,,D.Grierson
+D075,USS Epervier,Ship or boat,1815,,,Not placed,ocean or unknown only,False,,List of missing ships; List of people who disappeared mysteriously at sea,,John Yarnall
+D076,Amelia,Ship or boat,1816,-33.85,151.35,Near a named place,near port jackson,False,"Port Jackson, Australia",List of missing ships; List of people who disappeared mysteriously at sea,,Samuel Shaw
+D077,Jonathon Read,People lost at sea,1816,,,Not placed,ocean or unknown only,False,Location unknown,List of people who disappeared mysteriously at sea,,Jonathon Read
+D078,Whale,Ship or boat,1816,-33.715,151.35,Route midpoint,midpoint of sydney to hawkesbury (30 km),False,Somewhere between Sydney and the mouth of the Hawkesbury River,List of missing ships; List of people who disappeared mysteriously at sea,,George Winney
+D079,Princess Charlotte,Ship or boat,1820,-38.467,149.501,Route midpoint,"midpoint of hobart to sydney (1,079 km)",False,Somewhere between Hobart and Sydney,List of missing ships,,
+D080,USS Lynx,Ship or boat,1820,24.317,-78.936,Route midpoint,"midpoint of st marys georgia to kingston jamaica (1,494 km)",False,"Somewhere between St. Mary's, Georgia and Kingston, Jamaica",List of missing ships,,
+D081,Obed Hendricks,People lost at sea,1821,,,Not placed,ocean or unknown only,False,Pacific Ocean,List of people who disappeared mysteriously at sea,,Obed Hendricks; William Bond; Joseph West
+D082,Charles Lefebvre-Desnouettes,People lost at sea,1822,51.8,-10.3,Near a named place,near coast of ireland,False,Off the coast of Ireland,List of people who disappeared mysteriously at sea,,Charles Lefebvre-Desnouettes
+D083,Jean Lafitte,People lost at sea,1823,16.2,-88.2,Sea area only,sea area: gulf of honduras,False,Gulf of Honduras,List of people who disappeared mysteriously at sea,,Jean Lafitte
+D084,HMS Lady Nelson,Ship or boat,1825,-7.97,125.938,Near a named place,near the Babar islands (Aluta or Baba Island),True,Unconfirmed destruction at Aluta Island or Baba Island,List of missing ships,,
+D085,Despatch,Ship or boat,1826,-43.25,148.02,Near a named place,near cape pillar,False,Somewhere off Cape Pillar,List of missing ships,,
+D086,Douglas Clavering,People lost at sea,1827,8.4,-13.4,Near a named place,near sierra leone,False,near Sierra Leone,List of people who disappeared mysteriously at sea,,Douglas Clavering
+D087,Carlo Giuseppe Bertero,People lost at sea,1831,,,Not placed,ocean or unknown only,False,South Pacific Ocean,List of people who disappeared mysteriously at sea,,Carlo Giuseppe Bertero
+D088,Resolution,Ship or boat,1832,-39.076,148.419,Route midpoint,midpoint of launceston to twofold bay (518 km),False,Somewhere between Launceston and Twofold Bay,List of missing ships,,
+D089,Maid of Australia,Ship or boat,1834,-40.736,146.218,Route midpoint,midpoint of port arthur to port philip (601 km),False,Somewhere between Port Arthur and Port Philip,List of missing ships,,
+D090,Henry Hutton,People lost at sea,1835,,,Not placed,"route too long to place (midpoint of manila to london (10,642 km, circumstances text))",False,Unknown,List of people who disappeared mysteriously at sea,,Henry Hutton
+D091,Lady Franklin,Ship or boat,1838,-38.467,149.501,Route midpoint,"midpoint of sydney to hobart (1,079 km)",False,Somewhere between Sydney and Hobart,List of missing ships,,
+D092,Port Phillip Packet,Ship or boat,1838,-39.68,145.729,Route midpoint,midpoint of launceston to port phillip bay (355 km),False,Somewhere between Launceston and Port Phillip Bay,List of missing ships,,
+D093,Yarra Yarra,Ship or boat,1838,-39.68,145.729,Route midpoint,midpoint of launceston to port phillip bay (355 km),False,Somewhere between Launceston and Port Phillip Bay,List of missing ships,,
+D094,Rosalie,People lost at sea,1840,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Rosalie
+D095,SS President,Ship or boat,1841,52.541,-43.556,Sea area only,"long route, counted only in the sea area it crosses: midpoint of new york city to liverpool (5,305 km)",False,Somewhere between New York City and Liverpool,List of missing ships; List of people who disappeared mysteriously at sea,,Richard Roberts; George Grimston Cookman; Tyrone Power
+D096,Franklin's lost expedition,People lost at sea,1845,69.3,-100.5,Sea area only,sea area: victoria strait,False,Victoria Strait,List of people who disappeared mysteriously at sea,,Franklin's lost expedition
+D097,Francisque Arban,People lost at sea,1849,35.5,18.0,Sea area only,sea area: mediterranean sea,False,Mediterranean Sea,List of people who disappeared mysteriously at sea,,Francisque Arban
+D098,Elizabeth Radcliff,Ship or boat,1850,,,Not placed,ocean or unknown only,False,,List of missing ships,,
+D099,"Sir Montagu Chapman, 3rd Baronet",People lost at sea,1852,-37.0,160.0,Sea area only,sea area: tasman sea,False,Tasman Sea,List of people who disappeared mysteriously at sea,,"Sir Montagu Chapman, 3rd Baronet"
+D100,Madagascar,Ship or boat,1853,,,Not placed,route spans two oceans (Port Phillip to London),False,Somewhere between Port Phillip and London (also listed under Indian Ocean),List of missing ships,,
+D101,SS Arctic,Ship or boat,1854,46.6,-53.0,Near a named place,near cape race,False,"Somewhere off Cape Race, Newfoundland (missing wreck)",List of missing ships,,
+D102,SS City of Glasgow,Ship or boat,1854,51.93,-44.671,Sea area only,"long route, counted only in the sea area it crosses: midpoint of liverpool to philadelphia (5,493 km)",False,Somewhere between Liverpool and Philadelphia,List of missing ships,,
+D103,Senorita,Ship or boat,1854,-38.467,149.501,Route midpoint,"midpoint of sydney to hobart (1,079 km)",False,Somewhere between Sydney and Hobart,List of missing ships,,
+D104,USS Albany,Ship or boat,1854,15.0,-75.0,Sea area only,sea area: caribbean sea,False,Somewhere in Caribbean Sea,List of missing ships; List of people who disappeared mysteriously at sea,,James Thompson Gerry
+D105,USS Porpoise,Ship or boat,1854,,,Not placed,only 'off the coast of China or Taiwan',False,Somewhere off the coast of China or Taiwan,List of missing ships,,
+D106,Vivid,Ship or boat,1854,-39.525,144.995,Route midpoint,midpoint of melbourne to circular head (277 km),False,"Somewhere between Melbourne and Circular Head, Tasmania",List of missing ships,,
+D107,Pacific,Ship or boat,1856,52.541,-43.556,Sea area only,"long route, counted only in the sea area it crosses: midpoint of liverpool to new york city (5,305 km)",False,Somewhere between Liverpool and New York City,List of missing ships; List of people who disappeared mysteriously at sea,,Asa Eldridge; Bernard O'Reilly
+D108,Ville de Paris (hot air balloon),Aircraft,1856,24.2,-81.0,Sea area only,sea area: straits of florida,False,North Atlantic Ocean (Straits of Florida),List of missing aircraft,,
+D109,Tempest,Ship or boat,1857,53.249,-45.194,Sea area only,"long route, counted only in the sea area it crosses: midpoint of new york city to glasgow (5,153 km)",False,Somewhere between New York City and Glasgow,List of missing ships,,
+D110,HMS Sappho,Ship or boat,1858,-39.5,146.5,Sea area only,sea area: bass strait,False,somewhere in Bass Strait,List of missing ships,,
+D111,Burmah,Ship or boat,1859,-48.0,97.0,Position given,last seen near 97E 48S,False,Somewhere between London and New Zealand (last seen near 97E 48S),List of missing ships,,
+D112,Reindeer,Ship or boat,1862,-39.45,147.3,Near a named place,near kent group,False,Somewhere around the Kent Group (missing wreck),List of missing ships,,
+D113,Grecian Queen,Ship or boat,1863,-36.035,150.202,Route midpoint,midpoint of newcastle to melbourne (878 km),True,Somewhere between Newcastle and Melbourne (unidentified/missing wreck),List of missing ships,,
+D114,General Grant,Ship or boat,1866,-50.7,165.9,Near a named place,near auckland island,False,Off western shore of Auckland Island (missing wreck),List of missing ships,,
+D115,Gibraltar,Ship or boat,1867,50.2,-1.5,Sea area only,sea area: english channel,False,Reportedly sunk in English Channel (missing wreck),List of missing ships,,
+D116,Trevarton Charles Sholl,People lost at sea,1867,,,Not placed,on land or not recognised,False,Australia,List of people who disappeared mysteriously at sea,,Trevarton Charles Sholl
+D117,SS Hippocampus,Ship or boat,1868,42.2,-86.6,Near a named place,near benton harbor,False,"Lake freighter that capsized in Lake Michigan a few miles from Benton Harbor, Michigan",List of missing ships,,
+D118,Java,Ship or boat,1869,,,Not placed,only the destination (Yokohama) is known,False,Disappeared en route to Yokohama,List of missing ships,,
+D119,United Kingdom,Ship or boat,1869,53.249,-45.194,Sea area only,"long route, counted only in the sea area it crosses: midpoint of new york city to glasgow (5,153 km)",False,Somewhere between New York City and Glasgow,List of missing ships,,
+D120,SS City of Boston,Ship or boat,1870,52.541,-43.556,Sea area only,"long route, counted only in the sea area it crosses: midpoint of new york city to liverpool (5,305 km)",False,Somewhere between New York City and Liverpool,List of missing ships,,
+D121,SS R.G. Coburn,Ship or boat,1871,44.8,-82.5,Sea area only,sea area: lake huron,False,Lake freighter lost in heavy weather in Lake Huron in October 1871,List of missing ships,,
+D122,Captain Benjamin Briggs and crew,People lost at sea,1872,38.3,-17.5,Position given,Mary Celeste found about 400 miles east of the Azores,False,Atlantic Ocean near Azores,List of people who disappeared mysteriously at sea,,Captain Benjamin Briggs and crew; Sarah Elizabeth Briggs; Sophia Matilda Briggs
+D123,Shannon,Ship or boat,1872,55.307,-39.762,Sea area only,"long route, counted only in the sea area it crosses: midpoint of montreal to liverpool (4,670 km)",False,Somewhere between Montreal and Liverpool,List of missing ships,,
+D124,City of Hobart,Ship or boat,1873,-43.025,147.36,Route midpoint,midpoint of hobart to blackmans bay (9 km),False,Somewhere between Hobart and Blackman's Bay,List of missing ships,,
+D125,SS Ismailia,Ship or boat,1873,53.249,-45.194,Sea area only,"long route, counted only in the sea area it crosses: midpoint of new york city to glasgow (5,153 km)",False,Somewhere between New York City and Glasgow,List of missing ships,,
+D126,Trojan,Ship or boat,1874,53.807,-37.954,Sea area only,"long route, counted only in the sea area it crosses: midpoint of glasgow to halifax (4,213 km)",False,Somewhere between Glasgow and Halifax,List of missing ships,,
+D127,Colombo,Ship or boat,1876,53.204,-42.142,Sea area only,"long route, counted only in the sea area it crosses: midpoint of hull to new york city (5,531 km)",False,Somewhere between Hull and New York City,List of missing ships,,
+D128,Fleetwing,Ship or boat,1876,,,Not placed,ocean or unknown only,False,,List of missing ships,,
+D129,Flying Duck,Ship or boat,1876,-40.73,148.12,Near a named place,near swan island,False,Somewhere off Swan Island (unidentified/missing wreck),List of missing ships,,
+D130,Hermann Ludwig,Ship or boat,1878,52.821,-39.784,Sea area only,"long route, counted only in the sea area it crosses: midpoint of new york city to antwerp (5,810 km)",False,Somewhere between New York City and Antwerp,List of missing ships,,
+D131,Pathfinder (hydrogen balloon),Aircraft,1879,42.6,-87.2,Sea area only,sea area: lake michigan,False,United States (Lake Michigan),List of missing aircraft,,
+D132,HMS Atalanta,Ship or boat,1880,45.189,-39.395,Sea area only,"long route, counted only in the sea area it crosses: midpoint of bermuda to falmouth (5,219 km)",False,"sailed from Bermuda for Falmouth, England",legend article; List of missing ships; List of people who disappeared mysteriously at sea,Bermuda Triangle,Crew of HMS Atalanta
+D133,John Leslie Griffiths,Ship or boat,1880,-39.819,143.807,Near a named place,near king island,True,Somewhere around King Island,List of missing ships,,
+D134,Lamont Young,People lost at sea,1880,-36.43,150.15,Near a named place,near bermagui,False,"Bermagui, Australia",List of people who disappeared mysteriously at sea,,Lamont Young
+D135,Mercator,Ship or boat,1880,52.821,-39.784,Sea area only,"long route, counted only in the sea area it crosses: midpoint of antwerp to new york city (5,810 km)",False,Somewhere between Antwerp and New York City,List of missing ships,,
+D136,PS Alpena,Ship or boat,1880,43.1,-86.9,Sea area only,sea area: lake michigan,False,Lost on Lake Michigan 15 October 1880,List of missing ships,,
+D137,Charles W. Chipp,People lost at sea,1881,74.5,130.0,Sea area only,sea area: laptev sea,False,Laptev Sea,List of people who disappeared mysteriously at sea,,Charles W. Chipp
+D138,City of London,Ship or boat,1881,52.444,-40.557,Sea area only,"long route, counted only in the sea area it crosses: midpoint of london to new york city (5,687 km)",False,Somewhere between London and New York City,List of missing ships,,
+D139,Henry Edye,Ship or boat,1881,52.821,-39.784,Sea area only,"long route, counted only in the sea area it crosses: midpoint of antwerp to new york city (5,810 km)",False,Somewhere between Antwerp and New York City,List of missing ships,,
+D140,John Bristow Hughes,People lost at sea,1881,-37.944,144.879,Near a named place,near hobsons bay,True,"Hobson's Bay, Australia",List of people who disappeared mysteriously at sea,,John Bristow Hughes
+D141,Jumna,Ship or boat,1881,-38.629,130.292,Route midpoint,"midpoint of hobart to fremantle (3,035 km)",False,Somewhere between Hobart and Fremantle,List of missing ships,,
+D142,"Saladin (hydrogen balloon), with Walter Powell",Aircraft,1881,50.68,-2.8,Near a named place,near eype mouth,False,"North Atlantic Ocean (Eype Mouth, UK)",List of missing aircraft; List of people who disappeared mysteriously at sea,,Walter Powell
+D143,America,Ship or boat,1882,54.924,-39.109,Sea area only,"long route, counted only in the sea area it crosses: midpoint of new york city to hamburg (6,026 km)",False,Somewhere between New York City and Hamburg,List of missing ships,,
+D144,City of Limerick,Ship or boat,1882,52.444,-40.557,Sea area only,"long route, counted only in the sea area it crosses: midpoint of new york city to london (5,687 km)",False,Somewhere between New York City and London,List of missing ships,,
+D145,Louisa,Ship or boat,1882,-43.13,148.0,Near a named place,near fortescue bay,False,Somewhere around Fortescue Bay,List of missing ships,,
+D146,Titania,Ship or boat,1882,,,Not placed,"route too long to place (midpoint of new york city to newcastle (15,907 km))",False,Somewhere between New York City and Newcastle,List of missing ships,,
+D147,Viscount McDuff,Ship or boat,1882,,,Not placed,route spans an ocean (Sydney to Madras),False,Somewhere between Sydney and Madras (unidentified/missing wreck),List of missing ships,,
+D148,Africa,Ship or boat,1883,53.777,-44.639,Sea area only,"long route, counted only in the sea area it crosses: midpoint of new york city to leith (5,265 km)",False,Somewhere between New York City and Leith,List of missing ships,,
+D149,Ludwig,Ship or boat,1883,55.503,-35.729,Sea area only,"long route, counted only in the sea area it crosses: midpoint of antwerp to montreal (5,180 km)",False,Somewhere between Antwerp and Montreal,List of missing ships,,
+D150,Resolven,People lost at sea,1884,54.5,-57.0,Near a named place,near labrador,False,"Labrador, Canada",List of people who disappeared mysteriously at sea,,Resolven
+D151,Humber,Ship or boat,1885,52.444,-40.557,Sea area only,"long route, counted only in the sea area it crosses: midpoint of new york city to london (5,687 km)",False,Somewhere between New York City and London,List of missing ships,,
+D152,Shannon,Ship or boat,1885,,,Not placed,route spans two oceans (London to Calcutta),False,Somewhere between London and Calcutta (also listed under Indian Ocean),List of missing ships,,
+D153,Tristan da Cunha lifeboat,Ship or boat,1885,-37.1,-12.3,Near a named place,near tristan da cunha,False,Somewhere around Tristan da Cunha,List of missing ships,,
+D154,Vorsetzen,Ship or boat,1885,53.08,-32.603,Sea area only,"long route, counted only in the sea area it crosses: midpoint of halifax to antwerp (4,858 km)",False,Somewhere between Halifax and Antwerp,List of missing ships,,
+D155,James Henry Van Alen,People lost at sea,1886,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,James Henry Van Alen
+D156,Celestia,Ship or boat,1887,-39.899,161.562,Route midpoint,"midpoint of russell new zealand to hobart (2,458 km)",False,"Somewhere between Russell, New Zealand and Hobart",List of missing ships,,
+D157,Neva,Ship or boat,1887,,,Not placed,route spans two oceans (Banyuwangi to Lisbon),False,Somewhere between Banyuwangi and Lisbon (also listed under Indian Ocean),List of missing ships,,
+D158,SS Vaitarna,Ship or boat,1888,21.0,69.0,Near a named place,off the coast of Saurashtra,False,Somewhere off the coast of Saurashtra in Arabian Sea,List of missing ships,,
+D159,Erin,Ship or boat,1889,52.444,-40.557,Sea area only,"long route, counted only in the sea area it crosses: midpoint of new york city to london (5,687 km)",False,Somewhere between New York City and London,List of missing ships,,
+D160,"Peter Campbell Airship, America (demonstration flight)",Aircraft,1889,39.35,-74.3,Near a named place,near atlantic city,False,"North Atlantic Ocean (E. of Atlantic City, New Jersey)",List of missing aircraft,,
+D161,William Jackson,People lost at sea,1889,-37.0,160.0,Sea area only,sea area: tasman sea,False,Tasman Sea,List of people who disappeared mysteriously at sea,,William Jackson
+D162,Archduke Johann Salvator of Austria,People lost at sea,1890,-56.1,-67.3,Near a named place,near cape horn,False,"Cape Horn, Chile (presumed)",List of people who disappeared mysteriously at sea,,Archduke Johann Salvator of Austria
+D163,Awarau,Ship or boat,1891,-54.643,158.986,Near a named place,near macquarie island,True,Somewhere off Macquarie Island,List of missing ships,,
+D164,Kakanui,Ship or boat,1891,-50.5,163.5,Route midpoint,midpoint of Macquarie Island to southern New Zealand,False,Somewhere between Macquarie Island and New Zealand,List of missing ships,,
+D165,Thomas Hume,Ship or boat,1891,42.6,-87.0,Route midpoint,read from the article text,False,sailed from Chicago for Muskegon; wreck found in Lake Michigan in 2006,legend article,Michigan Triangle,
+D166,Danube,Ship or boat,1892,28.434,-66.993,Route midpoint,"midpoint of guadeloupe to new york city (2,937 km)",False,Somewhere between Guadeloupe and New York City,List of missing ships,,
+D167,Hermann Fol,People lost at sea,1892,47.8,-4.1,Near a named place,near benodet,False,"Bénodet, France",List of people who disappeared mysteriously at sea,,Hermann Fol
+D168,SS W. H. Gilcher,Ship or boat,1892,45.05,-85.95,Near a named place,near manitou passage,False,Somewhere in the Manitou Passage,List of missing ships,,
+D169,SS Naronic,Ship or boat,1893,52.369,-43.901,Sea area only,"long route, counted only in the sea area it crosses: midpoint of point lynas to new york city (5,248 km)",False,"Somewhere between Point Lynas, Wales and New York City",List of missing ships,,
+D170,Apollo,Ship or boat,1894,52.821,-39.784,Sea area only,"long route, counted only in the sea area it crosses: midpoint of new york city to antwerp (5,810 km)",False,Somewhere between New York City and Antwerp,List of missing ships,,
+D171,De Ruyter,Ship or boat,1894,52.821,-39.784,Sea area only,"long route, counted only in the sea area it crosses: midpoint of antwerp to new york city (5,810 km)",False,Somewhere between Antwerp and New York City,List of missing ships,,
+D172,SS Chicora,Ship or boat,1895,42.6,-86.8,Sea area only,sea area: lake michigan (sailed from Milwaukee for St. Joseph),False,Lake freighter that sank on 21 January 1895 in Lake Michigan,List of missing ships,,
+D173,SS Lord Spencer,Ship or boat,1895,,,Not placed,route rounds a continent (San Francisco to New York),False,Somewhere between San Francisco and New York City,List of missing ships,,
+D174,SS Falls of Bracklinn,Ship or boat,1897,50.378,-44.832,Sea area only,"long route, counted only in the sea area it crosses: midpoint of baltimore to avonmouth (5,806 km)",False,Somewhere between Baltimore and Avonmouth,List of missing ships,,
+D175,Örnen (Eagle) (attempted North Pole flight),Aircraft,1897,,,Not placed,found on land (Kvitøya) in 1930,False,Arctic Ocean (North of Svalbard),List of missing aircraft,,
+D176,Malcolm,Ship or boat,1898,-34.15,151.176,Route midpoint,midpoint of wollongong to sydney (74 km),False,Somewhere between Wollongong and Sydney.,List of missing ships,,
+D177,Merrimac,Ship or boat,1899,55.518,-41.326,Sea area only,"long route, counted only in the sea area it crosses: midpoint of quebec city to belfast (4,486 km)",False,Somewhere between Quebec City and Belfast,List of missing ships,,
+D178,Pauillac,Ship or boat,1900,54.469,-39.236,Sea area only,"long route, counted only in the sea area it crosses: midpoint of glasgow to saint john new brunswick (4,326 km)",False,"Somewhere between Glasgow and Saint John, New Brunswick",List of missing ships,,
+D179,Eduard von Toll,People lost at sea,1902,76.5,149.0,Near a named place,near Bennett Island,False,East Siberian Sea,List of people who disappeared mysteriously at sea,,Eduard von Toll
+D180,Huronian,Ship or boat,1902,54.469,-39.236,Sea area only,"long route, counted only in the sea area it crosses: midpoint of glasgow to saint john new brunswick (4,326 km)",False,"Somewhere between Glasgow and Saint John, New Brunswick",List of missing ships,,
+D181,SS Bannockburn,Ship or boat,1902,47.6,-87.5,Sea area only,sea area: lake superior,False,Lost on Lake Superior 21 November 1902,List of missing ships,,
+D182,Chris,Ship or boat,1903,-43.176,147.477,Route midpoint,midpoint of hobart to adventure bay (33 km),True,Somewhere between Hobart and Adventure Bay,List of missing ships,,
+D183,Loch Bredan,People lost at sea,1903,,,Not placed,ocean or unknown only,False,Indian Ocean,List of people who disappeared mysteriously at sea,,Loch Bredan
+D184,Moy,Ship or boat,1905,,,Not placed,route crosses an ocean (British Guiana to Liverpool),False,Somewhere between British Guiana and Liverpool,List of missing ships,,
+D185,SS Iosco,Ship or boat,1905,46.95,-87.97,Near a named place,near huron islands,False,Somewhere near the Huron Islands,List of missing ships,,
+D186,Patrie (semi-rigid airship),Aircraft,1907,57.5,-8.5,Near a named place,off the Hebrides,False,Atlantic Ocean (off the Hebrides),List of missing aircraft,,
+D187,Neustria,Ship or boat,1908,49.221,-35.284,Sea area only,"long route, counted only in the sea area it crosses: midpoint of new york city to marseille (6,308 km)",False,Somewhere between New York City and Marseille,List of missing ships,,
+D188,Pampero (coal gas balloon),Aircraft,1908,-35.2,-56.8,Sea area only,sea area: river plate,False,Argentina (River Plate),List of missing aircraft,,
+D189,SS D. M. Clemson,Ship or boat,1908,47.6,-87.5,Sea area only,sea area: lake superior,False,Lake freighter vanished in a violent Lake Superior storm on 1 December 1908.,List of missing ships,,
+D190,Southern Cross,Ship or boat,1908,-40.094,147.89,Near a named place,near furneaux group,True,Somewhere around the Furneaux Group (unconfirmed wreck),List of missing ships,,
+D191,Amy Louise,Ship or boat,1909,,,Not placed,route spans two oceans (Pernambuco to Sydney),False,"Somewhere between Pernambuco, Brazil and Sydney",List of missing ships,,
+D192,SS Marquette & Bessemer No. 2,Ship or boat,1909,42.2,-80.9,Sea area only,sea area: lake erie,False,American or Canadian waters of Lake Erie,List of missing ships,,
+D193,SS Waratah,Ship or boat,1909,-32.3,29.0,Near a named place,near mbhashe river,False,"Mbhashe River, Colony of Natal",List of missing ships; List of people who disappeared mysteriously at sea,,Waratah
+D194,Spray,Ship or boat,1909,41.3,-70.6,Near a named place,near marthas vineyard,False,"Martha's Vineyard, Massachusetts, U.S.",List of missing ships; List of people who disappeared mysteriously at sea,,Joshua Slocum
+D195,America (non-rigid airship),Aircraft,1910,35.0,-70.0,Near a named place,"west of Bermuda (abandoned at sea, crew rescued)",False,North Atlantic Ocean (W. of Bermuda),List of missing aircraft,,
+D196,Cecil Grace No. 3 (Short S.27),Aircraft,1910,51.05,1.6,Route midpoint,"midpoint of calais to dover (21 km, circumstances text)",False,North Atlantic Ocean (English Channel),List of missing aircraft; List of people who disappeared mysteriously at sea,,Cecil Grace
+D197,"Blériot XI, with Édouard Bague",Aircraft,1911,43.5,7.13,Near a named place,near cap d antibes,False,"North Atlantic Ocean (Mediterranean, near Cap d'Antibes)",List of missing aircraft; List of people who disappeared mysteriously at sea,,Édouard Bague
+D198,"Blériot XI, with Damer Leslie Allen",Aircraft,1912,53.4,-4.6,Near a named place,near anglesey,False,"North Atlantic Ocean (Irish Sea, near Anglesey)",List of missing aircraft; List of people who disappeared mysteriously at sea,,Damer Leslie Allen
+D199,SS James Gayley,Ship or boat,1912,47.6,-86.0,Near a named place,northwest of caribou island,False,"Sank in a collision on Lake Superior on 7 August 1912, northwest of Caribou Island",List of missing ships,,
+D200,Albert Jewell,People lost at sea,1913,,,Not placed,ocean or unknown only,False,North Atlantic Ocean,List of people who disappeared mysteriously at sea,,Albert Jewell
+D201,Blériot XI,Aircraft,1913,40.3,-73.6,Near a named place,south of Long Island,False,"North Atlantic Ocean (S. of Long Island, NY)",List of missing aircraft,,
+D202,SS Leafield,Ship or boat,1913,48.2,-88.9,Position given,"23 km southeast of port arthur, ontario",False,"Lake Superior, probably about 14 miles (23 km) southeast of Port Arthur, Ontario",List of missing ships,,
+D203,SS Plymouth,Ship or boat,1913,45.7,-86.65,Near a named place,near gull island,False,Near Gull Island and Poverty Island in Green Bay,List of missing ships,,
+D204,Vladimir Rusanov,People lost at sea,1913,74.0,70.0,Sea area only,sea area: kara sea,False,Kara Sea,List of people who disappeared mysteriously at sea,,Vladimir Rusanov; Alexander Kuchin
+D205,Albert Johan Petersson,People lost at sea,1914,60.4,5.1,Near a named place,near bergen,False,Bergen,List of people who disappeared mysteriously at sea,,Albert Johan Petersson
+D206,Endeavour,Ship or boat,1914,-48.966,152.483,Route midpoint,"midpoint of macquarie island to hobart (1,531 km)",False,Somewhere between Macquarie Island and Hobart,List of missing ships,,
+D207,Harald Kristian Dannevig,People lost at sea,1914,-54.643,158.986,Near a named place,near Macquarie Island (Endeavour),True,Macquarie Island,List of people who disappeared mysteriously at sea,,Harald Kristian Dannevig
+D208,Manuel Rodríguez (Sánchez-Besa biplane),Aircraft,1914,,,Not placed,on land or not recognised,False,Chile (Central),List of missing aircraft,,
+D209,"Morane-Saulnier (model unknown), with Gustav Hamel",Aircraft,1914,50.2,-1.5,Sea area only,sea area: english channel,False,North Atlantic Ocean (English Channel),List of missing aircraft; List of people who disappeared mysteriously at sea,,Gustav Hamel
+D210,SS Californian,Ship or boat,1915,36.3,22.5,Near a named place,near cape matapan,False,Somewhere off Cape Matapan,List of missing ships,,
+D211,UB-3,Ship or boat,1915,38.439,26.37,Near a named place,near izmir,True,Lost in the Aegean Sea west of Izmir,List of missing ships,,
+D212,Karl Schwartzkopf,People lost at sea,1916,53.555,-41.585,Sea area only,"long route, counted only in the sea area it crosses: midpoint of bremerhaven to norfolk virginia (6,434 km, circumstances text)",False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Karl Schwartzkopf
+D213,LZ60 (Zeppelin),Aircraft,1916,56.0,3.0,Sea area only,sea area: north sea,False,North Atlantic Ocean (North Sea),List of missing aircraft,,
+D214,Marc Armand Ruffer,People lost at sea,1917,38.5,25.0,Sea area only,sea area: aegean sea,False,Aegean Sea,List of people who disappeared mysteriously at sea,,Marc Armand Ruffer
+D215,Arthur Cravan,People lost at sea,1918,,,Not placed,last seen ashore at Salina Cruz,False,"Salina Cruz, Mexico",List of people who disappeared mysteriously at sea,,Arthur Cravan
+D216,Cerisoles,Ship or boat,1918,47.6,-87.5,Sea area only,sea area: lake superior,False,"Minesweeper built for French Navy, lost in heavy weather in Lake Superior along with Inkerman in November 1918",List of missing ships,,
+D217,Hewitt-Sperry Automatic Airplane N-9,Aircraft,1918,40.4,-72.9,Near a named place,south of Long Island,False,"North Atlantic Ocean (S. of Long Island, NY)",List of missing aircraft,,
+D218,Inkerman,Ship or boat,1918,47.6,-87.5,Sea area only,sea area: lake superior,False,"Minesweeper built for French Navy, lost in heavy weather in Lake Superior along with Cerisoles in November 1918",List of missing ships,,
+D219,René Audry (Commander & 22 crew),People lost at sea,1918,,,Not placed,ocean or unknown only,False,Unknown,List of people who disappeared mysteriously at sea,,René Audry (Commander & 22 crew)
+D220,SY Aurora,Ship or boat,1918,,,Not placed,route crosses the Pacific (Newcastle to Iquique),False,"Somewhere between Newcastle, Australia and Iquique, Chile",List of missing ships,,
+D221,USS Cyclops,Ship or boat,1918,25.283,-67.118,Route midpoint,"midpoint of barbados to baltimore (3,134 km)",False,sailed from Barbados for Baltimore,legend article; List of missing ships,Bermuda Triangle,
+D222,Lyman D. Foster,Ship or boat,1919,,,Not placed,route crosses the Pacific (Nuku'alofa to San Francisco),False,Somewhere between Nuku'alofa and San Francisco,List of missing ships,,
+D223,Marie Empress,People lost at sea,1919,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Marie Empress
+D224,Martinsyde (type A Mk.I),Aircraft,1919,39.4,19.9,Near a named place,near st georges bay,False,"North Atlantic Ocean (Mediterranean, near St George's Bay, Corfu)",List of missing aircraft,,
+D225,Paul Knutsen,People lost at sea,1919,,,Not placed,"lost on land, on the Taymyr coast",False,Cape Chelyuskin,List of people who disappeared mysteriously at sea,,Paul Knutsen
+D226,Sopwith Camel,Aircraft,1919,50.0,-5.0,Near a named place,near england,False,United States (New England),List of missing aircraft,,
+D227,Amelia J.,Ship or boat,1920,-40.094,147.89,Near a named place,near furneaux group,True,Somewhere around the Furneaux Group,List of missing ships,,
+D228,Croye Pithey,People lost at sea,1920,53.6,-5.2,Sea area only,sea area: irish sea,False,Irish Sea,List of people who disappeared mysteriously at sea,,Croye Pithey
+D229,Jutland,Ship or boat,1920,43.524,-62.097,Position given,160 km from halifax,False,Approximately 160 kilometers southeast of Halifax,List of missing ships,,
+D230,Carroll A. Deering,Ship or boat,1921,35.15,-75.4,Near a named place,read from the article text,False,"found aground and abandoned at Diamond Shoals, near Cape Hatteras",legend article; List of people who disappeared mysteriously at sea,Bermuda Triangle,Carroll A. Deering
+D231,Charles Whittlesey,People lost at sea,1921,31.856,-78.483,Route midpoint,"midpoint of new york city to havana (2,077 km, circumstances text)",False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Charles Whittlesey
+D232,Omega,Ship or boat,1921,-44.037,160.066,Route midpoint,"midpoint of hobart to lyttelton (2,052 km)",False,"Somewhere between Hobart and Lyttelton, New Zealand",List of missing ships,,
+D233,Rosabelle,Ship or boat,1921,42.75,-87.4,Near a named place,read from the article text,False,"found capsized in Lake Michigan, crew never found; towed to Racine",legend article,Michigan Triangle,
+D234,SS Canastota,Ship or boat,1921,-38.179,162.427,Route midpoint,"midpoint of sydney to wellington (2,211 km)",False,Somewhere between Sydney and Wellington,List of missing ships,,
+D235,SS Hewitt,People lost at sea,1921,31.114,-80.0,Position given,463 km from jupiter inlet (circumstances text),False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,SS Hewitt
+D236,Giuseppe Sartorio,People lost at sea,1922,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Giuseppe Sartorio
+D237,Douglas Mawson,Ship or boat,1923,-13.707,144.001,Route midpoint,midpoint of cairns to thursday island (804 km),False,Somewhere between Cairns and Thursday Island,List of missing ships,,
+D238,Fokker F.III (H-NABS),Aircraft,1924,56.0,3.0,Sea area only,sea area: north sea,False,Atlantic Ocean (North Sea),List of missing aircraft,,
+D239,Governor Parr,Ship or boat,1925,15.0,-75.0,Sea area only,sea area: caribbean sea,False,Somewhere in Caribbean Sea,List of missing ships,,
+D240,SS Cotopaxi,Ship or boat,1925,29.85,-80.75,Position given,read from the article text,False,"wreck found 35 nmi off St. Augustine, Florida",legend article,Bermuda Triangle,
+D241,Airco DH.9 (G-IAAB),Aircraft,1927,,,Not placed,on land or not recognised,False,Turkey (Konya & Eskişehir or Kütahya & Bandırma),List of missing aircraft,,
+D242,Dallas Spirit (NX941),Aircraft,1927,30.6,-141.7,Route midpoint,midpoint of Oakland to Hawaii (Dole Air Race search),False,North Pacific Ocean,List of missing aircraft,,
+D243,Farman F.61 Goliath (F-ADFN),Aircraft,1927,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of missing aircraft,,
+D244,Golden Eagle (NX913),Aircraft,1927,30.6,-141.7,Route midpoint,midpoint of Oakland to Hawaii (Dole Air Race),False,North Pacific Ocean,List of missing aircraft,,
+D245,James DeWitt Hill,People lost at sea,1927,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,James DeWitt Hill; Lloyd W. Bertaud; Philip A. Payne
+D246,Junkers F13 (with floats) K-SALD,Aircraft,1927,59.8,26.0,Sea area only,sea area: gulf of finland,False,Gulf of Finland,List of missing aircraft,,
+D247,"L'Oiseau Blanc (Levasseur PL.8), with Charles Nungesser",Aircraft,1927,,,Not placed,North Atlantic or Maine,False,North Atlantic Ocean or Maine,List of missing aircraft; List of people who disappeared mysteriously at sea,,Charles Nungesser; François Coli
+D248,"Miss Doran (NX2915), with Mildred Doran",Aircraft,1927,30.6,-141.7,Route midpoint,midpoint of Oakland to Hawaii (Dole Air Race),False,North Pacific Ocean,List of missing aircraft; List of people who disappeared mysteriously at sea,,Mildred Doran
+D249,Oskar Omdal,People lost at sea,1927,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Oskar Omdal; Frances Wilson Grayson; Brice Goldsborough; Frank Koehler
+D250,"Saint Raphael (Fokker F.VIIA), with Frederick F. Minchin",Aircraft,1927,47.0,-52.5,Near a named place,near newfoundland,False,North Atlantic Ocean (near Newfoundland),List of missing aircraft; List of people who disappeared mysteriously at sea,,Frederick F. Minchin; Leslie Hamilton; Princess Anne of Löwenstein-Wertheim-Freudenberg
+D251,The Dawn (Sikorsky S-36),Aircraft,1927,44.2,-63.0,Near a named place,near nova scotia,False,North Atlantic Ocean (near Nova Scotia),List of missing aircraft,,
+D252,William Portwood Erwin,People lost at sea,1927,30.603,-141.723,Route midpoint,"midpoint of oakland to hawaii (3,843 km, circumstances text)",False,Pacific Ocean,List of people who disappeared mysteriously at sea,,William Portwood Erwin
+D253,"Aotearoa (Ryan B-1 Brougham, G-AUNZ), with John Moncrieff",Aircraft,1928,-37.0,160.0,Sea area only,sea area: tasman sea,False,South Pacific Ocean (Tasman Sea),List of missing aircraft; List of people who disappeared mysteriously at sea,,John Moncrieff; George Hood
+D254,Endeavour (Stinson SM-1 Detroiter),Aircraft,1928,,,Not placed,ocean or unknown only,False,North Atlantic Ocean,List of missing aircraft,,
+D255,"Italia (airship), with Aldo Pontremoli",Aircraft,1928,81.5,25.0,Sea area only,sea area: north of Svalbard (Barents Sea),False,North Atlantic Ocean (Barents Sea),List of missing aircraft; List of people who disappeared mysteriously at sea,,Aldo Pontremoli
+D256,København,Ship or boat,1928,,,Not placed,route crosses a whole ocean (Buenos Aires to Australia),False,Somewhere between Buenos Aires and Australia,List of missing ships,,
+D257,"Latham 47.02, with Roald Amundsen",Aircraft,1928,72.5,18.0,Sea area only,sea area: Barents Sea (near Bear Island),False,North Atlantic Ocean (Barents Sea),List of missing aircraft; List of people who disappeared mysteriously at sea,,Roald Amundsen; René Guilbaud; Leif Dietrichson; Albert Cavelier de Cuverville; Gilbert Georges Paul Brazy; Emile Valette
+D258,R.1 Blackburn (N9834),Aircraft,1928,56.0,3.0,Sea area only,sea area: north sea,False,North Atlantic Ocean (North Sea),List of missing aircraft,,
+D259,Walter G. R. Hinchliffe,People lost at sea,1928,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Walter G. R. Hinchliffe; Elsie Mackay
+D260,CMASA/Dornier Do J Wal Asso 500 Cabina (I-AZDB),Aircraft,1929,38.5,25.0,Sea area only,sea area: aegean sea,False,North Atlantic Ocean (Aegean Sea),List of missing aircraft,,
+D261,"Jung Schweizerland (Farman F.190, CH-245)",Aircraft,1929,44.218,-41.235,Sea area only,"long route, counted only in the sea area it crosses: midpoint of lisbon to new york (5,386 km, circumstances text)",False,North Atlantic Ocean,List of missing aircraft,,
+D262,SS Andaste,Ship or boat,1929,42.7,-86.4,Near a named place,"southwest of holland, michigan",False,"Lost southwest of Holland, Michigan",List of missing ships,,
+D263,de Havilland DH.60M Moth (N-42),Aircraft,1929,,,Not placed,on land or not recognised,False,Antarctica (South Pole area),List of missing aircraft,,
+D264,Dornier Do R4 Superwal (I-RONY),Aircraft,1930,35.5,18.0,Sea area only,sea area: mediterranean sea,False,North Atlantic Ocean (Mediterranean Sea),List of missing aircraft,,
+D265,Lauro De Bosis,People lost at sea,1931,40.0,12.0,Sea area only,sea area: tyrrhenian sea,False,Tyrrhenian Sea,List of people who disappeared mysteriously at sea,,Lauro De Bosis
+D266,Avro 616 Avian IVM (G-AAKA),Aircraft,1932,15.8,97.0,Near a named place,near gulf of martaban,False,Indian Ocean (Gulf of Martaban),List of missing aircraft,,
+D267,Fairchild (model and registration unknown),Aircraft,1932,24.2,-81.0,Sea area only,sea area: straits of florida,False,North Atlantic Ocean (Straits of Florida),List of missing aircraft,,
+D268,"The American Nurse (Bellanca CH-400 Skyrocket, NR796W)",Aircraft,1932,42.9,-9.6,Near a named place,near cape finisterre,False,"North Atlantic Ocean (near Cape Finisterre, Spain)",List of missing aircraft,,
+D269,de Havilland DH.60 Moth (CF-AGL),Aircraft,1932,51.4,-55.5,Near a named place,near st anthony,False,"North Atlantic Ocean (near St. Anthony, Newfoundland and Labrador)",List of missing aircraft,,
+D270,CMASA Wal (I-AZEE),Aircraft,1933,38.5,25.0,Sea area only,sea area: aegean sea,False,North Atlantic Ocean (Aegean Sea),List of missing aircraft,,
+D271,Cuatro Vientos (Br.19 TF Super Bidon),Aircraft,1933,,,Not placed,on land or not recognised,False,Mexico (near Villahermosa),List of missing aircraft,,
+D272,SS Christina Fraser,Ship or boat,1933,-38.216,147.484,Route midpoint,midpoint of gabo island to geelong (474 km),True,"Somewhere between Gabo Island, last sighting, and Geelong",List of missing ships,,
+D273,Charles Ulm,People lost at sea,1934,30.603,-141.723,Route midpoint,"midpoint of oakland to hawaii (3,843 km, circumstances text)",False,Pacific Ocean,List of people who disappeared mysteriously at sea,,Charles Ulm
+D274,Stella Australis (Airspeed Envoy),Aircraft,1934,21.1,-157.8,Near a named place,near hawaii,False,North Pacific Ocean (near Hawaii),List of missing aircraft,,
+D275,"Trimotor Hydroplane (Bach 3-CT-6 Air Yacht, NC850E)",Aircraft,1934,26.5,-110.5,Sea area only,sea area: gulf of california,False,Pacific Ocean (Gulf of California),List of missing aircraft,,
+D276,"Lady Southern Cross (Lockheed Altair), with Charles Kingsford Smith",Aircraft,1935,11.0,96.5,Sea area only,sea area: andaman sea,False,Indian Ocean (Andaman Sea),List of missing aircraft; List of people who disappeared mysteriously at sea,,Charles Kingsford Smith; Tommy Pethybridge
+D277,Brian Abbot,People lost at sea,1936,-37.0,160.0,Sea area only,sea area: tasman sea,False,Tasman Sea,List of people who disappeared mysteriously at sea,,Brian Abbot; Leslie Hay-Simpson
+D278,Croix-du-Sud (Latécoère 300),Aircraft,1936,,,Not placed,ocean or unknown only,False,South Atlantic Ocean,List of missing aircraft,,
+D279,"Dauphine (CAMS 53 -1, F-AJIR)",Aircraft,1936,35.5,18.0,Sea area only,sea area: mediterranean sea,False,North Atlantic Ocean (Mediterranean Sea),List of missing aircraft,,
+D280,James Jenkins Simpson,People lost at sea,1936,38.5,25.0,Sea area only,sea area: aegean sea,False,Aegean Sea,List of people who disappeared mysteriously at sea,,James Jenkins Simpson
+D281,"Tornado (Dornier Do J-2F Bos Wal, D-ADYS)",Aircraft,1936,3.951,-25.958,Route midpoint,"midpoint of natal to bathurst (2,955 km, circumstances text)",False,South Atlantic Ocean,List of missing aircraft,,
+D282,"Ville de Buenos Aires (Latécoère 301, F-AOIK), with Émile Barrière",Aircraft,1936,0.92,-29.35,Near a named place,near saint peter and saint paul archipelago,False,South Atlantic Ocean (near Saint Peter and Saint Paul Archipelago),List of missing aircraft; List of people who disappeared mysteriously at sea,,Émile Barrière
+D283,"Antares (Dewoitine D.333, F-ANQA)",Aircraft,1937,33.5,-8.8,Near a named place,near El Jadida,False,North Atlantic Ocean (near El Jadida),List of missing aircraft,,
+D284,Blackburn Shark (K5619),Aircraft,1937,35.5,18.0,Sea area only,sea area: mediterranean sea,False,North Atlantic Ocean (Mediterranean Sea),List of missing aircraft,,
+D285,"Bolkhovitinov DB-A (prototype), with Sigizmund Levanevsky",Aircraft,1937,,,Not placed,ocean or unknown only,False,Arctic Ocean,List of missing aircraft; List of people who disappeared mysteriously at sea,,Sigizmund Levanevsky
+D286,"Lockheed Electra 10E (NR 16020), with Amelia Earhart",Aircraft,1937,0.8,-176.6,Near a named place,near Howland Island (Amelia Earhart),False,Central Pacific Ocean (Numerous theories exist on location),List of missing aircraft; List of people who disappeared mysteriously at sea,,Amelia Earhart; Fred Noonan
+D287,O.M. McFarland (Captain George R. Donner),Ship or boat,1937,43.4,-87.65,Near a named place,read from the article text,False,captain vanished from his cabin approaching Port Washington,legend article,Michigan Triangle,
+D288,Avro Anson (K8831),Aircraft,1938,54.1,0.0,Near a named place,near bridlington,False,North Atlantic Ocean (North Sea off Bridlington),List of missing aircraft,,
+D289,CANT Z-506 (I-ORIA),Aircraft,1938,35.5,18.0,Sea area only,sea area: mediterranean sea,False,North Atlantic Ocean (Mediterranean Sea),List of missing aircraft,,
+D290,Ettore Majorana,People lost at sea,1938,40.0,12.0,Sea area only,sea area: tyrrhenian sea,False,Tyrrhenian Sea,List of people who disappeared mysteriously at sea,,Ettore Majorana
+D291,Handley Page H.P.54 Harrow (K6971),Aircraft,1938,50.88,0.98,Near a named place,near dungeness,False,North Atlantic Ocean (English Channel off Dungeness),List of missing aircraft,,
+D292,"Hawaii Clipper (Martin M-130, NC14714)",Aircraft,1938,,,Not placed,only 'east of the Philippine coast',False,North Pacific Ocean (East of the Philippine coast),List of missing aircraft,,
+D293,Hawker Hector (K9759),Aircraft,1938,54.75,-1.2,Near a named place,near blackhall rocks,False,North Atlantic Ocean (North Sea off Blackhall Rocks),List of missing aircraft,,
+D294,"Pampero (Dornier Do 18, D-AROZ)",Aircraft,1938,13.5,-16.6,Near a named place,near bathurst,False,North Atlantic Ocean (off Bathurst),List of missing aircraft,,
+D295,Taylor Cub,Aircraft,1938,40.7,-72.8,Near a named place,near long island,False,"North Atlantic Ocean (near Long Island, United States)",List of missing aircraft,,
+D296,Vickers Vildebeest Mark II (K2944),Aircraft,1938,1.2,104.0,Near a named place,near singapore strait,False,North Pacific Ocean (Singapore Strait),List of missing aircraft,,
+D297,Monocoupe 90 A (SE-AGM/NX19421),Aircraft,1939,,,Not placed,ocean or unknown only,False,North Atlantic Ocean,List of missing aircraft,,
+D298,Richard Halliburton,People lost at sea,1939,,,Not placed,ocean or unknown only,False,Pacific Ocean,List of people who disappeared mysteriously at sea,,Richard Halliburton; Paul Mooney
+D299,Shalom (Ryan C-2 Foursome),Aircraft,1939,,,Not placed,ocean or unknown only,False,North Atlantic Ocean,List of missing aircraft,,
+D300,Supermarine Stranraer,Aircraft,1939,56.0,3.0,Sea area only,sea area: north sea,False,North Atlantic Ocean (North Sea),List of missing aircraft,,
+D301,Vickers Wellington I (L4258),Aircraft,1939,56.0,3.0,Sea area only,sea area: north sea,False,North Atlantic Ocean (North Sea),List of missing aircraft,,
+D302,Westland Wallace (K3570),Aircraft,1939,56.0,3.0,Sea area only,sea area: north sea,False,North Atlantic Ocean (North Sea),List of missing aircraft,,
+D303,William Snodgrass,People lost at sea,1939,-41.3,174.5,Near a named place,near cook strait,False,Cook Strait,List of people who disappeared mysteriously at sea,,William Snodgrass
+D304,Elroy Guckert,People lost at sea,1940,,,Not placed,ocean or unknown only,False,Location unknown,List of people who disappeared mysteriously at sea,,Elroy Guckert
+D305,HMS Seahorse,Ship or boat,1940,54.2,7.6,Sea area only,sea area: heligoland bight,False,Somewhere in Heligoland Bight (missing wreck),List of missing ships,,
+D306,"Hannibal (Handley Page H.P.42, G-AAGX), with Harold Whistler",Aircraft,1940,24.5,58.5,Sea area only,sea area: gulf of oman,False,Indian Ocean (Gulf of Oman),List of missing aircraft; List of people who disappeared mysteriously at sea,,Harold Whistler; A. T. Pannirselvam
+D307,Helmut Wick,People lost at sea,1940,50.2,-1.5,Sea area only,sea area: english channel,False,English Channel,List of people who disappeared mysteriously at sea,,Helmut Wick
+D308,John Dundas,People lost at sea,1940,50.2,-1.5,Sea area only,sea area: english channel,False,English Channel,List of people who disappeared mysteriously at sea,,John Dundas
+D309,ORP Orzeł,Ship or boat,1940,56.0,3.0,Sea area only,sea area: north sea,False,Somewhere in North Sea,List of missing ships,,
+D310,SNCAC NC.223.4 (F-AROA),Aircraft,1940,38.9,8.6,Near a named place,near teluada,False,"North Atlantic Ocean (Mediterranean Sea off Teluada, Sardinia)",List of missing aircraft,,
+D311,U-122,Ship or boat,1940,49.5,-4.0,Route midpoint,between the North Sea and the Bay of Biscay (English Channel approaches),False,Somewhere between North Sea and Bay of Biscay,List of missing ships,,
+D312,U-22,Ship or boat,1940,57.8,9.5,Sea area only,sea area: skagerrak strait,False,Somewhere in Skagerrak Strait,List of missing ships,,
+D313,U-54,Ship or boat,1940,56.0,3.0,Sea area only,sea area: north sea,False,Somewhere in North Sea,List of missing ships,,
+D314,Amy Johnson,People lost at sea,1941,51.5,1.1,Near a named place,near thames estuary,False,"Thames Estuary, England",List of people who disappeared mysteriously at sea,,Amy Johnson
+D315,Esmond Romilly,People lost at sea,1941,56.0,3.0,Sea area only,sea area: north sea,False,North Sea,List of people who disappeared mysteriously at sea,,Esmond Romilly
+D316,HMS Snapper,Ship or boat,1941,45.5,-5.0,Sea area only,sea area: bay of biscay,False,Somewhere in Bay of Biscay,List of missing ships,,
+D317,Lisunov PS-84 (CCCP-L3467),Aircraft,1941,,,Not placed,on land or not recognised,False,Russia (possibly near Lipetsk),List of missing aircraft,,
+D318,Luigi Barbesino,People lost at sea,1941,35.5,18.0,Sea area only,sea area: mediterranean sea,False,Mediterranean Sea,List of people who disappeared mysteriously at sea,,Luigi Barbesino
+D319,Savoia-Marchetti SM-75C (I-BAYR),Aircraft,1941,-3.85,-32.4,Near a named place,near fernando de noronha,False,Atlantic Ocean (off Fernando de Noronha),List of missing aircraft,,
+D320,U-47,Ship or boat,1941,60.0,-19.0,Position given,coordinates in the location text,False,Somewhere near the Rockall Banks around 60°N 19°W ﻿ / ﻿ 60°N 19°W,List of missing ships,,
+D321,USS Nereus,Ship or boat,1941,18.4,-64.8,Near a named place,near virgin islands,False,lost in the North Atlantic (around the Virgin Islands in the list of missing ships),legend article; List of missing ships,Bermuda Triangle,
+D322,USS Proteus,Ship or boat,1941,15.0,-75.0,Sea area only,sea area: caribbean sea,False,lost in the North Atlantic (Caribbean Sea in the list of missing ships),legend article; List of missing ships,Bermuda Triangle,
+D323,Zdzisław Henneberg,People lost at sea,1941,50.2,-1.5,Sea area only,sea area: english channel,False,English Channel,List of people who disappeared mysteriously at sea,,Zdzisław Henneberg
+D324,Airspeed Oxford (NZ278),Aircraft,1942,-44.3,172.0,Near a named place,near canterbury bight,False,"Canterbury Bight, New Zealand",List of missing aircraft,,
+D325,Boeing B-17E (41-9146),Aircraft,1942,53.51,-168.367,Near a named place,near umnak island,True,off Umnak Island,List of missing aircraft,,
+D326,Brian Lane,People lost at sea,1942,56.0,3.0,Sea area only,sea area: north sea,False,North Sea,List of people who disappeared mysteriously at sea,,Brian Lane
+D327,Consolidated PBY Catalina (044604),Aircraft,1942,47.0,-52.5,Near a named place,near newfoundland,False,off Newfoundland,List of missing aircraft,,
+D328,Consolidated PBY Catalina (04463),Aircraft,1942,,,Not placed,ocean or unknown only,False,Pacific Ocean off Alaska,List of missing aircraft,,
+D329,Consolidated PBY Catalina (05023),Aircraft,1942,25.5,-90.0,Sea area only,sea area: gulf of mexico,False,Gulf of Mexico,List of missing aircraft,,
+D330,Consolidated PBY Catalina (08135),Aircraft,1942,,,Not placed,ocean or unknown only,False,Pacific Ocean,List of missing aircraft,,
+D331,Consolidated PBY Catalina (Y-58),Aircraft,1942,1.355,125.156,Near a named place,near kema,True,"off Kema, Indonesia",List of missing aircraft,,
+D332,David Wanklyn,People lost at sea,1942,35.5,18.0,Sea area only,sea area: mediterranean sea,False,Mediterranean Sea,List of people who disappeared mysteriously at sea,,David Wanklyn
+D333,Gerhard Köppen,People lost at sea,1942,46.0,36.5,Sea area only,sea area: sea of azov,False,"Sea of Azov, Russia",List of people who disappeared mysteriously at sea,,Gerhard Köppen
+D334,Jose Gozar,People lost at sea,1942,10.3,123.4,Near a named place,near tanon strait,False,"Tanon Strait, Philippines",List of people who disappeared mysteriously at sea,,Jose Gozar
+D335,Lisunov PS-84 (CCCP-L3920),Aircraft,1942,,,Not placed,on land or not recognised,False,"possibly Kalinin region, Soviet Union",List of missing aircraft,,
+D336,Lisunov PS-84 (CCCP-L3975),Aircraft,1942,,,Not placed,on land or not recognised,False,"near Medyn, Soviet Union",List of missing aircraft,,
+D337,Lisunov PS-84 (CCCP-L4001),Aircraft,1942,,,Not placed,on land or not recognised,False,"Vyazma area, Smolensk region, Soviet Union",List of missing aircraft,,
+D338,Lockheed C-60 Lodestar (VHCAD),Aircraft,1942,,,Not placed,on land or not recognised,False,Australia,List of missing aircraft,,
+D339,Lt. Ernest Cody,People lost at sea,1942,37.741,-122.333,Near a named place,near san francisco bay,True,"San Francisco Bay, California, U.S.",List of people who disappeared mysteriously at sea,,Lt. Ernest Cody; Ens. Charles Adams
+D340,North American Harvard (NZ964),Aircraft,1942,,,Not placed,on land or not recognised,False,"Marlborough, New Zealand",List of missing aircraft,,
+D341,Samuel Adams,People lost at sea,1942,30.0,-177.4,Near a named place,near Midway (Battle of Midway),False,Pacific theatre,List of people who disappeared mysteriously at sea,,Samuel Adams
+D342,Short Sunderland (L2158),Aircraft,1942,8.4,-13.4,Near a named place,near sierra leone,False,off Sierra Leone,List of missing aircraft,,
+D343,Short Sunderland (L5806),Aircraft,1942,35.5,18.0,Sea area only,sea area: mediterranean sea,False,Mediterranean Sea off Egyptian coast,List of missing aircraft,,
+D344,Surcouf,Ship or boat,1942,9.45,-79.9,Near a named place,near cristobal,False,"North of Cristóbal, Colón",List of missing ships,,
+D345,U-116,Ship or boat,1942,45.0,-31.5,Position given,coordinates in the location text,False,Somewhere around 45°00′N 31°30′W ﻿ / ﻿ 45.000°N 31.500°W,List of missing ships,,
+D346,U-184,Ship or boat,1942,49.0,-45.0,Position given,coordinates in the location text,False,Somewhere east of Newfoundland near 49°N 45°W ﻿ / ﻿ 49°N 45°W,List of missing ships,,
+D347,USS Hammann,Ship or boat,1942,28.2,-177.37,Near a named place,near midway island,False,Somewhere north of Midway Island,List of missing ships,,
+D348,Vickers Vincent (NZ332),Aircraft,1942,-41.4,176.2,Near a named place,near wairarapa,False,"Off the East coast of Wairarapa, New Zealand",List of missing aircraft,,
+D349,William B. Ault,People lost at sea,1942,-15.0,155.5,Sea area only,sea area: Coral Sea (Battle of the Coral Sea),False,"Chuuk State, Federated States of Micronesia",List of people who disappeared mysteriously at sea,,William B. Ault
+D350,Consolidated C-87 Liberator Express (41-11708),Aircraft,1943,-5.7,-35.1,Near a named place,near natal,False,North Atlantic Ocean (off Natal),List of missing aircraft,,
+D351,Consolidated Catalina (FP114),Aircraft,1943,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of missing aircraft,,
+D352,Consolidated PBY Catalina (05013),Aircraft,1943,25.5,-90.0,Sea area only,sea area: gulf of mexico,False,Gulf of Mexico,List of missing aircraft,,
+D353,Consolidated PBY Catalina (08097),Aircraft,1943,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of missing aircraft,,
+D354,Consolidated PBY Catalina (2310),Aircraft,1943,31.1,-81.3,Near a named place,near brunswick ga,False,"off Brunswick, GA",List of missing aircraft,,
+D355,Consolidated PBY Catalina (33963),Aircraft,1943,,,Not placed,ocean or unknown only,False,Pacific Ocean,List of missing aircraft,,
+D356,Consolidated PBY Catalina (34035),Aircraft,1943,,,Not placed,ocean or unknown only,False,Pacific Ocean,List of missing aircraft,,
+D357,Curtiss C-46A (41-12287),Aircraft,1943,,,Not placed,route with an end not in the gazetteer,False,between Sookerating and Kunming,List of missing aircraft,,
+D358,Curtiss C-46A (41-12298),Aircraft,1943,,,Not placed,route with an end not in the gazetteer,False,Between Tezpur and Kunming,List of missing aircraft,,
+D359,Curtiss C-46A (41-12403),Aircraft,1943,,,Not placed,on land or not recognised,False,China,List of missing aircraft,,
+D360,Cymric,Ship or boat,1943,53.35,-5.8,Near a named place,near dublin,False,Last seen 24 February 1943 off Dublin en route to Lisbon vanished with crew of 11,List of missing ships,,
+D361,Denver V. Truelove,People lost at sea,1943,35.5,18.0,Sea area only,sea area: mediterranean sea,False,Mediterranean Sea,List of people who disappeared mysteriously at sea,,Denver V. Truelove
+D362,Douglas C-47 (41-18518),Aircraft,1943,,,Not placed,route with an end not in the gazetteer,False,Between Mohanbari and Kunming,List of missing aircraft,,
+D363,Douglas C-47 (41-38688),Aircraft,1943,,,Not placed,ocean or unknown only,False,Unknown,List of missing aircraft,,
+D364,Douglas C-47 (42-5686 and 42-5687),Aircraft,1943,37.061,14.008,Near a named place,near sicily,True,off Sicily,List of missing aircraft,,
+D365,Douglas C-47 Skytrain (41-18675),Aircraft,1943,-21.5,166.1,Near a named place,near nakety bay,False,"Nakety Bay, New Caledonia",List of missing aircraft,,
+D366,Douglas C-47A (42-23596),Aircraft,1943,10.82,-61.441,Near a named place,near trinidad,True,off Trinidad-Waller Field,List of missing aircraft,,
+D367,Douglas C-47A (42-23965),Aircraft,1943,5.9,-162.1,Near a named place,near palmyra island atoll,False,off Palmyra Island Atoll,List of missing aircraft,,
+D368,Douglas C-53 (41-20128),Aircraft,1943,,,Not placed,on land or not recognised,False,"Sookerating, India",List of missing aircraft,,
+D369,Douglas C-53 (49),Aircraft,1943,,,Not placed,on land or not recognised,False,"Patkai Range, Burma",List of missing aircraft,,
+D370,Douglas Dakota (MA929),Aircraft,1943,,,Not placed,on land or not recognised,False,northeastern Burma,List of missing aircraft,,
+D371,Douglas R4D (12432),Aircraft,1943,-22.5,166.0,Near a named place,near new caledonia,False,New Caledonia and Vanuatu,List of missing aircraft,,
+D372,Emei (Douglas C-47A),Aircraft,1943,,,Not placed,route with an end not in the gazetteer,False,between India and China,List of missing aircraft,,
+D373,Ernest Melville Charles Guest,People lost at sea,1943,45.5,-5.0,Sea area only,sea area: bay of biscay,False,Bay of Biscay,List of people who disappeared mysteriously at sea,,Ernest Melville Charles Guest
+D374,Erwin Clausen,People lost at sea,1943,56.0,3.0,Sea area only,sea area: north sea,False,North Sea,List of people who disappeared mysteriously at sea,,Erwin Clausen
+D375,Geoffrey Appleyard,People lost at sea,1943,37.061,14.008,Near a named place,near sicily,True,"Mediterranean Sea near Sicily, Italy",List of people who disappeared mysteriously at sea,,Geoffrey Appleyard
+D376,Jack Kraynick,People lost at sea,1943,15.0,-75.0,Sea area only,sea area: caribbean sea,False,Caribbean Sea,List of people who disappeared mysteriously at sea,,Jack Kraynick
+D377,Lisunov Li-2 (CCCP-L4034),Aircraft,1943,,,Not placed,on land or not recognised,False,"near Akhtyrka, Ukraine",List of missing aircraft,,
+D378,Lisunov Li-2 (CCCP-L4047),Aircraft,1943,,,Not placed,ocean or unknown only,False,Unknown,List of missing aircraft,,
+D379,Short Sunderland III (DD863),Aircraft,1943,54.05,-10.223,Near a named place,near mayo,True,"off Mayo, Ireland",List of missing aircraft,,
+D380,Short Sunderland III (DW106),Aircraft,1943,39.5,-9.8,Near a named place,near portuguese coast,False,Atlantic Ocean off Portuguese coast,List of missing aircraft,,
+D381,"Tachikawa Ki-77, with Kenji Tsukagoshi",Aircraft,1943,,,Not placed,ocean or unknown only,False,Indian Ocean,List of missing aircraft; List of people who disappeared mysteriously at sea,,Kenji Tsukagoshi
+D382,U-192,Ship or boat,1943,53.1,-45.033,Position given,coordinates in the location text,False,"Somewhere southeast of Cape Farewell, Greenland around 53°06′N 45°02′W ﻿ / ﻿ 53.100°N 45.033°W (missing wreck)",List of missing ships,,
+D383,U-337,Ship or boat,1943,63.0,-12.0,Position given,coordinates in the location text,False,Somewhere around 63°N 12°W ﻿ / ﻿ 63°N 12°W,List of missing ships,,
+D384,U-338,Ship or boat,1943,57.0,-30.0,Position given,coordinates in the location text,False,Somewhere around 57°N 30°W ﻿ / ﻿ 57°N 30°W,List of missing ships,,
+D385,U-376,Ship or boat,1943,45.5,-5.0,Sea area only,sea area: bay of biscay,False,Somewhere in Bay of Biscay,List of missing ships,,
+D386,U-381,Ship or boat,1943,59.0,-43.0,Near a named place,near greenland,False,Somewhere south of Greenland,List of missing ships,,
+D387,U-420,Ship or boat,1943,,,Not placed,ocean or unknown only,False,,List of missing ships,,
+D388,U-519,Ship or boat,1943,45.5,-5.0,Sea area only,sea area: bay of biscay,False,Somewhere in Bay of Biscay,List of missing ships,,
+D389,U-529,Ship or boat,1943,,,Not placed,ocean or unknown only,False,,List of missing ships,,
+D390,U-553,Ship or boat,1943,,,Not placed,ocean or unknown only,False,,List of missing ships,,
+D391,USS Amberjack,Ship or boat,1943,-4.2,152.3,Near a named place,near rabaul,False,Probably sunk off Rabaul (missing wreck),List of missing ships,,
+D392,USS Capelin,Ship or boat,1943,-1.142,122.729,Near a named place,near sulawesi,True,Somewhere near Sulawesi,List of missing ships,,
+D393,USS Grampus,Ship or boat,1943,-8.1,157.0,Near a named place,near blackett strait,False,Probably sunk in Blackett Strait (missing wreck),List of missing ships,,
+D394,USS Grayling,Ship or boat,1943,14.943,120.007,Near a named place,off Manila or in Lingayen Gulf,True,Somewhere off Manila or in Lingayen Gulf,List of missing ships,,
+D395,USS Runner,Ship or boat,1943,,,Not placed,only 'off Japan',False,Somewhere off Japan,List of missing ships,,
+D396,de Havilland Dragon,Aircraft,1943,,,Not placed,on land or not recognised,False,"New South Wales, Australia",List of missing aircraft,,
+D397,Alfonza W. Davis,People lost at sea,1944,43.0,15.5,Sea area only,sea area: adriatic sea,False,Adriatic Sea,List of people who disappeared mysteriously at sea,,Alfonza W. Davis
+D398,Antoine de Saint-Exupéry,People lost at sea,1944,35.5,18.0,Sea area only,sea area: mediterranean sea,False,Mediterranean Sea,List of people who disappeared mysteriously at sea,,Antoine de Saint-Exupéry
+D399,Beechcraft AT-10 (2144BU),Aircraft,1944,,,Not placed,ocean or unknown only,False,Unknown,List of missing aircraft,,
+D400,Clint Castleberry,People lost at sea,1944,5.5,-12.0,Near a named place,off Liberia (flight from Roberts Field),False,Liberia,List of people who disappeared mysteriously at sea,,Clint Castleberry
+D401,Consolidated PBY Catalina (34018),Aircraft,1944,51.879,-176.772,Near a named place,near adak,True,"off Adak, Alaska",List of missing aircraft,,
+D402,Consolidated PBY Catalina (A24-49),Aircraft,1944,-2.472,133.431,Near a named place,near babo,True,"off Babo, Indonesia",List of missing aircraft,,
+D403,Consolidated PBY Catalina (A24-73),Aircraft,1944,-5.0,111.0,Sea area only,sea area: java sea,False,Java Sea,List of missing aircraft,,
+D404,Douglas C-47A (42-92815),Aircraft,1944,,,Not placed,ocean or unknown only,False,Pacific Ocean,List of missing aircraft,,
+D405,Douglas C-47A (CCCP-L846),Aircraft,1944,,,Not placed,ocean or unknown only,False,Unknown,List of missing aircraft,,
+D406,Douglas C-47A (CCCP-L847),Aircraft,1944,,,Not placed,on land or not recognised,False,"near Tartu, Estonia",List of missing aircraft,,
+D407,"Douglas C-54A Skymaster (42-107470), with Leon Vance",Aircraft,1944,58.0,-38.0,Sea area only,sea area: southeast of Greenland,False,North Atlantic Ocean (SE of Greenland),List of missing aircraft; List of people who disappeared mysteriously at sea,,Leon Vance
+D408,Douglas Dakota (FL650),Aircraft,1944,50.5,-129.0,Near a named place,off British Columbia,False,off British Columbia,List of missing aircraft,,
+D409,Douglas Dakota (FZ563),Aircraft,1944,,,Not placed,on land: coordinates in the circumstances text,False,"near Myitkyina, Burma",List of missing aircraft,,
+D410,Douglas Dakota (KG480),Aircraft,1944,,,Not placed,on land or not recognised,False,"near Ranville, France",List of missing aircraft,,
+D411,Douglas R4D (39073),Aircraft,1944,-7.782,157.466,Route midpoint,midpoint of torokina to guadalcanal (633 km),False,between Torokina and Guadalcanal,List of missing aircraft,,
+D412,Gerry Atwell,People lost at sea,1944,43.0,15.5,Sea area only,sea area: adriatic sea,False,Adriatic Sea,List of people who disappeared mysteriously at sea,,Gerry Atwell
+D413,HMS Sickle,Ship or boat,1944,35.9,23.3,Near a named place,near antikythera,False,Probably sunk in Antikythera Channel,List of missing ships,,
+D414,HMS Stonehenge,Ship or boat,1944,9.0,93.0,Sea area only,sea area: Bay of Bengal or Andaman Sea,False,Somewhere in Bay of Bengal or Andaman Sea,List of missing ships,,
+D415,IJN Shinano,Ship or boat,1944,33.117,137.067,Position given,coordinates in the location text,False,Somewhere around 33°07′N 137°04′E ﻿ / ﻿ 33.117°N 137.067°E,List of missing ships,,
+D416,Ingvar Fredrik Håkansson,People lost at sea,1944,50.2,-1.5,Sea area only,sea area: english channel,False,English Channel,List of people who disappeared mysteriously at sea,,Ingvar Fredrik Håkansson
+D417,"Joachim Blankenburg (Junkers Ju 52 /3m, D-AWAS)",Aircraft,1944,38.4,24.3,Near a named place,near euboea,False,"North Atlantic Ocean (Mediterranean Sea within Aegean Sea off of Euboea, Greece)",List of missing aircraft,,
+D418,Johan Pitka,People lost at sea,1944,57.0,19.0,Sea area only,sea area: baltic sea,False,Baltic Sea,List of people who disappeared mysteriously at sea,,Johan Pitka
+D419,Lisunov Li-2 (CCCP-L4076),Aircraft,1944,,,Not placed,route with an end not in the gazetteer,False,between Nikopol and Krivoi Rog,List of missing aircraft,,
+D420,P-51 Mustang,Aircraft,1944,33.9,-118.6,Near a named place,near santa monica bay,False,North Pacific Ocean (Santa Monica Bay),List of missing aircraft,,
+D421,Peter Deinboll,People lost at sea,1944,56.0,3.0,Sea area only,sea area: north sea,False,North Sea,List of people who disappeared mysteriously at sea,,Peter Deinboll
+D422,Theodore Kara,People lost at sea,1944,,,Not placed,ocean or unknown only,False,Pacific Ocean,List of people who disappeared mysteriously at sea,,Theodore Kara
+D423,Toshio Kuroiwa,People lost at sea,1944,3.5,103.8,Near a named place,near malay peninsula,False,Off the Malay Peninsula,List of people who disappeared mysteriously at sea,,Toshio Kuroiwa
+D424,U-1226,Ship or boat,1944,,,Not placed,ocean or unknown only,False,,List of missing ships,,
+D425,U-196,Ship or boat,1944,-6.045,106.877,Near a named place,near java,True,Somewhere south of Java near Sunda Strait,List of missing ships,,
+D426,U-240,Ship or boat,1944,60.0,4.0,Sea area only,sea area: North Sea west of Norway,False,Somewhere in North Sea west of Norway,List of missing ships,,
+D427,U-355,Ship or boat,1944,,,Not placed,ocean or unknown only,False,,List of missing ships,,
+D428,U-703,Ship or boat,1944,66.0,3.0,Sea area only,sea area: norwegian sea,False,Somewhere in Norwegian Sea,List of missing ships,,
+D429,"UC-64 Norseman (44-70285), with Glenn Miller",Aircraft,1944,50.2,-1.5,Sea area only,sea area: english channel,False,North Atlantic Ocean (English Channel),List of missing aircraft; List of people who disappeared mysteriously at sea,,Glenn Miller
+D430,USS Gudgeon,Ship or boat,1944,22.87,143.53,Position given,"coordinates in the text (given as W; the list puts it southeast of Iwo Jima, so E)",False,"Near Maug Islands, or unconfirmed sinking southeast of Iwo Jima at 22°52′N 143°32′W ﻿ / ﻿ 22.867°N 143.533°W (missing wreck)",List of missing ships,,
+D431,USS Robalo crewmen,People lost at sea,1944,14.0,113.0,Sea area only,sea area: south china sea,False,South China Sea,List of people who disappeared mysteriously at sea,,USS Robalo crewmen
+D432,Vought F4U Corsair (22 aircraft lost),Aircraft,1944,,,Not placed,ocean or unknown only,False,Central Pacific,List of missing aircraft,,
+D433,Avro Lancaster (PA278),Aircraft,1945,42.616,8.733,Near a named place,near corsica,True,North Atlantic Ocean (Mediterranean Sea near Corsica),List of missing aircraft,,
+D434,"C-87A Liberator Express (41-24174, c/n 969), with Millard Harmon",Aircraft,1945,15.828,-175.552,Route midpoint,"midpoint of kwajalein to hawaii (3,921 km, circumstances text)",False,Pacific Ocean,List of missing aircraft; List of people who disappeared mysteriously at sea,,Millard Harmon; James Roy Andersen; F. E. Savage
+D435,"Commando (Liberator B Mk II (LB-30), AL504)",Aircraft,1945,39.5,-27.0,Near a named place,near the Azores,False,North Atlantic Ocean (near Azores),List of missing aircraft,,
+D436,Douglas C-47A (81),Aircraft,1945,,,Not placed,on land or not recognised,False,Within China,List of missing aircraft,,
+D437,Douglas C-47A-80-DL (43-15384),Aircraft,1945,,,Not placed,on land or not recognised,False,China (80 kilometers (50 miles) from Lüliang),List of missing aircraft,,
+D438,Douglas C-47B (44-76406),Aircraft,1945,5.0,-4.5,Near a named place,near ivory coast,False,Atlantic Ocean (off of the Ivory Coast),List of missing aircraft,,
+D439,Douglas C-47B (A65-83),Aircraft,1945,-11.0,127.0,Sea area only,sea area: timor sea,False,Indian / Pacific Ocean (Timor Sea),List of missing aircraft,,
+D440,Douglas Dakota (KJ957),Aircraft,1945,,,Not placed,on land or not recognised,False,"east of Chiringa, Bangladesh",List of missing aircraft,,
+D441,Flight 19,Aircraft,1945,26.6,-79.0,Near a named place,read from the article text,False,training flight east from Fort Lauderdale over the Atlantic,legend article; List of missing aircraft,Bermuda Triangle,
+D442,Naoshi Kanno,People lost at sea,1945,30.208,130.466,Near a named place,near yakushima,True,"Off Yakushima, Ōsumi Islands, Japan",List of people who disappeared mysteriously at sea,,Naoshi Kanno
+D443,PBM Mariner (Flight 19 search),Aircraft,1945,28.6,-80.0,Near a named place,read from the article text,False,"search aircraft, explosion seen by a tanker off the coast of Florida",legend article; List of missing aircraft,Bermuda Triangle,
+D444,Peter Drummond,People lost at sea,1945,,,Not placed,ocean or unknown only,False,North Atlantic Ocean,List of people who disappeared mysteriously at sea,,Peter Drummond; Rupert Brabner
+D445,U-398,Ship or boat,1945,56.0,3.0,Sea area only,sea area: north sea,False,Somewhere in North Sea,List of missing ships,,
+D446,USS Kete,Ship or boat,1945,27.0,128.0,Near a named place,near the Ryukyu Islands,False,Somewhere off Ryukyu Islands,List of missing ships,,
+D447,USS Snook,Ship or boat,1945,20.5,120.5,Route midpoint,between the South China Sea and the Luzon Strait,False,Somewhere between South China Sea and Luzon Strait,List of missing ships,,
+D448,USS Swordfish,Ship or boat,1945,26.5,127.5,Near a named place,near ryukyu islands,False,Somewhere off Ryukyu Islands,List of missing ships,,
+D449,Avro Lancastrian (G-AGLX),Aircraft,1946,,,Not placed,Indian Ocean only,False,Indian Ocean,List of missing aircraft,,
+D450,Douglas C-47B (43-48308),Aircraft,1946,,,Not placed,on land or not recognised,False,India,List of missing aircraft,,
+D451,Douglas C-54G (45-489),Aircraft,1946,13.4,144.6,Near a named place,near guam,False,Pacific Ocean (off Guam),List of missing aircraft,,
+D452,Douglas Dakota IV (KJ918),Aircraft,1946,,,Not placed,on land or not recognised,False,Malaysia (within Cameron Highlands),List of missing aircraft,,
+D453,"Röd Niklas (Saab 18, 18180)",Aircraft,1946,,,Not placed,on land or not recognised,False,Sweden (Jämtland),List of missing aircraft,,
+D454,Consolidated PBY-5A Catalina (34032),Aircraft,1947,,,Not placed,on land or not recognised,False,Within Alaska,List of missing aircraft,,
+D455,Airborne Transport DC-3,Aircraft,1948,27.5,-79.8,Near a named place,near east coast of florida,False,North Atlantic Ocean (off east coast of Florida),legend article; List of missing aircraft,Bermuda Triangle,
+D456,"BSAA Star Tiger, with Sir Arthur Coningham",Aircraft,1948,36.868,-46.884,Route midpoint,"midpoint of azores to bermuda (3,424 km)",False,flight from the Azores to Bermuda,legend article; List of missing aircraft; List of people who disappeared mysteriously at sea,Bermuda Triangle,Sir Arthur Coningham
+D457,Beechcraft C18S (F-BEAF),Aircraft,1948,50.2,-1.5,Sea area only,sea area: english channel,False,English Channel,List of missing aircraft,,
+D458,Douglas C-47A (NC17645),Aircraft,1948,,,Not placed,ocean or unknown only,False,North Atlantic Ocean,List of missing aircraft,,
+D459,Douglas C-47A-DK (NC66637),Aircraft,1948,58.15,-136.65,Near a named place,near cape spencer,False,Pacific Ocean (off of Cape Spencer),List of missing aircraft,,
+D460,Ilyushin Il-12 (CCCP-Л1450),Aircraft,1948,,,Not placed,on land or not recognised,False,Azerbaijan (Caucasus Mountains near Yevlakh),List of missing aircraft,,
+D461,"Lionel de Marnier (Latécoère 631, F-BDRC)",Aircraft,1948,,,Not placed,ocean or unknown only,False,North Atlantic Ocean,List of missing aircraft,,
+D462,Peron,Ship or boat,1948,-12.2,130.6,Near a named place,near Darwin,False,Somewhere near Darwin,List of missing ships,,
+D463,BSAA Star Ariel,Aircraft,1949,25.221,-71.147,Route midpoint,"midpoint of bermuda to kingston jamaica (2,004 km)",False,"flight from Bermuda to Kingston, Jamaica",legend article; List of missing aircraft,Bermuda Triangle,
+D464,Douglas C-47,Aircraft,1949,30.0,-116.5,Near a named place,near baja california,False,Pacific Ocean (off Baja California),List of missing aircraft,,
+D465,Unknown (F-....),Aircraft,1949,20.9,-17.1,Near a named place,near port etienne,False,Mauritania (near Port Étienne),List of missing aircraft,,
+D466,Douglas C-54D Skymaster (42-72469),Aircraft,1950,,,Not placed,on land or not recognised,False,"Canada (Yukon, near Snag)",List of missing aircraft,,
+D467,Northwest Orient Airlines Flight 2501,Aircraft,1950,42.3,-86.8,Position given,read from the article text,False,debris found 18 miles northwest of Benton Harbor,legend article; List of missing aircraft,Michigan Triangle,
+D468,Phoenix,Ship or boat,1950,-13.237,128.284,Route midpoint,midpoint of truscott to darwin (570 km),False,Somewhere between Truscott and Darwin,List of missing ships,,
+D469,Boeing C-97A Stratofreighter (49-2602),Aircraft,1951,,,Not placed,ocean or unknown only,False,North Atlantic,List of missing aircraft,,
+D470,Douglas C-124 Globemaster II (49-0244),Aircraft,1951,52.5,-10.0,Near a named place,near shannon ireland,False,"North Atlantic Ocean (near Shannon, Ireland)",List of missing aircraft,,
+D471,Douglas DC-4 (CF-CPC),Aircraft,1951,,,Not placed,on land or not recognised,False,United States (Alaska),List of missing aircraft,,
+D472,Awahou,Ship or boat,1952,-32.759,155.265,Route midpoint,midpoint of sydney to lord howe island (767 km),False,Somewhere between Sydney and Lord Howe Island,List of missing ships,,
+D473,David Atcherley,People lost at sea,1952,35.5,18.0,Sea area only,sea area: mediterranean sea,False,Mediterranean Sea,List of people who disappeared mysteriously at sea,,David Atcherley
+D474,Fairchild C-119 Flying Boxcar (51-2570),Aircraft,1952,,,Not placed,on land or not recognised,False,United States (Alaska),List of missing aircraft,,
+D475,Kaiyo Maru No. 5,Ship or boat,1952,31.92,140.02,Position given,read from the article text,False,destroyed by the undersea volcano at Myojin-sho,legend article,Dragon's Triangle,
+D476,Avro York (G-AHFA),Aircraft,1953,,,Not placed,ocean or unknown only,False,North Atlantic Ocean,List of missing aircraft,,
+D477,F-89C Scorpion (51-5853A),Aircraft,1953,47.6,-87.5,Sea area only,sea area: lake superior,False,Canada (Lake Superior),List of missing aircraft,,
+D478,Holchu 's 5 crew members,People lost at sea,1953,4.0,93.5,Position given,about 200 miles south of the Nicobar Islands,False,Indian Ocean,List of people who disappeared mysteriously at sea,,Holchu 's 5 crew members
+D479,Miles M.38 Messenger 2A (G-AKBL),Aircraft,1953,53.6,-5.2,Sea area only,sea area: irish sea,False,North Atlantic Ocean (Irish Sea),List of missing aircraft,,
+D480,Lockheed R7V-1 Constellation (128441),Aircraft,1954,38.3,-75.0,Near a named place,near maryland,False,North Atlantic Ocean (off east coast of Maryland),List of missing aircraft,,
+D481,Avro Shackletons (WG531 and WL743),Aircraft,1955,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of missing aircraft,,
+D482,Connemara IV,Ship or boat,1955,30.5,-64.8,Near a named place,read from the article text,False,yacht found adrift in the Atlantic south of Bermuda,legend article,Bermuda Triangle,
+D483,HMS Jonquil,Ship or boat,1955,,,Not placed,ocean or unknown only,False,,List of missing ships,,
+D484,Joyita,People lost at sea,1955,,,Not placed,ocean or unknown only,False,South Pacific Ocean,List of people who disappeared mysteriously at sea,,Joyita
+D485,Lockheed P2V-3W Neptune (131442),Aircraft,1955,17.757,-77.329,Near a named place,near jamaica,True,Caribbean Sea (off Jamaica),List of missing aircraft,,
+D486,SS Empire Adur,People lost at sea,1955,17.5,112.0,Near a named place,north of the Paracel Islands,False,Unknown,List of people who disappeared mysteriously at sea,,SS Empire Adur
+D487,"Boeing B-47 Stratojet (SN:52-534), with Robert H. Hodgin",Aircraft,1956,35.5,18.0,Sea area only,sea area: mediterranean sea,False,North Atlantic Ocean (Mediterranean Sea),List of missing aircraft; List of people who disappeared mysteriously at sea,,Robert H. Hodgin; Gordon M. Insley; Ronald L. Kurtz
+D488,Douglas R6D-1 Liftmaster,Aircraft,1956,50.05,-5.9,Near a named place,near lands end,False,"North Atlantic Ocean (near Land's End, United Kingdom)",List of missing aircraft,,
+D489,"Lionel ""Buster"" Crabb",People lost at sea,1956,50.78,-1.1,Near a named place,near portsmouth harbour,False,Portsmouth Harbour,List of people who disappeared mysteriously at sea,,"Lionel ""Buster"" Crabb"
+D490,McDonnell F2H-3 Banshee (126330),Aircraft,1956,43.8,-66.2,Near a named place,near yarmouth nova scotia,False,"North Atlantic Ocean (off Yarmouth, Nova Scotia)",List of missing aircraft,,
+D491,North American B-25J Mitchell (44-29125),Aircraft,1956,,,Not placed,on land or not recognised,False,"United States (Monongahela River, Pennsylvania)",List of missing aircraft,,
+D492,SNCASE Languedoc (61/F-SSUN),Aircraft,1956,35.5,18.0,Sea area only,sea area: mediterranean sea,False,Mediterranean Sea,List of missing aircraft,,
+D493,Boeing 377 Stratocruiser 10-29,Aircraft,1957,,,Not placed,ocean or unknown only,False,Central Pacific Ocean,List of missing aircraft,,
+D494,Boeing C-97C Stratofreighter (50-0702),Aircraft,1957,35.228,139.795,Near a named place,near tokyo,True,"North Pacific Ocean (near Tokyo, Japan)",List of missing aircraft,,
+D495,Avro 685 York I (OD-ADB),Aircraft,1958,,,Not placed,"Mediterranean Sea (whole sea, see list)",False,North Atlantic Ocean (Mediterranean Sea),List of missing aircraft,,
+D496,Boeing C-97A Stratofreighter (49-2597),Aircraft,1958,21.2,-157.9,Near a named place,near honolulu,False,Pacific Ocean (off Honolulu),List of missing aircraft,,
+D497,Douglas DC-3 (TAM-05),Aircraft,1958,,,Not placed,on land or not recognised,False,Bolivia (near La Paz),List of missing aircraft,,
+D498,Lockheed WV-2 Super Constellation (141310),Aircraft,1958,38.5,-27.5,Near a named place,near the Azores,False,North Atlantic Ocean (near Azores),List of missing aircraft,,
+D499,Lynne C. Quiggle,People lost at sea,1958,,,Not placed,ocean or unknown only,False,North Pacific Ocean,List of people who disappeared mysteriously at sea,,Lynne C. Quiggle
+D500,"Martin PBM-5 Mariner (CS-THB), with Harry Frank Broadbent",Aircraft,1958,39.5,-9.8,Near a named place,near portugal,False,North Atlantic Ocean (near Portugal),List of missing aircraft; List of people who disappeared mysteriously at sea,,Harry Frank Broadbent; Thomas Rowell
+D501,"Cessna 310 (FAR-53), with Camilo Cienfuegos",Aircraft,1959,25.5,-90.0,Sea area only,sea area: gulf of mexico,False,North Atlantic Ocean (Gulf of Mexico),List of missing aircraft; List of people who disappeared mysteriously at sea,,Camilo Cienfuegos
+D502,Hans Hedtoft,Ship or boat,1959,59.017,-43.9,Position given,65 km from cape farewell,False,About 35 nautical miles (65 km) south of Cape Farewell,List of missing ships,,
+D503,Douglas C-47 (VT-DGS),Aircraft,1960,25.6,55.3,Near a named place,Persian Gulf near Sharjah,False,"Indian Ocean (Persian Gulf, near Sharjah, UAE)",List of missing aircraft,,
+D504,David Kenyon Webster,People lost at sea,1961,33.95,-118.6,Near a named place,near santa monica,False,"Pacific Ocean near Santa Monica, California, U.S.",List of people who disappeared mysteriously at sea,,David Kenyon Webster
+D505,Douglas C-47A,Aircraft,1961,-6.833,113.299,Near a named place,near Madura Island,True,"Central Pacific Ocean (near Madura Island, Indonesia)",List of missing aircraft,,
+D506,Lockheed L-749A Constellation (HH-ABA),Aircraft,1961,18.6,-66.2,Near a named place,near puerto rico,False,North Atlantic Ocean (Caribbean Sea E of Puerto Rico),List of missing aircraft,,
+D507,North American FJ-4 Fury,Aircraft,1961,12.0,125.5,Near a named place,near philippines,False,North Pacific Ocean (near the Philippines),List of missing aircraft,,
+D508,Piaggio P.166 (VH-PAU),Aircraft,1961,,,Not placed,on land or not recognised,False,Papua New Guinea (Owen Stanley Range),List of missing aircraft,,
+D509,De Havilland Dragonfly (ZK-AFB),Aircraft,1962,-44.6,167.8,Near a named place,near milford sound,False,New Zealand (Milford Sound),List of missing aircraft,,
+D510,Lockheed L-1049H Constellation,Aircraft,1962,13.4,144.6,Near a named place,near guam,False,North Pacific Ocean (near Guam),List of missing aircraft,,
+D511,Private Colin Luke,People lost at sea,1962,36.1,-5.35,Near a named place,near gibraltar,False,Gibraltar / Straits of Gibraltar,List of people who disappeared mysteriously at sea,,Private Colin Luke
+D512,KC-135 Stratotankers,Aircraft,1963,32.3,-70.4,Position given,read from the article text,False,collided and crashed 300 miles west of Bermuda,legend article,Bermuda Triangle,
+D513,SS Marine Sulphur Queen,Ship or boat,1963,25.75,-86.0,Position given,coordinates in the location text,False,Somewhere in Florida Strait around 25°45′N 86°00′W ﻿ / ﻿ 25.750°N 86.000°W (missing wreck),legend article; List of missing ships,Bermuda Triangle,
+D514,Cessna 210 A (N9492X),Aircraft,1964,,,Not placed,on land or not recognised,False,"United States (Sierra Nevada, California)",List of missing aircraft,,
+D515,Douglas C-124 Globemaster II (52-0968),Aircraft,1964,,,Not placed,ocean or unknown only,False,North Pacific Ocean,List of missing aircraft,,
+D516,Douglas C-54A Skymaster (N4726V),Aircraft,1964,,,Not placed,ocean or unknown only,False,North Pacific Ocean,List of missing aircraft,,
+D517,Holly Roth,People lost at sea,1964,32.6,-9.35,Position given,20 miles north of Safi,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Holly Roth
+D518,Boeing 307B-1 Stratoliner (F-BELV),Aircraft,1965,19.5,107.5,Near a named place,Gulf of Tonkin near Hanoi,False,North Pacific Ocean (near Hanoi),List of missing aircraft,,
+D519,Douglas C-54,Aircraft,1965,,,Not placed,on land or not recognised,False,Costa Rica (Cordillera de Talamanca),List of missing aircraft,,
+D520,Fairchild C-119F Flying Boxcar (51-2680),Aircraft,1965,24.8,-77.4,Near a named place,near the bahamas,False,North Atlantic Ocean (near the Bahamas),List of missing aircraft,,
+D521,Curtiss C-46D Commando (HK-527),Aircraft,1966,-35.2,-56.5,Near a named place,near buenos aires,False,"Near Cerro el Planchon, Chile en route from Bogota, Colombia to Buenos Aires, Argentina",List of missing aircraft,,
+D522,Douglas DC-3 (HS-OOO),Aircraft,1966,,,Not placed,only '840 km off the US coast',False,Pacific Ocean 840 km off the US coast,List of missing aircraft,,
+D523,Audrey Bruce Currier,People lost at sea,1967,18.5,-66.1,Near a named place,near san juan,False,"Coast of San Juan, Puerto Rico",List of people who disappeared mysteriously at sea,,Audrey Bruce Currier; Stephen Currier
+D524,Cessna 150,Aircraft,1967,63.7,20.9,Near a named place,near holmo,False,"Near Holmö, off the cost of Sweden, en route from Vaasa, Finland to Umeå, Sweden",List of missing aircraft,,
+D525,FV Johannes Krüss,Ship or boat,1967,59.6,-43.9,Near a named place,near cape farewell,False,"Somewhere west of Cape Farewell, Greenland",List of missing ships,,
+D526,Grumman HU-16E Albatross (1240),Aircraft,1967,25.5,-90.0,Sea area only,sea area: gulf of mexico,False,Gulf of Mexico (off of Florida),List of missing aircraft,,
+D527,Harold Holt,People lost at sea,1967,-38.32,144.65,Near a named place,near cheviot beach,False,"Cheviot Beach, Australia",List of people who disappeared mysteriously at sea,,Harold Holt
+D528,Arthur Piver,People lost at sea,1968,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Arthur Piver
+D529,Lockheed A-12 (A-12 Aircraft No. 129),Aircraft,1968,26.3,127.7,Near a named place,near kadena,False,"Philippine Sea, on a flight from Kadena Air Base, Okinawa",List of missing aircraft,,
+D530,Donald Crowhurst,People lost at sea,1969,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Donald Crowhurst
+D531,Douglas DC-4 (N3821),Aircraft,1969,,,Not placed,route crosses an ocean (Halifax to the Azores),False,N Atlantic en route from Halifax International Airport to Santa Maria Airport (Azores),List of missing aircraft,,
+D532,Paul Meyer,People lost at sea,1969,50.2,-1.5,Sea area only,sea area: english channel,False,English Channel,List of people who disappeared mysteriously at sea,,Paul Meyer
+D533,Rivet Amber (Boeing RC-135),Aircraft,1969,52.9,179.5,Position given,about 400 km east of Shemya,False,"Bering Sea en route from Shemya AFB, AK to Eielson AFB, AK, ca 400 km E of Shemya",List of missing aircraft,,
+D534,SS Baychimo,Ship or boat,1969,71.5,-145.0,Sea area only,sea area: beaufort sea,False,Ghost ship last sighted in the Beaufort Sea off Alaska,List of missing ships,,
+D535,Eurydice,Ship or boat,1970,35.5,18.0,Sea area only,sea area: mediterranean sea,False,Somewhere in the Mediterranean Sea,List of missing ships,,
+D536,"Free Life (Rozière balloon, N2079)",Aircraft,1970,41.0,-44.0,Position given,about 1000 km southeast of Newfoundland,False,N Atlantic approx 1000 km SE of Newfoundland,List of missing aircraft,,
+D537,Boeing EC-135 N (61-0331),Aircraft,1971,20.084,-157.8,Position given,113 km from hawaii,False,"Pacific Ocean, 113 km S of Hawaii, near Palmyra Atoll en route from Pago Pago to Hickam Air Force Base",List of missing aircraft,,
+D538,Cessna 172 (N8342L),Aircraft,1971,42.9,-86.6,Sea area only,"sea area: lake michigan (en route to Holland, Michigan)",False,"Lake Michigan (presumed) en route to Holland, Michigan",List of missing aircraft,,
+D539,Francis Brenton,People lost at sea,1971,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Francis Brenton
+D540,Canadair CC-106 Yukon (LV-JYR),Aircraft,1972,,,Not placed,route with an end not in the gazetteer,False,"En route from Carrasco International Airport, Montevideo, Uruguay to Santiago, Chile",List of missing aircraft,,
+D541,"Cessna 310 C (N1812H), with Hale Boggs",Aircraft,1972,59.592,-142.279,Route midpoint,midpoint of anchorage to juneau (934 km),False,Alaska en route from Anchorage to Juneau,List of missing aircraft; List of people who disappeared mysteriously at sea,,Hale Boggs; Nick Begich
+D542,Douglas C-54A-DO (XW-TDE),Aircraft,1972,,,Not placed,route with an end not in the gazetteer,False,Laos (between Savannakhet and Vientiane),List of missing aircraft,,
+D543,Lockheed P-3A Orion (152155),Aircraft,1972,37.4,-122.65,Near a named place,near moffett,False,"Pacific Ocean off California, on a routine training mission based at Moffett Federal Airfield",List of missing aircraft,,
+D544,Henry E. Stebbins,People lost at sea,1973,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Henry E. Stebbins
+D545,Beech 95/B55 Baron (VH-FWR),Aircraft,1974,,,Not placed,route with an end not in the gazetteer,False,Queensland en route from Gladstone to Longreach,List of missing aircraft,,
+D546,Beechcraft Bonanza V35A (OH-BBD),Aircraft,1974,,,Not placed,on land or not recognised,False,"in the vicinity of Bodø, Norway",List of missing aircraft,,
+D547,Douglas DC-4 (TAM-52),Aircraft,1974,,,Not placed,route with an end not in the gazetteer,False,"Central Bolivia en route from Santa Rosa de Yacuma Airport (SRB/SLSR) (14°3′58″S 66°47′12″W ﻿ / ﻿ 14.06611°S 66.78667°W) to El Alto International Airport, La Paz",List of missing aircraft,,
+D548,Light Heart (superpressure balloon),Aircraft,1974,28.5,-31.5,Position given,1610 km west of the Canaries,False,"1610km W of the Canaries en route from Harrisburg Airport, PA to W Europe",List of missing aircraft,,
+D549,"Swan 38 (Lockheed WC-130, 65–0965)",Aircraft,1974,14.0,113.0,Sea area only,sea area: south china sea,False,South China Sea,List of missing aircraft,,
+D550,Thomas Leigh Gatch Jr.,People lost at sea,1974,28.5,-15.5,Near a named place,near canary islands,False,"Atlantic Ocean, near the Canary Islands",List of people who disappeared mysteriously at sea,,Thomas Leigh Gatch Jr.
+D551,Bas Jan Ader,People lost at sea,1975,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Bas Jan Ader
+D552,Cessna F150H,Aircraft,1975,56.4,-6.3,Near a named place,near isle of mull,False,"North Atlantic, near the Isle of Mull, Scotland",List of missing aircraft,,
+D553,Tupolev Tu-154 (HA-LCI),Aircraft,1975,33.9,35.4,Near a named place,near beirut,False,"Mediterranean Sea, close to Beirut–Rafic Hariri International Airport",List of missing aircraft,,
+D554,Curtiss C-46D Commando (HK-1282),Aircraft,1976,12.611,-69.955,Near a named place,near aruba,True,Caribbean Sea off Aruba en route to Queen Beatrix International Airport,List of missing aircraft,,
+D555,Douglas DC-3 (HP-671),Aircraft,1976,15.381,-70.674,Route midpoint,midpoint of curacao to port au prince (804 km),False,"Caribbean Sea en route from Willemstad, Curaçao to Port-au-Prince, Haiti",List of missing aircraft,,
+D556,Bill Tilman,People lost at sea,1977,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Bill Tilman
+D557,Lockheed L-188CF Electra (N126US),Aircraft,1977,9.4,-82.2,Near a named place,near bocas del toro,False,"Caribbean Sea 65 km off Bocas del Toro, Panama en route from San José, Costa Rica to Caracas, Venezuela",List of missing aircraft,,
+D558,Slim Wintermute,People lost at sea,1977,,,Not placed,inland lake,False,"Portage Bay, Washington, U.S.",List of people who disappeared mysteriously at sea,,Slim Wintermute
+D559,Alain Colas,People lost at sea,1978,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Alain Colas
+D560,Britten-Norman BN-2A Islander (H4-AAC),Aircraft,1978,-11.3,159.8,Near a named place,near bellona,False,"Pacific Ocean near Bellona, Solomon Islands",List of missing aircraft,,
+D561,Cessna 180 ZK-BMP,Aircraft,1978,,,Not placed,on land or not recognised,False,"Lake McKerrow, New Zealand",List of missing aircraft,,
+D562,Cessna 182L (VH-DSJ),Aircraft,1978,-38.9,143.5,Near a named place,near cape otway,False,"Bass Strait, vicinity of Cape Otway, Victoria, Australia (as reported by pilot)",List of missing aircraft,,
+D563,Cessna 185,Aircraft,1978,,,Not placed,route with an end not in the gazetteer,False,"Between Red Deer airport and Kamloops, B.C.",List of missing aircraft,,
+D564,Douglas DC-3 (N407D),Aircraft,1978,24.649,-81.233,Route midpoint,midpoint of ft lauderdale to havana (401 km),False,"N Atlantic off Ft Lauderdale, FL en route from Ft Lauderdale to Havana, Cuba",List of missing aircraft,,
+D565,Eddie Aikau,People lost at sea,1978,21.1,-157.8,Near a named place,near hawaii,False,"Hawaii, U.S.",List of people who disappeared mysteriously at sea,,Eddie Aikau
+D566,MS München,Ship or boat,1978,44.0,-24.0,Position given,coordinates in the location text,False,Somewhere around 44°N 24°W ﻿ / ﻿ 44°N 24°W (missing wreck),List of missing ships,,
+D567,Piper Cherokee Six ZK-EBU,Aircraft,1978,-44.6,167.8,Near a named place,near milford sound,False,"Milford Sound, New Zealand",List of missing aircraft,,
+D568,Boeing 707 -323C,Aircraft,1979,35.871,142.051,Position given,200 km from tokyo,False,Pacific Ocean 200 km ENE of Tokyo,List of missing aircraft,,
+D569,Douglas C-47B-50-DK (N63250),Aircraft,1979,21.2,-157.9,Near a named place,near honolulu,False,"Pacific Ocean, near Honolulu",List of missing aircraft,,
+D570,Jon Mathews,People lost at sea,1979,,,Not placed,ocean or unknown only,False,Indian Ocean,List of people who disappeared mysteriously at sea,,Jon Mathews
+D571,MV Kairali,Ship or boat,1979,15.3,69.0,Position given,about 500 km off Margao,False,Some miles away from Margao,List of missing ships,,
+D572,"Socata Rallye 235GT (N302RA), with Ian Mackintosh",Aircraft,1979,59.103,-151.489,Route midpoint,midpoint of anchorage to kodiak (330 km),False,Vicinity of Woody Island (Alaska) en route from Anchorage to Kodiak,List of missing aircraft; List of people who disappeared mysteriously at sea,,Ian Mackintosh
+D573,Alan Addis,People lost at sea,1980,,,Not placed,"lost on land, East Falkland",False,"East Falkland, Falkland Islands",List of people who disappeared mysteriously at sea,,Alan Addis
+D574,Angus Primrose,People lost at sea,1980,32.8,-79.0,Near a named place,near south carolina,False,"South Carolina, U.S.",List of people who disappeared mysteriously at sea,,Angus Primrose
+D575,Beechcraft 80 Queen Air (N242Q),Aircraft,1980,,,Not placed,inland lake in Florida,False,Florida (Lake Marian),List of missing aircraft,,
+D576,Britten-Norman BN-2A-6 Islander (PT-KHK),Aircraft,1980,,,Not placed,route with an end not in the gazetteer,False,"Brazil (between Rio de Janeiro, RJ and São Paulo, SP)",List of missing aircraft,,
+D577,Douglas DC-3 (C-47A) (ECT-025),Aircraft,1980,35.5,18.0,Sea area only,sea area: mediterranean sea,False,North Atlantic Ocean (Mediterranean Sea),List of missing aircraft,,
+D578,ERCO Ercoupe 415-D (N3808H),Aircraft,1980,18.2,-67.8,Near a named place,near mona channel,False,"Mona Channel, Puerto Rico",List of missing aircraft,,
+D579,Cessna 210 M (VH-MDX),Aircraft,1981,,,Not placed,on land or not recognised,False,Australia (Barrington Tops National Park),List of missing aircraft,,
+D580,Douglas C-53 Skytrooper (F-BJBY),Aircraft,1981,39.5,2.35,Near a named place,near port d andratx,False,North Atlantic Ocean (Mediterranean Sea off Port d'Andratx),List of missing aircraft,,
+D581,ARA General Belgrano,Ship or boat,1982,-55.4,-61.533,Position given,coordinates in the location text,False,Somewhere around 55°24′S 61°32′W (missing wreck),List of missing ships,,
+D582,Cessna 185 (572811),Aircraft,1982,,,Not placed,route with an end not in the gazetteer,False,"Canada (between Fox Creek and Prince George, B.C.)",List of missing aircraft,,
+D583,Britten-Norman BN-2A-21 Islander (C-GIPF),Aircraft,1983,,,Not placed,on land or not recognised,False,Canada (British Columbia near Smithers),List of missing aircraft,,
+D584,Cessna 172 K (ZK-CSS),Aircraft,1983,,,Not placed,on land or not recognised,False,New Zealand (Lake Tekapo),List of missing aircraft,,
+D585,Learjet 35 A (N482U),Aircraft,1983,4.0,99.5,Sea area only,sea area: strait of malacca,False,Indian / Pacific Ocean (Strait of Malacca),List of missing aircraft,,
+D586,Cessna 402 (N44NC),Aircraft,1984,24.2,-81.0,Sea area only,sea area: straits of florida,False,North Atlantic Ocean (Straits of Florida),List of missing aircraft,,
+D587,Douglas C-47B-1-DL (RP-C138),Aircraft,1984,6.9,125.7,Near a named place,near davao,False,"North Pacific Ocean (off Davao, Philippines)",List of missing aircraft,,
+D588,"Pitts S-2 (N13AS), with Art Scholl",Aircraft,1985,33.1,-117.4,Near a named place,near carlsbad,False,"North Pacific Ocean (off Carlsbad, United States)",List of missing aircraft; List of people who disappeared mysteriously at sea,,Art Scholl
+D589,Antonov An-32 (K2729),Aircraft,1986,22.729,69.585,Near a named place,near jamnagar,True,"Indian Ocean (off Jamnagar, India)",List of missing aircraft,,
+D590,Svante Odén,People lost at sea,1986,57.0,19.0,Sea area only,sea area: baltic sea,False,Baltic Sea,List of people who disappeared mysteriously at sea,,Svante Odén
+D591,de Havilland Canada DHC-6 Twin Otter,Aircraft,1986,15.0,-75.0,Sea area only,sea area: caribbean sea,False,North Atlantic Ocean (Caribbean Sea),List of missing aircraft,,
+D592,Britten-Norman BN-2A-6 Islander (C-GOMC),Aircraft,1987,,,Not placed,on land or not recognised,False,Canada (British Columbia near Mount Waddington),List of missing aircraft,,
+D593,Cessna 402 (N2652B),Aircraft,1987,24.8,-77.4,Near a named place,near the bahamas,False,North Atlantic Ocean (within The Bahamas),List of missing aircraft,,
+D594,Clement Howell,People lost at sea,1987,,,Not placed,ocean or unknown only,False,Atlantic Ocean,List of people who disappeared mysteriously at sea,,Clement Howell
+D595,Piper PA-31-350 Navajo Chieftain (N712AN),Aircraft,1987,21.3,-157.0,Near a named place,near molokai,False,"Hawaii (Molokai, 21 km NW of Mauna Loa)",List of missing aircraft,,
+D596,Douglas C-47A Skytrain (CP-1418),Aircraft,1989,,,Not placed,on land or not recognised,False,Bolivia (near La Paz),List of missing aircraft,,
+D597,Fokker F27 Friendship,Aircraft,1989,,,Not placed,on land or not recognised,False,Pakistan (Himalayan mountain range),List of missing aircraft,,
+D598,Nft West,Ship or boat,1989,-9.5,135.0,Sea area only,sea area: arafura sea,False,Somewhere in Arafura Sea,List of missing ships,,
+D599,"Boeing 727 (OB-1303), with 1990 Faucett Perú Boeing 727",Aircraft,1990,46.6,-53.0,Near a named place,near cape race,False,"North Atlantic Ocean (off Cape Race, Canada)",List of missing aircraft; List of people who disappeared mysteriously at sea,,1990 Faucett Perú Boeing 727
+D600,Cessna 150 H (N7156S),Aircraft,1990,34.3,-119.7,Near a named place,near santa barbara,False,"North Pacific Ocean (off Santa Barbara, United States)",List of missing aircraft,,
+D601,Convair CV-240 (HI-376CT),Aircraft,1990,18.2,-67.2,Near a named place,near mayaguez,False,"Caribbean Sea (off Mayagüez, San Juan)",List of missing aircraft,,
+D602,Andrea Gail,Ship or boat,1991,43.9,-60.0,Near a named place,off Sable Island,False,Somewhere off Sable Island,List of missing ships,,
+D603,Britten-Norman BN-2A Trislander Mk. III-2 (PK-KTC),Aircraft,1991,,,Not placed,on land or not recognised,False,"Tumbang Miri, Indonesia",List of missing aircraft,,
+D604,Cessna 340 (N69469),Aircraft,1992,59.4,-139.9,Near a named place,near yakutat,False,Alaska (near Yakutat),List of missing aircraft,,
+D605,Piper PA-28-181 (N81453),Aircraft,1992,,,Not placed,route with an end not in the gazetteer,False,California (between Santa Barbara and Palo Alto),List of missing aircraft,,
+D606,Cessna 172 I (N35549),Aircraft,1993,43.8,-87.0,Sea area only,sea area: lake michigan (presumed),False,Michigan (presumed Lake Michigan),List of missing aircraft,,
+D607,Piper Cherokee Arrow (N15206),Aircraft,1993,43.8,-87.0,Sea area only,sea area: lake michigan (presumed),False,Michigan (presumed Lake Michigan),List of missing aircraft,,
+D608,Aero Commander 690,Aircraft,1994,-31.132,154.131,Position given,260 km from williamtown,False,Tasman Sea (260 km NE Williamtown),List of missing aircraft,,
+D609,Bruno Bréguet,People lost at sea,1995,38.0,18.5,Sea area only,sea area: ionian sea,False,Ionian Sea,List of people who disappeared mysteriously at sea,,Bruno Bréguet
+D610,Larry Hillblom,People lost at sea,1995,15.2,145.7,Near a named place,near mariana islands,False,Mariana Islands,List of people who disappeared mysteriously at sea,,Larry Hillblom
+D611,de Havilland Canada DHC-6 Twin Otter,Aircraft,1995,-9.5,122.0,Sea area only,sea area: savu sea,False,Indian Ocean (Savu Sea),List of missing aircraft,,
+D612,Cessna 404 Titan (C-FPVB),Aircraft,1996,,,Not placed,on land or not recognised,False,Peru (Andes Mountains),List of missing aircraft,,
+D613,de Havilland Canada DHC-6 Twin Otter (N245GW),Aircraft,1996,,,Not placed,on land or not recognised,False,Peru (Amazonas Region),List of missing aircraft,,
+D614,Antonov An-72 (ER-ACF),Aircraft,1997,,,Not placed,ocean or unknown only,False,South Atlantic Ocean,List of missing aircraft,,
+D615,Cessna 180 (ZK-FMQ),Aircraft,1997,,,Not placed,on land or not recognised,False,New Zealand (Waiatoto River),List of missing aircraft,,
+D616,Gerry Roufs,People lost at sea,1997,,,Not placed,ocean or unknown only,False,Pacific Ocean,List of people who disappeared mysteriously at sea,,Gerry Roufs
+D617,Grant Hadwin,People lost at sea,1997,53.3,-130.8,Near a named place,near hecate strait,False,"Hecate Strait, British Columbia",List of people who disappeared mysteriously at sea,,Grant Hadwin
+D618,Aero L-39 (Schaller and Rodriguez),Aircraft,1998,45.15,-85.95,Near a named place,read from the article text,False,"vanished 27 miles from Cherry Capital Airport, Traverse City",legend article; List of missing aircraft,Michigan Triangle,
+D619,Amy Lynn Bradley,People lost at sea,1998,12.116,-69.034,Near a named place,near curacao,True,"Curaçao, Antilles",List of people who disappeared mysteriously at sea,,Amy Lynn Bradley
+D620,Tom Lonergan,People lost at sea,1998,-16.5,147.5,Near a named place,"St Crispin Reef, Great Barrier Reef",False,"Coral Sea, Australia",List of people who disappeared mysteriously at sea,,Tom Lonergan; Eileen Lonergan
+D621,Gerry Clark,People lost at sea,1999,-49.7,178.8,Near a named place,near antipodes islands,False,"Antipodes Islands, New Zealand",List of people who disappeared mysteriously at sea,,Gerry Clark
+D622,Yves Godard,People lost at sea,1999,48.85,-3.0,Near a named place,near channel coast france,False,"Channel coast, France",List of people who disappeared mysteriously at sea,,Yves Godard; Marie-France Godard; Camille Godard; Marius Godard
+D623,Antonov An-26 (D2-FBR),Aircraft,2000,,,Not placed,on land or not recognised,False,Angola,List of missing aircraft,,
+D624,Scott Smith,People lost at sea,2000,37.75,-122.65,Near a named place,near san francisco,False,"near San Francisco, California, U.S.",List of people who disappeared mysteriously at sea,,Scott Smith
+D625,Bison Dele,People lost at sea,2002,-17.458,-149.471,Near a named place,near tahiti,True,"Tahiti, French Polynesia",List of people who disappeared mysteriously at sea,,Bison Dele
+D626,Boeing 727 -223 (N844AA),Aircraft,2003,,,Not placed,ocean or unknown only,False,Unknown,List of missing aircraft,,
+D627,Erhart Aten,People lost at sea,2004,7.4,151.8,Near a named place,near chuuk state,False,Chuuk State,List of people who disappeared mysteriously at sea,,Erhart Aten
+D628,George Allen Smith IV,People lost at sea,2005,36.8,27.5,Near a named place,near coast of turkey,False,Coast of Turkey,List of people who disappeared mysteriously at sea,,George Allen Smith IV
+D629,Derek Batten,People lost at sea,2007,-20.25,148.85,Near a named place,near shute harbour,False,"Shute Harbour, Australia",List of people who disappeared mysteriously at sea,,Derek Batten; Peter Tunstead; James Tunstead
+D630,Jim Gray,People lost at sea,2007,37.741,-122.333,Near a named place,near san francisco bay,True,"San Francisco Bay, California, U.S.",List of people who disappeared mysteriously at sea,,Jim Gray
+D631,Beechcraft King Air 65-A90-1 (N87V),Aircraft,2008,,,Not placed,on land or not recognised,False,Guyana (Near Georgetown),List of missing aircraft,,
+D632,Britten-Norman BN-2A Trislander Mk.III-2 (N650LP),Aircraft,2008,21.745,-71.8,Near a named place,near turks and caicos,True,Atlantic Ocean (Caribbean Sea off Turks and Caicos),List of missing aircraft,,
+D633,GippsAero GA8 Airvan (VH-WRT),Aircraft,2008,-12.1,135.8,Near a named place,near buckingham bay,False,"Australia (Buckingham Bay, Northern Territory)",List of missing aircraft,,
+D634,L'Acadien II,Ship or boat,2008,46.2,-60.0,Near a named place,near cape breton,False,Somewhere off Cape Breton (missing wreck),List of missing ships,,
+D635,Tai Ching 21 fishing boat crew,People lost at sea,2008,1.924,-157.446,Near a named place,near kiribati,True,Kiribati,List of people who disappeared mysteriously at sea,,Tai Ching 21 fishing boat crew
+D636,Hubert Marcoux,People lost at sea,2009,,,Not placed,ocean or unknown only,False,North Atlantic Ocean,List of people who disappeared mysteriously at sea,,Hubert Marcoux
+D637,Jure Šterk,People lost at sea,2009,,,Not placed,southern Indian Ocean,False,Indian Ocean,List of people who disappeared mysteriously at sea,,Jure Šterk
+D638,Marquis Cooper,People lost at sea,2009,27.97,-82.9,Near a named place,near clearwater,False,"Off the coast of Clearwater, Florida, U.S.",List of people who disappeared mysteriously at sea,,Marquis Cooper; Corey Smith; William Bleakley
+D639,Beechcraft 200 Super King Air (D2-FFT),Aircraft,2010,,,Not placed,on land or not recognised,False,Angola (near Caxito),List of missing aircraft,,
+D640,Cessna 208B Grand Caravan (OB-1922-P),Aircraft,2010,,,Not placed,ocean or unknown only,False,Unknown,List of missing aircraft,,
+D641,Cessna 550 Citation II (B-7026),Aircraft,2011,,,Not placed,on land or not recognised,False,China (Tianshan Mountains),List of missing aircraft,,
+D642,Rebecca Coriam,People lost at sea,2011,,,Not placed,ocean or unknown only,False,Pacific Ocean near coast of Mexico,List of people who disappeared mysteriously at sea,,Rebecca Coriam
+D643,Robinson R44 (LV-ZYO),Aircraft,2011,,,Not placed,on land or not recognised,False,Argentina,List of missing aircraft,,
+D644,Bounty,Ship or boat,2012,34.17,-74.163,Position given,161 km from cape hatteras,False,"100 miles southeast of Cape Hatteras, North Carolina",List of missing ships,,
+D645,Guma Aguiar,People lost at sea,2012,26.12,-80.08,Near a named place,near fort lauderdale,False,"Fort Lauderdale, Florida, U.S.",List of people who disappeared mysteriously at sea,,Guma Aguiar
+D646,Piper PA-31-310 Navajo (N174BH),Aircraft,2012,46.9,-91.4,Near a named place,near two harbors,False,Lake Superior (near Two Harbors),List of missing aircraft,,
+D647,"Beechcraft 1900 C (ZS-PHL), with Jerry Krause",Aircraft,2013,0.4,6.7,Near a named place,near sao tome,False,North Atlantic Ocean (Near São Tomé International Airport),List of missing aircraft; List of people who disappeared mysteriously at sea,,Jerry Krause
+D648,Evi Nemeth,People lost at sea,2013,-37.0,160.0,Sea area only,sea area: tasman sea,False,Tasman Sea,List of people who disappeared mysteriously at sea,,Evi Nemeth
+D649,Lyubov Orlova,Ship or boat,2013,49.378,-44.856,Position given,coordinates in the location text,False,Last sighted around 49°22.70′N 44°51.34′W ﻿ / ﻿ 49.37833°N 44.85567°W,List of missing ships,,
+D650,Boeing 777 -200ER (9M-MRO),Aircraft,2014,,,Not placed,ocean or unknown only,False,Indian Ocean,List of missing aircraft,,
+D651,Britten-Norman BN-2 Islander (8R-GHE),Aircraft,2014,,,Not placed,on land or not recognised,False,Guyana,List of missing aircraft,,
+D652,Dick Conant,People lost at sea,2014,35.6,-75.5,Near a named place,near outer banks,False,Outer Banks,List of people who disappeared mysteriously at sea,,Dick Conant
+D653,British Aerospace 125 air ambulance (6V-AIM),Aircraft,2015,14.7,-17.6,Near a named place,near dakar,False,"Atlantic Ocean (off Dakar, Senegal)",List of missing aircraft,,
+D654,Maratonga,Ship or boat,2015,,,Not placed,"route crosses an ocean (Norfolk, Virginia to Portugal)",False,"Somewhere between Norfolk, Virginia and Portugal",List of missing ships,,
+D655,Natalia Molchanova,People lost at sea,2015,38.6,1.45,Near a named place,near formentera,False,"Formentera, Spain",List of people who disappeared mysteriously at sea,,Natalia Molchanova
+D656,Cessna 172 M Skyhawk (N174LL),Aircraft,2016,21.3,-157.0,Near a named place,near molokai,False,"Pacific Ocean (off Molokai, Hawaii, United States)",List of missing aircraft,,
+D657,PA-28-161 Warrior II (C-GDTK),Aircraft,2017,,,Not placed,on land or not recognised,False,British Columbia,List of missing aircraft,,
+D658,British Aerospace 125 -700A (N422X),Aircraft,2018,12.116,-69.034,Near a named place,near curacao,True,"Caribbean Sea, off the coast of Curaçao",List of missing aircraft,,
+D659,Daniel Küblböck,People lost at sea,2018,47.555,-53.034,Sea area only,sea area: off Newfoundland (Labrador Sea per the list),True,Labrador Sea,List of people who disappeared mysteriously at sea,,Daniel Küblböck
+D660,Embraer EMB 720C Minuano (PT-RDZ),Aircraft,2018,,,Not placed,on land or not recognised,False,Brazil (Amazon rainforest),List of missing aircraft,,
+D661,F-35A (JASDF 79-8705),Aircraft,2019,41.3,141.5,Near a named place,near aomori,False,"North Pacific Ocean (Near Aomori Prefecture, Japan)",List of missing aircraft,,
+D662,MBB Bo 105,Aircraft,2019,,,Not placed,on land or not recognised,False,"Russia (Yakutia Region, Lake Ayama)",List of missing aircraft,,
+D663,Piper PA-32R (N41453),Aircraft,2019,26.7,-80.02,Near a named place,near palm beach,False,"North Atlantic Ocean (E. of Palm Beach, Florida, US)",List of missing aircraft,,
+D664,Piper PA-34-220T Seneca V (YV2604),Aircraft,2020,,,Not placed,on land or not recognised,False,"near Charallave, Miranda State, Venezuela",List of missing aircraft,,
+D665,Sarm Heslop,People lost at sea,2021,18.3,-64.8,Near a named place,near united states virgin islands,False,United States Virgin Islands,List of people who disappeared mysteriously at sea,,Sarm Heslop
+D666,Yong Yu Sing No. 18 fishing boat crew,People lost at sea,2021,28.2,-177.37,Near a named place,near midway island,False,Midway Island,List of people who disappeared mysteriously at sea,,Yong Yu Sing No. 18 fishing boat crew
+D667,Piper PA-28R -200-2 (G-EGVA),Aircraft,2022,50.529,0.926,Position given,37 km from le touquet,False,"English Channel, approximately 20 nmi (37 km) west of Le Touquet",List of missing aircraft,,
+D668,Bellanca 17-30A Super Viking 300A (PP-ICO),Aircraft,2024,,,Not placed,on land or not recognised,False,Over Venezuela,List of missing aircraft,,
+D669,Air Tractor AT-802 A Fire Boss (N4025K),Aircraft,2025,47.512,-49.64,Position given,222 km from st johns,False,"Atlantic Ocean, about 120 nautical miles east of St. John's, Canada",List of missing aircraft,,
+D670,BRM Aero Bristell Classic S-LSA (23-2180),Aircraft,2025,-39.5,146.5,Sea area only,sea area: bass strait,False,Bass Strait,List of missing aircraft,,
+D671,Cessna 400 (N636CS),Aircraft,2025,30.5,-125.5,Position given,"about 470 miles off San Diego (bearing assumed west-southwest, towards Hawaii)",False,"Pacific Ocean, about 470 miles off San Diego, California, United States",List of missing aircraft,,
+D672,Sudiksha Konanki,People lost at sea,2025,18.3,-69.6,Near a named place,near dominican republic,False,Dominican Republic,List of people who disappeared mysteriously at sea,,Sudiksha Konanki
+D673,Albion,Ship or boat,,-40.85,145.515,Route midpoint,midpoint of table cape to circular head (42 km),False,Somewhere between Table Cape and Circular Head,List of missing ships,,

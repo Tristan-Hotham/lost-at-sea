@@ -1,0 +1,5846 @@
+{
+ "meta": {
+  "doi": "10.5281/zenodo.23856868",
+  "blog": "https://blog.tristanhotham.com/2026/10/31/lost-at-sea/",
+  "page": "https://maps.tristanhotham.com/lost-at-sea/",
+  "repo": "https://github.com/Tristan-Hotham/lost-at-sea",
+  "retrieved": "2026"
+ },
+ "cat": {
+  "rows_ships": 201,
+  "rows_aircraft": 289,
+  "rows_people": 223,
+  "rows_article": 21,
+  "rows": 734,
+  "n": 673,
+  "merged": 61,
+  "placed": 472,
+  "placed_pct": 70.13,
+  "unplaced": 201,
+  "why": {
+   "ocean": 98,
+   "land": 66,
+   "route": 30,
+   "other": 7
+  },
+  "conf": {
+   "Position given": 37,
+   "Near a named place": 220,
+   "Route midpoint": 52,
+   "Sea area only": 163
+  },
+  "conf_pct": {
+   "Position given": 7.84,
+   "Near a named place": 46.61,
+   "Route midpoint": 11.02,
+   "Sea area only": 34.53
+  },
+  "kinds": {
+   "Ship or boat": 203,
+   "Aircraft": 290,
+   "People lost at sea": 180
+  },
+  "placed_kinds": {
+   "Ship or boat": 174,
+   "Aircraft": 180,
+   "People lost at sea": 118
+  },
+  "placed_aircraft_pct": 38.14,
+  "year_min": 1468,
+  "year_max": 2025,
+  "median_year": 1940,
+  "pre1946_pct": 69.43,
+  "moved": 42,
+  "placed_cells": 309,
+  "placed_1800": 442,
+  "placed_1946": 144,
+  "war_pct": 24.79,
+  "fixes": 134,
+  "gaz_places": 359,
+  "gaz_seas": 58,
+  "decades": [
+   {
+    "dec": 1800,
+    "Ship or boat": 6,
+    "Aircraft": 0,
+    "People lost at sea": 6
+   },
+   {
+    "dec": 1810,
+    "Ship or boat": 4,
+    "Aircraft": 0,
+    "People lost at sea": 2
+   },
+   {
+    "dec": 1820,
+    "Ship or boat": 4,
+    "Aircraft": 0,
+    "People lost at sea": 3
+   },
+   {
+    "dec": 1830,
+    "Ship or boat": 5,
+    "Aircraft": 0,
+    "People lost at sea": 0
+   },
+   {
+    "dec": 1840,
+    "Ship or boat": 1,
+    "Aircraft": 0,
+    "People lost at sea": 2
+   },
+   {
+    "dec": 1850,
+    "Ship or boat": 9,
+    "Aircraft": 1,
+    "People lost at sea": 1
+   },
+   {
+    "dec": 1860,
+    "Ship or boat": 6,
+    "Aircraft": 0,
+    "People lost at sea": 0
+   },
+   {
+    "dec": 1870,
+    "Ship or boat": 9,
+    "Aircraft": 1,
+    "People lost at sea": 1
+   },
+   {
+    "dec": 1880,
+    "Ship or boat": 18,
+    "Aircraft": 2,
+    "People lost at sea": 5
+   },
+   {
+    "dec": 1890,
+    "Ship or boat": 12,
+    "Aircraft": 0,
+    "People lost at sea": 2
+   },
+   {
+    "dec": 1900,
+    "Ship or boat": 11,
+    "Aircraft": 2,
+    "People lost at sea": 1
+   },
+   {
+    "dec": 1910,
+    "Ship or boat": 9,
+    "Aircraft": 10,
+    "People lost at sea": 5
+   },
+   {
+    "dec": 1920,
+    "Ship or boat": 10,
+    "Aircraft": 13,
+    "People lost at sea": 4
+   },
+   {
+    "dec": 1930,
+    "Ship or boat": 2,
+    "Aircraft": 25,
+    "People lost at sea": 6
+   },
+   {
+    "dec": 1940,
+    "Ship or boat": 36,
+    "Aircraft": 45,
+    "People lost at sea": 28
+   },
+   {
+    "dec": 1950,
+    "Ship or boat": 5,
+    "Aircraft": 15,
+    "People lost at sea": 4
+   },
+   {
+    "dec": 1960,
+    "Ship or boat": 3,
+    "Aircraft": 14,
+    "People lost at sea": 6
+   },
+   {
+    "dec": 1970,
+    "Ship or boat": 3,
+    "Aircraft": 19,
+    "People lost at sea": 2
+   },
+   {
+    "dec": 1980,
+    "Ship or boat": 2,
+    "Aircraft": 11,
+    "People lost at sea": 2
+   },
+   {
+    "dec": 1990,
+    "Ship or boat": 1,
+    "Aircraft": 9,
+    "People lost at sea": 7
+   },
+   {
+    "dec": 2000,
+    "Ship or boat": 1,
+    "Aircraft": 2,
+    "People lost at sea": 8
+   },
+   {
+    "dec": 2010,
+    "Ship or boat": 2,
+    "Aircraft": 7,
+    "People lost at sea": 5
+   },
+   {
+    "dec": 2020,
+    "Ship or boat": 0,
+    "Aircraft": 4,
+    "People lost at sea": 3
+   }
+  ],
+  "peak_decade": 1940,
+  "peak_decade_n": 109
+ },
+ "losses": {
+  "n": 17224,
+  "n_wikipedia": 15133,
+  "n_wikidata": 2091,
+  "n1800": 15761,
+  "n2000": 433,
+  "n2015": 107,
+  "war_pct_1800": 69.38
+ },
+ "traffic": {
+  "cells": 9219,
+  "lanes_min": 1000
+ },
+ "areas": [
+  {
+   "name": "Bermuda Triangle",
+   "short": "Bermuda Tri.",
+   "group": "legend",
+   "traffic_pct": 0.592,
+   "lanes_pct": 0.707,
+   "T": {
+    "o": 8,
+    "e": 2.793,
+    "ratio": 2.865,
+    "lo": 1.237,
+    "hi": 5.645,
+    "p_up": 0.008010293066360938,
+    "p_lo": 0.9976093163671101,
+    "flag": "higher (95%)"
+   },
+   "T_lanes": {
+    "o": 8,
+    "e": 3.337,
+    "ratio": 2.397,
+    "lo": 1.035,
+    "hi": 4.723,
+    "p_up": 0.02097056142385302,
+    "p_lo": 0.9925930666678724,
+    "flag": "higher (95%)"
+   },
+   "T_1946": {
+    "o": 5,
+    "e": 0.852,
+    "ratio": 5.869,
+    "lo": 1.906,
+    "hi": 13.696,
+    "p_up": 0.0018530033193254805,
+    "p_lo": 0.9997426148808539,
+    "flag": "higher (95%)"
+   },
+   "T_ships": {
+    "o": 3,
+    "e": 1.029,
+    "ratio": 2.914,
+    "lo": 0.601,
+    "hi": 8.516,
+    "p_up": 0.08579941575407495,
+    "p_lo": 0.9791520456508799,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 8,
+    "e": 2.751,
+    "ratio": 2.908,
+    "lo": 1.255,
+    "hi": 5.73,
+    "p_up": 0.007364099773194508,
+    "p_lo": 0.9978332280301174,
+    "flag": "higher (95%)"
+   },
+   "L": {
+    "o": 8,
+    "e": 1.234,
+    "ratio": 6.483,
+    "lo": 2.799,
+    "hi": 12.775,
+    "p_up": 4.486703875185551e-05,
+    "p_lo": 0.999993940767586,
+    "flag": "higher"
+   },
+   "L_peace": {
+    "o": 7,
+    "e": 1.684,
+    "ratio": 4.158,
+    "lo": 1.672,
+    "hi": 8.567,
+    "p_up": 0.0017766363045975066,
+    "p_lo": 0.9996360588704446,
+    "flag": "higher (95%)"
+   },
+   "M": {
+    "o": 1,
+    "e": 2.562,
+    "ratio": 0.39,
+    "lo": 0.01,
+    "hi": 2.175,
+    "p_up": 0.922835730374207,
+    "p_lo": 0.2748451429828561,
+    "flag": "as expected"
+   },
+   "M_lanes": {
+    "o": 1,
+    "e": 3.062,
+    "ratio": 0.327,
+    "lo": 0.008,
+    "hi": 1.82,
+    "p_up": 0.9531923136745505,
+    "p_lo": 0.19011914707364305,
+    "flag": "as expected"
+   },
+   "losses_1800": 44,
+   "losses_2000": 1,
+   "kinds": {
+    "Ship or boat": 3,
+    "Aircraft": 5,
+    "People lost at sea": 0
+   },
+   "median_year": 1955
+  },
+  {
+   "name": "Dragon's Triangle",
+   "short": "Dragon's Tri.",
+   "group": "legend",
+   "traffic_pct": 1.341,
+   "lanes_pct": 1.247,
+   "T": {
+    "o": 7,
+    "e": 6.329,
+    "ratio": 1.106,
+    "lo": 0.445,
+    "hi": 2.279,
+    "p_up": 0.4463195766740175,
+    "p_lo": 0.6976416621874006,
+    "flag": "as expected"
+   },
+   "T_lanes": {
+    "o": 7,
+    "e": 5.885,
+    "ratio": 1.189,
+    "lo": 0.478,
+    "hi": 2.451,
+    "p_up": 0.3752990385601252,
+    "p_lo": 0.759599073839724,
+    "flag": "as expected"
+   },
+   "T_1946": {
+    "o": 3,
+    "e": 1.931,
+    "ratio": 1.554,
+    "lo": 0.32,
+    "hi": 4.541,
+    "p_up": 0.3045873559604932,
+    "p_lo": 0.8693980769204117,
+    "flag": "as expected"
+   },
+   "T_ships": {
+    "o": 4,
+    "e": 2.333,
+    "ratio": 1.715,
+    "lo": 0.467,
+    "hi": 4.39,
+    "p_up": 0.20739317701948276,
+    "p_lo": 0.912345809404945,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 6,
+    "e": 6.235,
+    "ratio": 0.962,
+    "lo": 0.353,
+    "hi": 2.095,
+    "p_up": 0.5912473231274781,
+    "p_lo": 0.5686587008187515,
+    "flag": "as expected"
+   },
+   "L": {
+    "o": 7,
+    "e": 5.441,
+    "ratio": 1.287,
+    "lo": 0.517,
+    "hi": 2.651,
+    "p_up": 0.30464464432212157,
+    "p_lo": 0.8167680913762335,
+    "flag": "as expected"
+   },
+   "L_peace": {
+    "o": 3,
+    "e": 1.414,
+    "ratio": 2.121,
+    "lo": 0.437,
+    "hi": 6.199,
+    "p_up": 0.16994781746751694,
+    "p_lo": 0.9446586526349935,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 1,
+    "e": 5.806,
+    "ratio": 0.172,
+    "lo": 0.004,
+    "hi": 0.96,
+    "p_up": 0.9969895297147496,
+    "p_lo": 0.0204882341051842,
+    "flag": "lower (95%)"
+   },
+   "M_lanes": {
+    "o": 1,
+    "e": 5.399,
+    "ratio": 0.185,
+    "lo": 0.005,
+    "hi": 1.032,
+    "p_up": 0.9954794444953058,
+    "p_lo": 0.028927578919679824,
+    "flag": "as expected"
+   },
+   "losses_1800": 194,
+   "losses_2000": 1,
+   "kinds": {
+    "Ship or boat": 4,
+    "Aircraft": 2,
+    "People lost at sea": 1
+   },
+   "median_year": 1945
+  },
+  {
+   "name": "Michigan Triangle",
+   "short": "Michigan Tri.",
+   "group": "legend",
+   "traffic_pct": 0.009,
+   "lanes_pct": 0.016,
+   "T": {
+    "o": 0,
+    "e": 0.042,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 86.961,
+    "p_up": 1.0,
+    "p_lo": 0.9584672071409492,
+    "flag": "as expected"
+   },
+   "T_lanes": {
+    "o": 0,
+    "e": 0.076,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 48.364,
+    "p_up": 1.0,
+    "p_lo": 0.9265629115767052,
+    "flag": "as expected"
+   },
+   "T_1946": {
+    "o": 0,
+    "e": 0.013,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 285.039,
+    "p_up": 1.0,
+    "p_lo": 0.987141709873692,
+    "flag": "as expected"
+   },
+   "T_ships": {
+    "o": 0,
+    "e": 0.016,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 235.894,
+    "p_up": 1.0,
+    "p_lo": 0.9844837809272418,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 0,
+    "e": 0.042,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 88.27,
+    "p_up": 1.0,
+    "p_lo": 0.9590703773197969,
+    "flag": "as expected"
+   },
+   "L": {
+    "o": 0,
+    "e": 0.112,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 32.885,
+    "p_up": 1.0,
+    "p_lo": 0.8938872562181653,
+    "flag": "as expected"
+   },
+   "L_peace": {
+    "o": 0,
+    "e": 0.269,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 13.694,
+    "p_up": 1.0,
+    "p_lo": 0.7638573491977071,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 0,
+    "e": 0.039,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 94.794,
+    "p_up": 1.0,
+    "p_lo": 0.9618325641572261,
+    "flag": "as expected"
+   },
+   "M_lanes": {
+    "o": 0,
+    "e": 0.07,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 52.72,
+    "p_up": 1.0,
+    "p_lo": 0.9324207782155635,
+    "flag": "as expected"
+   },
+   "losses_1800": 4,
+   "losses_2000": 0,
+   "kinds": {
+    "Ship or boat": 0,
+    "Aircraft": 0,
+    "People lost at sea": 0
+   },
+   "median_year": null
+  },
+  {
+   "name": "Rest of Lake Michigan",
+   "short": "L. Michigan",
+   "group": "lake",
+   "traffic_pct": 0.049,
+   "lanes_pct": 0.079,
+   "T": {
+    "o": 16,
+    "e": 0.229,
+    "ratio": 69.731,
+    "lo": 39.857,
+    "hi": 113.239,
+    "p_up": 2.273533970937064e-24,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "T_lanes": {
+    "o": 16,
+    "e": 0.371,
+    "ratio": 43.12,
+    "lo": 24.647,
+    "hi": 70.024,
+    "p_up": 4.354114249617266e-21,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "T_1946": {
+    "o": 5,
+    "e": 0.07,
+    "ratio": 71.426,
+    "lo": 23.192,
+    "hi": 166.685,
+    "p_up": 1.3215032774296023e-08,
+    "p_lo": 0.9999999998460779,
+    "flag": "higher"
+   },
+   "T_ships": {
+    "o": 10,
+    "e": 0.085,
+    "ratio": 118.223,
+    "lo": 56.692,
+    "hi": 217.416,
+    "p_up": 4.784598643707403e-18,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "T_lists": {
+    "o": 13,
+    "e": 0.226,
+    "ratio": 57.51,
+    "lo": 30.621,
+    "hi": 98.343,
+    "p_up": 5.239010281875583e-19,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "L": {
+    "o": 15,
+    "e": 1.991,
+    "ratio": 7.533,
+    "lo": 4.216,
+    "hi": 12.425,
+    "p_up": 3.65122901748772e-09,
+    "p_lo": 0.9999999995493006,
+    "flag": "higher"
+   },
+   "L_peace": {
+    "o": 15,
+    "e": 4.579,
+    "ratio": 3.276,
+    "lo": 1.833,
+    "hi": 5.403,
+    "p_up": 8.902142406067678e-05,
+    "p_lo": 0.9999750675285967,
+    "flag": "higher"
+   },
+   "M": {
+    "o": 0,
+    "e": 0.21,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 17.525,
+    "p_up": 1.0,
+    "p_lo": 0.8101845912311263,
+    "flag": "as expected"
+   },
+   "M_lanes": {
+    "o": 0,
+    "e": 0.34,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 10.837,
+    "p_up": 1.0,
+    "p_lo": 0.7114857536025259,
+    "flag": "as expected"
+   },
+   "losses_1800": 71,
+   "losses_2000": 0,
+   "kinds": {
+    "Ship or boat": 10,
+    "Aircraft": 6,
+    "People lost at sea": 0
+   },
+   "median_year": 1917
+  },
+  {
+   "name": "Rest of the Great Lakes",
+   "short": "Great Lakes",
+   "group": "lake",
+   "traffic_pct": 0.203,
+   "lanes_pct": 0.204,
+   "T": {
+    "o": 11,
+    "e": 0.958,
+    "ratio": 11.488,
+    "lo": 5.735,
+    "hi": 20.555,
+    "p_up": 6.478288458120505e-09,
+    "p_lo": 0.9999999994864422,
+    "flag": "higher"
+   },
+   "T_lanes": {
+    "o": 11,
+    "e": 0.965,
+    "ratio": 11.402,
+    "lo": 5.692,
+    "hi": 20.401,
+    "p_up": 6.991855697148867e-09,
+    "p_lo": 0.999999999441567,
+    "flag": "higher"
+   },
+   "T_1946": {
+    "o": 2,
+    "e": 0.292,
+    "ratio": 6.846,
+    "lo": 0.829,
+    "hi": 24.732,
+    "p_up": 0.03520175785480272,
+    "p_lo": 0.9966572847610363,
+    "flag": "as expected"
+   },
+   "T_ships": {
+    "o": 9,
+    "e": 0.353,
+    "ratio": 25.497,
+    "lo": 11.659,
+    "hi": 48.401,
+    "p_up": 1.7071005521207046e-10,
+    "p_lo": 0.999999999993994,
+    "flag": "higher"
+   },
+   "T_lists": {
+    "o": 11,
+    "e": 0.943,
+    "ratio": 11.661,
+    "lo": 5.821,
+    "hi": 20.865,
+    "p_up": 5.567978110807754e-09,
+    "p_lo": 0.9999999995651073,
+    "flag": "higher"
+   },
+   "L": {
+    "o": 11,
+    "e": 3.141,
+    "ratio": 3.502,
+    "lo": 1.748,
+    "hi": 6.266,
+    "p_up": 0.00042698435907844676,
+    "p_lo": 0.9998909832755759,
+    "flag": "higher"
+   },
+   "L_peace": {
+    "o": 9,
+    "e": 7.138,
+    "ratio": 1.261,
+    "lo": 0.577,
+    "hi": 2.393,
+    "p_up": 0.28912532780670364,
+    "p_lo": 0.8161869660182325,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 0,
+    "e": 0.878,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 4.2,
+    "p_up": 1.0,
+    "p_lo": 0.41544875862880926,
+    "flag": "as expected"
+   },
+   "M_lanes": {
+    "o": 0,
+    "e": 0.885,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 4.168,
+    "p_up": 1.0,
+    "p_lo": 0.41269778876184204,
+    "flag": "as expected"
+   },
+   "losses_1800": 112,
+   "losses_2000": 0,
+   "kinds": {
+    "Ship or boat": 9,
+    "Aircraft": 2,
+    "People lost at sea": 0
+   },
+   "median_year": 1912
+  },
+  {
+   "name": "English Channel",
+   "short": "Channel",
+   "group": "europe",
+   "traffic_pct": 1.34,
+   "lanes_pct": 0.514,
+   "T": {
+    "o": 19,
+    "e": 6.326,
+    "ratio": 3.003,
+    "lo": 1.808,
+    "hi": 4.69,
+    "p_up": 3.551301420632987e-05,
+    "p_lo": 0.9999889923810178,
+    "flag": "higher"
+   },
+   "T_lanes": {
+    "o": 19,
+    "e": 2.428,
+    "ratio": 7.824,
+    "lo": 4.711,
+    "hi": 12.218,
+    "p_up": 1.726303857175562e-11,
+    "p_lo": 0.9999999999979173,
+    "flag": "higher"
+   },
+   "T_1946": {
+    "o": 5,
+    "e": 1.93,
+    "ratio": 2.591,
+    "lo": 0.841,
+    "hi": 6.046,
+    "p_up": 0.04656279967212508,
+    "p_lo": 0.9858303937411984,
+    "flag": "as expected"
+   },
+   "T_ships": {
+    "o": 3,
+    "e": 2.332,
+    "ratio": 1.286,
+    "lo": 0.265,
+    "hi": 3.759,
+    "p_up": 0.4124678599093385,
+    "p_lo": 0.7927797136017811,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 19,
+    "e": 6.232,
+    "ratio": 3.049,
+    "lo": 1.835,
+    "hi": 4.761,
+    "p_up": 2.9176603382734774e-05,
+    "p_lo": 0.9999910869793647,
+    "flag": "higher"
+   },
+   "L": {
+    "o": 18,
+    "e": 18.172,
+    "ratio": 0.991,
+    "lo": 0.587,
+    "hi": 1.565,
+    "p_up": 0.5474120594130614,
+    "p_lo": 0.5461084588530697,
+    "flag": "as expected"
+   },
+   "L_peace": {
+    "o": 11,
+    "e": 3.435,
+    "ratio": 3.203,
+    "lo": 1.599,
+    "hi": 5.731,
+    "p_up": 0.0008779452945812209,
+    "p_lo": 0.9997556019834901,
+    "flag": "higher"
+   },
+   "M": {
+    "o": 3,
+    "e": 5.804,
+    "ratio": 0.517,
+    "lo": 0.107,
+    "hi": 1.511,
+    "p_up": 0.9286703869962287,
+    "p_lo": 0.16961240092778307,
+    "flag": "as expected"
+   },
+   "M_lanes": {
+    "o": 3,
+    "e": 2.228,
+    "ratio": 1.347,
+    "lo": 0.278,
+    "hi": 3.936,
+    "p_up": 0.38471161934404763,
+    "p_lo": 0.8138728508988622,
+    "flag": "as expected"
+   },
+   "losses_1800": 648,
+   "losses_2000": 3,
+   "kinds": {
+    "Ship or boat": 3,
+    "Aircraft": 7,
+    "People lost at sea": 9
+   },
+   "median_year": 1940
+  },
+  {
+   "name": "North Sea",
+   "short": "North Sea",
+   "group": "europe",
+   "traffic_pct": 7.172,
+   "lanes_pct": 3.478,
+   "T": {
+    "o": 21,
+    "e": 33.854,
+    "ratio": 0.62,
+    "lo": 0.384,
+    "hi": 0.948,
+    "p_up": 0.9927967842278471,
+    "p_lo": 0.012342156909755235,
+    "flag": "lower (95%)"
+   },
+   "T_lanes": {
+    "o": 21,
+    "e": 16.417,
+    "ratio": 1.279,
+    "lo": 0.792,
+    "hi": 1.955,
+    "p_up": 0.15637268719710082,
+    "p_lo": 0.8918278731660257,
+    "flag": "as expected"
+   },
+   "T_1946": {
+    "o": 0,
+    "e": 10.328,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 0.357,
+    "p_up": 1.0,
+    "p_lo": 3.269414203439783e-05,
+    "flag": "lower"
+   },
+   "T_ships": {
+    "o": 7,
+    "e": 12.48,
+    "ratio": 0.561,
+    "lo": 0.226,
+    "hi": 1.156,
+    "p_up": 0.9650365912821917,
+    "p_lo": 0.07053206769207468,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 21,
+    "e": 33.352,
+    "ratio": 0.63,
+    "lo": 0.39,
+    "hi": 0.962,
+    "p_up": 0.9910214074696168,
+    "p_lo": 0.015182285310375491,
+    "flag": "lower (95%)"
+   },
+   "L": {
+    "o": 20,
+    "e": 39.037,
+    "ratio": 0.512,
+    "lo": 0.313,
+    "hi": 0.791,
+    "p_up": 0.9997036600607144,
+    "p_lo": 0.0006052454250930712,
+    "flag": "lower"
+   },
+   "L_peace": {
+    "o": 4,
+    "e": 13.603,
+    "ratio": 0.294,
+    "lo": 0.08,
+    "hi": 0.753,
+    "p_up": 0.9993488643105956,
+    "p_lo": 0.0024151317482895133,
+    "flag": "lower (95%)"
+   },
+   "M": {
+    "o": 13,
+    "e": 31.057,
+    "ratio": 0.419,
+    "lo": 0.223,
+    "hi": 0.716,
+    "p_up": 0.9999133806898278,
+    "p_lo": 0.00021723436455886147,
+    "flag": "lower"
+   },
+   "M_lanes": {
+    "o": 13,
+    "e": 15.061,
+    "ratio": 0.863,
+    "lo": 0.46,
+    "hi": 1.476,
+    "p_up": 0.7373964480611083,
+    "p_lo": 0.3574282924580162,
+    "flag": "as expected"
+   },
+   "losses_1800": 1392,
+   "losses_2000": 13,
+   "kinds": {
+    "Ship or boat": 7,
+    "Aircraft": 8,
+    "People lost at sea": 6
+   },
+   "median_year": 1940
+  },
+  {
+   "name": "Baltic Sea",
+   "short": "Baltic",
+   "group": "europe",
+   "traffic_pct": 6.113,
+   "lanes_pct": 2.247,
+   "T": {
+    "o": 5,
+    "e": 28.853,
+    "ratio": 0.173,
+    "lo": 0.056,
+    "hi": 0.404,
+    "p_up": 0.9999999901829669,
+    "p_lo": 5.8904385614639085e-08,
+    "flag": "lower"
+   },
+   "T_lanes": {
+    "o": 5,
+    "e": 10.604,
+    "ratio": 0.472,
+    "lo": 0.153,
+    "hi": 1.1,
+    "p_up": 0.9803117554340492,
+    "p_lo": 0.047414811363929325,
+    "flag": "as expected"
+   },
+   "T_1946": {
+    "o": 2,
+    "e": 8.803,
+    "ratio": 0.227,
+    "lo": 0.028,
+    "hi": 0.821,
+    "p_up": 0.9985263925738492,
+    "p_lo": 0.007297828867550379,
+    "flag": "lower (95%)"
+   },
+   "T_ships": {
+    "o": 1,
+    "e": 10.637,
+    "ratio": 0.094,
+    "lo": 0.002,
+    "hi": 0.524,
+    "p_up": 0.9999759793202982,
+    "p_lo": 0.00027951893198900076,
+    "flag": "lower"
+   },
+   "T_lists": {
+    "o": 5,
+    "e": 28.425,
+    "ratio": 0.176,
+    "lo": 0.057,
+    "hi": 0.41,
+    "p_up": 0.999999985782297,
+    "p_lo": 8.409931320421144e-08,
+    "flag": "lower"
+   },
+   "L": {
+    "o": 4,
+    "e": 6.338,
+    "ratio": 0.631,
+    "lo": 0.172,
+    "hi": 1.616,
+    "p_up": 0.8764998526545186,
+    "p_lo": 0.24236450611120858,
+    "flag": "as expected"
+   },
+   "L_peace": {
+    "o": 3,
+    "e": 3.098,
+    "ratio": 0.968,
+    "lo": 0.2,
+    "hi": 2.83,
+    "p_up": 0.5983612237971946,
+    "p_lo": 0.6253312544461556,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 8,
+    "e": 26.469,
+    "ratio": 0.302,
+    "lo": 0.13,
+    "hi": 0.596,
+    "p_up": 0.9999922792288037,
+    "p_lo": 2.6817973302560083e-05,
+    "flag": "lower"
+   },
+   "M_lanes": {
+    "o": 8,
+    "e": 9.728,
+    "ratio": 0.822,
+    "lo": 0.355,
+    "hi": 1.62,
+    "p_up": 0.7542607137266342,
+    "p_lo": 0.3642782444945148,
+    "flag": "as expected"
+   },
+   "losses_1800": 226,
+   "losses_2000": 8,
+   "kinds": {
+    "Ship or boat": 1,
+    "Aircraft": 2,
+    "People lost at sea": 2
+   },
+   "median_year": 1944
+  },
+  {
+   "name": "Irish and Celtic Seas",
+   "short": "Irish Sea",
+   "group": "europe",
+   "traffic_pct": 1.701,
+   "lanes_pct": 0.716,
+   "T": {
+    "o": 12,
+    "e": 8.027,
+    "ratio": 1.495,
+    "lo": 0.772,
+    "hi": 2.611,
+    "p_up": 0.11390226932642951,
+    "p_lo": 0.9348817065828149,
+    "flag": "as expected"
+   },
+   "T_lanes": {
+    "o": 12,
+    "e": 3.379,
+    "ratio": 3.552,
+    "lo": 1.835,
+    "hi": 6.204,
+    "p_up": 0.0002111375634316849,
+    "p_lo": 0.9999463733457794,
+    "flag": "higher"
+   },
+   "T_1946": {
+    "o": 3,
+    "e": 2.449,
+    "ratio": 1.225,
+    "lo": 0.253,
+    "hi": 3.58,
+    "p_up": 0.44303842151070166,
+    "p_lo": 0.7684212321821676,
+    "flag": "as expected"
+   },
+   "T_ships": {
+    "o": 2,
+    "e": 2.959,
+    "ratio": 0.676,
+    "lo": 0.082,
+    "hi": 2.441,
+    "p_up": 0.7946748639166485,
+    "p_lo": 0.4323920916474284,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 12,
+    "e": 7.908,
+    "ratio": 1.517,
+    "lo": 0.784,
+    "hi": 2.651,
+    "p_up": 0.10541238479462443,
+    "p_lo": 0.9405191239908672,
+    "flag": "as expected"
+   },
+   "L": {
+    "o": 9,
+    "e": 22.155,
+    "ratio": 0.406,
+    "lo": 0.186,
+    "hi": 0.771,
+    "p_up": 0.9994790236517284,
+    "p_lo": 0.0013677543753636797,
+    "flag": "lower (95%)"
+   },
+   "L_peace": {
+    "o": 7,
+    "e": 8.081,
+    "ratio": 0.866,
+    "lo": 0.348,
+    "hi": 1.785,
+    "p_up": 0.6964455514774386,
+    "p_lo": 0.44168136976671285,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 2,
+    "e": 7.364,
+    "ratio": 0.272,
+    "lo": 0.033,
+    "hi": 0.981,
+    "p_up": 0.9947000528799613,
+    "p_lo": 0.022481195556465564,
+    "flag": "lower (95%)"
+   },
+   "M_lanes": {
+    "o": 2,
+    "e": 3.1,
+    "ratio": 0.645,
+    "lo": 0.078,
+    "hi": 2.331,
+    "p_up": 0.815232631602629,
+    "p_lo": 0.40126487940755956,
+    "flag": "as expected"
+   },
+   "losses_1800": 790,
+   "losses_2000": 2,
+   "kinds": {
+    "Ship or boat": 2,
+    "Aircraft": 6,
+    "People lost at sea": 4
+   },
+   "median_year": 1916
+  },
+  {
+   "name": "Bay of Biscay",
+   "short": "Biscay",
+   "group": "europe",
+   "traffic_pct": 2.593,
+   "lanes_pct": 1.122,
+   "T": {
+    "o": 5,
+    "e": 12.238,
+    "ratio": 0.409,
+    "lo": 0.133,
+    "hi": 0.953,
+    "p_up": 0.993568037901308,
+    "p_lo": 0.01750972085177167,
+    "flag": "lower (95%)"
+   },
+   "T_lanes": {
+    "o": 5,
+    "e": 5.296,
+    "ratio": 0.944,
+    "lo": 0.307,
+    "hi": 2.203,
+    "p_up": 0.6097992416643757,
+    "p_lo": 0.5641965997924803,
+    "flag": "as expected"
+   },
+   "T_1946": {
+    "o": 0,
+    "e": 3.734,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 0.988,
+    "p_up": 1.0,
+    "p_lo": 0.02390530913705662,
+    "flag": "lower (95%)"
+   },
+   "T_ships": {
+    "o": 3,
+    "e": 4.511,
+    "ratio": 0.665,
+    "lo": 0.137,
+    "hi": 1.943,
+    "p_up": 0.8277112437251132,
+    "p_lo": 0.34035951545060583,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 5,
+    "e": 12.057,
+    "ratio": 0.415,
+    "lo": 0.135,
+    "hi": 0.968,
+    "p_up": 0.9926944394005841,
+    "p_lo": 0.019631779183780604,
+    "flag": "lower (95%)"
+   },
+   "L": {
+    "o": 5,
+    "e": 12.928,
+    "ratio": 0.387,
+    "lo": 0.126,
+    "hi": 0.903,
+    "p_up": 0.9960619184532611,
+    "p_lo": 0.01124698679585192,
+    "flag": "lower (95%)"
+   },
+   "L_peace": {
+    "o": 1,
+    "e": 8.081,
+    "ratio": 0.124,
+    "lo": 0.003,
+    "hi": 0.689,
+    "p_up": 0.9996907086016668,
+    "p_lo": 0.0028087453011503877,
+    "flag": "lower (95%)"
+   },
+   "M": {
+    "o": 3,
+    "e": 11.227,
+    "ratio": 0.267,
+    "lo": 0.055,
+    "hi": 0.781,
+    "p_up": 0.9989983403483687,
+    "p_lo": 0.004141084221237652,
+    "flag": "lower (95%)"
+   },
+   "M_lanes": {
+    "o": 3,
+    "e": 4.858,
+    "ratio": 0.618,
+    "lo": 0.127,
+    "hi": 1.805,
+    "p_up": 0.8628914095280782,
+    "p_lo": 0.28548847707898395,
+    "flag": "as expected"
+   },
+   "losses_1800": 461,
+   "losses_2000": 3,
+   "kinds": {
+    "Ship or boat": 3,
+    "Aircraft": 0,
+    "People lost at sea": 2
+   },
+   "median_year": 1943
+  },
+  {
+   "name": "Black Sea",
+   "short": "Black Sea",
+   "group": "europe",
+   "traffic_pct": 3.439,
+   "lanes_pct": 1.513,
+   "T": {
+    "o": 1,
+    "e": 16.233,
+    "ratio": 0.062,
+    "lo": 0.002,
+    "hi": 0.343,
+    "p_up": 0.9999999108852232,
+    "p_lo": 1.5357453079525179e-06,
+    "flag": "lower"
+   },
+   "T_lanes": {
+    "o": 1,
+    "e": 7.143,
+    "ratio": 0.14,
+    "lo": 0.004,
+    "hi": 0.78,
+    "p_up": 0.9992095392686295,
+    "p_lo": 0.0064366384037836235,
+    "flag": "lower (95%)"
+   },
+   "T_1946": {
+    "o": 0,
+    "e": 4.953,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 0.745,
+    "p_up": 1.0,
+    "p_lo": 0.007065407319124868,
+    "flag": "lower (95%)"
+   },
+   "T_ships": {
+    "o": 0,
+    "e": 5.984,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 0.616,
+    "p_up": 1.0,
+    "p_lo": 0.0025179133938000656,
+    "flag": "lower (95%)"
+   },
+   "T_lists": {
+    "o": 1,
+    "e": 15.993,
+    "ratio": 0.063,
+    "lo": 0.002,
+    "hi": 0.348,
+    "p_up": 0.9999998866280663,
+    "p_lo": 1.926483011040075e-06,
+    "flag": "lower"
+   },
+   "L": {
+    "o": 1,
+    "e": 2.44,
+    "ratio": 0.41,
+    "lo": 0.01,
+    "hi": 2.284,
+    "p_up": 0.9128234414685739,
+    "p_lo": 0.2998716528634775,
+    "flag": "as expected"
+   },
+   "L_peace": {
+    "o": 0,
+    "e": 0.875,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 4.214,
+    "p_up": 1.0,
+    "p_lo": 0.4166677136418322,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 5,
+    "e": 14.892,
+    "ratio": 0.336,
+    "lo": 0.109,
+    "hi": 0.784,
+    "p_up": 0.9990708575122144,
+    "p_lo": 0.003009140026122326,
+    "flag": "lower (95%)"
+   },
+   "M_lanes": {
+    "o": 5,
+    "e": 6.553,
+    "ratio": 0.763,
+    "lo": 0.248,
+    "hi": 1.781,
+    "p_up": 0.7821613947834993,
+    "p_lo": 0.3614268732560705,
+    "flag": "as expected"
+   },
+   "losses_1800": 87,
+   "losses_2000": 5,
+   "kinds": {
+    "Ship or boat": 0,
+    "Aircraft": 0,
+    "People lost at sea": 1
+   },
+   "median_year": 1942
+  },
+  {
+   "name": "Mediterranean Sea",
+   "short": "Mediterranean",
+   "group": "europe",
+   "traffic_pct": 14.353,
+   "lanes_pct": 8.339,
+   "T": {
+    "o": 41,
+    "e": 67.748,
+    "ratio": 0.605,
+    "lo": 0.434,
+    "hi": 0.821,
+    "p_up": 0.9998137296939481,
+    "p_lo": 0.0003180154280929138,
+    "flag": "lower"
+   },
+   "T_lanes": {
+    "o": 41,
+    "e": 39.361,
+    "ratio": 1.042,
+    "lo": 0.747,
+    "hi": 1.413,
+    "p_up": 0.41793773658031164,
+    "p_lo": 0.6421824031379884,
+    "flag": "as expected"
+   },
+   "T_1946": {
+    "o": 11,
+    "e": 20.669,
+    "ratio": 0.532,
+    "lo": 0.266,
+    "hi": 0.952,
+    "p_up": 0.9924895026954611,
+    "p_lo": 0.015289902377524298,
+    "flag": "lower (95%)"
+   },
+   "T_ships": {
+    "o": 4,
+    "e": 24.975,
+    "ratio": 0.16,
+    "lo": 0.044,
+    "hi": 0.41,
+    "p_up": 0.9999999582152324,
+    "p_lo": 2.726378199329252e-07,
+    "flag": "lower"
+   },
+   "T_lists": {
+    "o": 41,
+    "e": 66.743,
+    "ratio": 0.614,
+    "lo": 0.441,
+    "hi": 0.833,
+    "p_up": 0.9997147863650814,
+    "p_lo": 0.0004802142087472241,
+    "flag": "lower"
+   },
+   "L": {
+    "o": 40,
+    "e": 48.264,
+    "ratio": 0.829,
+    "lo": 0.592,
+    "hi": 1.129,
+    "p_up": 0.8993732053488339,
+    "p_lo": 0.1303113892851125,
+    "flag": "as expected"
+   },
+   "L_peace": {
+    "o": 24,
+    "e": 11.785,
+    "ratio": 2.036,
+    "lo": 1.305,
+    "hi": 3.03,
+    "p_up": 0.001166153623871028,
+    "p_lo": 0.9994664023715769,
+    "flag": "higher (95%)"
+   },
+   "M": {
+    "o": 19,
+    "e": 62.15,
+    "ratio": 0.306,
+    "lo": 0.184,
+    "hi": 0.477,
+    "p_up": 0.9999999999574526,
+    "p_lo": 1.4227505348850747e-10,
+    "flag": "lower"
+   },
+   "M_lanes": {
+    "o": 19,
+    "e": 36.109,
+    "ratio": 0.526,
+    "lo": 0.317,
+    "hi": 0.822,
+    "p_up": 0.9993255524577459,
+    "p_lo": 0.0013469406230693735,
+    "flag": "lower (95%)"
+   },
+   "losses_1800": 1721,
+   "losses_2000": 19,
+   "kinds": {
+    "Ship or boat": 4,
+    "Aircraft": 18,
+    "People lost at sea": 19
+   },
+   "median_year": 1942
+  },
+  {
+   "name": "Gulf of Mexico",
+   "short": "Gulf of Mexico",
+   "group": "americas",
+   "traffic_pct": 1.214,
+   "lanes_pct": 1.819,
+   "T": {
+    "o": 11,
+    "e": 5.732,
+    "ratio": 1.919,
+    "lo": 0.958,
+    "hi": 3.434,
+    "p_up": 0.03251432424859378,
+    "p_lo": 0.9853014476521993,
+    "flag": "as expected"
+   },
+   "T_lanes": {
+    "o": 11,
+    "e": 8.588,
+    "ratio": 1.281,
+    "lo": 0.639,
+    "hi": 2.292,
+    "p_up": 0.24642234731555887,
+    "p_lo": 0.8410622100319077,
+    "flag": "as expected"
+   },
+   "T_1946": {
+    "o": 6,
+    "e": 1.749,
+    "ratio": 3.431,
+    "lo": 1.259,
+    "hi": 7.468,
+    "p_up": 0.009103214143919514,
+    "p_lo": 0.9978076342326376,
+    "flag": "higher (95%)"
+   },
+   "T_ships": {
+    "o": 1,
+    "e": 2.113,
+    "ratio": 0.473,
+    "lo": 0.012,
+    "hi": 2.637,
+    "p_up": 0.8791298620072968,
+    "p_lo": 0.37627339904853907,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 11,
+    "e": 5.647,
+    "ratio": 1.948,
+    "lo": 0.972,
+    "hi": 3.485,
+    "p_up": 0.029699034505173052,
+    "p_lo": 0.9867576878049147,
+    "flag": "as expected"
+   },
+   "L": {
+    "o": 10,
+    "e": 3.281,
+    "ratio": 3.048,
+    "lo": 1.462,
+    "hi": 5.605,
+    "p_up": 0.002106999629497016,
+    "p_lo": 0.9993909627324028,
+    "flag": "higher (95%)"
+   },
+   "L_peace": {
+    "o": 8,
+    "e": 4.31,
+    "ratio": 1.856,
+    "lo": 0.801,
+    "hi": 3.657,
+    "p_up": 0.07176486977809536,
+    "p_lo": 0.9679071030760288,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 20,
+    "e": 5.258,
+    "ratio": 3.804,
+    "lo": 2.323,
+    "hi": 5.874,
+    "p_up": 7.417310478803662e-07,
+    "p_lo": 0.9999998169222297,
+    "flag": "higher"
+   },
+   "M_lanes": {
+    "o": 20,
+    "e": 7.878,
+    "ratio": 2.539,
+    "lo": 1.551,
+    "hi": 3.921,
+    "p_up": 0.00020845625710381893,
+    "p_lo": 0.9999236939060174,
+    "flag": "higher"
+   },
+   "losses_1800": 117,
+   "losses_2000": 20,
+   "kinds": {
+    "Ship or boat": 1,
+    "Aircraft": 8,
+    "People lost at sea": 2
+   },
+   "median_year": 1959
+  },
+  {
+   "name": "Caribbean Sea",
+   "short": "Caribbean",
+   "group": "americas",
+   "traffic_pct": 2.175,
+   "lanes_pct": 2.924,
+   "T": {
+    "o": 27,
+    "e": 10.265,
+    "ratio": 2.63,
+    "lo": 1.733,
+    "hi": 3.827,
+    "p_up": 1.0133094674512051e-05,
+    "p_lo": 0.999996352833219,
+    "flag": "higher"
+   },
+   "T_lanes": {
+    "o": 27,
+    "e": 13.799,
+    "ratio": 1.957,
+    "lo": 1.289,
+    "hi": 2.847,
+    "p_up": 0.0010693405896578224,
+    "p_lo": 0.9994880932231988,
+    "flag": "higher (95%)"
+   },
+   "T_1946": {
+    "o": 11,
+    "e": 3.132,
+    "ratio": 3.512,
+    "lo": 1.753,
+    "hi": 6.285,
+    "p_up": 0.0004169564755500638,
+    "p_lo": 0.9998938424850261,
+    "flag": "higher"
+   },
+   "T_ships": {
+    "o": 7,
+    "e": 3.784,
+    "ratio": 1.85,
+    "lo": 0.744,
+    "hi": 3.811,
+    "p_up": 0.08942897354734966,
+    "p_lo": 0.9606854112073933,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 27,
+    "e": 10.113,
+    "ratio": 2.67,
+    "lo": 1.759,
+    "hi": 3.884,
+    "p_up": 7.818833259402714e-06,
+    "p_lo": 0.9999972264490004,
+    "flag": "higher"
+   },
+   "L": {
+    "o": 21,
+    "e": 6.029,
+    "ratio": 3.483,
+    "lo": 2.156,
+    "hi": 5.324,
+    "p_up": 1.5686170035759543e-06,
+    "p_lo": 0.9999995766845189,
+    "flag": "higher"
+   },
+   "L_peace": {
+    "o": 16,
+    "e": 2.357,
+    "ratio": 6.788,
+    "lo": 3.88,
+    "hi": 11.024,
+    "p_up": 4.761891812527935e-09,
+    "p_lo": 0.9999999993454713,
+    "flag": "higher"
+   },
+   "M": {
+    "o": 5,
+    "e": 9.417,
+    "ratio": 0.531,
+    "lo": 0.172,
+    "hi": 1.239,
+    "p_up": 0.9575832585223869,
+    "p_lo": 0.0926031865149272,
+    "flag": "as expected"
+   },
+   "M_lanes": {
+    "o": 5,
+    "e": 12.659,
+    "ratio": 0.395,
+    "lo": 0.128,
+    "hi": 0.922,
+    "p_up": 0.9952260716476092,
+    "p_lo": 0.013385002751782117,
+    "flag": "lower (95%)"
+   },
+   "losses_1800": 215,
+   "losses_2000": 5,
+   "kinds": {
+    "Ship or boat": 7,
+    "Aircraft": 9,
+    "People lost at sea": 11
+   },
+   "median_year": 1942
+  },
+  {
+   "name": "US Atlantic coast",
+   "short": "US Atlantic",
+   "group": "americas",
+   "traffic_pct": 1.479,
+   "lanes_pct": 1.573,
+   "T": {
+    "o": 24,
+    "e": 6.98,
+    "ratio": 3.438,
+    "lo": 2.203,
+    "hi": 5.116,
+    "p_up": 3.699074862310709e-07,
+    "p_lo": 0.9999998981686902,
+    "flag": "higher"
+   },
+   "T_lanes": {
+    "o": 24,
+    "e": 7.425,
+    "ratio": 3.232,
+    "lo": 2.071,
+    "hi": 4.809,
+    "p_up": 1.0714083070503404e-06,
+    "p_lo": 0.9999996866023598,
+    "flag": "higher"
+   },
+   "T_1946": {
+    "o": 9,
+    "e": 2.129,
+    "ratio": 4.226,
+    "lo": 1.933,
+    "hi": 8.023,
+    "p_up": 0.0003725485871879598,
+    "p_lo": 0.9999224478597524,
+    "flag": "higher"
+   },
+   "T_ships": {
+    "o": 4,
+    "e": 2.573,
+    "ratio": 1.555,
+    "lo": 0.424,
+    "hi": 3.98,
+    "p_up": 0.25815139917179514,
+    "p_lo": 0.8812043417756181,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 22,
+    "e": 6.876,
+    "ratio": 3.199,
+    "lo": 2.005,
+    "hi": 4.844,
+    "p_up": 3.435003331231978e-06,
+    "p_lo": 0.9999989899620505,
+    "flag": "higher"
+   },
+   "L": {
+    "o": 23,
+    "e": 19.491,
+    "ratio": 1.18,
+    "lo": 0.748,
+    "hi": 1.771,
+    "p_up": 0.24127446708878098,
+    "p_lo": 0.8202175389158171,
+    "flag": "as expected"
+   },
+   "L_peace": {
+    "o": 19,
+    "e": 33.402,
+    "ratio": 0.569,
+    "lo": 0.342,
+    "hi": 0.888,
+    "p_up": 0.9973366384468481,
+    "p_lo": 0.004955297470969274,
+    "flag": "lower (95%)"
+   },
+   "M": {
+    "o": 94,
+    "e": 6.403,
+    "ratio": 14.68,
+    "lo": 11.863,
+    "hi": 17.965,
+    "p_up": 1.0321583386814487e-73,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "M_lanes": {
+    "o": 94,
+    "e": 6.812,
+    "ratio": 13.8,
+    "lo": 11.152,
+    "hi": 16.887,
+    "p_up": 2.3125386972662285e-71,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "losses_1800": 695,
+   "losses_2000": 94,
+   "kinds": {
+    "Ship or boat": 4,
+    "Aircraft": 13,
+    "People lost at sea": 7
+   },
+   "median_year": 1940
+  },
+  {
+   "name": "Newfoundland and the Grand Banks",
+   "short": "Grand Banks",
+   "group": "americas",
+   "traffic_pct": 1.299,
+   "lanes_pct": 1.029,
+   "T": {
+    "o": 18,
+    "e": 6.129,
+    "ratio": 2.937,
+    "lo": 1.741,
+    "hi": 4.641,
+    "p_up": 7.407879392360182e-05,
+    "p_lo": 0.9999766184663855,
+    "flag": "higher"
+   },
+   "T_lanes": {
+    "o": 18,
+    "e": 4.855,
+    "ratio": 3.708,
+    "lo": 2.197,
+    "hi": 5.86,
+    "p_up": 3.6472872785406137e-06,
+    "p_lo": 0.9999990829874162,
+    "flag": "higher"
+   },
+   "T_1946": {
+    "o": 5,
+    "e": 1.87,
+    "ratio": 2.674,
+    "lo": 0.868,
+    "hi": 6.24,
+    "p_up": 0.04167755359458918,
+    "p_lo": 0.9876870909092842,
+    "flag": "as expected"
+   },
+   "T_ships": {
+    "o": 10,
+    "e": 2.259,
+    "ratio": 4.426,
+    "lo": 2.122,
+    "hi": 8.139,
+    "p_up": 0.00012492549256975404,
+    "p_lo": 0.9999748490065328,
+    "flag": "higher"
+   },
+   "T_lists": {
+    "o": 18,
+    "e": 6.038,
+    "ratio": 2.981,
+    "lo": 1.767,
+    "hi": 4.711,
+    "p_up": 6.158733960049895e-05,
+    "p_lo": 0.9999808412084165,
+    "flag": "higher"
+   },
+   "L": {
+    "o": 17,
+    "e": 7.319,
+    "ratio": 2.323,
+    "lo": 1.353,
+    "hi": 3.719,
+    "p_up": 0.0015269636128222956,
+    "p_lo": 0.9993983176678369,
+    "flag": "higher (95%)"
+   },
+   "L_peace": {
+    "o": 14,
+    "e": 8.889,
+    "ratio": 1.575,
+    "lo": 0.861,
+    "hi": 2.642,
+    "p_up": 0.06841326699201157,
+    "p_lo": 0.962007903409646,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 1,
+    "e": 5.623,
+    "ratio": 0.178,
+    "lo": 0.005,
+    "hi": 0.991,
+    "p_up": 0.9963850994991079,
+    "p_lo": 0.023940368824123547,
+    "flag": "lower (95%)"
+   },
+   "M_lanes": {
+    "o": 1,
+    "e": 4.454,
+    "ratio": 0.225,
+    "lo": 0.006,
+    "hi": 1.251,
+    "p_up": 0.9883629948365404,
+    "p_lo": 0.0634631659046055,
+    "flag": "as expected"
+   },
+   "losses_1800": 261,
+   "losses_2000": 1,
+   "kinds": {
+    "Ship or boat": 10,
+    "Aircraft": 6,
+    "People lost at sea": 2
+   },
+   "median_year": 1929
+  },
+  {
+   "name": "Gulf of Alaska",
+   "short": "Gulf of Alaska",
+   "group": "americas",
+   "traffic_pct": 0.576,
+   "lanes_pct": 0.671,
+   "T": {
+    "o": 5,
+    "e": 2.72,
+    "ratio": 1.838,
+    "lo": 0.597,
+    "hi": 4.29,
+    "p_up": 0.14005728215041105,
+    "p_lo": 0.9416612661501933,
+    "flag": "as expected"
+   },
+   "T_lanes": {
+    "o": 5,
+    "e": 3.168,
+    "ratio": 1.578,
+    "lo": 0.512,
+    "hi": 3.683,
+    "p_up": 0.21378856274270364,
+    "p_lo": 0.8981575583744745,
+    "flag": "as expected"
+   },
+   "T_1946": {
+    "o": 5,
+    "e": 0.83,
+    "ratio": 6.026,
+    "lo": 1.957,
+    "hi": 14.062,
+    "p_up": 0.0016536015212980644,
+    "p_lo": 0.9997761553504607,
+    "flag": "higher (95%)"
+   },
+   "T_ships": {
+    "o": 0,
+    "e": 1.003,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 3.679,
+    "p_up": 1.0,
+    "p_lo": 0.36690605344512406,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 5,
+    "e": 2.679,
+    "ratio": 1.866,
+    "lo": 0.606,
+    "hi": 4.355,
+    "p_up": 0.13405568693357206,
+    "p_lo": 0.9449018007923492,
+    "flag": "as expected"
+   },
+   "L": {
+    "o": 5,
+    "e": 34.494,
+    "ratio": 0.145,
+    "lo": 0.047,
+    "hi": 0.338,
+    "p_up": 0.9999999999304982,
+    "p_lo": 4.95081764065944e-10,
+    "flag": "lower"
+   },
+   "L_peace": {
+    "o": 5,
+    "e": 75.492,
+    "ratio": 0.066,
+    "lo": 0.022,
+    "hi": 0.155,
+    "p_up": 1.0,
+    "p_lo": 3.5797297292653355e-26,
+    "flag": "lower"
+   },
+   "M": {
+    "o": 87,
+    "e": 2.495,
+    "ratio": 34.868,
+    "lo": 27.928,
+    "hi": 43.01,
+    "p_up": 1.4180612608140614e-99,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "M_lanes": {
+    "o": 87,
+    "e": 2.907,
+    "ratio": 29.932,
+    "lo": 23.974,
+    "hi": 36.92,
+    "p_up": 5.538868820995918e-94,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "losses_1800": 1230,
+   "losses_2000": 87,
+   "kinds": {
+    "Ship or boat": 0,
+    "Aircraft": 4,
+    "People lost at sea": 1
+   },
+   "median_year": 1979
+  },
+  {
+   "name": "North Atlantic, open ocean",
+   "short": "N. Atlantic",
+   "group": "ocean",
+   "traffic_pct": 14.506,
+   "lanes_pct": 12.668,
+   "T": {
+    "o": 68,
+    "e": 68.466,
+    "ratio": 0.993,
+    "lo": 0.771,
+    "hi": 1.259,
+    "p_up": 0.5385618998138604,
+    "p_lo": 0.509680923153195,
+    "flag": "as expected"
+   },
+   "T_lanes": {
+    "o": 68,
+    "e": 59.792,
+    "ratio": 1.137,
+    "lo": 0.883,
+    "hi": 1.442,
+    "p_up": 0.1592312432359106,
+    "p_lo": 0.8689488482170765,
+    "flag": "as expected"
+   },
+   "T_1946": {
+    "o": 16,
+    "e": 20.888,
+    "ratio": 0.766,
+    "lo": 0.438,
+    "hi": 1.244,
+    "p_up": 0.8844289937242307,
+    "p_lo": 0.16880511203607762,
+    "flag": "as expected"
+   },
+   "T_ships": {
+    "o": 42,
+    "e": 25.24,
+    "ratio": 1.664,
+    "lo": 1.199,
+    "hi": 2.249,
+    "p_up": 0.0013992791393022755,
+    "p_lo": 0.9992010307918515,
+    "flag": "higher (95%)"
+   },
+   "T_lists": {
+    "o": 67,
+    "e": 67.451,
+    "ratio": 0.993,
+    "lo": 0.77,
+    "hi": 1.261,
+    "p_up": 0.5381041069999106,
+    "p_lo": 0.510500448704719,
+    "flag": "as expected"
+   },
+   "L": {
+    "o": 64,
+    "e": 100.902,
+    "ratio": 0.634,
+    "lo": 0.488,
+    "hi": 0.81,
+    "p_up": 0.9999656527001253,
+    "p_lo": 5.548175786746337e-05,
+    "flag": "lower"
+   },
+   "L_peace": {
+    "o": 53,
+    "e": 60.946,
+    "ratio": 0.87,
+    "lo": 0.651,
+    "hi": 1.137,
+    "p_up": 0.8613702136337524,
+    "p_lo": 0.17044720035628227,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 18,
+    "e": 62.809,
+    "ratio": 0.287,
+    "lo": 0.17,
+    "hi": 0.453,
+    "p_up": 0.9999999999925618,
+    "p_lo": 2.6513028328061302e-11,
+    "flag": "lower"
+   },
+   "M_lanes": {
+    "o": 18,
+    "e": 54.852,
+    "ratio": 0.328,
+    "lo": 0.194,
+    "hi": 0.519,
+    "p_up": 0.9999999977627657,
+    "p_lo": 6.993892127415812e-09,
+    "flag": "lower"
+   },
+   "losses_1800": 3598,
+   "losses_2000": 18,
+   "kinds": {
+    "Ship or boat": 42,
+    "Aircraft": 19,
+    "People lost at sea": 7
+   },
+   "median_year": 1907
+  },
+  {
+   "name": "South China Sea",
+   "short": "S. China Sea",
+   "group": "asia",
+   "traffic_pct": 1.802,
+   "lanes_pct": 2.931,
+   "T": {
+    "o": 8,
+    "e": 8.504,
+    "ratio": 0.941,
+    "lo": 0.406,
+    "hi": 1.854,
+    "p_up": 0.6148806904403178,
+    "p_lo": 0.5225972804796108,
+    "flag": "as expected"
+   },
+   "T_lanes": {
+    "o": 8,
+    "e": 13.836,
+    "ratio": 0.578,
+    "lo": 0.25,
+    "hi": 1.139,
+    "p_up": 0.9654158338458028,
+    "p_lo": 0.06721236545362458,
+    "flag": "as expected"
+   },
+   "T_1946": {
+    "o": 3,
+    "e": 2.594,
+    "ratio": 1.156,
+    "lo": 0.238,
+    "hi": 3.379,
+    "p_up": 0.4801503505077421,
+    "p_lo": 0.7372310365703953,
+    "flag": "as expected"
+   },
+   "T_ships": {
+    "o": 2,
+    "e": 3.135,
+    "ratio": 0.638,
+    "lo": 0.077,
+    "hi": 2.305,
+    "p_up": 0.8201061499112617,
+    "p_lo": 0.3936692270536535,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 8,
+    "e": 8.378,
+    "ratio": 0.955,
+    "lo": 0.412,
+    "hi": 1.882,
+    "p_up": 0.5983908007588945,
+    "p_lo": 0.5399949587571933,
+    "flag": "as expected"
+   },
+   "L": {
+    "o": 8,
+    "e": 16.125,
+    "ratio": 0.496,
+    "lo": 0.214,
+    "hi": 0.978,
+    "p_up": 0.9907250258204454,
+    "p_lo": 0.020532033126156642,
+    "flag": "lower (95%)"
+   },
+   "L_peace": {
+    "o": 4,
+    "e": 7.071,
+    "ratio": 0.566,
+    "lo": 0.154,
+    "hi": 1.448,
+    "p_up": 0.9218651722216281,
+    "p_lo": 0.16660604245105856,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 21,
+    "e": 7.801,
+    "ratio": 2.692,
+    "lo": 1.666,
+    "hi": 4.115,
+    "p_up": 6.667694412421633e-05,
+    "p_lo": 0.9999768665049489,
+    "flag": "higher"
+   },
+   "M_lanes": {
+    "o": 21,
+    "e": 12.693,
+    "ratio": 1.654,
+    "lo": 1.024,
+    "hi": 2.529,
+    "p_up": 0.020026467721741027,
+    "p_lo": 0.9889694204529574,
+    "flag": "higher (95%)"
+   },
+   "losses_1800": 575,
+   "losses_2000": 21,
+   "kinds": {
+    "Ship or boat": 2,
+    "Aircraft": 3,
+    "People lost at sea": 3
+   },
+   "median_year": 1944
+  },
+  {
+   "name": "East China and Yellow Seas",
+   "short": "E. China Sea",
+   "group": "asia",
+   "traffic_pct": 3.857,
+   "lanes_pct": 2.626,
+   "T": {
+    "o": 2,
+    "e": 18.207,
+    "ratio": 0.11,
+    "lo": 0.013,
+    "hi": 0.397,
+    "p_up": 0.9999997621331357,
+    "p_lo": 2.2905252902562156e-06,
+    "flag": "lower"
+   },
+   "T_lanes": {
+    "o": 2,
+    "e": 12.395,
+    "ratio": 0.161,
+    "lo": 0.02,
+    "hi": 0.583,
+    "p_up": 0.9999445779184171,
+    "p_lo": 0.0003732704791398913,
+    "flag": "lower"
+   },
+   "T_1946": {
+    "o": 0,
+    "e": 5.555,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 0.664,
+    "p_up": 1.0,
+    "p_lo": 0.0038695266377784076,
+    "flag": "lower (95%)"
+   },
+   "T_ships": {
+    "o": 0,
+    "e": 6.712,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 0.55,
+    "p_up": 1.0,
+    "p_lo": 0.0012164284179636113,
+    "flag": "lower (95%)"
+   },
+   "T_lists": {
+    "o": 2,
+    "e": 17.937,
+    "ratio": 0.112,
+    "lo": 0.014,
+    "hi": 0.403,
+    "p_up": 0.9999996927783701,
+    "p_lo": 2.917009616024223e-06,
+    "flag": "lower"
+   },
+   "L": {
+    "o": 0,
+    "e": 7.852,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 0.47,
+    "p_up": 1.0,
+    "p_lo": 0.00038885904344679496,
+    "flag": "lower"
+   },
+   "L_peace": {
+    "o": 0,
+    "e": 5.859,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 0.63,
+    "p_up": 1.0,
+    "p_lo": 0.0028544121775270197,
+    "flag": "lower (95%)"
+   },
+   "M": {
+    "o": 18,
+    "e": 16.702,
+    "ratio": 1.078,
+    "lo": 0.639,
+    "hi": 1.703,
+    "p_up": 0.40735199850472276,
+    "p_lo": 0.6817567044596289,
+    "flag": "as expected"
+   },
+   "M_lanes": {
+    "o": 18,
+    "e": 11.371,
+    "ratio": 1.583,
+    "lo": 0.938,
+    "hi": 2.502,
+    "p_up": 0.04192467692842447,
+    "p_lo": 0.9762612272102614,
+    "flag": "as expected"
+   },
+   "losses_1800": 280,
+   "losses_2000": 18,
+   "kinds": {
+    "Ship or boat": 0,
+    "Aircraft": 0,
+    "People lost at sea": 2
+   },
+   "median_year": 1608
+  },
+  {
+   "name": "Sea of Japan",
+   "short": "Sea of Japan",
+   "group": "asia",
+   "traffic_pct": 2.474,
+   "lanes_pct": 1.336,
+   "T": {
+    "o": 0,
+    "e": 11.675,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 0.316,
+    "p_up": 1.0,
+    "p_lo": 8.499858920842854e-06,
+    "flag": "lower"
+   },
+   "T_lanes": {
+    "o": 0,
+    "e": 6.308,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 0.585,
+    "p_up": 1.0,
+    "p_lo": 0.0018216532768446266,
+    "flag": "lower (95%)"
+   },
+   "T_1946": {
+    "o": 0,
+    "e": 3.562,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 1.036,
+    "p_up": 1.0,
+    "p_lo": 0.028381860619636438,
+    "flag": "as expected"
+   },
+   "T_ships": {
+    "o": 0,
+    "e": 4.304,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 0.857,
+    "p_up": 1.0,
+    "p_lo": 0.013513184593949028,
+    "flag": "lower (95%)"
+   },
+   "T_lists": {
+    "o": 0,
+    "e": 11.502,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 0.321,
+    "p_up": 1.0,
+    "p_lo": 1.0106740616338717e-05,
+    "flag": "lower"
+   },
+   "L": {
+    "o": 0,
+    "e": 2.047,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 1.802,
+    "p_up": 1.0,
+    "p_lo": 0.1290952046116339,
+    "flag": "as expected"
+   },
+   "L_peace": {
+    "o": 0,
+    "e": 1.886,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 1.956,
+    "p_up": 1.0,
+    "p_lo": 0.15173502124333677,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 4,
+    "e": 10.711,
+    "ratio": 0.373,
+    "lo": 0.102,
+    "hi": 0.956,
+    "p_up": 0.9938918510048453,
+    "p_lo": 0.018338764544233572,
+    "flag": "lower (95%)"
+   },
+   "M_lanes": {
+    "o": 4,
+    "e": 5.787,
+    "ratio": 0.691,
+    "lo": 0.188,
+    "hi": 1.77,
+    "p_up": 0.8287332060361812,
+    "p_lo": 0.3146068613895107,
+    "flag": "as expected"
+   },
+   "losses_1800": 73,
+   "losses_2000": 4,
+   "kinds": {
+    "Ship or boat": 0,
+    "Aircraft": 0,
+    "People lost at sea": 0
+   },
+   "median_year": null
+  },
+  {
+   "name": "Indonesian seas",
+   "short": "Indonesian seas",
+   "group": "asia",
+   "traffic_pct": 1.297,
+   "lanes_pct": 3.699,
+   "T": {
+    "o": 8,
+    "e": 6.121,
+    "ratio": 1.307,
+    "lo": 0.564,
+    "hi": 2.575,
+    "p_up": 0.27282552748531075,
+    "p_lo": 0.8345061521636489,
+    "flag": "as expected"
+   },
+   "T_lanes": {
+    "o": 8,
+    "e": 17.46,
+    "ratio": 0.458,
+    "lo": 0.198,
+    "hi": 0.903,
+    "p_up": 0.9959253699043371,
+    "p_lo": 0.009671632636603106,
+    "flag": "lower (95%)"
+   },
+   "T_1946": {
+    "o": 2,
+    "e": 1.867,
+    "ratio": 1.071,
+    "lo": 0.13,
+    "hi": 3.869,
+    "p_up": 0.5569128492959498,
+    "p_lo": 0.7125152808751127,
+    "flag": "as expected"
+   },
+   "T_ships": {
+    "o": 3,
+    "e": 2.256,
+    "ratio": 1.33,
+    "lo": 0.274,
+    "hi": 3.885,
+    "p_up": 0.392375974485014,
+    "p_lo": 0.8081448379036924,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 8,
+    "e": 6.03,
+    "ratio": 1.327,
+    "lo": 0.573,
+    "hi": 2.614,
+    "p_up": 0.2601771721232805,
+    "p_lo": 0.8441119630734708,
+    "flag": "as expected"
+   },
+   "L": {
+    "o": 8,
+    "e": 5.048,
+    "ratio": 1.585,
+    "lo": 0.684,
+    "hi": 3.123,
+    "p_up": 0.13842260246748997,
+    "p_lo": 0.9287343653625337,
+    "flag": "as expected"
+   },
+   "L_peace": {
+    "o": 3,
+    "e": 1.549,
+    "ratio": 1.937,
+    "lo": 0.399,
+    "hi": 5.66,
+    "p_up": 0.20352482804358915,
+    "p_lo": 0.9280706272381655,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 10,
+    "e": 5.615,
+    "ratio": 1.781,
+    "lo": 0.854,
+    "hi": 3.275,
+    "p_up": 0.059969571997668746,
+    "p_lo": 0.9713070206563087,
+    "flag": "as expected"
+   },
+   "M_lanes": {
+    "o": 10,
+    "e": 16.018,
+    "ratio": 0.624,
+    "lo": 0.299,
+    "hi": 1.148,
+    "p_up": 0.957077552673204,
+    "p_lo": 0.07679429366556866,
+    "flag": "as expected"
+   },
+   "losses_1800": 180,
+   "losses_2000": 10,
+   "kinds": {
+    "Ship or boat": 3,
+    "Aircraft": 5,
+    "People lost at sea": 0
+   },
+   "median_year": 1944
+  },
+  {
+   "name": "Malacca Strait and Andaman Sea",
+   "short": "Malacca",
+   "group": "asia",
+   "traffic_pct": 0.272,
+   "lanes_pct": 0.514,
+   "T": {
+    "o": 4,
+    "e": 1.282,
+    "ratio": 3.12,
+    "lo": 0.85,
+    "hi": 7.988,
+    "p_up": 0.04133473310271734,
+    "p_lo": 0.9899052864520244,
+    "flag": "as expected"
+   },
+   "T_lanes": {
+    "o": 4,
+    "e": 2.424,
+    "ratio": 1.65,
+    "lo": 0.45,
+    "hi": 4.225,
+    "p_up": 0.22636189763226355,
+    "p_lo": 0.9010650926867804,
+    "flag": "as expected"
+   },
+   "T_1946": {
+    "o": 1,
+    "e": 0.391,
+    "ratio": 2.556,
+    "lo": 0.065,
+    "hi": 14.244,
+    "p_up": 0.32373055713635346,
+    "p_lo": 0.9408014991374465,
+    "flag": "as expected"
+   },
+   "T_ships": {
+    "o": 1,
+    "e": 0.473,
+    "ratio": 2.116,
+    "lo": 0.054,
+    "hi": 11.788,
+    "p_up": 0.3766556195846405,
+    "p_lo": 0.9179719262653275,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 4,
+    "e": 1.263,
+    "ratio": 3.167,
+    "lo": 0.863,
+    "hi": 8.108,
+    "p_up": 0.039505120734104476,
+    "p_lo": 0.9904874147326811,
+    "flag": "as expected"
+   },
+   "L": {
+    "o": 4,
+    "e": 1.346,
+    "ratio": 2.972,
+    "lo": 0.81,
+    "hi": 7.608,
+    "p_up": 0.04783518190489602,
+    "p_lo": 0.9877689710604663,
+    "flag": "as expected"
+   },
+   "L_peace": {
+    "o": 3,
+    "e": 0.606,
+    "ratio": 4.95,
+    "lo": 1.021,
+    "hi": 14.465,
+    "p_up": 0.023721369577409914,
+    "p_lo": 0.9965200979591808,
+    "flag": "higher (95%)"
+   },
+   "M": {
+    "o": 1,
+    "e": 1.176,
+    "ratio": 0.85,
+    "lo": 0.022,
+    "hi": 4.737,
+    "p_up": 0.6915536970439018,
+    "p_lo": 0.6712431607014125,
+    "flag": "as expected"
+   },
+   "M_lanes": {
+    "o": 1,
+    "e": 2.224,
+    "ratio": 0.45,
+    "lo": 0.011,
+    "hi": 2.505,
+    "p_up": 0.8918186088858497,
+    "p_lo": 0.34877095378482703,
+    "flag": "as expected"
+   },
+   "losses_1800": 48,
+   "losses_2000": 1,
+   "kinds": {
+    "Ship or boat": 1,
+    "Aircraft": 3,
+    "People lost at sea": 0
+   },
+   "median_year": 1939
+  },
+  {
+   "name": "Bay of Bengal",
+   "short": "Bay of Bengal",
+   "group": "asia",
+   "traffic_pct": 0.772,
+   "lanes_pct": 1.282,
+   "T": {
+    "o": 1,
+    "e": 3.644,
+    "ratio": 0.274,
+    "lo": 0.007,
+    "hi": 1.529,
+    "p_up": 0.9738504726659272,
+    "p_lo": 0.12143642185900061,
+    "flag": "as expected"
+   },
+   "T_lanes": {
+    "o": 1,
+    "e": 6.05,
+    "ratio": 0.165,
+    "lo": 0.004,
+    "hi": 0.921,
+    "p_up": 0.9976429174133853,
+    "p_lo": 0.016618211526671582,
+    "flag": "lower (95%)"
+   },
+   "T_1946": {
+    "o": 0,
+    "e": 1.112,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 3.318,
+    "p_up": 1.0,
+    "p_lo": 0.32899731902977997,
+    "flag": "as expected"
+   },
+   "T_ships": {
+    "o": 1,
+    "e": 1.343,
+    "ratio": 0.744,
+    "lo": 0.019,
+    "hi": 4.148,
+    "p_up": 0.7390198756540932,
+    "p_lo": 0.6115576030746359,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 1,
+    "e": 3.59,
+    "ratio": 0.279,
+    "lo": 0.007,
+    "hi": 1.552,
+    "p_up": 0.9723984380542025,
+    "p_lo": 0.12668793761947825,
+    "flag": "as expected"
+   },
+   "L": {
+    "o": 0,
+    "e": 1.514,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 2.436,
+    "p_up": 1.0,
+    "p_lo": 0.21994650626196638,
+    "flag": "as expected"
+   },
+   "L_peace": {
+    "o": 0,
+    "e": 1.077,
+    "ratio": 0.0,
+    "lo": 0.0,
+    "hi": 3.424,
+    "p_up": 1.0,
+    "p_lo": 0.3404466347423528,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 3,
+    "e": 3.343,
+    "ratio": 0.897,
+    "lo": 0.185,
+    "hi": 2.623,
+    "p_up": 0.6491038251139489,
+    "p_lo": 0.5708941475630296,
+    "flag": "as expected"
+   },
+   "M_lanes": {
+    "o": 3,
+    "e": 5.55,
+    "ratio": 0.541,
+    "lo": 0.111,
+    "hi": 1.58,
+    "p_up": 0.9146899523375402,
+    "p_lo": 0.19605186917275585,
+    "flag": "as expected"
+   },
+   "losses_1800": 54,
+   "losses_2000": 3,
+   "kinds": {
+    "Ship or boat": 1,
+    "Aircraft": 0,
+    "People lost at sea": 0
+   },
+   "median_year": 1749
+  },
+  {
+   "name": "Arabian Sea and the Gulfs",
+   "short": "Arabian Sea",
+   "group": "asia",
+   "traffic_pct": 3.36,
+   "lanes_pct": 4.643,
+   "T": {
+    "o": 5,
+    "e": 15.861,
+    "ratio": 0.315,
+    "lo": 0.102,
+    "hi": 0.736,
+    "p_up": 0.999554650727456,
+    "p_lo": 0.001526868519936457,
+    "flag": "lower (95%)"
+   },
+   "T_lanes": {
+    "o": 5,
+    "e": 21.913,
+    "ratio": 0.228,
+    "lo": 0.074,
+    "hi": 0.532,
+    "p_up": 0.9999964631855526,
+    "p_lo": 1.6348076449059387e-05,
+    "flag": "lower"
+   },
+   "T_1946": {
+    "o": 3,
+    "e": 4.839,
+    "ratio": 0.62,
+    "lo": 0.128,
+    "hi": 1.812,
+    "p_up": 0.8611205070253724,
+    "p_lo": 0.2883506305793742,
+    "flag": "as expected"
+   },
+   "T_ships": {
+    "o": 2,
+    "e": 5.847,
+    "ratio": 0.342,
+    "lo": 0.041,
+    "hi": 1.236,
+    "p_up": 0.9802250965046939,
+    "p_lo": 0.06914516333179745,
+    "flag": "as expected"
+   },
+   "T_lists": {
+    "o": 5,
+    "e": 15.626,
+    "ratio": 0.32,
+    "lo": 0.104,
+    "hi": 0.747,
+    "p_up": 0.9994669806629326,
+    "p_lo": 0.0018028584039584395,
+    "flag": "lower (95%)"
+   },
+   "L": {
+    "o": 5,
+    "e": 3.253,
+    "ratio": 1.537,
+    "lo": 0.499,
+    "hi": 3.587,
+    "p_up": 0.22890427639542868,
+    "p_lo": 0.8884505158181992,
+    "flag": "as expected"
+   },
+   "L_peace": {
+    "o": 4,
+    "e": 3.232,
+    "ratio": 1.237,
+    "lo": 0.337,
+    "hi": 3.168,
+    "p_up": 0.40470551002887056,
+    "p_lo": 0.7748029901092619,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 6,
+    "e": 14.551,
+    "ratio": 0.412,
+    "lo": 0.151,
+    "hi": 0.898,
+    "p_up": 0.9961944438481213,
+    "p_lo": 0.010124910721318381,
+    "flag": "lower (95%)"
+   },
+   "M_lanes": {
+    "o": 6,
+    "e": 20.103,
+    "ratio": 0.298,
+    "lo": 0.11,
+    "hi": 0.65,
+    "p_up": 0.9999335139763083,
+    "p_lo": 0.00023700071186392966,
+    "flag": "lower"
+   },
+   "losses_1800": 116,
+   "losses_2000": 6,
+   "kinds": {
+    "Ship or boat": 2,
+    "Aircraft": 3,
+    "People lost at sea": 0
+   },
+   "median_year": 1960
+  },
+  {
+   "name": "Bass Strait and Tasman Sea",
+   "short": "Tasman Sea",
+   "group": "oceania",
+   "traffic_pct": 0.038,
+   "lanes_pct": 0.961,
+   "T": {
+    "o": 48,
+    "e": 0.179,
+    "ratio": 268.595,
+    "lo": 198.041,
+    "hi": 356.119,
+    "p_up": 8.56868548831442e-98,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "T_lanes": {
+    "o": 48,
+    "e": 4.535,
+    "ratio": 10.584,
+    "lo": 7.804,
+    "hi": 14.033,
+    "p_up": 3.1266409225683e-32,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "T_1946": {
+    "o": 8,
+    "e": 0.055,
+    "ratio": 146.733,
+    "lo": 63.349,
+    "hi": 289.122,
+    "p_up": 1.8447771578085973e-15,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "T_ships": {
+    "o": 32,
+    "e": 0.066,
+    "ratio": 485.736,
+    "lo": 332.243,
+    "hi": 685.714,
+    "p_up": 5.6504402702235224e-74,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "T_lists": {
+    "o": 48,
+    "e": 0.176,
+    "ratio": 272.639,
+    "lo": 201.022,
+    "hi": 361.479,
+    "p_up": 4.193411240553125e-98,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "L": {
+    "o": 47,
+    "e": 1.374,
+    "ratio": 34.203,
+    "lo": 25.131,
+    "hi": 45.483,
+    "p_up": 3.0958375887321123e-54,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "L_peace": {
+    "o": 45,
+    "e": 1.684,
+    "ratio": 26.729,
+    "lo": 19.496,
+    "hi": 35.765,
+    "p_up": 2.4424015798691573e-47,
+    "p_lo": 1.0,
+    "flag": "higher"
+   },
+   "M": {
+    "o": 3,
+    "e": 0.164,
+    "ratio": 18.299,
+    "lo": 3.774,
+    "hi": 53.478,
+    "p_up": 0.0006497348601827447,
+    "p_lo": 0.9999735916636316,
+    "flag": "higher"
+   },
+   "M_lanes": {
+    "o": 3,
+    "e": 4.16,
+    "ratio": 0.721,
+    "lo": 0.149,
+    "hi": 2.107,
+    "p_up": 0.7844757485777458,
+    "p_lo": 0.4027691684963708,
+    "flag": "as expected"
+   },
+   "losses_1800": 49,
+   "losses_2000": 3,
+   "kinds": {
+    "Ship or boat": 32,
+    "Aircraft": 7,
+    "People lost at sea": 9
+   },
+   "median_year": 1880
+  },
+  {
+   "name": "Rest of the world's seas",
+   "short": "Rest",
+   "group": "rest",
+   "traffic_pct": 25.975,
+   "lanes_pct": 41.141,
+   "T": {
+    "o": 97,
+    "e": 122.604,
+    "ratio": 0.791,
+    "lo": 0.642,
+    "hi": 0.965,
+    "p_up": 0.9925324726570585,
+    "p_lo": 0.00973511304455253,
+    "flag": "lower (95%)"
+   },
+   "T_lanes": {
+    "o": 97,
+    "e": 194.186,
+    "ratio": 0.5,
+    "lo": 0.405,
+    "hi": 0.609,
+    "p_up": 0.9999999999999958,
+    "p_lo": 8.639592411057248e-15,
+    "flag": "lower"
+   },
+   "T_1946": {
+    "o": 39,
+    "e": 37.405,
+    "ratio": 1.043,
+    "lo": 0.741,
+    "hi": 1.425,
+    "p_up": 0.4186135197364668,
+    "p_lo": 0.6430288768624561,
+    "flag": "as expected"
+   },
+   "T_ships": {
+    "o": 23,
+    "e": 45.197,
+    "ratio": 0.509,
+    "lo": 0.323,
+    "hi": 0.764,
+    "p_up": 0.9998983131444777,
+    "p_lo": 0.00020789686143529536,
+    "flag": "lower"
+   },
+   "T_lists": {
+    "o": 97,
+    "e": 120.786,
+    "ratio": 0.803,
+    "lo": 0.651,
+    "hi": 0.98,
+    "p_up": 0.9885487477164917,
+    "p_lo": 0.01473065935116345,
+    "flag": "lower (95%)"
+   },
+   "L": {
+    "o": 92,
+    "e": 70.671,
+    "ratio": 1.302,
+    "lo": 1.049,
+    "hi": 1.597,
+    "p_up": 0.008472392700385668,
+    "p_lo": 0.993732343346252,
+    "flag": "higher (95%)"
+   },
+   "L_peace": {
+    "o": 67,
+    "e": 52.595,
+    "ratio": 1.274,
+    "lo": 0.987,
+    "hi": 1.618,
+    "p_up": 0.03122708653661617,
+    "p_lo": 0.9767097826876056,
+    "flag": "as expected"
+   },
+   "M": {
+    "o": 87,
+    "e": 112.474,
+    "ratio": 0.774,
+    "lo": 0.62,
+    "hi": 0.954,
+    "p_up": 0.9944157868302634,
+    "p_lo": 0.007450230448062008,
+    "flag": "lower (95%)"
+   },
+   "M_lanes": {
+    "o": 87,
+    "e": 178.141,
+    "ratio": 0.488,
+    "lo": 0.391,
+    "hi": 0.602,
+    "p_up": 0.9999999999999875,
+    "p_lo": 2.5926964824459806e-14,
+    "flag": "lower"
+   },
+   "losses_1800": 2520,
+   "losses_2000": 87,
+   "kinds": {
+    "Ship or boat": 23,
+    "Aircraft": 44,
+    "People lost at sea": 30
+   },
+   "median_year": 1943
+  }
+ ],
+ "natl": {
+  "o": 68,
+  "e": 68.466
+ },
+ "T": {
+  "n_areas": 27,
+  "higher": [
+   "Rest of Lake Michigan",
+   "Rest of the Great Lakes",
+   "English Channel",
+   "Caribbean Sea",
+   "US Atlantic coast",
+   "Newfoundland and the Grand Banks",
+   "Bass Strait and Tasman Sea"
+  ],
+  "n_higher": 7,
+  "lower": [
+   "Baltic Sea",
+   "Black Sea",
+   "Mediterranean Sea",
+   "East China and Yellow Seas",
+   "Sea of Japan"
+  ],
+  "n_lower": 5,
+  "higher95": [
+   "Bermuda Triangle",
+   "Rest of Lake Michigan",
+   "Rest of the Great Lakes",
+   "English Channel",
+   "Caribbean Sea",
+   "US Atlantic coast",
+   "Newfoundland and the Grand Banks",
+   "Bass Strait and Tasman Sea"
+  ]
+ },
+ "famous": {
+  "Bermuda Triangle": {
+   "n": 14,
+   "inside": 2,
+   "within300": 8,
+   "list": [
+    {
+     "name": "HMS Atalanta",
+     "year": 1880,
+     "kind": "Ship or boat",
+     "conf": "Sea area only",
+     "km": 2613,
+     "inside": false,
+     "where": "sailed from Bermuda for Falmouth, England",
+     "lat": 45.189,
+     "lon": -39.395,
+     "id": "D132"
+    },
+    {
+     "name": "USS Cyclops",
+     "year": 1918,
+     "kind": "Ship or boat",
+     "conf": "Route midpoint",
+     "km": 0,
+     "inside": true,
+     "where": "sailed from Barbados for Baltimore",
+     "lat": 25.283,
+     "lon": -67.118,
+     "id": "D221"
+    },
+    {
+     "name": "Carroll A. Deering",
+     "year": 1921,
+     "kind": "Ship or boat",
+     "conf": "Near a named place",
+     "km": 730,
+     "inside": false,
+     "where": "found aground and abandoned at Diamond Shoals, near Cape Hatteras",
+     "lat": 35.15,
+     "lon": -75.4,
+     "id": "D230"
+    },
+    {
+     "name": "SS Cotopaxi",
+     "year": 1925,
+     "kind": "Ship or boat",
+     "conf": "Position given",
+     "km": 433,
+     "inside": false,
+     "where": "wreck found 35 nmi off St. Augustine, Florida",
+     "lat": 29.85,
+     "lon": -80.75,
+     "id": "D240"
+    },
+    {
+     "name": "USS Nereus",
+     "year": 1941,
+     "kind": "Ship or boat",
+     "conf": "Near a named place",
+     "km": 139,
+     "inside": false,
+     "where": "lost in the North Atlantic (around the Virgin Islands in the list of missing ships)",
+     "lat": 18.4,
+     "lon": -64.8,
+     "id": "D321"
+    },
+    {
+     "name": "USS Proteus",
+     "year": 1941,
+     "kind": "Ship or boat",
+     "conf": "Sea area only",
+     "km": 786,
+     "inside": false,
+     "where": "lost in the North Atlantic (Caribbean Sea in the list of missing ships)",
+     "lat": 15.0,
+     "lon": -75.0,
+     "id": "D322"
+    },
+    {
+     "name": "Flight 19",
+     "year": 1945,
+     "kind": "Aircraft",
+     "conf": "Near a named place",
+     "km": 34,
+     "inside": false,
+     "where": "training flight east from Fort Lauderdale over the Atlantic",
+     "lat": 26.6,
+     "lon": -79.0,
+     "id": "D441"
+    },
+    {
+     "name": "PBM Mariner (Flight 19 search)",
+     "year": 1945,
+     "kind": "Aircraft",
+     "conf": "Near a named place",
+     "km": 276,
+     "inside": false,
+     "where": "search aircraft, explosion seen by a tanker off the coast of Florida",
+     "lat": 28.6,
+     "lon": -80.0,
+     "id": "D443"
+    },
+    {
+     "name": "Airborne Transport DC-3",
+     "year": 1948,
+     "kind": "Aircraft",
+     "conf": "Near a named place",
+     "km": 158,
+     "inside": false,
+     "where": "North Atlantic Ocean (off east coast of Florida)",
+     "lat": 27.5,
+     "lon": -79.8,
+     "id": "D455"
+    },
+    {
+     "name": "BSAA Star Tiger, with Sir Arthur Coningham",
+     "year": 1948,
+     "kind": "Aircraft",
+     "conf": "Route midpoint",
+     "km": 1716,
+     "inside": false,
+     "where": "flight from the Azores to Bermuda",
+     "lat": 36.868,
+     "lon": -46.884,
+     "id": "D456"
+    },
+    {
+     "name": "BSAA Star Ariel",
+     "year": 1949,
+     "kind": "Aircraft",
+     "conf": "Route midpoint",
+     "km": 0,
+     "inside": true,
+     "where": "flight from Bermuda to Kingston, Jamaica",
+     "lat": 25.221,
+     "lon": -71.147,
+     "id": "D463"
+    },
+    {
+     "name": "Connemara IV",
+     "year": 1955,
+     "kind": "Ship or boat",
+     "conf": "Near a named place",
+     "km": 15,
+     "inside": false,
+     "where": "yacht found adrift in the Atlantic south of Bermuda",
+     "lat": 30.5,
+     "lon": -64.8,
+     "id": "D482"
+    },
+    {
+     "name": "KC-135 Stratotankers",
+     "year": 1963,
+     "kind": "Aircraft",
+     "conf": "Position given",
+     "km": 238,
+     "inside": false,
+     "where": "collided and crashed 300 miles west of Bermuda",
+     "lat": 32.3,
+     "lon": -70.4,
+     "id": "D512"
+    },
+    {
+     "name": "SS Marine Sulphur Queen",
+     "year": 1963,
+     "kind": "Ship or boat",
+     "conf": "Position given",
+     "km": 583,
+     "inside": false,
+     "where": "Somewhere in Florida Strait around 25°45′N 86°00′W ﻿ / ﻿ 25.750°N 86.000°W (missing wreck)",
+     "lat": 25.75,
+     "lon": -86.0,
+     "id": "D513"
+    }
+   ],
+   "area_km2": 1136000.0
+  },
+  "Dragon's Triangle": {
+   "n": 1,
+   "inside": 1,
+   "within300": 1,
+   "list": [
+    {
+     "name": "Kaiyo Maru No. 5",
+     "year": 1952,
+     "kind": "Ship or boat",
+     "conf": "Position given",
+     "km": 0,
+     "inside": true,
+     "where": "destroyed by the undersea volcano at Myojin-sho",
+     "lat": 31.92,
+     "lon": 140.02,
+     "id": "D475"
+    }
+   ],
+   "area_km2": 2561000.0
+  },
+  "Michigan Triangle": {
+   "n": 6,
+   "inside": 0,
+   "within300": 6,
+   "list": [
+    {
+     "name": "Le Griffon",
+     "year": 1679,
+     "kind": "Ship or boat",
+     "conf": "Sea area only",
+     "km": 142,
+     "inside": false,
+     "where": "sailed from La Grand Baie (Green Bay) for Lake Erie",
+     "lat": 45.3,
+     "lon": -86.9,
+     "id": "D022"
+    },
+    {
+     "name": "Thomas Hume",
+     "year": 1891,
+     "kind": "Ship or boat",
+     "conf": "Route midpoint",
+     "km": 19,
+     "inside": false,
+     "where": "sailed from Chicago for Muskegon; wreck found in Lake Michigan in 2006",
+     "lat": 42.6,
+     "lon": -87.0,
+     "id": "D165"
+    },
+    {
+     "name": "Rosabelle",
+     "year": 1921,
+     "kind": "Ship or boat",
+     "conf": "Near a named place",
+     "km": 42,
+     "inside": false,
+     "where": "found capsized in Lake Michigan, crew never found; towed to Racine",
+     "lat": 42.75,
+     "lon": -87.4,
+     "id": "D233"
+    },
+    {
+     "name": "O.M. McFarland (Captain George R. Donner)",
+     "year": 1937,
+     "kind": "Ship or boat",
+     "conf": "Near a named place",
+     "km": 31,
+     "inside": false,
+     "where": "captain vanished from his cabin approaching Port Washington",
+     "lat": 43.4,
+     "lon": -87.65,
+     "id": "D287"
+    },
+    {
+     "name": "Northwest Orient Airlines Flight 2501",
+     "year": 1950,
+     "kind": "Aircraft",
+     "conf": "Position given",
+     "km": 18,
+     "inside": false,
+     "where": "debris found 18 miles northwest of Benton Harbor",
+     "lat": 42.3,
+     "lon": -86.8,
+     "id": "D467"
+    },
+    {
+     "name": "Aero L-39 (Schaller and Rodriguez)",
+     "year": 1998,
+     "kind": "Aircraft",
+     "conf": "Near a named place",
+     "km": 138,
+     "inside": false,
+     "where": "vanished 27 miles from Cherry Capital Airport, Traverse City",
+     "lat": 45.15,
+     "lon": -85.95,
+     "id": "D618"
+    }
+   ],
+   "area_km2": 10000.0
+  }
+ },
+ "bermuda": {
+  "o": 8,
+  "e": 2.793,
+  "x": 2.865,
+  "lo": 1.237,
+  "hi": 5.645,
+  "flag": "higher (95%)",
+  "p_up": 0.008010293066360938,
+  "traffic_pct": 0.592,
+  "lanes_x": 2.397,
+  "lanes_flag": "higher (95%)",
+  "o46": 5,
+  "e46": 0.852,
+  "x46": 5.869,
+  "flag46": "higher (95%)",
+  "ships_o": 3,
+  "ships_x": 2.914,
+  "L_o": 8,
+  "L_e": 1.234,
+  "L_x": 6.483,
+  "L_lo": 2.799,
+  "L_hi": 12.775,
+  "L_flag": "higher",
+  "Lpeace_x": 4.158,
+  "Lpeace_flag": "higher (95%)",
+  "losses_1800": 44,
+  "M_o": 1,
+  "M_e": 2.562,
+  "M_x": 0.39,
+  "M_flag": "as expected",
+  "neigh_o": 80,
+  "neigh_e": 29.106,
+  "neigh_x": 2.749,
+  "neigh_lo": 2.179,
+  "neigh_hi": 3.421,
+  "within_share_pct": 8.8,
+  "within_e": 7.7,
+  "within_p": 0.51,
+  "within_loss_share_pct": 3.3,
+  "within18_e": 2.61,
+  "within18_o": 8,
+  "within18_p": 0.005,
+  "neigh_losses": 1288,
+  "area_km2": 1136000.0,
+  "names": [
+   "USS Pickering (1800)",
+   "Danube (1892)",
+   "USS Cyclops (1918)",
+   "BSAA Star Ariel (1949)",
+   "Lockheed L-749A Constellation (HH-ABA) (1961)",
+   "Fairchild C-119F Flying Boxcar (51-2680) (1965)",
+   "Cessna 402 (N2652B) (1987)",
+   "Britten-Norman BN-2A Trislander Mk.III-2 (N650LP) (2008)"
+  ],
+  "famous_n": 14,
+  "famous_inside": 2,
+  "famous_within300": 8,
+  "group_n": 88,
+  "famous_inside_names": [
+   "USS Cyclops",
+   "BSAA Star Ariel"
+  ],
+  "flagged_cells": 1,
+  "flagged_cell": {
+   "row": 30,
+   "col": 51,
+   "lat0": 23.0,
+   "lon0": -78.0,
+   "D": 2,
+   "D_exp": 0.0168,
+   "ratio": 119.03,
+   "p": 0.00013959099831482798,
+   "area": "Bermuda Triangle",
+   "traffic_share_ppm": 54.38,
+   "L1800": 0,
+   "n_aircraft": 2,
+   "n_ships": 0,
+   "n_people": 0,
+   "war": 0,
+   "before1900": 0,
+   "median_year": 1976,
+   "names": [
+    "Fairchild C-119F Flying Boxcar (51-2680) (1965)",
+    "Cessna 402 (N2652B) (1987)"
+   ]
+  }
+ },
+ "dragon": {
+  "o": 7,
+  "e": 6.329,
+  "x": 1.106,
+  "lo": 0.445,
+  "hi": 2.279,
+  "flag": "as expected",
+  "traffic_pct": 1.341,
+  "L_x": 1.287,
+  "L_flag": "as expected",
+  "M_o": 1,
+  "M_e": 5.806,
+  "war": 4,
+  "names": [
+   "IJN Shinano (1944)",
+   "Naoshi Kanno (1945)",
+   "USS Kete (1945)",
+   "USS Swordfish (1945)",
+   "Kaiyo Maru No. 5 (1952)",
+   "Boeing C-97C Stratofreighter (50-0702) (1957)",
+   "Lockheed A-12 (A-12 Aircraft No. 129) (1968)"
+  ],
+  "area_km2": 2561000.0
+ },
+ "michigan": {
+  "o": 0,
+  "e": 0.042,
+  "hi": 86.961,
+  "lake_o": 16,
+  "lake_e": 0.229,
+  "lake_x": 69.731,
+  "lake_lo": 39.857,
+  "lake_hi": 113.239,
+  "lake_L_x": 7.533,
+  "lake_lanes_x": 43.12,
+  "gl_o": 11,
+  "gl_e": 0.958,
+  "gl_x": 11.488,
+  "gl_L_x": 3.502,
+  "lake_pre1946": 11,
+  "sea_only_in_triangle": 4,
+  "famous_n": 6,
+  "famous_inside": 0,
+  "famous_within50": 4,
+  "area_km2": 10000.0
+ },
+ "worse": [
+  {
+   "name": "Bass Strait and Tasman Sea",
+   "o": 48,
+   "e": 0.179,
+   "x": 268.595,
+   "lo": 198.041,
+   "hi": 356.119,
+   "lanes_x": 10.584,
+   "lanes_flag": "higher",
+   "L_x": 34.203,
+   "L_flag": "higher",
+   "causes": "weather, shoals, reporting",
+   "why": "Colonial-era coastal traders lost between Sydney, Hobart, Launceston and Port Phillip, in a strait swept by westerly gales and strewn with islands and reefs; one section of the Wikipedia list carefully gathers these Australian losses, and receivers pick up relatively little AIS traffic here today.",
+   "median_year": 1880,
+   "aircraft": 7
+  },
+  {
+   "name": "Rest of Lake Michigan",
+   "o": 16,
+   "e": 0.229,
+   "x": 69.731,
+   "lo": 39.857,
+   "hi": 113.239,
+   "lanes_x": 43.12,
+   "lanes_flag": "higher",
+   "L_x": 7.533,
+   "L_flag": "higher",
+   "causes": "weather, history, reporting",
+   "why": "Nineteenth- and early twentieth-century lake freighters and schooners caught by sudden autumn gales on a long, open lake, when lake traffic was far busier than it is today; the losses are richly documented by American newspapers and enthusiasts.",
+   "median_year": 1917,
+   "aircraft": 6
+  },
+  {
+   "name": "Rest of the Great Lakes",
+   "o": 11,
+   "e": 0.958,
+   "x": 11.488,
+   "lo": 5.735,
+   "hi": 20.555,
+   "lanes_x": 11.402,
+   "lanes_flag": "higher",
+   "L_x": 3.502,
+   "L_flag": "higher",
+   "causes": "weather, history",
+   "why": "Lake Superior and Lake Huron storms, above all the November gales, which sank freighters that left no trace; busy lake trade a century ago.",
+   "median_year": 1912,
+   "aircraft": 2
+  },
+  {
+   "name": "US Atlantic coast",
+   "o": 24,
+   "e": 6.98,
+   "x": 3.438,
+   "lo": 2.203,
+   "hi": 5.116,
+   "lanes_x": 3.232,
+   "lanes_flag": "higher",
+   "L_x": 1.18,
+   "L_flag": "as expected",
+   "causes": "shoals, weather, reporting",
+   "why": "Cape Hatteras and the Diamond Shoals, Gulf Stream storms, and a long tail of American light aircraft and yachts, reported by an English-language press that Wikipedia draws on heavily.",
+   "median_year": 1940,
+   "aircraft": 13
+  },
+  {
+   "name": "Caribbean Sea",
+   "o": 27,
+   "e": 10.265,
+   "x": 2.63,
+   "lo": 1.733,
+   "hi": 3.827,
+   "lanes_x": 1.957,
+   "lanes_flag": "higher (95%)",
+   "L_x": 3.483,
+   "L_flag": "higher",
+   "causes": "weather, history",
+   "why": "Hurricanes, and the warships and packets of the 1700s and 1800s (USS Insurgent, USS Albany, HMS Babet), plus light aircraft in recent decades.",
+   "median_year": 1942,
+   "aircraft": 9
+  },
+  {
+   "name": "English Channel",
+   "o": 19,
+   "e": 6.326,
+   "x": 3.003,
+   "lo": 1.808,
+   "hi": 4.69,
+   "lanes_x": 7.824,
+   "lanes_flag": "higher",
+   "L_x": 0.991,
+   "L_flag": "as expected",
+   "causes": "war, aviation, reporting",
+   "why": "Pioneer aviators (Walter Powell, Cecil Grace, Gustav Hamel), pilots of the Battle of Britain, and Glenn Miller's aircraft: short flights over water, often in war, all well reported in English.",
+   "median_year": 1940,
+   "aircraft": 7
+  },
+  {
+   "name": "Newfoundland and the Grand Banks",
+   "o": 18,
+   "e": 6.129,
+   "x": 2.937,
+   "lo": 1.741,
+   "hi": 4.641,
+   "lanes_x": 3.708,
+   "lanes_flag": "higher",
+   "L_x": 2.323,
+   "L_flag": "higher (95%)",
+   "causes": "weather, aviation",
+   "why": "Fog, ice and gales at the corner of the North Atlantic, where the great-circle routes to Europe begin: pioneer transatlantic flights of 1927 and 1928 and steamers such as the Arctic were lost here.",
+   "median_year": 1929,
+   "aircraft": 6
+  }
+ ],
+ "cells": {
+  "n_flagged": 28,
+  "with_D": 223,
+  "no_traffic_incidents": 2,
+  "ranked": [
+   {
+    "lat0": -45.0,
+    "lon0": 166.0,
+    "D": 2,
+    "D_exp": 0.0,
+    "p": 3.567174910815211e-19,
+    "area": "Bass Strait and Tasman Sea",
+    "L1800": 0,
+    "n_aircraft": 2,
+    "n_ships": 0,
+    "n_people": 0,
+    "war": 0,
+    "before1900": 0,
+    "median_year": 1970,
+    "place": "Fiordland, Milford Sound",
+    "causes": "aviation",
+    "names": [
+     "De Havilland Dragonfly (ZK-AFB) (1962)",
+     "Piper Cherokee Six ZK-EBU (1978)"
+    ]
+   },
+   {
+    "lat0": 21.0,
+    "lon0": -158.0,
+    "D": 6,
+    "D_exp": 0.0207,
+    "p": 1.063193271187681e-13,
+    "area": "Rest of the world's seas",
+    "L1800": 3,
+    "n_aircraft": 5,
+    "n_ships": 0,
+    "n_people": 1,
+    "war": 0,
+    "before1900": 0,
+    "median_year": 1978,
+    "place": "Hawaii, Oahu and Molokai",
+    "causes": "aviation",
+    "names": [
+     "Stella Australis (Airspeed Envoy) (1934)",
+     "Boeing C-97A Stratofreighter (49-2597) (1958)",
+     "Eddie Aikau (1978)",
+     "Douglas C-47B-50-DK (N63250) (1979)",
+     "Piper PA-31-350 Navajo Chieftain (N712AN) (1987)",
+     "Cessna 172 M Skyhawk (N174LL) (2016)"
+    ]
+   },
+   {
+    "lat0": -41.0,
+    "lon0": 144.0,
+    "D": 4,
+    "D_exp": 0.0017,
+    "p": 3.544498739005387e-13,
+    "area": "Bass Strait and Tasman Sea",
+    "L1800": 0,
+    "n_aircraft": 0,
+    "n_ships": 4,
+    "n_people": 0,
+    "war": 0,
+    "before1900": 3,
+    "median_year": 1838,
+    "place": "Bass Strait, west (King Island, Port Phillip)",
+    "causes": "weather, shoals",
+    "names": [
+     "Port Phillip Packet (1838)",
+     "Yarra Yarra (1838)",
+     "Vivid (1854)",
+     "Albion (?)"
+    ]
+   },
+   {
+    "lat0": -41.0,
+    "lon0": 146.0,
+    "D": 4,
+    "D_exp": 0.0017,
+    "p": 3.8963665415422375e-13,
+    "area": "Bass Strait and Tasman Sea",
+    "L1800": 0,
+    "n_aircraft": 0,
+    "n_ships": 4,
+    "n_people": 0,
+    "war": 0,
+    "before1900": 2,
+    "median_year": 1885,
+    "place": "Bass Strait, Tasmania's north coast",
+    "causes": "weather, shoals",
+    "names": [
+     "Maid of Australia (1834)",
+     "Reindeer (1862)",
+     "Southern Cross (1908)",
+     "Amelia J. (1920)"
+    ]
+   },
+   {
+    "lat0": -39.0,
+    "lon0": 148.0,
+    "D": 4,
+    "D_exp": 0.0031,
+    "p": 3.909099200417751e-12,
+    "area": "Bass Strait and Tasman Sea",
+    "L1800": 1,
+    "n_aircraft": 0,
+    "n_ships": 4,
+    "n_people": 0,
+    "war": 0,
+    "before1900": 4,
+    "median_year": 1829,
+    "place": "Bass Strait, east (Furneaux and Kent Groups)",
+    "causes": "weather, shoals",
+    "names": [
+     "John (1806)",
+     "Princess Charlotte (1820)",
+     "Lady Franklin (1838)",
+     "Senorita (1854)"
+    ]
+   },
+   {
+    "lat0": 29.0,
+    "lon0": -142.0,
+    "D": 5,
+    "D_exp": 0.0174,
+    "p": 1.3253405143088383e-11,
+    "area": "Rest of the world's seas",
+    "L1800": 0,
+    "n_aircraft": 3,
+    "n_ships": 0,
+    "n_people": 2,
+    "war": 0,
+    "before1900": 0,
+    "median_year": 1927,
+    "place": "Mid-Pacific, Oakland to Hawaii",
+    "causes": "aviation (Dole Air Race)",
+    "names": [
+     "Dallas Spirit (NX941) (1927)",
+     "Golden Eagle (NX913) (1927)",
+     "Miss Doran (NX2915), with Mildred Doran (1927)",
+     "William Portwood Erwin (1927)",
+     "Charles Ulm (1934)"
+    ]
+   },
+   {
+    "lat0": -35.0,
+    "lon0": 150.0,
+    "D": 4,
+    "D_exp": 0.008,
+    "p": 1.6991978088021061e-10,
+    "area": "Bass Strait and Tasman Sea",
+    "L1800": 10,
+    "n_aircraft": 0,
+    "n_ships": 3,
+    "n_people": 1,
+    "war": 0,
+    "before1900": 4,
+    "median_year": 1816,
+    "place": "Off Sydney and Botany Bay",
+    "causes": "weather, reporting",
+    "names": [
+     "George Bass (1803)",
+     "Amelia (1816)",
+     "Whale (1816)",
+     "Malcolm (1898)"
+    ]
+   },
+   {
+    "lat0": -55.0,
+    "lon0": 158.0,
+    "D": 2,
+    "D_exp": 0.0,
+    "p": 5.272156320053509e-10,
+    "area": "Rest of the world's seas",
+    "L1800": 0,
+    "n_aircraft": 0,
+    "n_ships": 1,
+    "n_people": 1,
+    "war": 1,
+    "before1900": 1,
+    "median_year": 1902,
+    "place": "Macquarie Island",
+    "causes": "weather",
+    "names": [
+     "Awarau (1891)",
+     "Harald Kristian Dannevig (1914)"
+    ]
+   },
+   {
+    "lat0": -45.0,
+    "lon0": 148.0,
+    "D": 2,
+    "D_exp": 0.0001,
+    "p": 3.9004883160792615e-09,
+    "area": "Bass Strait and Tasman Sea",
+    "L1800": 0,
+    "n_aircraft": 0,
+    "n_ships": 2,
+    "n_people": 0,
+    "war": 0,
+    "before1900": 2,
+    "median_year": 1854,
+    "place": "South-east Tasmania",
+    "causes": "weather, shoals",
+    "names": [
+     "Despatch (1826)",
+     "Louisa (1882)"
+    ]
+   },
+   {
+    "lat0": 41.0,
+    "lon0": -88.0,
+    "D": 5,
+    "D_exp": 0.072,
+    "p": 1.5175300305459253e-08,
+    "area": "Rest of Lake Michigan",
+    "L1800": 6,
+    "n_aircraft": 1,
+    "n_ships": 4,
+    "n_people": 0,
+    "war": 0,
+    "before1900": 2,
+    "median_year": 1921,
+    "place": "Southern Lake Michigan",
+    "causes": "weather, history",
+    "names": [
+     "SS Hippocampus (1868)",
+     "Thomas Hume (1891)",
+     "Rosabelle (1921)",
+     "SS Andaste (1929)",
+     "Northwest Orient Airlines Flight 2501 (1950)"
+    ]
+   },
+   {
+    "lat0": -45.0,
+    "lon0": 146.0,
+    "D": 2,
+    "D_exp": 0.0003,
+    "p": 4.34741531777322e-08,
+    "area": "Bass Strait and Tasman Sea",
+    "L1800": 0,
+    "n_aircraft": 0,
+    "n_ships": 2,
+    "n_people": 0,
+    "war": 0,
+    "before1900": 1,
+    "median_year": 1888,
+    "place": "Hobart and the Derwent",
+    "causes": "weather, reporting",
+    "names": [
+     "City of Hobart (1873)",
+     "Chris (1903)"
+    ]
+   },
+   {
+    "lat0": -41.0,
+    "lon0": 148.0,
+    "D": 2,
+    "D_exp": 0.0005,
+    "p": 1.3176424611921725e-07,
+    "area": "Bass Strait and Tasman Sea",
+    "L1800": 0,
+    "n_aircraft": 0,
+    "n_ships": 2,
+    "n_people": 0,
+    "war": 0,
+    "before1900": 2,
+    "median_year": 1854,
+    "place": "North-east Tasmania",
+    "causes": "weather, shoals",
+    "names": [
+     "Resolution (1832)",
+     "Flying Duck (1876)"
+    ]
+   },
+   {
+    "lat0": -33.0,
+    "lon0": 154.0,
+    "D": 2,
+    "D_exp": 0.001,
+    "p": 4.81097860189071e-07,
+    "area": "Bass Strait and Tasman Sea",
+    "L1800": 0,
+    "n_aircraft": 1,
+    "n_ships": 1,
+    "n_people": 0,
+    "war": 0,
+    "before1900": 0,
+    "median_year": 1973,
+    "place": "Tasman Sea off New South Wales",
+    "causes": "weather",
+    "names": [
+     "Awahou (1952)",
+     "Aero Commander 690 (1994)"
+    ]
+   },
+   {
+    "lat0": 45.0,
+    "lon0": -54.0,
+    "D": 5,
+    "D_exp": 0.154,
+    "p": 6.343343868706336e-07,
+    "area": "Newfoundland and the Grand Banks",
+    "L1800": 8,
+    "n_aircraft": 3,
+    "n_ships": 2,
+    "n_people": 0,
+    "war": 1,
+    "before1900": 2,
+    "median_year": 1927,
+    "place": "Off Cape Race, Newfoundland",
+    "causes": "weather, aviation",
+    "names": [
+     "USS Reprisal (1777)",
+     "SS Arctic (1854)",
+     "Saint Raphael (Fokker F.VIIA), with Frederick F. Minchin (1927)",
+     "Consolidated PBY Catalina (044604) (1942)",
+     "Boeing 727 (OB-1303), with 1990 Faucett Perú Boeing 727 (1990)"
+    ]
+   },
+   {
+    "lat0": -39.0,
+    "lon0": 144.0,
+    "D": 2,
+    "D_exp": 0.0013,
+    "p": 9.058971835880177e-07,
+    "area": "Bass Strait and Tasman Sea",
+    "L1800": 1,
+    "n_aircraft": 0,
+    "n_ships": 0,
+    "n_people": 2,
+    "war": 0,
+    "before1900": 1,
+    "median_year": 1924,
+    "place": "Port Phillip Heads",
+    "causes": "weather, reporting",
+    "names": [
+     "John Bristow Hughes (1881)",
+     "Harold Holt (1967)"
+    ]
+   },
+   {
+    "lat0": 27.0,
+    "lon0": -178.0,
+    "D": 2,
+    "D_exp": 0.0014,
+    "p": 9.955109858357305e-07,
+    "area": "Rest of the world's seas",
+    "L1800": 0,
+    "n_aircraft": 0,
+    "n_ships": 1,
+    "n_people": 1,
+    "war": 1,
+    "before1900": 0,
+    "median_year": 1981,
+    "place": "Midway",
+    "causes": "war",
+    "names": [
+     "USS Hammann (1942)",
+     "Yong Yu Sing No. 18 fishing boat crew (2021)"
+    ]
+   },
+   {
+    "lat0": -37.0,
+    "lon0": 150.0,
+    "D": 2,
+    "D_exp": 0.0038,
+    "p": 7.1511730350554425e-06,
+    "area": "Bass Strait and Tasman Sea",
+    "L1800": 5,
+    "n_aircraft": 0,
+    "n_ships": 1,
+    "n_people": 1,
+    "war": 0,
+    "before1900": 2,
+    "median_year": 1871,
+    "place": "Far south coast of New South Wales",
+    "causes": "weather, shoals",
+    "names": [
+     "Grecian Queen (1863)",
+     "Lamont Young (1880)"
+    ]
+   },
+   {
+    "lat0": 17.0,
+    "lon0": -68.0,
+    "D": 4,
+    "D_exp": 0.1441,
+    "p": 1.6034274439646484e-05,
+    "area": "Caribbean Sea",
+    "L1800": 4,
+    "n_aircraft": 3,
+    "n_ships": 0,
+    "n_people": 1,
+    "war": 0,
+    "before1900": 0,
+    "median_year": 1973,
+    "place": "Mona Passage and Puerto Rico",
+    "causes": "aviation, reporting",
+    "names": [
+     "Lockheed L-749A Constellation (HH-ABA) (1961)",
+     "Audrey Bruce Currier (1967)",
+     "ERCO Ercoupe 415-D (N3808H) (1980)",
+     "Convair CV-240 (HI-376CT) (1990)"
+    ]
+   },
+   {
+    "lat0": 37.0,
+    "lon0": -124.0,
+    "D": 4,
+    "D_exp": 0.1493,
+    "p": 1.8375993178171757e-05,
+    "area": "Rest of the world's seas",
+    "L1800": 3,
+    "n_aircraft": 1,
+    "n_ships": 0,
+    "n_people": 3,
+    "war": 1,
+    "before1900": 0,
+    "median_year": 1986,
+    "place": "Off San Francisco",
+    "causes": "aviation, reporting",
+    "names": [
+     "Lt. Ernest Cody (1942)",
+     "Lockheed P-3A Orion (152155) (1972)",
+     "Scott Smith (2000)",
+     "Jim Gray (2007)"
+    ]
+   },
+   {
+    "lat0": -23.0,
+    "lon0": 166.0,
+    "D": 2,
+    "D_exp": 0.0066,
+    "p": 2.165653075043884e-05,
+    "area": "Rest of the world's seas",
+    "L1800": 1,
+    "n_aircraft": 2,
+    "n_ships": 0,
+    "n_people": 0,
+    "war": 2,
+    "before1900": 0,
+    "median_year": 1943,
+    "place": "New Caledonia",
+    "causes": "war, aviation",
+    "names": [
+     "Douglas C-47 Skytrain (41-18675) (1943)",
+     "Douglas R4D (12432) (1943)"
+    ]
+   },
+   {
+    "lat0": 59.0,
+    "lon0": -44.0,
+    "D": 2,
+    "D_exp": 0.0089,
+    "p": 3.934120999508816e-05,
+    "area": "North Atlantic, open ocean",
+    "L1800": 0,
+    "n_aircraft": 0,
+    "n_ships": 2,
+    "n_people": 0,
+    "war": 0,
+    "before1900": 0,
+    "median_year": 1963,
+    "place": "Off Cape Farewell, Greenland",
+    "causes": "weather, ice",
+    "names": [
+     "Hans Hedtoft (1959)",
+     "FV Johannes Krüss (1967)"
+    ]
+   },
+   {
+    "lat0": 31.0,
+    "lon0": -80.0,
+    "D": 4,
+    "D_exp": 0.1871,
+    "p": 4.4016692023832654e-05,
+    "area": "US Atlantic coast",
+    "L1800": 10,
+    "n_aircraft": 0,
+    "n_ships": 0,
+    "n_people": 4,
+    "war": 0,
+    "before1900": 1,
+    "median_year": 1921,
+    "place": "Off Georgia and South Carolina",
+    "causes": "weather, reporting",
+    "names": [
+     "Theodosia Burr Alston (1813)",
+     "Charles Whittlesey (1921)",
+     "SS Hewitt (1921)",
+     "Angus Primrose (1980)"
+    ]
+   },
+   {
+    "lat0": 33.0,
+    "lon0": -120.0,
+    "D": 3,
+    "D_exp": 0.0667,
+    "p": 4.70730680402964e-05,
+    "area": "Rest of the world's seas",
+    "L1800": 2,
+    "n_aircraft": 2,
+    "n_ships": 0,
+    "n_people": 1,
+    "war": 1,
+    "before1900": 0,
+    "median_year": 1961,
+    "place": "Off Los Angeles",
+    "causes": "aviation, reporting",
+    "names": [
+     "P-51 Mustang (1944)",
+     "David Kenyon Webster (1961)",
+     "Cessna 150 H (N7156S) (1990)"
+    ]
+   },
+   {
+    "lat0": -9.0,
+    "lon0": 156.0,
+    "D": 2,
+    "D_exp": 0.0132,
+    "p": 8.578012535990922e-05,
+    "area": "Rest of the world's seas",
+    "L1800": 18,
+    "n_aircraft": 1,
+    "n_ships": 1,
+    "n_people": 0,
+    "war": 2,
+    "before1900": 0,
+    "median_year": 1943,
+    "place": "Solomon Islands",
+    "causes": "war",
+    "names": [
+     "USS Grampus (1943)",
+     "Douglas R4D (39073) (1944)"
+    ]
+   },
+   {
+    "lat0": 25.0,
+    "lon0": -82.0,
+    "D": 2,
+    "D_exp": 0.0153,
+    "p": 0.00011616195531956368,
+    "area": "US Atlantic coast",
+    "L1800": 7,
+    "n_aircraft": 1,
+    "n_ships": 0,
+    "n_people": 1,
+    "war": 0,
+    "before1900": 0,
+    "median_year": 2015,
+    "place": "Florida Keys and Straits",
+    "causes": "aviation, reporting",
+    "names": [
+     "Guma Aguiar (2012)",
+     "Piper PA-32R (N41453) (2019)"
+    ]
+   },
+   {
+    "lat0": 23.0,
+    "lon0": -78.0,
+    "D": 2,
+    "D_exp": 0.0168,
+    "p": 0.00013959099831482798,
+    "area": "Bermuda Triangle",
+    "L1800": 0,
+    "n_aircraft": 2,
+    "n_ships": 0,
+    "n_people": 0,
+    "war": 0,
+    "before1900": 0,
+    "median_year": 1976,
+    "place": "Bahamas (inside the Bermuda Triangle)",
+    "causes": "aviation",
+    "names": [
+     "Fairchild C-119F Flying Boxcar (51-2680) (1965)",
+     "Cessna 402 (N2652B) (1987)"
+    ]
+   },
+   {
+    "lat0": 45.0,
+    "lon0": -88.0,
+    "D": 2,
+    "D_exp": 0.0215,
+    "p": 0.00022859030828828588,
+    "area": "Rest of the Great Lakes",
+    "L1800": 6,
+    "n_aircraft": 0,
+    "n_ships": 2,
+    "n_people": 0,
+    "war": 0,
+    "before1900": 0,
+    "median_year": 1909,
+    "place": "Green Bay, Lake Michigan",
+    "causes": "weather, history",
+    "names": [
+     "SS Iosco (1905)",
+     "SS Plymouth (1913)"
+    ]
+   },
+   {
+    "lat0": 39.0,
+    "lon0": -74.0,
+    "D": 3,
+    "D_exp": 0.1798,
+    "p": 0.000846635120260377,
+    "area": "US Atlantic coast",
+    "L1800": 83,
+    "n_aircraft": 3,
+    "n_ships": 0,
+    "n_people": 0,
+    "war": 1,
+    "before1900": 0,
+    "median_year": 1918,
+    "place": "Off New Jersey and Long Island",
+    "causes": "aviation, reporting",
+    "names": [
+     "Blériot XI (1913)",
+     "Hewitt-Sperry Automatic Airplane N-9 (1918)",
+     "Taylor Cub (1938)"
+    ]
+   }
+  ],
+  "bass_cells": 11,
+  "aviation_cells": 11,
+  "weather_cells": 16,
+  "war_cells": 3
+ },
+ "modern": {
+  "n": 433,
+  "higher": [
+   {
+    "name": "Gulf of Alaska",
+    "o": 87,
+    "e": 2.495,
+    "x": 34.868,
+    "lanes_x": 29.932
+   },
+   {
+    "name": "Bass Strait and Tasman Sea",
+    "o": 3,
+    "e": 0.164,
+    "x": 18.299,
+    "lanes_x": 0.721
+   },
+   {
+    "name": "US Atlantic coast",
+    "o": 94,
+    "e": 6.403,
+    "x": 14.68,
+    "lanes_x": 13.8
+   },
+   {
+    "name": "Gulf of Mexico",
+    "o": 20,
+    "e": 5.258,
+    "x": 3.804,
+    "lanes_x": 2.539
+   },
+   {
+    "name": "South China Sea",
+    "o": 21,
+    "e": 7.801,
+    "x": 2.692,
+    "lanes_x": 1.654
+   }
+  ],
+  "alaska_o": 87,
+  "alaska_wiki_pct": 100.0,
+  "usatl_o": 94,
+  "us_waters_pct": 54.73,
+  "alaska_x": 34.868,
+  "usatl_x": 14.68
+ },
+ "funnel": {
+  "e": [
+   0.001,
+   0.00109,
+   0.00119,
+   0.00129,
+   0.00141,
+   0.00154,
+   0.00168,
+   0.00183,
+   0.00199,
+   0.00217,
+   0.00237,
+   0.00258,
+   0.00281,
+   0.00306,
+   0.00334,
+   0.00364,
+   0.00397,
+   0.00432,
+   0.00471,
+   0.00514,
+   0.0056,
+   0.0061,
+   0.00665,
+   0.00725,
+   0.0079,
+   0.00861,
+   0.00939,
+   0.01023,
+   0.01116,
+   0.01216,
+   0.01325,
+   0.01444,
+   0.01574,
+   0.01716,
+   0.0187,
+   0.02039,
+   0.02222,
+   0.02422,
+   0.0264,
+   0.02877,
+   0.03136,
+   0.03418,
+   0.03726,
+   0.04061,
+   0.04426,
+   0.04825,
+   0.05259,
+   0.05732,
+   0.06247,
+   0.06809,
+   0.07422,
+   0.08089,
+   0.08817,
+   0.0961,
+   0.10475,
+   0.11417,
+   0.12444,
+   0.13564,
+   0.14784,
+   0.16114,
+   0.17563,
+   0.19143,
+   0.20865,
+   0.22742,
+   0.24788,
+   0.27018,
+   0.29449,
+   0.32098,
+   0.34985,
+   0.38132,
+   0.41563,
+   0.45302,
+   0.49377,
+   0.53819,
+   0.5866,
+   0.63937,
+   0.69689,
+   0.75958,
+   0.82791,
+   0.90239,
+   0.98357,
+   1.07205,
+   1.16849,
+   1.27361,
+   1.38818,
+   1.51306,
+   1.64917,
+   1.79753,
+   1.95923,
+   2.13548,
+   2.32759,
+   2.53698,
+   2.7652,
+   3.01395,
+   3.28509,
+   3.58061,
+   3.90272,
+   4.2538,
+   4.63647,
+   5.05356,
+   5.50817,
+   6.00368,
+   6.54376,
+   7.13243,
+   7.77405,
+   8.4734,
+   9.23565,
+   10.06648,
+   10.97205,
+   11.95908,
+   13.03491,
+   14.20751,
+   15.4856,
+   16.87867,
+   18.39705,
+   20.05203,
+   21.85588,
+   23.82201,
+   25.96501,
+   28.30079,
+   30.84669,
+   33.62163,
+   36.64619,
+   39.94283,
+   43.53604,
+   47.45249,
+   51.72126,
+   56.37404,
+   61.44538,
+   66.97293,
+   72.99773,
+   79.56452,
+   86.72204,
+   94.52345,
+   103.02666,
+   112.29482,
+   122.39672,
+   133.40738,
+   145.40854,
+   158.48932
+  ],
+  "u95": [
+   3690.9826,
+   3386.5242,
+   3107.1939,
+   2850.918,
+   2615.7936,
+   2400.0749,
+   2202.1604,
+   2020.5805,
+   1853.9872,
+   1701.1435,
+   1560.9147,
+   1432.2594,
+   1314.2226,
+   1205.9279,
+   1106.5711,
+   1015.4147,
+   931.7817,
+   855.0513,
+   784.6538,
+   720.0664,
+   660.8097,
+   606.4436,
+   556.5646,
+   510.8022,
+   468.8168,
+   430.2966,
+   394.9555,
+   362.5313,
+   332.7831,
+   305.4901,
+   280.4497,
+   257.4758,
+   236.3981,
+   217.0599,
+   199.3176,
+   183.0397,
+   168.1051,
+   154.403,
+   141.8317,
+   130.2978,
+   119.7158,
+   110.007,
+   101.0993,
+   92.9267,
+   85.4283,
+   78.5487,
+   72.2366,
+   66.4453,
+   61.1317,
+   56.2564,
+   51.7832,
+   47.6788,
+   43.9129,
+   40.4574,
+   37.2867,
+   34.3773,
+   31.7075,
+   29.2576,
+   27.0094,
+   24.9462,
+   23.0526,
+   21.3147,
+   19.7196,
+   18.2554,
+   16.9112,
+   15.6772,
+   14.5442,
+   13.5038,
+   12.5483,
+   11.6706,
+   10.8644,
+   10.1236,
+   9.4428,
+   8.817,
+   8.2416,
+   7.7125,
+   7.2257,
+   6.7777,
+   6.3653,
+   5.9856,
+   5.6357,
+   5.3133,
+   5.016,
+   4.7417,
+   4.4886,
+   4.2548,
+   4.0388,
+   3.8391,
+   3.6544,
+   3.4834,
+   3.3251,
+   3.1783,
+   3.0422,
+   2.9159,
+   2.7985,
+   2.6895,
+   2.5881,
+   2.4937,
+   2.4058,
+   2.3238,
+   2.2474,
+   2.1761,
+   2.1095,
+   2.0472,
+   1.9889,
+   1.9344,
+   1.8833,
+   1.8355,
+   1.7906,
+   1.7484,
+   1.7088,
+   1.6716,
+   1.6367,
+   1.6037,
+   1.5728,
+   1.5436,
+   1.516,
+   1.4901,
+   1.4656,
+   1.4425,
+   1.4206,
+   1.4,
+   1.3805,
+   1.362,
+   1.3445,
+   1.328,
+   1.3123,
+   1.2975,
+   1.2834,
+   1.27,
+   1.2574,
+   1.2453,
+   1.2339,
+   1.2231,
+   1.2128,
+   1.203,
+   1.1937,
+   1.1848,
+   1.1764,
+   1.1684
+  ],
+  "u998": [
+   6910.3928,
+   6340.2674,
+   5817.1967,
+   5337.2972,
+   4897.0057,
+   4493.0534,
+   4122.4408,
+   3782.4164,
+   3470.4556,
+   3184.2422,
+   2921.6512,
+   2680.7329,
+   2459.6985,
+   2256.907,
+   2070.8526,
+   1900.1541,
+   1743.544,
+   1599.8596,
+   1468.034,
+   1347.0884,
+   1236.125,
+   1134.3198,
+   1040.9169,
+   955.223,
+   876.6016,
+   804.4692,
+   738.29,
+   677.5729,
+   621.8669,
+   570.7585,
+   523.8682,
+   480.8478,
+   441.378,
+   405.1658,
+   371.9421,
+   341.4604,
+   313.4943,
+   287.8363,
+   264.2958,
+   242.6979,
+   222.8825,
+   204.7023,
+   188.0224,
+   172.7189,
+   158.6782,
+   145.796,
+   133.9768,
+   123.1327,
+   113.1833,
+   104.0547,
+   95.6791,
+   87.9943,
+   80.9433,
+   74.4737,
+   68.5375,
+   63.0907,
+   58.0927,
+   53.5066,
+   49.2983,
+   45.4364,
+   41.8925,
+   38.6402,
+   35.6553,
+   32.9158,
+   30.4013,
+   28.0931,
+   25.9743,
+   24.029,
+   22.243,
+   20.6029,
+   19.0967,
+   17.7133,
+   16.4424,
+   15.2747,
+   14.2016,
+   13.2153,
+   12.3085,
+   11.4747,
+   10.7076,
+   10.0019,
+   9.3523,
+   8.7542,
+   8.2034,
+   7.6958,
+   7.2279,
+   6.7965,
+   6.3984,
+   6.031,
+   5.6917,
+   5.3781,
+   5.0883,
+   4.8201,
+   4.572,
+   4.3421,
+   4.1292,
+   3.9317,
+   3.7485,
+   3.5783,
+   3.4203,
+   3.2733,
+   3.1367,
+   3.0094,
+   2.8909,
+   2.7803,
+   2.6773,
+   2.581,
+   2.4912,
+   2.4071,
+   2.3285,
+   2.255,
+   2.1861,
+   2.1215,
+   2.061,
+   2.0041,
+   1.9508,
+   1.9006,
+   1.8535,
+   1.8091,
+   1.7674,
+   1.7281,
+   1.691,
+   1.6561,
+   1.6232,
+   1.5921,
+   1.5627,
+   1.5349,
+   1.5087,
+   1.4839,
+   1.4604,
+   1.4382,
+   1.4172,
+   1.3972,
+   1.3784,
+   1.3605,
+   1.3435,
+   1.3273,
+   1.3121,
+   1.2975,
+   1.2837,
+   1.2706
+  ],
+  "l95": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0001,
+   0.0001,
+   0.0003,
+   0.0005,
+   0.0009,
+   0.0016,
+   0.0026,
+   0.0041,
+   0.0063,
+   0.0092,
+   0.0131,
+   0.018,
+   0.024,
+   0.0313,
+   0.0398,
+   0.0497,
+   0.0608,
+   0.0732,
+   0.0868,
+   0.1015,
+   0.1172,
+   0.1338,
+   0.1513,
+   0.1694,
+   0.1881,
+   0.2073,
+   0.2268,
+   0.2467,
+   0.2667,
+   0.2869,
+   0.307,
+   0.3272,
+   0.3472,
+   0.3671,
+   0.3868,
+   0.4063,
+   0.4254,
+   0.4443,
+   0.4628,
+   0.4809,
+   0.4987,
+   0.516,
+   0.533,
+   0.5495,
+   0.5656,
+   0.5813,
+   0.5965,
+   0.6113,
+   0.6256,
+   0.6395,
+   0.653,
+   0.6661,
+   0.6787,
+   0.691,
+   0.7028,
+   0.7142,
+   0.7253,
+   0.7359,
+   0.7462,
+   0.7561,
+   0.7657,
+   0.7749,
+   0.7838,
+   0.7924,
+   0.8007,
+   0.8086,
+   0.8163,
+   0.8236,
+   0.8307,
+   0.8375,
+   0.8441,
+   0.8504
+  ],
+  "l998": [
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0,
+   0.0001,
+   0.0001,
+   0.0003,
+   0.0005,
+   0.0009,
+   0.0015,
+   0.0025,
+   0.0039,
+   0.0058,
+   0.0084,
+   0.0118,
+   0.016,
+   0.0213,
+   0.0276,
+   0.035,
+   0.0436,
+   0.0533,
+   0.0641,
+   0.0761,
+   0.089,
+   0.103,
+   0.1178,
+   0.1335,
+   0.1499,
+   0.167,
+   0.1846,
+   0.2027,
+   0.2212,
+   0.24,
+   0.2591,
+   0.2783,
+   0.2975,
+   0.3168,
+   0.3361,
+   0.3553,
+   0.3743,
+   0.3932,
+   0.4119,
+   0.4303,
+   0.4485,
+   0.4663,
+   0.4838,
+   0.501,
+   0.5178,
+   0.5342,
+   0.5503,
+   0.566,
+   0.5812,
+   0.5961,
+   0.6106,
+   0.6247,
+   0.6383,
+   0.6516,
+   0.6644,
+   0.6769,
+   0.689,
+   0.7007,
+   0.712,
+   0.723,
+   0.7335,
+   0.7438,
+   0.7536,
+   0.7632,
+   0.7724
+  ],
+  "cells": [
+   [
+    0.0006,
+    1
+   ],
+   [
+    0.5357,
+    1
+   ],
+   [
+    0.0616,
+    1
+   ],
+   [
+    0.0573,
+    1
+   ],
+   [
+    0.0324,
+    1
+   ],
+   [
+    0.0136,
+    1
+   ],
+   [
+    0.0089,
+    2
+   ],
+   [
+    0.0635,
+    1
+   ],
+   [
+    1.3938,
+    1
+   ],
+   [
+    0.6621,
+    1
+   ],
+   [
+    0.0301,
+    1
+   ],
+   [
+    0.0002,
+    1
+   ],
+   [
+    0.05,
+    1
+   ],
+   [
+    0.0039,
+    1
+   ],
+   [
+    0.6632,
+    1
+   ],
+   [
+    0.0661,
+    1
+   ],
+   [
+    0.0884,
+    1
+   ],
+   [
+    0.0377,
+    1
+   ],
+   [
+    0.0037,
+    1
+   ],
+   [
+    0.1695,
+    1
+   ],
+   [
+    1.1535,
+    4
+   ],
+   [
+    0.4052,
+    1
+   ],
+   [
+    1.1269,
+    1
+   ],
+   [
+    0.0041,
+    1
+   ],
+   [
+    0.054,
+    1
+   ],
+   [
+    0.2782,
+    1
+   ],
+   [
+    0.3072,
+    1
+   ],
+   [
+    0.6093,
+    2
+   ],
+   [
+    1.7635,
+    2
+   ],
+   [
+    0.0025,
+    1
+   ],
+   [
+    0.0477,
+    1
+   ],
+   [
+    0.0108,
+    1
+   ],
+   [
+    1.3351,
+    3
+   ],
+   [
+    1.1794,
+    3
+   ],
+   [
+    1.1894,
+    1
+   ],
+   [
+    0.6623,
+    2
+   ],
+   [
+    0.0407,
+    1
+   ],
+   [
+    0.0077,
+    1
+   ],
+   [
+    0.043,
+    1
+   ],
+   [
+    0.0516,
+    1
+   ],
+   [
+    1.2758,
+    1
+   ],
+   [
+    0.3817,
+    1
+   ],
+   [
+    0.0118,
+    1
+   ],
+   [
+    0.0215,
+    2
+   ],
+   [
+    0.0565,
+    2
+   ],
+   [
+    0.2322,
+    1
+   ],
+   [
+    0.154,
+    5
+   ],
+   [
+    0.062,
+    1
+   ],
+   [
+    0.1206,
+    1
+   ],
+   [
+    0.1292,
+    2
+   ],
+   [
+    0.0376,
+    1
+   ],
+   [
+    0.0642,
+    1
+   ],
+   [
+    0.0531,
+    1
+   ],
+   [
+    0.233,
+    1
+   ],
+   [
+    0.072,
+    5
+   ],
+   [
+    0.1113,
+    2
+   ],
+   [
+    0.8649,
+    1
+   ],
+   [
+    0.5279,
+    1
+   ],
+   [
+    0.7085,
+    1
+   ],
+   [
+    0.0366,
+    1
+   ],
+   [
+    0.1798,
+    3
+   ],
+   [
+    0.0398,
+    1
+   ],
+   [
+    0.0845,
+    1
+   ],
+   [
+    0.7286,
+    2
+   ],
+   [
+    0.8465,
+    1
+   ],
+   [
+    0.9996,
+    1
+   ],
+   [
+    0.1493,
+    4
+   ],
+   [
+    0.2021,
+    1
+   ],
+   [
+    0.0858,
+    1
+   ],
+   [
+    0.232,
+    2
+   ],
+   [
+    0.1103,
+    1
+   ],
+   [
+    0.8159,
+    1
+   ],
+   [
+    0.9026,
+    1
+   ],
+   [
+    0.5859,
+    2
+   ],
+   [
+    1.2615,
+    1
+   ],
+   [
+    0.521,
+    1
+   ],
+   [
+    0.2821,
+    2
+   ],
+   [
+    0.0773,
+    1
+   ],
+   [
+    0.506,
+    1
+   ],
+   [
+    0.7984,
+    2
+   ],
+   [
+    0.9288,
+    1
+   ],
+   [
+    0.0951,
+    1
+   ],
+   [
+    0.0678,
+    1
+   ],
+   [
+    0.0667,
+    3
+   ],
+   [
+    0.0099,
+    1
+   ],
+   [
+    0.1302,
+    1
+   ],
+   [
+    0.0909,
+    1
+   ],
+   [
+    0.4773,
+    1
+   ],
+   [
+    0.6885,
+    1
+   ],
+   [
+    0.7448,
+    1
+   ],
+   [
+    0.0732,
+    1
+   ],
+   [
+    0.1871,
+    4
+   ],
+   [
+    0.0706,
+    1
+   ],
+   [
+    0.2092,
+    1
+   ],
+   [
+    0.3815,
+    1
+   ],
+   [
+    0.0365,
+    1
+   ],
+   [
+    0.0479,
+    1
+   ],
+   [
+    0.0174,
+    5
+   ],
+   [
+    0.0281,
+    1
+   ],
+   [
+    0.0597,
+    1
+   ],
+   [
+    0.101,
+    2
+   ],
+   [
+    0.0648,
+    1
+   ],
+   [
+    0.3686,
+    1
+   ],
+   [
+    0.0014,
+    2
+   ],
+   [
+    0.0372,
+    1
+   ],
+   [
+    0.1539,
+    2
+   ],
+   [
+    0.0659,
+    2
+   ],
+   [
+    0.0252,
+    1
+   ],
+   [
+    0.4177,
+    1
+   ],
+   [
+    0.0214,
+    1
+   ],
+   [
+    0.0153,
+    2
+   ],
+   [
+    0.3757,
+    1
+   ],
+   [
+    0.0643,
+    1
+   ],
+   [
+    0.0283,
+    1
+   ],
+   [
+    0.6156,
+    1
+   ],
+   [
+    0.2674,
+    2
+   ],
+   [
+    0.1348,
+    1
+   ],
+   [
+    0.2026,
+    1
+   ],
+   [
+    0.15,
+    1
+   ],
+   [
+    0.0168,
+    2
+   ],
+   [
+    0.0207,
+    6
+   ],
+   [
+    0.0753,
+    1
+   ],
+   [
+    0.2393,
+    1
+   ],
+   [
+    0.0037,
+    1
+   ],
+   [
+    0.0228,
+    1
+   ],
+   [
+    0.2065,
+    1
+   ],
+   [
+    0.2369,
+    1
+   ],
+   [
+    0.1522,
+    1
+   ],
+   [
+    0.1232,
+    1
+   ],
+   [
+    0.0925,
+    1
+   ],
+   [
+    0.1953,
+    2
+   ],
+   [
+    0.179,
+    1
+   ],
+   [
+    0.1441,
+    4
+   ],
+   [
+    0.1073,
+    2
+   ],
+   [
+    0.021,
+    1
+   ],
+   [
+    0.0044,
+    1
+   ],
+   [
+    0.0917,
+    1
+   ],
+   [
+    0.0465,
+    1
+   ],
+   [
+    0.0219,
+    1
+   ],
+   [
+    0.0096,
+    1
+   ],
+   [
+    0.239,
+    2
+   ],
+   [
+    0.1733,
+    1
+   ],
+   [
+    0.0522,
+    2
+   ],
+   [
+    0.1983,
+    3
+   ],
+   [
+    0.0005,
+    1
+   ],
+   [
+    0.0657,
+    1
+   ],
+   [
+    0.0178,
+    1
+   ],
+   [
+    0.1486,
+    1
+   ],
+   [
+    0.1639,
+    1
+   ],
+   [
+    0.1188,
+    1
+   ],
+   [
+    0.0577,
+    2
+   ],
+   [
+    0.007,
+    1
+   ],
+   [
+    0.0011,
+    1
+   ],
+   [
+    0.0536,
+    1
+   ],
+   [
+    0.1163,
+    1
+   ],
+   [
+    0.0946,
+    1
+   ],
+   [
+    0.0078,
+    1
+   ],
+   [
+    0.1193,
+    1
+   ],
+   [
+    0.064,
+    1
+   ],
+   [
+    0.0365,
+    1
+   ],
+   [
+    0.174,
+    1
+   ],
+   [
+    0.0663,
+    1
+   ],
+   [
+    0.0004,
+    1
+   ],
+   [
+    0.0343,
+    1
+   ],
+   [
+    0.0327,
+    1
+   ],
+   [
+    0.0454,
+    1
+   ],
+   [
+    0.0155,
+    1
+   ],
+   [
+    0.0161,
+    1
+   ],
+   [
+    0.0347,
+    1
+   ],
+   [
+    0.0513,
+    1
+   ],
+   [
+    0.1144,
+    1
+   ],
+   [
+    0.1662,
+    1
+   ],
+   [
+    0.0133,
+    1
+   ],
+   [
+    0.0681,
+    1
+   ],
+   [
+    0.0132,
+    2
+   ],
+   [
+    0.0223,
+    1
+   ],
+   [
+    0.0099,
+    1
+   ],
+   [
+    0.0035,
+    1
+   ],
+   [
+    0.0026,
+    1
+   ],
+   [
+    0.0018,
+    1
+   ],
+   [
+    0.0037,
+    1
+   ],
+   [
+    0.0032,
+    1
+   ],
+   [
+    0.0105,
+    1
+   ],
+   [
+    0.0076,
+    1
+   ],
+   [
+    0.0066,
+    2
+   ],
+   [
+    0.0352,
+    1
+   ],
+   [
+    0.0125,
+    1
+   ],
+   [
+    0.013,
+    1
+   ],
+   [
+    0.001,
+    2
+   ],
+   [
+    0.0098,
+    1
+   ],
+   [
+    0.008,
+    4
+   ],
+   [
+    0.001,
+    1
+   ],
+   [
+    0.0038,
+    2
+   ],
+   [
+    0.0002,
+    1
+   ],
+   [
+    0.0002,
+    1
+   ],
+   [
+    0.001,
+    1
+   ],
+   [
+    0.0013,
+    2
+   ],
+   [
+    0.0003,
+    1
+   ],
+   [
+    0.0031,
+    4
+   ],
+   [
+    0.0001,
+    1
+   ],
+   [
+    0.0011,
+    1
+   ],
+   [
+    0.0017,
+    4
+   ],
+   [
+    0.0017,
+    4
+   ],
+   [
+    0.0005,
+    2
+   ],
+   [
+    0.0001,
+    1
+   ],
+   [
+    0.001,
+    1
+   ],
+   [
+    0.0005,
+    1
+   ],
+   [
+    0.0003,
+    2
+   ],
+   [
+    0.0001,
+    2
+   ],
+   [
+    0.0008,
+    1
+   ],
+   [
+    0.0001,
+    1
+   ]
+  ]
+ }
+}

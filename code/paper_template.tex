@@ -1,0 +1,149 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+\newfontfamily\headfont{Inter}[UprightFont=*-ExtraBold,BoldFont=*-ExtraBold,Extension=.otf,Path=/usr/share/fonts/opentype/inter/]
+\usepackage[a4paper,margin=2.3cm]{geometry}
+\usepackage{graphicx,booktabs,float,caption,array,xcolor,longtable}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage[round]{natbib}
+\usepackage{setspace}
+\setstretch{1.05}
+\renewcommand{\topfraction}{0.9}
+\renewcommand{\bottomfraction}{0.8}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.55em}
+\titleformat{\section}{\headfont\Large}{\thesection}{0.8em}{}
+\titleformat{\subsection}{\headfont\large}{\thesubsection}{0.8em}{}
+\captionsetup{font=small,labelfont=bf}
+\urlstyle{same}
+\hypersetup{pdftitle={Lost at Sea: Famous Disappearances Tested against Shipping Traffic},pdfauthor={Tristan Hotham}}
+
+\begin{document}
+\begin{center}
+{\Large\bfseries Lost at Sea: Famous Disappearances Tested against Shipping Traffic\par}
+\vspace{0.4em}
+{\large Is the Bermuda Triangle, or anywhere else, worse than its traffic would predict?\par}
+\vspace{1.2em}
+{\large Tristan Hotham\par}
+\vspace{0.3em}
+{\small Independent researcher\\
+ORCID: 0000-0003-4931-9349\\
+DOI: \href{https://doi.org/{{meta.doi}}}{https://doi.org/{{meta.doi}}}\par}
+\vspace{0.8em}
+2026
+\end{center}
+
+\begin{quote}
+\small
+\begin{center}\textbf{Abstract}\end{center}
+The Bermuda Triangle is said to claim more ships and aircraft than its traffic can explain. I test that claim, and the same claim for every other sea, with open data. From Wikipedia's lists of missing ships, missing aircraft and people who disappeared mysteriously at sea, and the articles on the Bermuda, Dragon's and Michigan Triangles, I built a catalogue of {{cat.n|int}} famous disappearances and placed {{cat.placed|int}} of them at sea from their location text. I compared 27 sea areas, and 2 degree squares, with modern shipping (the World Bank and IMF's AIS ship density, 2015 to 2021) and with {{losses.n|int}} recorded wrecks that have a position. The Bermuda Triangle holds {{bermuda.o|int}} placed disappearances against {{bermuda.e|f1}} expected from its traffic ({{bermuda.x|x1}} times; 95\% interval {{bermuda.lo|f1}} to {{bermuda.hi|f1}}), but its four neighbouring seas have the same excess ({{bermuda.neigh_x|x1}} times), and within that group the Triangle holds exactly its share ({{bermuda.o|int}} against {{bermuda.within_e|f1}}). Only {{bermuda.famous_inside|int}} of the {{bermuda.famous_n|int}} incidents told in its Wikipedia article lie inside the triangle as usually drawn. The Dragon's Triangle is as expected and the Michigan Triangle holds none. The seas that really are worse than their traffic are Bass Strait and the Tasman Sea, the Great Lakes, the English Channel, the US Atlantic coast, the Caribbean and the Grand Banks, and each has a plain explanation: weather, shoals, historical traffic, aviation and who wrote the losses down.
+
+\textbf{Keywords:} Bermuda Triangle; disappearances at sea; shipping traffic; AIS; funnel plot; Poisson; Wikipedia; maritime history; open data
+\end{quote}
+
+\section{Introduction}
+Since Vincent Gaddis gave the Bermuda Triangle its name and its vertices (Miami, San Juan and Bermuda) in a magazine article of 1964, and Charles Berlitz made it a best seller a decade later \citep{berlitz}, the claim has been that ships and aircraft vanish there more often than elsewhere \citep{wikibt}. The standard reply, made most fully by Larry Kusche \citep{kusche}, is that the area is busy, stormy and badly reported, and that many of its famous losses happened somewhere else. Both sides are making a quantitative claim about losses per unit of traffic, but neither had a map of traffic.
+
+Such a map now exists. The World Bank and the IMF publish a global raster of ship density built from AIS position reports \citep{wbdensity,cerdeiro}. And Wikipedia's volunteers have compiled lists of missing ships, missing aircraft and people who disappeared mysteriously at sea, alongside the articles on the Bermuda Triangle and its two lesser cousins, the Dragon's Triangle (the Devil's Sea) south of Japan and the Lake Michigan Triangle \citep{wikimships,wikimair,wikipeople,wikids,wikilm}. This paper places those disappearances on the map and asks, for every sea: how many would we expect if disappearances simply followed traffic, and how many are there? An interactive version is at \url{{{meta.page}}}.
+
+\section{Data}
+\textbf{Famous disappearances.} I parsed the tables of the three Wikipedia lists, with row spans filled in: {{cat.rows_ships|int}} rows of missing ships, {{cat.rows_aircraft|int}} of missing aircraft and {{cat.rows_people|int}} incidents from the people list (rows that continue a row span, such as the second Vivaldi brother, are folded into one incident; the list's ``solved cases'' are left out). I added {{cat.rows_article|int}} incidents told in the three triangle articles, with positions read from the article text (for example ``wreck found 35 nmi off St.~Augustine'' for the Cotopaxi). Each row keeps its year and its location text. Wikipedia text is CC BY-SA 4.0; the derived catalogue is shared under the same licence.
+
+\textbf{Shipping traffic.} The World Bank's Global Shipping Traffic Density \citep{wbdensity} counts AIS positions of all vessels from January 2015 to February 2021 on a 0.005 degree grid, produced by the IMF and World Bank from the AIS data behind \citet{cerdeiro}; it is CC BY 4.0. I used the 0.08 degree overview level of the published raster. That level was made by sampling single full-resolution pixels, so individual values are noisy; I only use sums over 2 degree squares (about 625 samples each) and over named seas (thousands). It is a proxy for modern traffic only.
+
+\textbf{Recorded losses.} As a historical denominator I use the {{losses.n|int}} wrecks with a position in two global records, as cleaned for an earlier study \citep{hotham}: entries of Wikipedia's ``List of shipwrecks'' pages that give coordinates ({{losses.n_wikipedia|int}}; CC BY-SA 4.0) and Wikidata wrecks ({{losses.n_wikidata|int}}; CC0). Of these, {{losses.n1800|int}} are dated 1800 to 2025 and {{losses.n2000|int}} are dated 2000 to 2025. I left out the national bulk records in that study (Canmore for Scotland, Coflein for Wales, NOAA's AWOIS for the United States), which would make the seas of three countries look far more dangerous than all others. Natural Earth supplies coastlines \citep{naturalearth}.
+
+\section{Methods}
+\subsection{Placing the disappearances}
+Each incident was placed from its location text with a hand-made gazetteer of {{cat.gaz_places|int}} ports, capes, islands and coasts and {{cat.gaz_seas|int}} named seas, in four grades of confidence: \emph{position given} (coordinates, or a distance and bearing from a named place, {{cat.conf.Position given|int}} incidents); \emph{near a named place} (``off'', ``near'' or ``around'' a cape, island or port, {{cat.conf.Near a named place|int}}); \emph{route midpoint} (``between A and B'' or ``from A to B'': the great-circle midpoint, for routes up to 4,000 km, {{cat.conf.Route midpoint|int}}); and \emph{sea area only} (a representative point inside a named sea, {{cat.conf.Sea area only|int}}). Routes of 4,000 to 7,000 km (most of them transatlantic) count only for the open sea they cross. For the aircraft and people lists, the circumstances text was used only when the location column gave an ocean or nothing better. A point that fell on land was moved to the nearest sea within 75 km (200 km for routes); {{cat.moved|int}} were moved. Incidents placed only by a whole ocean, lost over land, or on routes that cross continents were left out: {{cat.unplaced|int}} of {{cat.n|int}}. {{cat.fixes|int}} cases (including the {{cat.rows_article|int}} article incidents) were placed or corrected by hand, each with a note in the code.
+
+Duplicates were merged when two rows shared a year and a distinctive name word (for the people list, also a capitalised word of the circumstances), or an aircraft and a person shared a full date and lay within 1,500 km, but never two differently named ships or aircraft. {{cat.merged|int}} rows were merged, leaving {{cat.n|int}} incidents.
+
+\subsection{Seas, squares and expected counts}
+I drew {{T.n_areas|int}} named areas as simple polygons, tested in order so that they never overlap: the three triangles (the Bermuda Triangle from Miami to Bermuda to San Juan; the Dragon's Triangle from Tokyo to Guam to Taipei, a generous version around the Wikipedia article's centre point, since the article says its outline varies by author; and the Michigan Triangle from Ludington to Manitowoc to Benton Harbor), then smaller seas, then larger ones, and the rest of the world's seas. Incidents placed only by a sea's name are never counted inside a triangle (the representative point of ``Lake Michigan'' happens to fall inside the Michigan Triangle, which would otherwise be credited with four incidents it does not own).
+
+For area $a$ with traffic share $t_a$ and $N$ placed incidents, the expected count is $E_a = N t_a$ and the ratio is $O_a/E_a$. Intervals are exact Poisson 95\% intervals for $O_a$ \citep{garwood} divided by $E_a$. ``Clearly'' more or fewer means beyond the 99.8\% limit of a funnel plot \citep{spiegelhalter}, that is a one-sided Poisson probability below 0.001. I report four tests:
+\begin{itemize}
+\item \textbf{T}: disappearances against traffic, as above.
+\item \textbf{L}: disappearances of 1800 to 2025 against recorded losses of 1800 to 2025, $E_a = N_{1800} \ell_a$, where $\ell_a$ is the area's share of recorded losses; and the same without the world-war years.
+\item \textbf{M}: recorded losses of 2000 to 2025 against traffic, the closest match of eras.
+\item \textbf{Sensitivities}: a ``lanes'' traffic index (the share of sampled pixels with at least {{traffic.lanes_min|int}} AIS positions), which is less sensitive to how densely receivers pick up ships; incidents since 1946 only; ships only; and incidents placed by a position or a named place only.
+\end{itemize}
+For 2 degree squares I use only incidents placed by a position, a named place or a route ({{cat.placed_cells|int}}), and rank squares with at least two incidents beyond the 99.8\% limit.
+
+\section{Results}
+\subsection{The catalogue}
+Of the {{cat.placed|int}} placed incidents, {{cat.placed_kinds.Ship or boat|int}} are ships and boats, {{cat.placed_kinds.Aircraft|int}} aircraft and {{cat.placed_kinds.People lost at sea|int}} people lost from a vessel or with one. Their median year is {{cat.median_year|raw}}; {{cat.pre1946_pct|pc}} are from before 1946 and {{cat.war_pct|pc}} from the two world wars (Figure~\ref{fig:decades}). Their map (Figure~\ref{fig:map}) already shows the shape of the result: dense clusters off North America, around Britain, in Bass Strait and the Great Lakes, and very few off East Asia, whose shipping lanes are among the busiest in the world.
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_decades.png}\caption{Famous disappearances placed at sea, per decade, by what was lost. Shaded: the decades of the two world wars.}\label{fig:decades}\end{figure}
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_map.png}\caption{The {{cat.placed|int}} placed disappearances on modern AIS traffic (blue haze), with the three triangles. Sea areas are shaded by test T: red more than expected from traffic, blue fewer, pale within chance. Equal Earth projection.}\label{fig:map}\end{figure}
+
+\subsection{Every sea against its traffic}
+Figure~\ref{fig:forest} and Table~\ref{tab:areas} give test T for every area. {{T.n_higher|int}} areas hold clearly more disappearances than their traffic predicts, and {{T.n_lower|int}} clearly fewer: the Mediterranean, the Baltic and the Black Sea, and the East China and Japanese seas. The open North Atlantic ({{natl.o|int}} against {{natl.e|f1}}), the South China Sea and the Gulf of Mexico are as expected. The funnel plot (Figure~\ref{fig:funnel}) shows how far the extreme areas lie beyond chance.
+
+\begin{figure}[tbp]\centering\includegraphics[width=.92\textwidth]{f_forest.png}\caption{Test T: observed disappearances against the number expected from each area's share of AIS traffic, with exact Poisson 95\% intervals (log scale). Shaded rows: the three legendary triangles.}\label{fig:forest}\end{figure}
+\begin{figure}[tbp]\centering\includegraphics[width=.92\textwidth]{f_funnel.png}\caption{Funnel plot of test T. Points: named areas (coloured by verdict) and 2 degree squares with at least one disappearance (grey). Dashed lines: 95\% and 99.8\% limits if disappearances followed traffic.}\label{fig:funnel}\end{figure}
+
+{{TABLE_AREAS}}
+
+\subsection{The Bermuda Triangle}
+The Bermuda Triangle as drawn covers about {{bermuda.area_km2|int}} km$^2$ (Wikipedia notes that other authors' versions range from 1.3 to 3.9 million) and carries {{bermuda.traffic_pct|f2}}\% of the world's AIS traffic. It holds {{bermuda.o|int}} placed disappearances against {{bermuda.e|f2}} expected: {{bermuda.x|x1}} times, 95\% interval {{bermuda.lo|f1}} to {{bermuda.hi|f1}}, a one-sided probability of {{bermuda.p_up|f3}}. That is more than chance would usually give, but not beyond the 99.8\% limit. Its four neighbours (the US Atlantic coast, the Caribbean, the Gulf of Mexico and Newfoundland and the Grand Banks) hold {{bermuda.neigh_o|int}} against {{bermuda.neigh_e|f1}} ({{bermuda.neigh_x|x1}} times, 95\% interval {{bermuda.neigh_lo|f1}} to {{bermuda.neigh_hi|f1}}). Conditioning on the {{bermuda.group_n|int}} disappearances in the Triangle and its neighbours, the Triangle's share of the group's traffic ({{bermuda.within_share_pct|f1}}\%) predicts {{bermuda.within_e|f1}}; it holds {{bermuda.o|int}} (binomial $p = {{bermuda.within_p|f2}}$).
+
+Figure~\ref{fig:tests} shows the Triangle under each test. With the lanes index it is {{bermuda.lanes_x|x1}} times; since 1946, {{bermuda.o46|int}} against {{bermuda.e46|f1}}, almost all light and military aircraft; for ships alone, {{bermuda.ships_o|int}} against an expected count close to 1, within chance. Against recorded losses it stands out more ({{bermuda.L_x|x1}} times; without war years {{bermuda.Lpeace_x|x1}} times), but that comparison is weak here: only {{bermuda.losses_1800|int}} recorded wrecks in the Triangle have a position, because ships lost over deep water leave no wreck to plot, and the positioned wrecks of the Atlantic are dominated by wartime sinkings off the American coast. Losses of 2000 to 2025 are as expected ({{bermuda.M_o|int}} against {{bermuda.M_e|f1}}).
+
+Finally, the legend's own cases mostly lie outside. Of the {{bermuda.famous_n|int}} incidents told in the Wikipedia article, only {{bermuda.famous_inside|int}} fall inside the triangle as drawn, both placed at a route midpoint; {{bermuda.famous_within300|int}} are within 300 km (Figure~\ref{fig:bermuda}, Table~\ref{tab:famous}). Flight 19, the Cotopaxi and the 1948 DC-3 are placed off Florida's east coast, north of the Miami to Bermuda line; the Marine Sulphur Queen in the Gulf of Mexico; the Star Tiger far out towards the Azores. Kusche made the same observation in 1975 \citep{kusche}.
+
+\begin{figure}[tbp]\centering\includegraphics[width=.95\textwidth]{f_bermuda.png}\caption{The incidents of the Wikipedia Bermuda Triangle article as placed from their text (red: inside the triangle; white: outside), other catalogued disappearances (grey) and AIS traffic. Lambert azimuthal equal-area projection centred on 29N, 68W.}\label{fig:bermuda}\end{figure}
+\begin{figure}[tbp]\centering\includegraphics[width=.9\textwidth]{f_tests.png}\caption{The Bermuda Triangle (and its neighbours) under each test, with 95\% intervals. Observed against expected at right.}\label{fig:tests}\end{figure}
+
+{{TABLE_FAMOUS}}
+
+\subsection{The Dragon's and Michigan Triangles}
+The Dragon's Triangle holds {{dragon.o|int}} disappearances against {{dragon.e|f1}} expected ({{dragon.x|x1}} times, 95\% interval {{dragon.lo|f1}} to {{dragon.hi|f1}}); {{dragon.war|int}} are from the Second World War, among them the carrier Shinano. Its most famous case, the research ship Kaiyo Maru No.~5, was destroyed in 1952 by the eruption of the undersea volcano Myojin-sho that she was studying \citep{wikids}. The Michigan Triangle holds none of the catalogue's placed incidents once those placed only as ``Lake Michigan'' are excluded; by my placing, none of the {{michigan.famous_n|int}} incidents of its article lies inside it, though {{michigan.famous_within50|int}} lie within 50 km. Lake Michigan as a whole, however, is far above its traffic ({{michigan.lake_o|int}} against {{michigan.lake_e|f2}}, {{michigan.lake_x|x1}} times; {{michigan.lake_lanes_x|x1}} times with the lanes index), as are the other Great Lakes ({{michigan.gl_o|int}} against {{michigan.gl_e|f2}}).
+
+\subsection{Where the sea really is worse}
+Table~\ref{tab:worse} lists the areas beyond the 99.8\% limit, with the likely reasons, and Table~\ref{tab:cells} the most extreme 2 degree squares. Bass Strait and the Tasman Sea lead by far ({{worse.0.o|int}} against {{worse.0.e|f2}}; {{worse.0.lanes_x|x1}} times with the lanes index). Most of its incidents are colonial schooners and packets lost between Sydney, Hobart, Launceston and Port Phillip in the 1800s, in a strait swept by westerly gales and crowded with islands and reefs, and they come from one carefully compiled section of the list of missing ships. The Great Lakes follow, for similar reasons: autumn gales and a lake trade a century ago that dwarfed today's. The English Channel's excess is made of early aviators, Battle of Britain pilots and Glenn Miller; the US Atlantic coast's of Cape Hatteras, Gulf Stream storms and light aircraft; the Grand Banks' of fog, ice and pioneer transatlantic flights. Of the {{cells.n_flagged|int}} flagged squares, {{cells.bass_cells|int}} are in Bass Strait and the Tasman Sea and {{cells.aviation_cells|int}} owe much to aviation, such as the approaches to Hawaii and the Dole Air Race of 1927. Only {{bermuda.flagged_cells|int}} is inside the Bermuda Triangle: the Bahamas, with two aircraft.
+
+\begin{figure}[tbp]\centering\includegraphics[width=\textwidth]{f_worse.png}\caption{Two seas that really are worse than their traffic: Bass Strait and the Tasman Sea, and Lake Michigan and Lake Superior, with AIS traffic.}\label{fig:worse}\end{figure}
+
+{{TABLE_WORSE}}
+{{TABLE_CELLS}}
+
+\subsection{Modern losses against modern traffic}
+Test M compares the {{modern.n|int}} positioned wrecks of 2000 to 2025 with the AIS traffic of 2015 to 2021 (Figure~\ref{fig:modern}). The areas that stand out are the Gulf of Alaska ({{modern.alaska_x|x1}} times) and the US Atlantic coast ({{modern.usatl_x|x1}} times). This too is reporting: {{modern.alaska_wiki_pct|pc}} of the Alaskan losses are fishing vessels entered with positions into Wikipedia's monthly shipwreck lists, and {{modern.us_waters_pct|pc}} of all positioned losses since 2000 are in North American waters.
+
+\begin{figure}[tbp]\centering\includegraphics[width=.92\textwidth]{f_modern.png}\caption{Test M: recorded losses of 2000 to 2025 with a position against the number expected from AIS traffic of 2015 to 2021.}\label{fig:modern}\end{figure}
+
+\section{Limitations}
+First, the catalogue is of famous disappearances: those that someone wrote about, in English, on Wikipedia. It leans towards the English-speaking world, towards aviation and towards the twentieth century, and its regional sections reflect the energy of particular editors (Australia's colonial losses are an example). Second, many placements are rough: a route midpoint or a sea's representative point can be hundreds of kilometres from the loss, and a different outline for any triangle would change its count. Third, AIS traffic is a modern proxy: it cannot tell us where ships sailed in 1850 or where aircraft flew, and AIS position counts favour coasts with dense receivers, ports and slow vessels, which is why I repeat the tests with a lanes index. Fourth, the recorded-loss denominator is itself biased towards war and towards some countries' records. Fifth, disappearances cluster (one storm, one air race), so Poisson intervals are somewhat too narrow; the conclusions rest on patterns that are large compared with that. Finally, the sea outlines are my own, not the International Hydrographic Organization's.
+
+\section{Conclusion}
+The Bermuda Triangle does hold more famous disappearances than its modern traffic predicts, but by the same margin as every sea around it, and most of the incidents that made its name happened outside it. Nothing singles it out. The seas that really are worse than their traffic are less famous and more explicable: stormy straits and lakes that were far busier in the past, routes flown by pioneer aviators, and coasts whose losses were especially well written down.
+
+\section*{Data and code availability}
+The interactive map is at \url{{{meta.page}}}. Data and code are at \url{{{meta.repo}}} and archived with this paper at \url{https://doi.org/{{meta.doi}}}. The disappearance catalogue and the loss table, derived from Wikipedia, are released under CC BY-SA 4.0; other derived data under CC BY 4.0; code under the MIT licence. The AIS density is used under CC BY 4.0 as sums and a rendered image.
+
+\section*{AI statement}
+I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.
+
+\begin{thebibliography}{20}
+\bibitem[Berlitz(1974)]{berlitz} Berlitz, C. (1974) \emph{The Bermuda Triangle}. New York: Doubleday.
+\bibitem[Cerdeiro et al.(2020)]{cerdeiro} Cerdeiro, D. A., Komaromi, A., Liu, Y. and Saeed, M. (2020) World seaborne trade in real time: a proof of concept for building AIS-based nowcasts from scratch. IMF Working Paper 20/57. Washington, DC: International Monetary Fund.
+\bibitem[Garwood(1936)]{garwood} Garwood, F. (1936) Fiducial limits for the Poisson distribution. \emph{Biometrika} 28, 437 to 442.
+\bibitem[Hotham(2026)]{hotham} Hotham, T. (2026) Shipwrecks of the world, and how many over time: three centuries of recorded losses. Zenodo. \url{https://doi.org/10.5281/zenodo.23850289}
+\bibitem[Kusche(1975)]{kusche} Kusche, L. D. (1975) \emph{The Bermuda Triangle Mystery: Solved}. New York: Harper and Row.
+\bibitem[Natural Earth(2026)]{naturalearth} Natural Earth (2026) Land, admin 0 countries and populated places. Public domain. \url{https://www.naturalearthdata.com/}
+\bibitem[Spiegelhalter(2005)]{spiegelhalter} Spiegelhalter, D. J. (2005) Funnel plots for comparing institutional performance. \emph{Statistics in Medicine} 24, 1185 to 1202.
+\bibitem[Wikipedia(2026a)]{wikibt} Wikipedia contributors (2026a) Bermuda Triangle. CC BY-SA 4.0. \url{https://en.wikipedia.org/wiki/Bermuda_Triangle}
+\bibitem[Wikipedia(2026b)]{wikids} Wikipedia contributors (2026b) Devil's Sea. CC BY-SA 4.0. \url{https://en.wikipedia.org/wiki/Devil\%27s_Sea}
+\bibitem[Wikipedia(2026c)]{wikilm} Wikipedia contributors (2026c) Lake Michigan Triangle. CC BY-SA 4.0. \url{https://en.wikipedia.org/wiki/Lake_Michigan_Triangle}
+\bibitem[Wikipedia(2026d)]{wikimships} Wikipedia contributors (2026d) List of missing ships. CC BY-SA 4.0. \url{https://en.wikipedia.org/wiki/List_of_missing_ships}
+\bibitem[Wikipedia(2026e)]{wikimair} Wikipedia contributors (2026e) List of missing aircraft. CC BY-SA 4.0. \url{https://en.wikipedia.org/wiki/List_of_missing_aircraft}
+\bibitem[Wikipedia(2026f)]{wikipeople} Wikipedia contributors (2026f) List of people who disappeared mysteriously at sea. CC BY-SA 4.0. \url{https://en.wikipedia.org/wiki/List_of_people_who_disappeared_mysteriously_at_sea}
+\bibitem[World Bank(2026)]{wbdensity} World Bank (2026) Global Shipping Traffic Density. Data catalogue, dataset 0037580, produced with the IMF from AIS data, January 2015 to February 2021; retrieved 2026. CC BY 4.0. \url{https://datacatalog.worldbank.org/search/dataset/0037580}
+\end{thebibliography}
+\end{document}

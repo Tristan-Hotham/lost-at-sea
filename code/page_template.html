@@ -1,0 +1,679 @@
+<!doctype html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lost at Sea</title>
+<meta name="description" content="{{cat.n|int}} famous disappearances at sea from Wikipedia, placed on the map and tested against modern shipping traffic and against all recorded losses. Is the Bermuda Triangle worse than its traffic would predict?">
+<meta property="og:title" content="Lost at sea: is the Bermuda Triangle worse than its traffic?">
+<meta property="og:description" content="{{bermuda.o|int}} famous disappearances inside the Bermuda Triangle against {{bermuda.e|f1}} expected from its shipping. Its neighbours run just as high. The places that really are worse are elsewhere.">
+<meta property="og:image" content="https://maps.tristanhotham.com/lost-at-sea/header.png">
+<meta property="og:url" content="https://maps.tristanhotham.com/lost-at-sea/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800;9..144,900&family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.css">
+<style>
+/* Chart room: pale paper, deep sea ink, signal red for more than expected, sea blue for fewer. */
+:root{
+  --bg:#F6F4EF; --panel:#EAE7DF; --fg:#1D2128; --muted:#636A72; --rule:#DDD8CC; --card:#FFFEFA; --border:#CBC5B8;
+  --hot:#B3202A; --cool:#2F7FB8; --gold:#C9A227; --ink:#1F3A5F; --land:#E6E2D8; --sea:#E4ECF0;
+  --display:"Fraunces",Georgia,"Times New Roman",serif;
+  --body:"Source Serif 4",Georgia,"Times New Roman",serif;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#11161D; --panel:#1B222C; --fg:#ECEEF1; --muted:#A2A8B0; --rule:#2E3540; --card:#161C24; --border:#444B57;
+  --hot:#FF6B6B; --cool:#7DB7E6; --gold:#F2C94E; --ink:#A9C2E6; --land:#232831; --sea:#131A22; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#11161D; --panel:#1B222C; --fg:#ECEEF1; --muted:#A2A8B0; --rule:#2E3540; --card:#161C24; --border:#444B57;
+  --hot:#FF6B6B; --cool:#7DB7E6; --gold:#F2C94E; --ink:#A9C2E6; --land:#232831; --sea:#131A22; color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 18px/1.62 var(--body);
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));overflow-x:hidden}
+.wrap{max-width:700px;margin:0 auto;padding-block:28px 64px}
+.wrap .bleed{width:min(1180px,calc(100vw - 32px));margin-left:calc((100% - min(1180px,100vw - 32px))/2);margin-right:0}
+a{color:inherit;text-decoration-color:var(--hot);text-underline-offset:3px}
+.kicker{font:500 12px/1 var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.kicker b{background:var(--ink);color:var(--bg);padding:5px 8px;font-weight:500}
+header.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:12px 24px;align-items:end;border-bottom:6px double var(--fg);padding-bottom:22px;margin-top:18px}
+h1{font:900 clamp(48px,12vw,104px)/.9 var(--display);letter-spacing:-.02em;margin:0;text-wrap:balance}
+h1 .a{color:var(--hot)}
+.mark{width:clamp(78px,16vw,128px);height:auto;display:block;color:var(--fg)}
+.dek{grid-column:1/-1;font-size:21px;line-height:1.42;margin:8px 0 0;max-width:58ch}
+.byline{font:400 13px/1.4 var(--mono);color:var(--muted);margin-top:14px}
+h2{font:800 34px/1.04 var(--display);letter-spacing:-.01em;margin:54px 0 10px;text-wrap:balance}
+h2 .n{font:500 13px/1 var(--mono);color:var(--hot);display:block;letter-spacing:.1em;margin-bottom:10px}
+h3{font:600 20px/1.25 var(--display);margin:28px 0 6px}
+p{margin:0 0 16px}
+.lede::first-letter{font:900 72px/.8 var(--display);float:left;margin:6px 10px 0 0;color:var(--hot)}
+.stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);margin:26px 0 8px}
+.stats div{background:var(--card);padding:14px 12px}
+.stats b{display:block;font:900 clamp(22px,4.4vw,32px)/1 var(--display);letter-spacing:-.01em}
+.stats b.h{color:var(--hot)} .stats b.c{color:var(--cool)} .stats b.g{color:var(--gold)} .stats b.p{color:var(--ink)}
+.stats span{font:400 12px/1.35 var(--mono);color:var(--muted);display:block;margin-top:6px}
+@media (max-width:600px){.stats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.figure{margin:26px 0 30px}
+.fig-h{font:600 19px/1.25 var(--display);margin:0 0 4px}
+.fig-sub{font:400 13px/1.45 var(--mono);color:var(--muted);margin:0 0 12px}
+.src{font:400 12px/1.45 var(--mono);color:var(--muted);margin-top:10px}
+.chart{width:100%;position:relative}
+.chart svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--mono);fill:var(--fg)}
+.lab{font-size:12px}.lab.m{fill:var(--muted)}.lab.b{font-weight:500}.lab.s{font-size:11px}
+.tip{position:absolute;pointer-events:none;background:var(--fg);color:var(--bg);font:400 12px/1.45 var(--mono);padding:8px 10px;border-radius:3px;max-width:300px;z-index:1000;transform:translate(-50%,calc(-100% - 12px));display:none}
+.tip b{font-weight:500}
+.controls{display:flex;gap:8px;align-items:center;margin:0 0 10px;flex-wrap:wrap}
+.scrollrow{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:thin;padding-bottom:2px;max-width:100%}
+.scrollrow .btn{flex:0 0 auto;white-space:nowrap}
+.ctl-l{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-right:2px;flex:0 0 auto;align-self:center}
+.btn{font:500 12px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:8px 10px;cursor:pointer;min-height:36px}
+.btn[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.btn i{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:-1px;border:1px solid rgba(0,0,0,.2)}
+.btn:focus-visible,input:focus-visible,summary:focus-visible,select:focus-visible{outline:2px solid var(--hot);outline-offset:2px}
+.searchbox{position:relative;flex:1 1 260px;min-width:0}
+input[type=search]{font:400 15px/1 var(--mono);background:var(--card);color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 11px;min-height:40px;width:100%}
+.suggest{position:absolute;left:0;right:0;top:100%;margin:2px 0 0;padding:0;list-style:none;background:var(--card);border:1px solid var(--border);z-index:1001;font:400 13px/1.3 var(--mono);display:none;max-height:340px;overflow:auto}
+.suggest li{padding:8px 10px;cursor:pointer;border-bottom:1px solid var(--rule)}
+.suggest li span{color:var(--muted)}
+.suggest li[aria-selected="true"],.suggest li:hover{background:var(--panel)}
+.mapgrid{display:grid;grid-template-columns:minmax(0,1fr) 330px;gap:14px;align-items:start}
+@media (max-width:900px){.mapgrid{grid-template-columns:1fr}}
+.side{background:var(--card);border:1px solid var(--border);padding:12px 12px 10px;font:400 13px/1.45 var(--mono);max-height:660px;overflow:auto}
+@media (max-width:900px){.side{max-height:none}}
+.side h4{font:500 11px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:14px 0 8px}
+.side h4:first-child{margin-top:2px}
+.side .big{font:800 24px/1.1 var(--display);margin:2px 0 4px}
+.side .sub{color:var(--muted);font-size:12px;margin:0 0 8px}
+.side ol,.side ul{margin:4px 0 8px;padding-left:20px}
+.side li{margin:3px 0}
+.side li small,.side td small{color:var(--muted)}
+.side table{width:100%;border-collapse:collapse;margin:4px 0 6px}
+.side td{padding:4px 4px 4px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+.side td.num{text-align:right;white-space:nowrap}
+.back{font:400 12px var(--mono);background:none;border:0;color:var(--muted);padding:0;cursor:pointer;text-decoration:underline;margin-bottom:6px}
+.go{cursor:pointer;text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:3px}
+.lmap{height:640px;border:1px solid var(--border);background:var(--sea);border-radius:2px}
+@media (max-width:600px){.lmap{height:min(62vh,470px)}}
+.leaflet-container{font:400 12px/1.4 var(--mono);background:var(--sea)}
+.dotcanvas{position:absolute;left:0;top:0;pointer-events:none}
+.lyrBtn{background:var(--card,var(--bg));color:var(--fg);border:1px solid var(--border);border-radius:3px;font:600 12px/1 var(--mono);padding:8px 10px;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.lyrBtn[aria-expanded="true"]{background:var(--fg);color:var(--bg)}
+.lyrPanel{background:var(--card,var(--bg));color:var(--fg);border:1px solid var(--border);border-radius:3px;padding:10px 12px 8px;margin-top:6px;width:260px;box-shadow:0 2px 10px rgba(0,0,0,.15);font:400 12px/1.3 var(--mono);max-height:min(70vh,540px);overflow:auto}
+.lyrPanel[hidden]{display:none}
+.lyrPanel .row{margin:0 0 9px}
+.lyrPanel label{display:flex;gap:6px;align-items:center;cursor:pointer;font-weight:600}
+.lyrPanel input[type=range]{width:100%;accent-color:var(--fg)}
+.lyrPanel select{font:400 12px var(--mono);background:var(--bg);color:var(--fg);border:1px solid var(--border);border-radius:2px;padding:2px 4px;width:100%;min-height:0}
+.lyrPanel .sub{display:flex;gap:6px;align-items:center;color:var(--muted);font-size:11px;margin-top:3px}
+.lyrPanel .sub span{flex:0 0 58px}
+.lyrPanel .hd{font:500 10.5px/1 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:10px 0 7px;border-top:1px solid var(--rule);padding-top:9px}
+.lyrPanel .reset{font:400 11px var(--mono);color:var(--muted);background:none;border:0;padding:0;cursor:pointer;text-decoration:underline}
+.cityL{font:500 11px/1 var(--mono);color:var(--fg);white-space:nowrap;text-shadow:0 0 3px var(--bg),0 0 3px var(--bg),0 0 2px var(--bg);pointer-events:none}
+.cityL i{display:inline-block;width:5px;height:5px;border-radius:50%;background:var(--fg);margin-right:4px;vertical-align:1px}
+.cityL.s{font-size:10px;font-weight:400}
+.cntL{font:700 11px/1 var(--mono);color:var(--fg);white-space:nowrap;text-transform:uppercase;letter-spacing:.06em;opacity:.75;text-shadow:0 0 3px var(--bg),0 0 3px var(--bg);pointer-events:none;text-align:center}
+.triL{font:700 12px/1.1 var(--display);color:var(--fg);white-space:nowrap;text-shadow:0 0 4px var(--bg),0 0 3px var(--bg),0 0 2px var(--bg);pointer-events:none}
+.mapnote{background:color-mix(in srgb,var(--card) 92%,transparent);border:1px solid var(--border);border-radius:3px;padding:6px 9px;font:400 12px/1.35 var(--mono);max-width:min(300px,62vw);box-shadow:0 1px 4px rgba(0,0,0,.12)}
+.mapnote b{font-weight:600}
+.mapnote:empty{display:none}
+.leaflet-bar a,.leaflet-bar a:hover{background:var(--card);color:var(--fg);border-bottom-color:var(--border)}
+.leaflet-control-attribution{background:color-mix(in srgb,var(--card) 85%,transparent)!important;color:var(--muted)}
+.leaflet-control-attribution a{color:var(--fg)}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:var(--card);color:var(--fg)}
+.leaflet-popup-content{font:400 12.5px/1.45 var(--mono);margin:10px 12px}
+.leaflet-popup-content b{font:700 15px/1.2 var(--display)}
+.legend{display:flex;gap:6px 14px;flex-wrap:wrap;font:400 12px/1.3 var(--mono);color:var(--muted);margin-top:8px;align-items:center}
+.legend span{display:inline-flex;align-items:center}
+.legend i{display:inline-block;width:13px;height:13px;margin-right:6px;border-radius:50%;border:1px solid rgba(0,0,0,.15)}
+.legend i.sq{border-radius:2px}
+.legend .ramp{display:inline-block;width:150px;height:12px;border-radius:2px;margin:0 6px;border:1px solid rgba(0,0,0,.1)}
+.pull{font:600 26px/1.25 var(--display);border-left:6px solid var(--hot);padding:4px 0 4px 18px;margin:30px 0}
+.note{background:var(--panel);border:1px solid var(--rule);padding:14px 16px;font-size:16px;margin:22px 0}
+.note h3{margin-top:0}
+.verdict{border:2px solid var(--fg);background:var(--card);padding:16px 18px;margin:24px 0}
+.verdict h3{margin:0 0 8px}
+.verdict p:last-child{margin-bottom:0}
+table.tbl{width:100%;border-collapse:collapse;font:400 13px/1.4 var(--mono)}
+table.tbl th{font:500 11px/1 var(--mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:left;padding:6px 6px 6px 0;border-bottom:2px solid var(--fg)}
+table.tbl td{padding:6px 6px 6px 0;border-bottom:1px solid var(--rule);vertical-align:top}
+table.tbl td.r,table.tbl th.r{text-align:right;white-space:nowrap}
+table.tbl tr[data-i]{cursor:pointer}
+table.tbl tr[data-i]:hover td{background:var(--panel)}
+.tag{display:inline-block;font:500 11px/1 var(--mono);padding:3px 5px;border-radius:2px;white-space:nowrap}
+.tag.in{background:var(--hot);color:#fff}.tag.out{background:var(--panel);color:var(--fg);border:1px solid var(--border)}
+.tablebox{max-height:470px;overflow:auto;border:1px solid var(--border);background:var(--card);padding:0 10px}
+details{margin:14px 0}
+summary{font:500 13px/1.4 var(--mono);cursor:pointer;color:var(--fg);padding:8px 0}
+.cta{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}
+.cta a{font:500 13px/1 var(--mono);text-decoration:none;border:1px solid var(--fg);padding:11px 14px;border-radius:3px}
+.cta a.p{background:var(--hot);border-color:var(--hot);color:#fff}
+footer{border-top:6px double var(--fg);margin-top:56px;padding-top:16px;font:400 13px/1.55 var(--mono);color:var(--muted)}
+footer p{margin:0 0 10px}
+.theme{position:fixed;right:12px;bottom:12px;z-index:1002}
+@media print{.theme,.controls{display:none}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<div class="kicker"><b>Data study</b><span>Disappearances at sea</span><span>World, 1468 to 2025</span></div>
+<header class="hero">
+  <h1>Lost <span class="a">at</span> sea</h1>
+  <svg class="mark" viewBox="0 0 120 120" aria-hidden="true"><g id="heroMark"></g></svg>
+  <p class="dek">The Bermuda Triangle is famous for swallowing ships and planes. I put {{cat.placed|int}} famous disappearances on the map and tested every sea against its shipping. The Triangle does have more than its traffic predicts, about {{bermuda.x|x1}} times, but so does the whole American side of the Atlantic. The places that really are worse than their traffic are less famous, and easier to explain.</p>
+</header>
+<div class="byline">Dr Tristan Hotham · Independent researcher · 2026 · Data: Wikipedia contributors (lists of missing ships, missing aircraft and people who disappeared at sea; the three "triangle" articles; lists of shipwrecks); Wikidata; World Bank Global Shipping Traffic Density (IMF and World Bank, AIS data); Natural Earth</div>
+
+<div class="stats">
+  <div><b class="p">{{cat.placed|int}}</b><span>famous disappearances placed at sea, from {{cat.n|int}} on Wikipedia's lists</span></div>
+  <div><b class="h">{{bermuda.o|int}} v {{bermuda.e|f1}}</b><span>inside the Bermuda Triangle, against the number expected from its shipping</span></div>
+  <div><b class="g">{{bermuda.neigh_x|x1}}×</b><span>its neighbours' excess, from the Gulf of Mexico to Newfoundland: the same as the Triangle's</span></div>
+  <div><b class="c">{{bermuda.famous_inside|int}} of {{bermuda.famous_n|int}}</b><span>incidents told on Wikipedia's Bermuda Triangle page that lie inside the triangle</span></div>
+</div>
+
+<p class="lede">Draw a line from Miami to Bermuda, on to San Juan in Puerto Rico and back to Miami, and you have the most famous patch of sea in the world. Since the 1960s, books and films have said that ships and aircraft vanish there more often than anywhere else. The usual reply is that the Triangle is simply busy: lots of traffic, so lots of losses. That is a testable claim, so I tested it.</p>
+<p>I took Wikipedia's lists of missing ships, missing aircraft and people who disappeared mysteriously at sea, added the incidents told in the articles on the Bermuda, Dragon's and Michigan Triangles, merged the duplicates and placed each disappearance as well as its text allows: {{cat.n|int}} incidents, {{cat.placed|int}} of them at sea. Then I compared each sea with its shipping, measured by the World Bank and IMF's map of ship positions from 2015 to 2021, and with all {{losses.n|int}} recorded wrecks that have a position. If a sea really is cursed, it should hold more disappearances than either would predict.</p>
+
+<h2><span class="n">01 · The catalogue</span>What "lost at sea" looks like on Wikipedia</h2>
+<p>The three lists are a mixed bag: {{cat.kinds.Ship or boat|int}} ships and boats, from Tudor warships to yachts; {{cat.kinds.Aircraft|int}} aircraft, from Victorian balloons to Malaysia Airlines Flight 370; and {{cat.kinds.People lost at sea|int}} people, from explorers to cruise passengers, who vanished over the side or with their boat. {{cat.merged|int}} rows turned out to be the same incident listed twice. The median year of a placed incident is {{cat.median_year|raw}}, and {{cat.pre1946_pct|pc}} are from before 1946, so most of these losses happened long before modern shipping lanes existed; {{cat.war_pct|pc}} happened during the two world wars.</p>
+<p>Placing them is the hard part. Only {{cat.conf.Position given|int}} give coordinates or a distance from a named place. {{cat.conf.Near a named place|int}} say "off" or "near" a cape, island or port; {{cat.conf.Route midpoint|int}} name only the two ports between which a ship vanished, so I use the midpoint of the route; and {{cat.conf.Sea area only|int}} name only a sea. I left out the {{cat.unplaced|int}} that say no more than "Atlantic Ocean", or that were lost over land.</p>
+<div class="figure"><p class="fig-h">Famous disappearances per decade, 1800 to 2025</p><p class="fig-sub">The {{cat.placed|int}} incidents placed at sea, by what was lost. Hover a bar.</p>
+<div class="chart" id="decChart"></div><div class="legend" id="decLegend"></div></div>
+
+<h2><span class="n">02 · The map</span>Disappearances, traffic and the sea that is worse than expected</h2>
+<p>Each dot is a disappearance, coloured by what was lost or by how precisely I could place it. The blue haze is modern shipping. Each sea is shaded by how many disappearances it holds compared with the number its share of shipping predicts: red for more, blue for fewer, pale where the difference is within chance. Switch the shading to the other two tests, or to 2 degree squares, and click anything.</p>
+<div class="bleed" id="atlas">
+<div class="controls">
+  <div class="scrollrow" id="measRow"><span class="ctl-l">Shade by</span><button class="btn" data-m="T" aria-pressed="true">Disappearances v traffic</button><button class="btn" data-m="L" aria-pressed="false">Disappearances v all recorded losses</button><button class="btn" data-m="M" aria-pressed="false">Losses 2000 to 2025 v traffic</button><button class="btn" data-m="none" aria-pressed="false">No shading</button></div>
+</div>
+<div class="controls">
+  <div class="scrollrow" id="unitRow"><span class="ctl-l">Units</span><button class="btn" data-u="area" aria-pressed="true">Named seas</button><button class="btn" data-u="cell" aria-pressed="false">2 degree squares</button></div>
+  <div class="scrollrow" id="colRow"><span class="ctl-l">Dots</span><button class="btn" data-c="kind" aria-pressed="true">What was lost</button><button class="btn" data-c="conf" aria-pressed="false">How placed</button></div>
+</div>
+<div class="controls">
+  <div class="searchbox"><input type="search" id="q" placeholder="Search a disappearance, a sea or a town" aria-label="Search a disappearance, a sea or a town" autocomplete="off"><ul class="suggest" id="sug" role="listbox"></ul></div>
+</div>
+<div class="controls"><div class="scrollrow" id="focusRow"><span class="ctl-l">Zoom to</span></div></div>
+<div class="mapgrid">
+  <div><div id="map" class="lmap" role="application" aria-label="Map of disappearances at sea, shipping traffic and the seas that hold more than expected"></div>
+    <div class="legend" id="legend"></div></div>
+  <div class="side" id="side" aria-live="polite"></div>
+</div>
+<p class="src">Dots: {{cat.placed|int}} disappearances placed at sea (Wikipedia lists and the three triangle articles, duplicates merged). Shading: observed disappearances (or losses) divided by the number expected from the sea's share of modern AIS traffic (or of all recorded losses since 1800); pale where the 95% interval includes 1. Squares use only incidents placed by a position, a named place or a route. Traffic: World Bank, Global Shipping Traffic Density (IMF and World Bank, AIS positions 2015 to 2021), CC BY 4.0, shown as a modern proxy only. Recorded losses: Wikipedia lists of shipwrecks and Wikidata. Outlines: Natural Earth. Base map tiles © Esri.</p>
+</div>
+
+<h2><span class="n">03 · The Bermuda Triangle</span>Busy, but no busier at losing things than its neighbours</h2>
+<p>The Triangle covers about {{bermuda.area_km2|int}} square kilometres and carries {{bermuda.traffic_pct|f2}}% of the world's tracked shipping. If disappearances simply followed traffic, it would hold {{bermuda.e|f1}} of the {{cat.placed|int}} placed incidents. It holds {{bermuda.o|int}}: {{bermuda.x|x1}} times as many, with a 95% interval of {{bermuda.lo|f1}} to {{bermuda.hi|f1}} times. That is more than chance would usually give, but only just, and it is not unusual for its part of the world. The four seas around it, the US Atlantic coast, the Caribbean, the Gulf of Mexico and the Grand Banks, hold {{bermuda.neigh_o|int}} disappearances against {{bermuda.neigh_e|f1}} expected, {{bermuda.neigh_x|x1}} times their traffic. Within that group the Triangle has {{bermuda.within_share_pct|f1}}% of the shipping and should hold {{bermuda.within_e|f1}} of their disappearances. It holds {{bermuda.o|int}}.</p>
+<div class="verdict"><h3>So, is the Bermuda Triangle worse than its traffic would predict?</h3><p>Slightly, but not because it is the Triangle. Its excess, about {{bermuda.x|x1}} times, matches the excess of the whole western North Atlantic, which is what you would expect from lists written mostly in English, about American and British ships and flights, with a long tail of light aircraft out of Florida. Compared with its neighbours it is exactly as dangerous as its shipping suggests. Its few modern losses ({{bermuda.M_o|int}} recorded since 2000, against {{bermuda.M_e|f1}} expected) are no worse than anywhere else.</p></div>
+<p>The legend also leaks at the edges. Of the {{bermuda.famous_n|int}} incidents told on Wikipedia's Bermuda Triangle page, only {{bermuda.famous_inside|int}} lie inside the triangle as usually drawn, and both of those are placed only at the midpoint of their route. Flight 19 vanished off Florida's east coast, just north of the Miami to Bermuda line; the Star Tiger was lost on the way from the Azores, far out in the Atlantic; the Cotopaxi's wreck lies off St Augustine; the Marine Sulphur Queen went down in the Gulf of Mexico; the Carroll A. Deering ran aground at Cape Hatteras. {{bermuda.famous_within300|int}} of the {{bermuda.famous_n|int}} are within 300 km of it. The Triangle has grown in the telling to cover most of the western North Atlantic.</p>
+<div class="figure"><p class="fig-h">The incidents on the Bermuda Triangle page</p><p class="fig-sub">Where I placed them, and how far outside the Miami, Bermuda and San Juan triangle they fall. Click a row to see it on the map.</p><div class="tablebox"><table class="tbl" id="famTable"></table></div></div>
+<p>There is one test the Triangle does fail. Measured against all recorded wrecks with a position since 1800, it has {{bermuda.L_x|x1}} times more disappearances than expected ({{bermuda.L_o|int}} against {{bermuda.L_e|f1}}). But that says more about the wrecks than the mysteries: only {{bermuda.losses_1800|int}} recorded wrecks there have a position, because ships lost in deep open water leave no wreck to plot, and wartime sinkings, which dominate the positioned wrecks, were rarer there than off the American coast. A ship that sinks over the Puerto Rico Trench simply vanishes. That is geography, not mystery.</p>
+
+<h2><span class="n">04 · Every sea, side by side</span>Observed against expected, with the uncertainty</h2>
+<p>Here is every sea in the comparison, from the busiest (the Mediterranean and the North Sea) to the ones where few ships go now. Each bar is a 95% interval for the ratio of disappearances to the number expected; anything whose bar crosses 1 is within chance. Switch between the tests. The Mediterranean, the North Sea, the Baltic and the seas around Japan and China have far fewer famous disappearances than their shipping predicts. The open North Atlantic, the South China Sea and the Gulf of Mexico are about as expected. The Bermuda Triangle sits among its neighbours, well below the seas that really stand out.</p>
+<div class="figure"><p class="fig-h">Disappearances per unit of traffic, by sea</p><p class="fig-sub">Ratio of observed to expected, log scale, with exact Poisson 95% intervals. Hover a row.</p>
+<div class="controls"><div class="scrollrow" id="forRow"><span class="ctl-l">Test</span><button class="btn" data-f="T" aria-pressed="true">v traffic</button><button class="btn" data-f="T_lanes" aria-pressed="false">v traffic (lanes index)</button><button class="btn" data-f="T_1946" aria-pressed="false">Since 1946 only</button><button class="btn" data-f="L" aria-pressed="false">v all recorded losses</button><button class="btn" data-f="M" aria-pressed="false">Losses 2000 to 2025 v traffic</button></div></div>
+<div class="chart" id="forest"></div><div class="legend" id="forLegend"></div></div>
+<p>A funnel plot shows the same thing with the role of chance made explicit. Seas where little is expected scatter widely by luck alone; seas where a lot is expected should sit close to 1. The funnel lines mark where 95% and 99.8% of seas would fall if disappearances simply followed traffic.</p>
+<div class="figure"><p class="fig-h">Funnel plot: disappearances against traffic</p><p class="fig-sub">Each point is a sea (or a 2 degree square): expected count across, observed over expected up, both on log scales. Hover a point.</p>
+<div class="controls"><div class="scrollrow" id="funRow"><span class="ctl-l">Points</span><button class="btn" data-u="area" aria-pressed="true">Named seas</button><button class="btn" data-u="cell" aria-pressed="false">2 degree squares</button></div></div>
+<div class="chart" id="funnel"></div><div class="legend" id="funLegend"></div></div>
+
+<h2><span class="n">05 · Where it really is worse</span>Weather, shoals, war and who wrote it down</h2>
+<p>{{T.n_higher|int}} seas hold clearly more disappearances than their traffic predicts, beyond the 99.8% funnel. None of them is a legend, and each has a plain explanation. Bass Strait and the Tasman Sea top the list, with {{worse.0.o|int}} incidents against {{worse.0.e|f2}} expected: colonial schooners and packets lost between Sydney, Hobart and Port Phillip in the 1800s, in one of the stormiest straits in the world, carefully gathered in one section of the list of missing ships. Even with a traffic measure that is kinder to the Southern Hemisphere it is {{worse.0.lanes_x|x1}} times. Lake Michigan and the other Great Lakes come next: lake freighters lost in autumn gales a century ago, when lake trade was far busier than it is now.</p>
+<div class="figure"><p class="fig-h">Seas clearly worse than their traffic predicts</p><p class="fig-sub">Beyond the 99.8% funnel limit. Click a row to zoom the map there.</p><div class="tablebox"><table class="tbl" id="worseTable"></table></div></div>
+<p>At the scale of 2 degree squares, {{cells.n_flagged|int}} squares are beyond the 99.8% limit with at least two incidents. {{cells.bass_cells|int}} of them are in Bass Strait and the Tasman Sea. Most of the others are about aviation: the approaches to Hawaii, the Dole Air Race of 1927, when three of the planes racing from California to Hawaii vanished, and pioneer flights from Newfoundland. Aircraft follow routes that ships rarely use, so measuring them against shipping makes them look worse than they were. Just {{bermuda.flagged_cells|int}} of the squares is inside the Bermuda Triangle: the Bahamas, where a Flying Boxcar and a Cessna vanished, among thousands of light aircraft that cross from Florida every year.</p>
+<div class="figure"><p class="fig-h">The 2 degree squares furthest beyond their traffic</p><p class="fig-sub">At least two incidents and beyond the 99.8% limit, most extreme first. Click a row to zoom the map there.</p><div class="tablebox"><table class="tbl" id="cellTable"></table></div></div>
+<p class="pull">The seas that really are worse than their traffic are not mysterious: they are stormy, shallow, busy in the past, or very well written about.</p>
+
+<h2><span class="n">06 · The other triangles</span>The Dragon's Triangle and the Michigan Triangle</h2>
+<p><b>The Dragon's Triangle</b>, or Devil's Sea, south of Tokyo, has no agreed shape; Wikipedia's article says its outline "varies from one author to another". I drew it from Tokyo to Guam and to Taipei, a generous version around the article's centre point. It holds {{dragon.o|int}} placed disappearances against {{dragon.e|f1}} expected from its traffic ({{dragon.x|x1}} times, 95% interval {{dragon.lo|f1}} to {{dragon.hi|f1}}): exactly as many as its busy shipping predicts. {{dragon.war|int}} of them are from the Second World War, among them the giant carrier Shinano, sunk by a submarine on her first voyage. Its most famous case, the research ship Kaiyo Maru No. 5, was destroyed in 1952 by the undersea volcano she had gone to study.</p>
+<p><b>The Michigan Triangle</b> runs from Ludington to Manitowoc and down to Benton Harbor. By my placing, none of the {{michigan.famous_n|int}} incidents in its Wikipedia article falls inside it, though {{michigan.famous_within50|int}} are within 50 km. The incidents placed only as "Lake Michigan" do sit at a point inside it, so I do not count them in the triangle. Lake Michigan as a whole, though, is genuinely worse than its traffic: {{michigan.lake_o|int}} disappearances against {{michigan.lake_e|f2}} expected, {{michigan.lake_pre1946|int}} of them before 1946. Today's lake traffic is a shadow of the schooners and steamers of the 1800s, and the lake's autumn storms were notorious. Against all recorded losses, Lake Michigan's excess shrinks to {{michigan.lake_L_x|x1}} times.</p>
+
+<h2><span class="n">07 · Modern losses, modern traffic</span>The fairest test, and its own trap</h2>
+<p>Comparing old disappearances with modern traffic mixes eras. The fairest test compares like with like: the {{modern.n|int}} wrecks from 2000 to 2025 that have a position in Wikipedia's lists or Wikidata, against shipping from 2015 to 2021. Here the Bermuda Triangle has {{bermuda.M_o|int}} wreck against {{bermuda.M_e|f1}} expected. The seas that stand out are the Gulf of Alaska ({{modern.alaska_x|x1}} times) and the US Atlantic coast ({{modern.usatl_x|x1}} times), and the reason is again who writes it down: {{modern.alaska_wiki_pct|pc}} of the Alaskan losses are fishing boats entered, with positions, into Wikipedia's monthly shipwreck lists, and {{modern.us_waters_pct|pc}} of all positioned losses since 2000 are in North American waters. Switch the chart above to "Losses 2000 to 2025 v traffic" to see every sea.</p>
+
+<h2><span class="n">08 · How I did this</span>Methods and caveats</h2>
+<p><b>Disappearances.</b> I parsed the tables of three English Wikipedia lists (List of missing ships, List of missing aircraft, List of people who disappeared mysteriously at sea; {{cat.rows_ships|int}}, {{cat.rows_aircraft|int}} and {{cat.rows_people|int}} rows, leaving out the people list's solved cases) and added {{cat.rows_article|int}} incidents told in the articles on the Bermuda Triangle, the Devil's Sea and the Lake Michigan Triangle. Rows were merged when they shared a year and a distinctive name word, or an aircraft and a person shared a full date and a place, giving {{cat.n|int}} incidents. Each was placed by a hand-made gazetteer of ports, capes, islands and seas: coordinates or a distance and bearing where given ("position"), "off" or "near" a named place, the great-circle midpoint of a route of up to 4,000 km, or a representative point in a named sea. Longer routes count only for the open sea they cross. Points that fell on land were moved to the nearest sea within 75 km (200 km for routes); {{cat.moved|int}} were moved.</p>
+<p><b>Traffic.</b> The World Bank's Global Shipping Traffic Density counts AIS positions from all vessels, January 2015 to February 2021. I used its 0.08 degree overview, which samples single pixels, so I only use it summed over 2 degree squares or whole seas, as a share of the world total. AIS positions favour coasts with dense receivers, ports and slow ships, so I repeat every test with a "lanes" index: the share of sampled pixels with at least {{traffic.lanes_min|int}} positions, which is less sensitive to how many positions are picked up. It is a modern proxy only: it cannot tell us where ships sailed in 1850.</p>
+<p><b>Recorded losses.</b> As a historical denominator I use the {{losses.n|int}} wrecks with a position from Wikipedia's lists of shipwrecks ({{losses.n_wikipedia|int}}) and Wikidata ({{losses.n_wikidata|int}}), {{losses.n1800|int}} of them dated 1800 to 2025. I leave out the national bulk records (Scotland's Canmore, Wales's Coflein, the United States' AWOIS), which would flatter the seas of three countries. {{losses.war_pct_1800|pc}} of these positioned wrecks are war losses, so I also repeat the test without the war years.</p>
+<p><b>Statistics.</b> For each sea, the expected count is the total multiplied by the sea's share of traffic (or of recorded losses in the same years). Intervals are exact Poisson 95% intervals; "clearly" more or fewer means beyond the 99.8% funnel limit. The seas are simple outlines that I drew; each point belongs to the first sea that contains it, triangles first. Incidents placed only by a sea's name are never counted inside a triangle.</p>
+<p><b>What this cannot say.</b> These are famous disappearances: the ones somebody wrote about, in English, on Wikipedia. They lean towards the English-speaking world, aviation and the twentieth century. Many placements are rough, and a different outline for a triangle would change its count. Disappearances also cluster (one storm, one air race), which makes the intervals a little too narrow. The honest conclusion is about the pattern, not the second decimal place.</p>
+<details><summary>Sources and licences</summary>
+<ul>
+<li>Wikipedia contributors, "List of missing ships", "List of missing aircraft", "List of people who disappeared mysteriously at sea", "Bermuda Triangle", "Devil's Sea" and "Lake Michigan Triangle" (https://en.wikipedia.org/), retrieved {{meta.retrieved|raw}}, CC BY-SA 4.0. The disappearance table derived from them (data/disappearances.csv) is shared under CC BY-SA 4.0.</li>
+<li>Wikipedia contributors, "List of shipwrecks" pages (https://en.wikipedia.org/wiki/Lists_of_shipwrecks), CC BY-SA 4.0; and Wikidata (https://www.wikidata.org/), CC0: positioned wrecks, as cleaned for my study "Shipwrecks of the world" (https://maps.tristanhotham.com/world-shipwrecks/). data/losses.csv is shared under CC BY-SA 4.0.</li>
+<li>World Bank, Global Shipping Traffic Density (https://datacatalog.worldbank.org/search/dataset/0037580), produced by the IMF and World Bank from AIS data, January 2015 to February 2021 (Cerdeiro, Komaromi, Liu and Saeed 2020), CC BY 4.0. Used as sums over squares and seas, and as a rendered image.</li>
+<li>Natural Earth land, countries and populated places (public domain). Base map tiles © Esri.</li>
+</ul></details>
+
+<div class="cta"><a class="p" href="https://doi.org/10.5281/zenodo.23856868">Read the paper</a><a href="https://github.com/Tristan-Hotham/lost-at-sea">Data and code</a><a href="https://blog.tristanhotham.com/2026/10/31/lost-at-sea/">Blog post</a></div>
+
+<footer>
+<p>Dr Tristan Hotham, Independent researcher. ORCID <a href="https://orcid.org/0000-0003-4931-9349">0000-0003-4931-9349</a>.</p>
+<p>Cite as: Hotham, T. (2026) Lost at sea: famous disappearances tested against shipping traffic. Zenodo. <a href="https://doi.org/10.5281/zenodo.23856868">https://doi.org/10.5281/zenodo.23856868</a></p>
+<p>Data: Wikipedia contributors (CC BY-SA 4.0), Wikidata (CC0), World Bank Global Shipping Traffic Density (CC BY 4.0), Natural Earth. Licence: text and figures CC BY 4.0, the derived Wikipedia tables CC BY-SA 4.0, other derived data CC BY 4.0, code MIT.</p>
+<p>I wrote the text, with drafting and editing assistance from Claude (Anthropic), which also helped prepare the analysis code. I reviewed and checked all text and results.</p>
+</footer>
+</div>
+<div class="tip" id="tip"></div>
+<button class="btn theme" id="theme" aria-label="Toggle dark mode">◐</button>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.min.js"></script>
+<script>
+const R = /*RESULTS*/;
+const SITE = /*SITE*/;
+const SEAS = /*SEAS*/;
+const fmt = n => n == null || n === "" ? "n/a" : Math.round(n).toLocaleString("en-GB");
+const f1 = n => n == null ? "n/a" : (+n).toFixed(1), f2 = n => n == null ? "n/a" : (+n).toFixed(2);
+const xr = r => r == null ? "n/a" : r >= 1000 ? "over 1,000×" : r >= 100 ? Math.round(r) + "×" : r >= 10 ? r.toFixed(0) + "×" : r.toFixed(r < 0.1 ? 2 : 1) + "×";
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const tip = document.getElementById("tip");
+function showTip(h, x, y) { tip.innerHTML = h; tip.style.display = "block"; const w = tip.offsetWidth; x = Math.max(w / 2 + 8, Math.min(innerWidth - w / 2 - 8, x)); tip.style.left = x + scrollX + "px"; tip.style.top = y + scrollY + "px"; }
+function hideTip() { tip.style.display = "none"; }
+document.addEventListener("click", hideTip);
+const NS = "http://www.w3.org/2000/svg";
+const el = (t, a, p) => { const e = document.createElementNS(NS, t); for (const k in a) e.setAttribute(k, a[k]); if (p) p.appendChild(e); return e; };
+const lbl = (svg, x, y, s, cls = "lab", anchor = "start") => { const t = el("text", { x, y, class: cls, "text-anchor": anchor }, svg); t.textContent = s; return t; };
+const redraws = [];
+function resp(box, render) { let last = 0; const go = force => { const w = Math.max(280, Math.round(box.clientWidth)); if (!force && Math.abs(w - last) < 4) return; last = w; box.innerHTML = ""; render(w, w < 560); }; new ResizeObserver(() => go()).observe(box); go(); redraws.push(() => go(true)); }
+const isDark = () => { const r = document.documentElement; return r.dataset.theme ? r.dataset.theme === "dark" : matchMedia("(prefers-color-scheme: dark)").matches; };
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const small = () => innerWidth < 900;
+const KINDS = SITE.kinds, CONF = SITE.conf, AREAS = SITE.areas, TRI = SITE.triangles;
+const AR = R.areas;
+const FLAGTXT = { "higher": "clearly more than expected", "higher (95%)": "more than expected (95% level)", "as expected": "within chance", "lower (95%)": "fewer than expected (95% level)", "lower": "clearly fewer than expected" };
+const MEAS = { T: { lab: "disappearances v traffic", o: "disappearances", e: "expected from traffic" }, L: { lab: "disappearances v all recorded losses", o: "disappearances, 1800 to 2025", e: "expected from recorded losses" },
+  M: { lab: "losses 2000 to 2025 v traffic", o: "recorded losses, 2000 to 2025", e: "expected from traffic" }, T_lanes: { lab: "v traffic (lanes index)", o: "disappearances", e: "expected from lanes" },
+  T_1946: { lab: "since 1946 only", o: "disappearances since 1946", e: "expected from traffic" } };
+
+/* diverging colour for a ratio: blue fewer, sand neutral, red more */
+const RAMP = [[47, 127, 184], [143, 181, 207], [221, 214, 198], [233, 160, 104], [205, 74, 52], [150, 22, 36], [92, 10, 30]];
+const RSTOP = [-1.5, -0.6, 0, 0.45, 1.0, 1.7, 2.6];
+function rcol(r) {
+  if (r == null) return "rgb(221,214,198)";
+  const t = Math.max(RSTOP[0], Math.min(RSTOP[RSTOP.length - 1], Math.log10(Math.max(r, 0.02))));
+  let i = 0; while (i < RSTOP.length - 2 && t > RSTOP[i + 1]) i++;
+  const u = (t - RSTOP[i]) / (RSTOP[i + 1] - RSTOP[i]); const c = RAMP[i].map((x, j) => Math.round(x + (RAMP[i + 1][j] - x) * u)); return `rgb(${c})`;
+}
+const RAMPCSS = `linear-gradient(90deg,${RSTOP.map((s, i) => rcol(Math.pow(10, s)) + " " + Math.round(100 * i / (RSTOP.length - 1)) + "%").join(",")})`;
+
+/* hero mark: a triangle of sea with a vanishing hull */
+(function () {
+  const g = document.getElementById("heroMark");
+  el("path", { d: "M14 100 L60 18 L106 100 Z", fill: "none", stroke: "currentColor", "stroke-width": 3.2, "stroke-linejoin": "round" }, g);
+  [[30, 74], [44, 86], [62, 78], [80, 88], [92, 74]].forEach(([x, y]) => el("path", { d: `M${x - 8} ${y} q4 -4 8 0 t8 0`, fill: "none", stroke: "#2F7FB8", "stroke-width": 2 }, g));
+  el("path", { d: "M46 58 L74 58 L70 66 L50 66 Z", fill: "#B3202A", opacity: .95 }, g);
+  el("path", { d: "M60 58 L60 40 L71 55 Z", fill: "currentColor", opacity: .35 }, g);
+  [[54, 50, 1.6], [66, 46, 1.2], [58, 38, 0.9]].forEach(([x, y, r]) => el("circle", { cx: x, cy: y, r, fill: "currentColor", opacity: .5 }, g));
+})();
+
+/* ---------- decades chart ---------- */
+function decChart() {
+  const box = document.getElementById("decChart");
+  resp(box, (W, sm) => {
+    const H = sm ? 230 : 260, m = { l: 34, r: 8, t: 10, b: 26 }, d = R.cat.decades, n = d.length;
+    const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Bar chart of famous disappearances per decade by kind" }, box);
+    const tot = d.map(r => KINDS.reduce((s, k) => s + r[k[0]], 0)), mx = Math.ceil(Math.max(...tot) / 10) * 10;
+    const x = i => m.l + i * (W - m.l - m.r) / n, bw = (W - m.l - m.r) / n - (sm ? 2 : 4), y = v => H - m.b - v / mx * (H - m.t - m.b);
+    for (let v = 0; v <= mx; v += 10) { el("line", { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), stroke: css("--rule") }, svg); lbl(svg, m.l - 6, y(v) + 4, v, "lab s m", "end"); }
+    [1910, 1940].forEach(w => { const i = (w - 1800) / 10; el("rect", { x: x(i) - 1, y: m.t, width: (W - m.l - m.r) / n + 2, height: H - m.t - m.b, fill: css("--hot"), opacity: .08 }, svg); });
+    d.forEach((r, i) => { let acc = 0; KINDS.forEach(k => { const v = r[k[0]]; if (!v) return; const rr = el("rect", { x: x(i), y: y(acc + v), width: bw, height: y(acc) - y(acc + v), fill: k[1] }, svg); acc += v; });
+      const hit = el("rect", { x: x(i), y: m.t, width: bw + 2, height: H - m.t - m.b, fill: "transparent" }, svg);
+      hit.addEventListener("mousemove", e => showTip(`<b>${r.dec}s</b><br>${KINDS.map(k => `${k[0]}: ${r[k[0]]}`).join("<br>")}`, e.clientX, e.clientY)); hit.addEventListener("mouseleave", hideTip);
+      if (r.dec % (sm ? 50 : 20) === 0) lbl(svg, x(i) + bw / 2, H - 8, r.dec, "lab s m", "middle"); });
+  });
+  document.getElementById("decLegend").innerHTML = KINDS.map(k => `<span><i class="sq" style="background:${k[1]}"></i>${esc(k[0])}</span>`).join("") + `<span><i class="sq" style="background:var(--hot);opacity:.25"></i>world wars (the 1910s and 1940s)</span>`;
+}
+decChart();
+
+/* ---------- forest plot ---------- */
+let FOR = "T";
+const order = () => AR.filter(a => a[FOR]).slice().sort((a, b) => (b[FOR].ratio ?? 0) - (a[FOR].ratio ?? 0));
+function forest() {
+  const box = document.getElementById("forest");
+  resp(box, (W, sm) => {
+    const LN = { "Newfoundland and the Grand Banks": "Newfoundland, Grand Banks", "Malacca Strait and Andaman Sea": "Malacca and Andaman Sea", "East China and Yellow Seas": "East China, Yellow Seas", "North Atlantic, open ocean": "North Atlantic, open sea" };
+    const rows = order(), rh = sm ? 22 : 21, m = { l: sm ? 104 : 204, r: sm ? 70 : 74, t: 24, b: 28 }, H = m.t + m.b + rows.length * rh;
+    const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Ratio of observed to expected disappearances by sea, with intervals" }, box);
+    const L0 = -1.7, L1 = 3, X = v => m.l + (Math.log10(Math.max(v, Math.pow(10, L0))) - L0) / (L1 - L0) * (W - m.l - m.r);
+    [0.03, 0.1, 0.3, 1, 3, 10, 30, 100, 300].forEach(v => { el("line", { x1: X(v), x2: X(v), y1: m.t - 4, y2: H - m.b, stroke: v === 1 ? css("--fg") : css("--rule"), "stroke-width": v === 1 ? 1.4 : 1 }, svg); if (!sm || [0.1, 1, 10, 100].includes(v)) lbl(svg, X(v), H - m.b + 16, v < 1 ? v : v + "", "lab s m", "middle"); });
+    if (!sm) lbl(svg, X(1) + 5, m.t - 8, "as expected", "lab s m"); lbl(svg, X(sm ? 1000 : 300), m.t - 8, "more →", "lab s m", "end"); lbl(svg, m.l, m.t - 8, "← fewer", "lab s m");
+    rows.forEach((a, i) => { const t = a[FOR], y = m.t + i * rh + rh / 2, tri = a.group === "legend";
+      if (tri) el("rect", { x: 0, y: y - rh / 2, width: W, height: rh, fill: css("--gold"), opacity: .14 }, svg);
+      const nm = sm ? a.short : (LN[a.name] || a.name); lbl(svg, m.l - 8, y + 4, nm, (sm ? "lab s" : "lab") + (tri ? " b" : ""), "end");
+      const c = t.flag.startsWith("higher") ? css("--hot") : t.flag.startsWith("lower") ? css("--cool") : css("--muted");
+      el("line", { x1: X(Math.max(t.lo, 0.02)), x2: X(Math.min(t.hi, 999)), y1: y, y2: y, stroke: c, "stroke-width": 3, "stroke-linecap": "round", opacity: t.flag === "as expected" ? .55 : .9 }, svg);
+      if (t.ratio > 0) el("circle", { cx: X(t.ratio), cy: y, r: 4.5, fill: c, stroke: css("--card"), "stroke-width": 1.2 }, svg);
+      else el("path", { d: `M${X(0.02) + 7} ${y - 5} L${X(0.02)} ${y} L${X(0.02) + 7} ${y + 5}`, fill: "none", stroke: c, "stroke-width": 2 }, svg);
+      lbl(svg, W - m.r + 8, y + 4, `${t.o} v ${t.e < 1 ? t.e.toFixed(2) : t.e < 10 ? t.e.toFixed(1) : Math.round(t.e)}`, "lab s m");
+      const hit = el("rect", { x: 0, y: y - rh / 2, width: W, height: rh, fill: "transparent" }, svg);
+      hit.addEventListener("mousemove", e => showTip(`<b>${esc(a.name)}</b><br>${MEAS[FOR].o}: ${t.o}<br>${MEAS[FOR].e}: ${f2(t.e)}<br>ratio ${xr(t.ratio)} (95%: ${f2(t.lo)} to ${f2(t.hi)})<br>${FLAGTXT[t.flag]}`, e.clientX, e.clientY));
+      hit.addEventListener("mouseleave", hideTip); hit.addEventListener("click", ev => { ev.stopPropagation(); goArea(AREAS.findIndex(x => x[0] === a.name)); });
+    });
+    if (!sm) lbl(svg, W - 2, m.t - 8, "obs. v exp.", "lab s m", "end");
+  });
+  document.getElementById("forLegend").innerHTML = `<span><i style="background:var(--hot)"></i>more than expected (beyond 95%)</span><span><i style="background:var(--cool)"></i>fewer than expected</span><span><i style="background:var(--muted)"></i>within chance</span><span><i class="sq" style="background:var(--gold);opacity:.4"></i>the three legendary triangles</span>`;
+}
+document.querySelectorAll("#forRow .btn").forEach(b => b.onclick = () => { FOR = b.dataset.f; document.querySelectorAll("#forRow .btn").forEach(x => x.setAttribute("aria-pressed", x === b)); document.getElementById("forest").innerHTML = ""; redraws.forEach(f => f()); });
+forest();
+
+/* ---------- funnel plot ---------- */
+let FUNU = "area";
+function funnelPlot() {
+  const box = document.getElementById("funnel");
+  resp(box, (W, sm) => {
+    const H = sm ? 330 : 420, m = { l: 46, r: 14, t: 14, b: 40 };
+    const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Funnel plot of observed over expected disappearances against expected count" }, box);
+    const ex0 = FUNU === "area" ? -1.5 : -3, ex1 = 2.2, ey0 = -1.6, ey1 = 3.4;
+    const X = e => m.l + (Math.log10(e) - ex0) / (ex1 - ex0) * (W - m.l - m.r), Y = r => H - m.b - (Math.log10(Math.max(r, Math.pow(10, ey0))) - ey0) / (ey1 - ey0) * (H - m.t - m.b);
+    [0.03, 0.1, 0.3, 1, 3, 10, 30, 100, 300, 1000].forEach(v => { if (Math.log10(v) > ey1) return; el("line", { x1: m.l, x2: W - m.r, y1: Y(v), y2: Y(v), stroke: v === 1 ? css("--fg") : css("--rule"), "stroke-width": v === 1 ? 1.3 : 1 }, svg); lbl(svg, m.l - 6, Y(v) + 4, v, "lab s m", "end"); });
+    [0.001, 0.01, 0.1, 1, 10, 100].forEach(v => { if (Math.log10(v) < ex0) return; el("line", { x1: X(v), x2: X(v), y1: m.t, y2: H - m.b, stroke: css("--rule") }, svg); lbl(svg, X(v), H - m.b + 15, v, "lab s m", "middle"); });
+    lbl(svg, (m.l + W - m.r) / 2, H - 6, "expected number of disappearances (from traffic)", "lab s m", "middle");
+    const F = R.funnel, pth = (k) => F.e.map((e, i) => [e, F[k][i]]).filter(([e, v]) => Math.log10(e) >= ex0 && v > 0).map(([e, v], i) => `${i ? "L" : "M"}${X(e).toFixed(1)} ${Y(v).toFixed(1)}`).join(" ");
+    [["u998", 1.6, "4 3"], ["u95", 1.2, "2 3"], ["l95", 1.2, "2 3"], ["l998", 1.6, "4 3"]].forEach(([k, w, da]) => el("path", { d: pth(k), fill: "none", stroke: css("--muted"), "stroke-width": w, "stroke-dasharray": da }, svg));
+    const pts = FUNU === "area" ? AR.map(a => ({ e: a.T.e, o: a.T.o, nm: a.name, sh: a.short, f: a.T.flag, leg: a.group === "legend" })) : R.funnel.cells.map(([e, o]) => ({ e, o, f: "" }));
+    const uLimit = e => { let i = F.e.findIndex(x => x >= e); if (i < 0) i = F.e.length - 1; return F.u998[i]; };
+    pts.forEach(p => { if (p.e <= 0) return; const r = p.o / p.e, zero = p.o === 0, y = zero ? H - m.b - 4 : Y(r);
+      const c = FUNU === "area" ? (p.f.startsWith("higher") ? css("--hot") : p.f.startsWith("lower") ? css("--cool") : css("--muted")) : (r > uLimit(p.e) ? css("--hot") : css("--muted"));
+      const dot = el("circle", { cx: X(Math.max(p.e, Math.pow(10, ex0))), cy: y, r: FUNU === "area" ? (p.leg ? 6.5 : 5) : 3, fill: c, opacity: FUNU === "area" ? .9 : .6, stroke: p.leg ? css("--fg") : css("--card"), "stroke-width": p.leg ? 1.8 : .8 }, svg);
+      dot.addEventListener("mousemove", e => showTip(`${p.nm ? "<b>" + esc(p.nm) + "</b><br>" : "2 degree square<br>"}observed ${p.o}, expected ${p.e < 0.01 ? p.e.toExponential(1) : f2(p.e)}<br>ratio ${zero ? "0" : xr(r)}${p.f ? "<br>" + FLAGTXT[p.f] : ""}`, e.clientX, e.clientY)); dot.addEventListener("mouseleave", hideTip);
+      const LB = { "Bermuda Triangle": [0, -13, 2], "Dragon's Triangle": [9, 14, 1], "Michigan Triangle": [9, 4, 1], "Bass Strait and Tasman Sea": [9, 4, 1], "Rest of Lake Michigan": [9, 4, 1],
+        "Rest of the Great Lakes": [9, 4, 1], "Mediterranean Sea": [-14, 17, 2], "North Atlantic, open ocean": [-9, -9, 0], "Sea of Japan": [-9, 4, 0] };
+      const lb = FUNU === "area" && LB[p.nm] && (!sm || ["Bermuda Triangle", "Michigan Triangle", "Bass Strait and Tasman Sea"].includes(p.nm));
+      if (lb) { const [dx, dy, st] = LB[p.nm]; const nmx = p.nm === "Michigan Triangle" ? "Michigan Triangle (none)" : sm ? p.sh : p.nm.replace(", open ocean", "").replace("Rest of Lake", "Lake").replace("Rest of the Great Lakes", "Other Great Lakes");
+        const t = lbl(svg, X(Math.max(p.e, Math.pow(10, ex0))) + dx, y + dy, nmx, "lab s" + (p.leg ? " b" : ""), st === 2 ? "middle" : st ? "start" : "end");
+        t.setAttribute("style", `paint-order:stroke;stroke:${css("--bg")};stroke-width:3px`);
+      } });
+    lbl(svg, m.l + 4, m.t + 10, FUNU === "area" ? "observed ÷ expected" : `observed ÷ expected, ${R.funnel.cells.length} squares with a disappearance`, "lab s m");
+  });
+  document.getElementById("funLegend").innerHTML = `<span><i style="background:transparent;border:0;border-top:2px dashed var(--muted);border-radius:0;height:0;width:18px"></i>95% and 99.8% limits if disappearances followed traffic</span><span><i style="background:var(--hot)"></i>above the limit</span><span><i style="background:var(--cool)"></i>below</span><span><i style="background:var(--muted)"></i>within</span><span><i style="background:transparent;border:2px solid var(--fg)"></i>legendary triangles</span>`;
+}
+document.querySelectorAll("#funRow .btn").forEach(b => b.onclick = () => { FUNU = b.dataset.u; document.querySelectorAll("#funRow .btn").forEach(x => x.setAttribute("aria-pressed", x === b)); document.getElementById("funnel").innerHTML = ""; redraws.forEach(f => f()); });
+funnelPlot();
+
+/* ---------- tables ---------- */
+function famTable() {
+  const t = document.getElementById("famTable"), L = R.famous["Bermuda Triangle"].list;
+  t.innerHTML = `<tr><th>Incident</th><th class="r">Year</th><th>Placed by</th><th class="r">Outside by</th></tr>` + L.map((f, i) => `<tr data-i="${i}"><td>${esc(f.name)}<br><small>${esc(f.where || "")}</small></td><td class="r">${f.year}</td><td>${esc(f.conf.toLowerCase())}</td><td class="r">${f.inside ? '<span class="tag in">inside</span>' : f.km == null ? "not placed" : `<span class="tag out">${fmt(f.km)} km</span>`}</td></tr>`).join("");
+  t.querySelectorAll("tr[data-i]").forEach(r => r.onclick = () => { const f = L[+r.dataset.i]; if (f.id) byId(f.id); });
+}
+function worseTable() {
+  const t = document.getElementById("worseTable");
+  t.innerHTML = `<tr><th>Sea</th><th class="r">Observed</th><th class="r">Expected</th><th class="r">Ratio</th><th>Why</th></tr>` + R.worse.map((w, i) => `<tr data-i="${i}"><td><b>${esc(w.name)}</b><br><small>${esc(w.causes)}</small></td><td class="r">${w.o}</td><td class="r">${f2(w.e)}</td><td class="r">${xr(w.x)}<br><small>lanes ${xr(w.lanes_x)}</small></td><td><small>${esc(w.why)}</small></td></tr>`).join("");
+  t.querySelectorAll("tr[data-i]").forEach(r => r.onclick = () => goArea(AREAS.findIndex(a => a[0] === R.worse[+r.dataset.i].name)));
+}
+function cellTable() {
+  const t = document.getElementById("cellTable"), C = R.cells.ranked;
+  t.innerHTML = `<tr><th>Square</th><th class="r">Obs.</th><th class="r">Exp.</th><th>Why</th><th>Incidents</th></tr>` + C.map((c, i) => `<tr data-i="${i}"><td>${esc(c.place)}<br><small>${c.lat0 < 0 ? -c.lat0 - 2 + "° to " + -c.lat0 + "°S" : c.lat0 + "° to " + (c.lat0 + 2) + "°N"}, ${c.lon0 < 0 ? -c.lon0 - 2 + "° to " + -c.lon0 + "°W" : c.lon0 + "° to " + (c.lon0 + 2) + "°E"}</small></td><td class="r">${c.D}</td><td class="r">${c.D_exp < 0.001 ? "under 0.001" : c.D_exp.toFixed(3)}</td><td><small>${esc(c.causes)}</small></td><td><small>${c.names.slice(0, 4).map(esc).join("; ")}${c.names.length > 4 ? "; …" : ""}</small></td></tr>`).join("");
+  t.querySelectorAll("tr[data-i]").forEach(r => r.onclick = () => { const c = C[+r.dataset.i]; map.fitBounds([[c.lat0, c.lon0], [c.lat0 + 2, c.lon0 + 2]], { maxZoom: 7 }); setUnit("cell"); toMap(); });
+}
+
+/* ---------- map ---------- */
+const ESRI = "https://server.arcgisonline.com/ArcGIS/rest/services/";
+const ESRI_ATT = 'Tiles &copy; Esri, GEBCO, NOAA, National Geographic, Garmin, HERE, Geonames.org, and other contributors';
+const LYDEF = { base: "plain", hills: false, hillK: 40, labels: true, labelK: 70, names: true, nameLvl: 1, cnames: false, borders: true, traffic: true, trafK: 65, shade: true, shadeK: 55, dots: true, size: 3.5, losses: false, tris: true, outlines: false };
+const LY = { ...LYDEF };
+try { Object.assign(LY, JSON.parse(localStorage.getItem("lost_layers") || "{}")); } catch (e) {}
+const saveLY = () => { try { localStorage.setItem("lost_layers", JSON.stringify(LY)); } catch (e) {} };
+const HOME = () => small() ? [[26, -40], 1.5] : [[26, -30], 2];
+const map = L.map("map", { minZoom: 1, maxZoom: 12, maxBounds: [[-88, -230], [88, 230]], zoomSnap: .5, worldCopyJump: false, preferCanvas: true }).setView(...HOME());
+["hills:250", "traffic:300", "shade:380", "labels:450", "lines:520", "losses:560", "pts:600", "names:620"].forEach(s => { const [n, z] = s.split(":"); map.createPane(n); map.getPane(n).style.zIndex = z; });
+["hills", "labels", "names", "traffic", "losses"].forEach(n => map.getPane(n).style.pointerEvents = "none");
+const ptsRenderer = L.canvas({ pane: "pts", padding: .3 });
+let base = null, hills = null, labels = null; const names = L.layerGroup(), cnames = L.layerGroup();
+const traffic = L.imageOverlay("data/traffic.png", [[-85.0511, -180], [85.0511, 180]], { pane: "traffic", opacity: .65, interactive: false });
+let COUNTRIES = null, CITIES = [], CN = {};
+const cLayer = L.geoJSON(null, { pane: "lines", style: () => ({ color: css("--border") || "#999", weight: LY.borders ? .6 : 0, fill: false, interactive: false }), interactive: false }).addTo(map);
+function setTiles() {
+  [base, labels, hills].forEach(l => { if (l) map.removeLayer(l); });
+  const t = isDark() ? "Dark" : "Light";
+  const url = LY.base === "ocean" ? ESRI + "Ocean/World_Ocean_Base/MapServer/tile/{z}/{y}/{x}" : LY.base === "relief" ? ESRI + "World_Shaded_Relief/MapServer/tile/{z}/{y}/{x}" : LY.base === "satellite" ? ESRI + "World_Imagery/MapServer/tile/{z}/{y}/{x}" : `${ESRI}Canvas/World_${t}_Gray_Base/MapServer/tile/{z}/{y}/{x}`;
+  base = L.tileLayer(url, { maxZoom: 16, maxNativeZoom: LY.base === "relief" || LY.base === "ocean" ? 13 : 16, attribution: ESRI_ATT }).addTo(map);
+  hills = L.tileLayer(ESRI + "Elevation/World_Hillshade/MapServer/tile/{z}/{y}/{x}", { maxZoom: 16, maxNativeZoom: 16, pane: "hills" });
+  labels = L.tileLayer(LY.base === "ocean" ? ESRI + "Ocean/World_Ocean_Reference/MapServer/tile/{z}/{y}/{x}" : `${ESRI}Canvas/World_${t}_Gray_Reference/MapServer/tile/{z}/{y}/{x}`, { maxZoom: 16, maxNativeZoom: 13, pane: "labels" });
+  applyLayers();
+}
+function applyLayers() {
+  if (!base) return;
+  if (LY.hills) { hills.addTo(map); hills.setOpacity(Math.min(1, .1 + LY.hillK / 120)); } else map.removeLayer(hills);
+  if (LY.labels) { labels.addTo(map); labels.setOpacity(LY.labelK / 100); } else map.removeLayer(labels);
+  if (LY.names) names.addTo(map); else map.removeLayer(names);
+  if (LY.cnames) cnames.addTo(map); else map.removeLayer(cnames);
+  if (LY.traffic) { traffic.addTo(map); traffic.setOpacity(LY.trafK / 100); } else map.removeLayer(traffic);
+  if (LY.tris) triLayer.addTo(map); else map.removeLayer(triLayer); triLab();
+  if (LY.dots) dotLayer.addTo(map); else map.removeLayer(dotLayer);
+  if (LY.losses) lossLayer.addTo(map); else map.removeLayer(lossLayer);
+  cLayer.setStyle(() => ({ color: css("--border"), weight: LY.borders ? .6 : 0, fill: false }));
+  shade(); placeNames(); dotStyle(); lossLayer.draw && lossLayer.draw();
+}
+function placeNames() {
+  names.clearLayers(); cnames.clearLayers();
+  const z = map.getZoom(), bb = map.getBounds().pad(.05); const bxs = [];
+  if (LY.names && CITIES.length) {
+    const minPop = [[2, 8e6], [3, 3e6], [4, 1e6], [5, 4e5], [6, 1.5e5], [99, 1e5]].find(([zz]) => z < zz + (LY.nameLvl === 2 ? 1.5 : LY.nameLvl === 0 ? -1 : 0))[1] * (LY.nameLvl === 0 ? 2 : 1);
+    let n = 0;
+    for (const c of CITIES) {
+      if (c.pop < minPop || !bb.contains([c.lat, c.lon])) continue;
+      const pt = map.latLngToContainerPoint([c.lat, c.lon]), big = c.pop >= 5e6;
+      const bx = [pt.x - 4, pt.y - 8, pt.x + 10 + c.name.length * (big ? 6.9 : 6.3), pt.y + 7];
+      if (bxs.some(o => bx[0] < o[2] && bx[2] > o[0] && bx[1] < o[3] && bx[3] > o[1])) continue;
+      bxs.push(bx); L.marker([c.lat, c.lon], { pane: "names", interactive: false, keyboard: false, icon: L.divIcon({ className: "cityL" + (big ? "" : " s"), html: `<i></i>${esc(c.name)}`, iconSize: null, iconAnchor: [3, 6] }) }).addTo(names);
+      if (++n >= 110) break;
+    }
+  }
+  if (LY.cnames && COUNTRIES && z >= 3 && z < 7) {
+    COUNTRIES.features.forEach(f => { const g = CN.cpos[f.properties.iso]; if (!g || !bb.contains([g[1], g[0]])) return; const nm = CN.cname[f.properties.iso] || "";
+      if (z < 4 && (g[2] || 0) < 2e7) return; const pt = map.latLngToContainerPoint([g[1], g[0]]), w = nm.length * 7.2;
+      const bx = [pt.x - w / 2, pt.y - 7, pt.x + w / 2, pt.y + 7]; if (bxs.some(o => bx[0] < o[2] && bx[2] > o[0] && bx[1] < o[3] && bx[3] > o[1])) return; bxs.push(bx);
+      L.marker([g[1], g[0]], { pane: "names", interactive: false, keyboard: false, icon: L.divIcon({ className: "cntL", html: esc(nm), iconSize: [w, 14], iconAnchor: [w / 2, 7] }) }).addTo(cnames); });
+  }
+}
+map.on("moveend zoomend", placeNames);
+(function layerControl() {
+  const Ctl = L.Control.extend({ options: { position: "topright" }, onAdd() {
+    const d = L.DomUtil.create("div"); L.DomEvent.disableClickPropagation(d); L.DomEvent.disableScrollPropagation(d);
+    d.innerHTML = `<button class="lyrBtn" aria-expanded="false">Map layers</button>
+<div class="lyrPanel" hidden>
+ <div class="row"><label style="font-weight:600">Base map</label><div class="sub"><select data-k="base" aria-label="Base map"><option value="plain">Plain grey</option><option value="ocean">Sea depth (bathymetry)</option><option value="relief">Shaded relief</option><option value="satellite">Satellite</option></select></div></div>
+ <div class="row"><label><input type="checkbox" data-k="hills"> Hill shading</label><div class="sub"><span>strength</span><input type="range" data-k="hillK" min="10" max="100" step="5" aria-label="Hill shading strength"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="labels"> Sea and place labels</label><div class="sub"><span>strength</span><input type="range" data-k="labelK" min="20" max="100" step="5" aria-label="Map label strength"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="names"> Bold town names</label><div class="sub"><span>how many</span><select data-k="nameLvl" aria-label="How many town names"><option value="0">Biggest only</option><option value="1">Some</option><option value="2">Lots</option></select></div></div>
+ <div class="row"><label><input type="checkbox" data-k="cnames"> Country names</label></div>
+ <div class="row"><label><input type="checkbox" data-k="borders"> Borders</label></div>
+ <div class="hd">This study</div>
+ <div class="row"><label><input type="checkbox" data-k="traffic"> Ship traffic, AIS 2015 to 2021</label><div class="sub"><span>strength</span><input type="range" data-k="trafK" min="10" max="100" step="5" aria-label="Traffic strength"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="shade"> Shading (observed v expected)</label><div class="sub"><span>strength</span><input type="range" data-k="shadeK" min="10" max="100" step="5" aria-label="Shading strength"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="dots"> Disappearances</label><div class="sub"><span>size</span><input type="range" data-k="size" min="1.5" max="7" step=".5" aria-label="Dot size"></div></div>
+ <div class="row"><label><input type="checkbox" data-k="losses"> All recorded losses (grey)</label></div>
+ <div class="row"><label><input type="checkbox" data-k="tris"> The three triangles</label></div>
+ <div class="row"><label><input type="checkbox" data-k="outlines"> Sea outlines</label></div>
+ <button class="reset">Reset layers</button>
+</div>`;
+    return d; } });
+  map.addControl(new Ctl());
+  const boxm = map.getContainer(), btn = boxm.querySelector(".lyrBtn"), pan = boxm.querySelector(".lyrPanel");
+  btn.onclick = () => { const o = pan.hidden; pan.hidden = !o; btn.setAttribute("aria-expanded", o); };
+  const sync = () => pan.querySelectorAll("[data-k]").forEach(i => { const k = i.dataset.k; if (i.type === "checkbox") i.checked = LY[k]; else i.value = LY[k]; });
+  pan.querySelectorAll("[data-k]").forEach(i => i.addEventListener(i.type === "range" ? "input" : "change", () => {
+    const k = i.dataset.k; LY[k] = i.type === "checkbox" ? i.checked : (k === "base" ? i.value : +i.value);
+    if (k === "hillK") LY.hills = true; if (k === "labelK") LY.labels = true; if (k === "nameLvl") LY.names = true; if (k === "trafK") LY.traffic = true; if (k === "shadeK") LY.shade = true;
+    sync(); saveLY(); if (k === "base") setTiles(); else applyLayers(); legend();
+  }));
+  pan.querySelector(".reset").onclick = () => { Object.assign(LY, LYDEF); saveLY(); sync(); setTiles(); legend(); };
+  sync();
+})();
+const Note = L.Control.extend({ options: { position: "bottomleft" }, onAdd() { const d = L.DomUtil.create("div", "mapnote"); d.id = "mapnote"; L.DomEvent.disableClickPropagation(d); return d; } });
+map.addControl(new Note());
+L.control.scale({ imperial: false, position: "bottomright" }).addTo(map);
+function note(h) { document.getElementById("mapnote").innerHTML = h || ""; }
+
+/* state */
+const S = { meas: "T", unit: "area", col: "kind", sel: null };
+
+/* triangles */
+const triLayer = L.layerGroup(), triLabels = L.layerGroup();
+const TRIZ = { "Bermuda Triangle": 3, "Dragon's Triangle": 3, "Michigan Triangle": 5 };
+function triLab() { triLabels.clearLayers(); if (!LY.tris) return; const z = map.getZoom();
+  Object.keys(TRI).forEach(nm => { if (z < TRIZ[nm]) return; L.marker(nm === "Michigan Triangle" ? [44.6, -86.0] : nm === "Bermuda Triangle" ? [33.6, -71.5] : [36.6, 128.5], { pane: "names", interactive: false, icon: L.divIcon({ className: "triL", html: esc(nm), iconSize: null, iconAnchor: [0, 6] }) }).addTo(triLabels); }); }
+map.on("zoomend", triLab); triLabels.addTo(map);
+Object.entries(TRI).forEach(([nm, t]) => { const ll = t.verts.map(v => [v[1], v[0]]);
+  L.polygon(ll, { pane: "lines", color: t.col, weight: 2.4, dashArray: "6 4", fill: false, interactive: false }).addTo(triLayer);
+  const c = [ll.reduce((s, p) => s + p[0], 0) / 3, ll.reduce((s, p) => s + p[1], 0) / 3];
+  t.verts.forEach(v => L.circleMarker([v[1], v[0]], { pane: "lines", radius: 3, color: t.col, fillColor: t.col, fillOpacity: 1, weight: 1, interactive: false }).addTo(triLayer)); });
+
+/* sea areas and cells shading */
+const areaVal = i => { const a = AR[i]; const t = a[S.meas]; return t ? t : null; };
+const seaLayer = L.geoJSON(SEAS, { pane: "shade", style: f => seaStyle(f.properties.i), onEachFeature: (f, l) => {
+  l.on("click", e => { L.DomEvent.stopPropagation(e); pickArea(f.properties.i, e.latlng); });
+  l.on("mouseover", e => { const t = areaVal(f.properties.i); note(`<b>${esc(f.properties.name)}</b>${t ? `: ${t.o} v ${f2(t.e)} expected, ${xr(t.ratio)}` : ""}`); });
+  l.on("mouseout", () => note("")); } });
+function seaStyle(i) {
+  const t = areaVal(i), k = LY.shadeK / 100, on = LY.shade && S.meas !== "none" && S.unit === "area";
+  const pale = !t || t.flag === "as expected";
+  return { color: LY.outlines || S.sel === i ? css("--fg") : "transparent", weight: S.sel === i ? 2.2 : .8, fillColor: t ? rcol(t.ratio) : "transparent", fillOpacity: on && t ? (pale ? .22 : .62) * k + .02 : 0, opacity: LY.outlines || S.sel === i ? .8 : 0 };
+}
+let CELLS = null; const cellLayer = L.layerGroup();
+function cellMetric(c) { // [lat0, lon0, D, D_exp, L2000, L2000_exp, D1800, D1800_exp, L1800, ppm]
+  if (S.meas === "T") return c[2] ? [c[2], c[3]] : null; if (S.meas === "M") return c[4] ? [c[4], c[5]] : null; if (S.meas === "L") return c[6] ? [c[6], c[7]] : null; return null; }
+function drawCells() {
+  cellLayer.clearLayers(); if (!CELLS || S.unit !== "cell" || !LY.shade || S.meas === "none") return;
+  const k = LY.shadeK / 100;
+  CELLS.rows.forEach(c => { const v = cellMetric(c); if (!v) return; const [o, e] = v; const r = e > 0 ? o / e : 999;
+    const sig = e > 0 ? pUp(o, e) < 0.025 : true;
+    const rect = L.rectangle([[c[0], c[1]], [c[0] + 2, c[1] + 2]], { pane: "shade", renderer: ptsRendererShade, weight: .4, color: css("--card"), fillColor: rcol(r), fillOpacity: (sig ? .72 : .3) * k + .05 });
+    rect.on("click", ev => { L.DomEvent.stopPropagation(ev); pickCell(c, ev.latlng); }); rect.addTo(cellLayer); });
+}
+const ptsRendererShade = L.canvas({ pane: "shade" });
+function pUp(o, e) { // P(X >= o), X ~ Poisson(e)
+  let p = Math.exp(-e), s = 0; for (let k = 0; k < o; k++) { s += p; p *= e / (k + 1); } return Math.max(0, 1 - s); }
+function shade() {
+  if (S.unit === "area") { seaLayer.addTo(map); map.removeLayer(cellLayer); seaLayer.setStyle(f => seaStyle(f.properties.i)); }
+  else { seaLayer.addTo(map); seaLayer.setStyle(f => ({ ...seaStyle(f.properties.i), fillOpacity: 0 })); drawCells(); cellLayer.addTo(map); }
+}
+
+/* disappearance dots */
+let P = [];
+const dotLayer = L.layerGroup();
+const dotCol = p => S.col === "conf" ? CONF[p[3]][1] : KINDS[p[2]][1];
+function dotStyle() { dotLayer.eachLayer(l => { const p = l.options.p; l.setStyle({ radius: LY.size * (p[3] === 3 ? .8 : 1) * (map.getZoom() >= 6 ? 1.3 : 1), fillColor: dotCol(p), fillOpacity: p[3] === 3 ? .55 : .9, color: isDark() ? "#000" : "#fff", weight: .8 }); }); }
+function buildDots() {
+  dotLayer.clearLayers();
+  P.forEach((p, i) => { const m = L.circleMarker([p[0], p[1]], { renderer: ptsRenderer, p, i }); m.on("click", e => { L.DomEvent.stopPropagation(e); pickDot(i, false); });
+    m.on("mouseover", e => { const r = map.getContainer().getBoundingClientRect(); showTip(`<b>${esc(p[5])}</b><br>${p[4] ?? "?"} · ${esc(KINDS[p[2]][0].toLowerCase())}`, r.left + e.containerPoint.x, r.top + e.containerPoint.y); }); m.on("mouseout", hideTip); m.addTo(dotLayer); });
+  dotStyle();
+}
+map.on("zoomend", dotStyle);
+
+/* recorded losses: one canvas */
+let LP = null;
+const LossCanvas = L.Layer.extend({
+  onAdd(m) { this._c = L.DomUtil.create("canvas", "dotcanvas"); m.getPane("losses").appendChild(this._c); m.on("moveend zoomend resize viewreset", this._reset, this); this._reset(); if (!LP) fetch("data/losses_points.json").then(r => r.json()).then(j => { LP = j.rows; this.draw(); }); },
+  onRemove(m) { L.DomUtil.remove(this._c); m.off("moveend zoomend resize viewreset", this._reset, this); this._c = null; },
+  _reset() { const s = map.getSize(), d = devicePixelRatio || 1; L.DomUtil.setPosition(this._c, map.containerPointToLayerPoint([0, 0])); this._c.width = s.x * d; this._c.height = s.y * d; this._c.style.width = s.x + "px"; this._c.style.height = s.y + "px"; this.draw(); },
+  draw() { if (!this._c || !LP) return; const ctx = this._c.getContext("2d"), d = devicePixelRatio || 1; ctx.setTransform(d, 0, 0, d, 0, 0); ctx.clearRect(0, 0, this._c.width, this._c.height);
+    const z = map.getZoom(), r = z < 3 ? .9 : z < 5 ? 1.3 : 2; ctx.fillStyle = isDark() ? "rgba(200,205,212,.45)" : "rgba(70,72,78,.38)";
+    for (const p of LP) { const q = map.latLngToContainerPoint([p[0], p[1]]); if (q.x < -5 || q.y < -5 || q.x > this._c.width / d + 5 || q.y > this._c.height / d + 5) continue; ctx.fillRect(q.x - r, q.y - r, 2 * r, 2 * r); } }
+});
+const lossLayer = new LossCanvas();
+
+/* side panel and picking */
+const kindsIn = i => { const c = KINDS.map(() => 0); P.forEach(p => { if (p[6] === i) c[p[2]]++; }); return c; };
+function side() {
+  const box = document.getElementById("side"); let h = "";
+  if (S.sel != null && S.sel >= 0) {
+    const a = AR[S.sel], t = a[S.meas === "none" ? "T" : S.meas];
+    h = `<button class="back">Back</button><h4>${esc(a.group === "legend" ? "Legendary triangle" : "Sea")}</h4><div class="big">${esc(a.name)}</div><p class="sub">${f2(a.traffic_pct)}% of the world's AIS traffic${a.lanes_pct != null ? `; ${f2(a.lanes_pct)}% of the lanes index` : ""}</p><table>` +
+      ["T", "T_lanes", "T_1946", "L", "M"].map(k => a[k] ? `<tr><td>${esc(MEAS[k].lab)}<br><small>${FLAGTXT[a[k].flag]}</small></td><td class="num">${a[k].o} v ${f2(a[k].e)}<br><small>${xr(a[k].ratio)}</small></td></tr>` : "").join("") + `</table>`;
+    const ks = kindsIn(S.sel); h += `<h4>Placed here</h4><p>Ships and boats: ${ks[0]}; aircraft: ${ks[1]}; people: ${ks[2]}${a.median_year ? `; median year ${a.median_year}` : ""}.</p>`;
+    const w = R.worse.find(x => x.name === a.name); if (w) h += `<h4>Why</h4><p>${esc(w.why)}</p>`;
+    const list = P.filter(p => p[6] === S.sel).slice(0, 40);
+    if (list.length) h += `<h4>Disappearances</h4><ul>` + list.map(p => `<li><span class="go" data-id="${p[7]}">${esc(p[5])}</span> <small>${p[4] ?? ""}</small></li>`).join("") + `</ul>`;
+  } else if (S.sel != null && S.sel < 0) {
+    const p = P[-S.sel - 1];
+    h = `<button class="back">Back</button><h4>${esc(KINDS[p[2]][0])}</h4><div class="big">${esc(p[5])}</div><table><tr><td>Year</td><td>${p[4] ?? "not known"}</td></tr><tr><td>Location in the list</td><td>${esc(p[8])}</td></tr><tr><td>How placed</td><td>${esc(CONF[p[3]][0])}: ${esc(p[9])}</td></tr><tr><td>Sea</td><td><span class="go" data-a="${p[6]}">${esc(AREAS[p[6]][0])}</span></td></tr><tr><td>Source</td><td>${esc(p[10])}</td></tr></table>`;
+    h += `<p class="sub">Positions are approximate: a route midpoint or a sea's representative point can be hundreds of kilometres from where the loss happened.</p>`;
+  } else {
+    const ms = S.meas === "none" ? "T" : S.meas;
+    h = `<h4>Shading now</h4><div class="big">${esc(MEAS[ms].lab)}</div><p class="sub">${S.unit === "area" ? "Named seas" : "2 degree squares"}. Red: more than expected; blue: fewer; pale: within chance.</p>`;
+    const top = AR.map((a, i) => ({ a, i })).filter(x => x.a[ms] && x.a[ms].flag === "higher").sort((x, y) => x.a[ms].p_up - y.a[ms].p_up);
+    h += `<h4>Clearly more than expected</h4><ul>` + top.map(x => `<li><span class="go" data-a="${x.i}">${esc(x.a.name)}</span> <small>${x.a[ms].o} v ${f2(x.a[ms].e)}</small></li>`).join("") + `</ul>`;
+    const tri = AR.map((a, i) => ({ a, i })).filter(x => x.a.group === "legend");
+    h += `<h4>The triangles</h4><ul>` + tri.map(x => `<li><span class="go" data-a="${x.i}">${esc(x.a.name)}</span> <small>${x.a[ms].o} v ${f2(x.a[ms].e)}, ${FLAGTXT[x.a[ms].flag]}</small></li>`).join("") + `</ul>`;
+    h += `<p class="sub">Click a sea, a square or a dot for its numbers. Base map, traffic and labels are under Map layers.</p>`;
+  }
+  box.innerHTML = h;
+  const b = box.querySelector(".back"); if (b) b.onclick = () => { S.sel = null; map.closePopup(); shade(); side(); };
+  box.querySelectorAll("[data-a]").forEach(e => e.onclick = () => goArea(+e.dataset.a));
+  box.querySelectorAll("[data-id]").forEach(e => e.onclick = () => byId(e.dataset.id));
+}
+function toMap() { if (small()) document.getElementById("map").scrollIntoView({ behavior: "smooth", block: "start" }); }
+function areaBounds(i) { let b = null; seaLayer.eachLayer(l => { if (l.feature.properties.i === i) b = b ? b.extend(l.getBounds()) : L.latLngBounds(l.getBounds().getSouthWest(), l.getBounds().getNorthEast()); }); return b; }
+function goArea(i) { if (i < 0) return; S.sel = i; const b = areaBounds(i); if (b) map.fitBounds(b, { maxZoom: 7, padding: [10, 10] }); else map.setView(HOME()[0], HOME()[1]); setUnit("area"); side(); toMap(); }
+function pickArea(i, ll) {
+  S.sel = i; const a = AR[i], t = a[S.meas === "none" ? "T" : S.meas]; shade();
+  L.popup({ maxWidth: 290 }).setLatLng(ll).setContent(`<b>${esc(a.name)}</b><br>${esc(MEAS[S.meas === "none" ? "T" : S.meas].lab)}<br>observed ${t.o}, expected ${f2(t.e)}<br>ratio ${xr(t.ratio)} (95%: ${f2(t.lo)} to ${f2(t.hi)})<br>${FLAGTXT[t.flag]}`).openOn(map); side();
+}
+function pickCell(c, ll) {
+  const sq = `${c[0] < 0 ? -c[0] - 2 + "° to " + -c[0] + "°S" : c[0] + "° to " + (c[0] + 2) + "°N"}, ${c[1] < 0 ? -c[1] - 2 + "° to " + -c[1] + "°W" : c[1] + "° to " + (c[1] + 2) + "°E"}`;
+  L.popup({ maxWidth: 290 }).setLatLng(ll).setContent(`<b>2 degree square</b><br>${sq}<br>disappearances ${c[2]} (expected from traffic ${c[3] < 0.001 ? "under 0.001" : c[3].toFixed(3)})<br>recorded losses since 1800: ${c[8]}<br>losses 2000 to 2025: ${c[4]} (expected ${c[5].toFixed(2)})<br>share of world traffic: ${c[9]} per million`).openOn(map);
+}
+function pickDot(i, move) {
+  const p = P[i]; S.sel = -i - 1; if (move) { map.setView([p[0], p[1]], Math.max(map.getZoom(), 6)); toMap(); }
+  L.popup({ maxWidth: 290 }).setLatLng([p[0], p[1]]).setContent(`<b>${esc(p[5])}</b><br>${p[4] ?? "year not known"} · ${esc(KINDS[p[2]][0].toLowerCase())}<br>${esc(p[8])}<br><small>${esc(CONF[p[3]][0])}: ${esc(p[9])}</small><br>${esc(AREAS[p[6]][0])}`).openOn(map);
+  note(`<b>${esc(p[5])}</b>, ${p[4] ?? ""}`); side();
+}
+function byId(id) { const i = P.findIndex(p => p[7] === id); if (i >= 0) pickDot(i, true); }
+
+/* controls */
+const press = (row, b) => document.querySelectorAll(row + " .btn").forEach(x => x.setAttribute("aria-pressed", x === b));
+document.querySelectorAll("#measRow .btn").forEach(b => b.onclick = () => { S.meas = b.dataset.m; press("#measRow", b); shade(); legend(); side(); });
+function setUnit(u) { S.unit = u; press("#unitRow", document.querySelector(`#unitRow [data-u="${u}"]`)); shade(); legend(); side(); }
+document.querySelectorAll("#unitRow .btn").forEach(b => b.onclick = () => setUnit(b.dataset.u));
+document.querySelectorAll("#colRow .btn").forEach(b => b.onclick = () => { S.col = b.dataset.c; press("#colRow", b); dotStyle(); legend(); });
+const FOCUS = [["World", null], ["Bermuda Triangle", [[16, -84], [35, -62]]], ["Dragon's Triangle", [[11, 118], [38, 148]]], ["Michigan Triangle", [[41.4, -88.6], [46.2, -84.6]]], ["Bass Strait", [[-45, 140], [-32, 156]]], ["English Channel", [[48, -7], [52.5, 3]]], ["Grand Banks", [[40, -66], [56, -44]]], ["Hawaii", [[16, -165], [33, -140]]]];
+(function focusRow() { const row = document.getElementById("focusRow");
+  FOCUS.forEach(([n, b]) => { const x = document.createElement("button"); x.className = "btn"; x.textContent = n; x.onclick = () => { if (b) map.fitBounds(b); else map.setView(...HOME()); toMap(); }; row.appendChild(x); }); })();
+function legend() {
+  const e = document.getElementById("legend"); let h = "";
+  h += (S.col === "conf" ? CONF : KINDS).map(x => `<span><i style="background:${x[1]}"></i>${esc(x[0])}</span>`).join("");
+  if (LY.shade && S.meas !== "none") h += `<span>fewer</span><span class="ramp" style="background:${RAMPCSS}"></span><span>more than expected (${esc(MEAS[S.meas].lab)}); paler: within chance</span>`;
+  if (LY.traffic) h += `<span><i class="sq" style="background:linear-gradient(90deg,#94C9D6,#20609A,#0C1A3C)"></i>ship traffic, AIS 2015 to 2021</span>`;
+  if (LY.tris) h += `<span><i class="sq" style="background:transparent;border:2px dashed var(--hot)"></i>triangles</span>`;
+  if (LY.losses) h += `<span><i class="sq" style="background:rgba(70,72,78,.5)"></i>recorded losses</span>`;
+  e.innerHTML = h;
+}
+
+/* search */
+(function search() {
+  const q = document.getElementById("q"), sug = document.getElementById("sug"); let items = [], sel = -1;
+  const run = () => { const s = q.value.trim().toLowerCase(); if (s.length < 2) { sug.style.display = "none"; return; }
+    const out = [];
+    P.forEach((p, i) => { if (p[5].toLowerCase().includes(s)) out.push({ t: p[5], sub: (p[4] ?? "") + " · " + KINDS[p[2]][0].toLowerCase(), go: () => pickDot(i, true) }); });
+    AREAS.forEach((a, i) => { if (a[0].toLowerCase().includes(s)) out.push({ t: a[0], sub: "sea", go: () => goArea(i) }); });
+    CITIES.forEach(c => { if (out.length < 14 && c.name.toLowerCase().startsWith(s)) out.push({ t: c.name, sub: "town", go: () => { map.setView([c.lat, c.lon], 7); toMap(); } }); });
+    items = out.slice(0, 14); sel = -1;
+    sug.innerHTML = items.map((x, i) => `<li role="option" data-i="${i}">${esc(x.t)} <span>${esc(x.sub)}</span></li>`).join("") || `<li>No match</li>`; sug.style.display = "block";
+    sug.querySelectorAll("li[data-i]").forEach(li => li.onclick = () => { items[+li.dataset.i].go(); sug.style.display = "none"; }); };
+  q.addEventListener("input", run);
+  q.addEventListener("keydown", e => { if (e.key === "ArrowDown") { sel = Math.min(items.length - 1, sel + 1); } else if (e.key === "ArrowUp") { sel = Math.max(0, sel - 1); } else if (e.key === "Enter") { const x = items[sel < 0 ? 0 : sel]; if (x) { x.go(); sug.style.display = "none"; } return; } else if (e.key === "Escape") { sug.style.display = "none"; return; } else return;
+    e.preventDefault(); sug.querySelectorAll("li").forEach((li, i) => li.setAttribute("aria-selected", i === sel)); });
+  document.addEventListener("click", e => { if (!sug.contains(e.target) && e.target !== q) sug.style.display = "none"; });
+})();
+
+/* theme */
+document.getElementById("theme").onclick = () => { const r = document.documentElement; r.dataset.theme = isDark() ? "light" : "dark"; setTiles(); redraws.forEach(f => f()); legend(); };
+
+/* load */
+map.on("click", () => { if (S.sel != null) { S.sel = null; shade(); side(); } });
+setTiles(); legend(); side(); famTable(); worseTable(); cellTable();
+fetch("data/points.json").then(r => r.json()).then(j => { P = j.rows; buildDots(); side(); });
+fetch("data/cells.json").then(r => r.json()).then(j => { CELLS = j; shade(); });
+fetch("data/world.json").then(r => r.json()).then(j => { COUNTRIES = j; cLayer.addData(j); });
+fetch("data/countries.json").then(r => r.json()).then(j => { CN = j; placeNames(); });
+fetch("data/cities.json").then(r => r.json()).then(j => { CITIES = j; placeNames(); });
+</script>
+/*FULLSCREEN*/
+</body>
+</html>
